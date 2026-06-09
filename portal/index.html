@@ -8,7 +8,7 @@
       name="description"
       content="Public Stage 1 viewer for the SignoGroup Expomap Moscow 2026 exhibition dataset."
     />
-    <link rel="stylesheet" href="./styles.css?v=9" />
+    <link rel="stylesheet" href="./styles.css?v=10" />
   </head>
   <body>
     <a class="skip-link" href="#events-table">Skip to event table</a>
@@ -49,6 +49,7 @@
         <button class="section-tab active" type="button" data-section="exhibitions" aria-controls="exhibitions-section" aria-selected="true">Exhibitions</button>
         <button class="section-tab" type="button" data-section="analytics" aria-controls="analytics-section" aria-selected="false">Analytics</button>
         <button class="section-tab" type="button" data-section="datasets" aria-controls="datasets-section" aria-selected="false">Datasets</button>
+        <button class="section-tab" type="button" data-section="okved" aria-controls="okved-section" aria-selected="false">OKVED</button>
       </nav>
 
       <section id="exhibitions-section" class="portal-view table-section active" data-section-panel="exhibitions" aria-labelledby="table-title">
@@ -136,6 +137,26 @@
         </div>
       </section>
 
+      <section id="okved-section" class="portal-view okved-section" data-section-panel="okved" aria-labelledby="okved-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">OKVED</p>
+          <h2 id="okved-title">OKVED</h2>
+        </div>
+        <div class="table-wrap okved-wrap" role="region" aria-label="OKVED table" tabindex="0">
+          <table class="okved-table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Number of contacts</th>
+                <th scope="col">OKVED number + description</th>
+                <th scope="col">Website</th>
+              </tr>
+            </thead>
+            <tbody id="okved-body"></tbody>
+          </table>
+        </div>
+      </section>
+
       <aside id="detail-panel" class="detail-panel" aria-labelledby="detail-title" hidden>
         <button id="detail-close" class="detail-close" type="button" aria-label="Close event details">×</button>
         <div id="detail-content"></div>
@@ -153,6 +174,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=9" defer></script>
+    <script src="./app.js?v=10" defer></script>
   </body>
 </html>

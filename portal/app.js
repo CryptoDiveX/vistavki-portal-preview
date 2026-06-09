@@ -15,6 +15,7 @@ const state = {
   activeSection: 'exhibitions',
   relevance: loadRelevance(),
   datasets: [{ name: 'ProductCenter', contacts: 4000, website: 'productcenter.ru' }],
+  okved: [],
 };
 
 const el = (id) => document.getElementById(id);
@@ -158,6 +159,7 @@ function render() {
   renderDashboard();
   renderAnalytics();
   renderDatasets();
+  renderOkved();
   populateMonthFilter();
   bindFilters();
   bindSectionSwitcher();
@@ -385,7 +387,7 @@ function renderAnalytics() {
 }
 
 function showSection(section, updateHash = true) {
-  const allowedSections = new Set(['exhibitions', 'analytics', 'datasets']);
+  const allowedSections = new Set(['exhibitions', 'analytics', 'datasets', 'okved']);
   const target = allowedSections.has(section) ? section : 'exhibitions';
   state.activeSection = target;
   document.querySelectorAll('[data-section-panel]').forEach((panel) => {
@@ -423,6 +425,28 @@ function renderDatasets() {
   }).join('');
 }
 
+function renderOkved() {
+  const body = el('okved-body');
+  if (!body) return;
+  body.innerHTML = state.okved.map((record) => {
+    const name = text(record.name, '—');
+    const contacts = record.contacts === '' || record.contacts === null || record.contacts === undefined ? '—' : fmt.format(Number(record.contacts) || 0);
+    const okved = text(record.okved, '—');
+    const website = text(record.website, '');
+    const websiteCell = website
+      ? `<a href="${escapeHtml(normalizeUrl(website))}" target="_blank" rel="noreferrer">${escapeHtml(website)}</a>`
+      : '<span class="muted">No website</span>';
+    return `
+      <tr>
+        <td><strong>${escapeHtml(name)}</strong></td>
+        <td>${escapeHtml(contacts)}</td>
+        <td>${escapeHtml(okved)}</td>
+        <td>${websiteCell}</td>
+      </tr>
+    `;
+  }).join('');
+}
+
 function normalizeUrl(value) {
   const trimmed = text(value, '').trim();
   if (!trimmed) return '';
@@ -435,7 +459,7 @@ function bindSectionSwitcher() {
     tab.dataset.bound = 'true';
     tab.addEventListener('click', () => showSection(tab.dataset.section));
   });
-  const initial = ['#analytics', '#datasets'].includes(window.location.hash) ? window.location.hash.slice(1) : 'exhibitions';
+  const initial = ['#analytics', '#datasets', '#okved'].includes(window.location.hash) ? window.location.hash.slice(1) : 'exhibitions';
   showSection(initial, false);
 }
 
