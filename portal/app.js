@@ -21,7 +21,8 @@ const fmt = new Intl.NumberFormat('en-US');
 
 function loadRelevance() {
   try {
-    return JSON.parse(localStorage.getItem(RELEVANCE_STORAGE_KEY) || '{}');
+    const saved = JSON.parse(localStorage.getItem(RELEVANCE_STORAGE_KEY) || '{}');
+    return saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
   } catch (error) {
     console.warn('Unable to read saved relevance choices:', error);
     return {};
@@ -29,17 +30,56 @@ function loadRelevance() {
 }
 
 function saveRelevance() {
-  localStorage.setItem(RELEVANCE_STORAGE_KEY, JSON.stringify(state.relevance));
+  try {
+    localStorage.setItem(RELEVANCE_STORAGE_KEY, JSON.stringify(state.relevance));
+  } catch (error) {
+    console.warn('Unable to save relevance choices:', error);
+  }
+}
+
+function slugify(value) {
+  return text(value, '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^\p{Letter}\p{Number}]+/gu, '-')
+    .replace(/^-+|-+$/g, '') || 'event';
+}
+
+function getEventRelevanceKey(event) {
+  const urls = event.urls || {};
+  const source = event.source_audit || {};
+  const stableUrl = urls.expomap || source?.detail_page_url || urls.official_website || urls.external || event.official_website_url;
+  if (stableUrl) return `url:${stableUrl}`;
+  return `event:${slugify(event.event_name)}:${event.dates?.start || ''}:${slugify(event.venue?.name || event.venue?.city || '')}`;
+}
+
+function getSavedRelevanceRecord(eventOrKey) {
+  const key = typeof eventOrKey === 'string' ? eventOrKey : getEventRelevanceKey(eventOrKey);
+  const record = state.relevance[key];
+  if (!record) return null;
+  if (typeof record === 'string') return { value: record, savedAt: '' };
+  return record;
+}
+
+function getSavedRelevanceValue(event) {
+  const record = getSavedRelevanceRecord(event);
+  return record?.value === 'yes' || record?.value === 'no' ? record.value : '';
 }
 
 function relevanceSelect(event) {
-  const saved = state.relevance[String(event.ordinal)] || '';
+  const key = getEventRelevanceKey(event);
+  const saved = getSavedRelevanceValue(event);
   return `
-    <select class="relevance-select" data-ordinal="${event.ordinal}" aria-label="Set relevance for ${escapeHtml(event.event_name)}">
-      <option value=""${saved === '' ? ' selected' : ''}>Select</option>
-      <option value="yes"${saved === 'yes' ? ' selected' : ''}>Yes</option>
-      <option value="no"${saved === 'no' ? ' selected' : ''}>No</option>
-    </select>
+    <div class="relevance-control">
+      <select class="relevance-select" data-relevance-key="${escapeHtml(key)}" aria-label="Set relevance for ${escapeHtml(event.event_name)}">
+        <option value=""${saved === '' ? ' selected' : ''}>Select</option>
+        <option value="yes"${saved === 'yes' ? ' selected' : ''}>Yes</option>
+        <option value="no"${saved === 'no' ? ' selected' : ''}>No</option>
+      </select>
+      <span class="relevance-saved"${saved ? '' : ' hidden'}>Saved</span>
+    </div>
   `;
 }
 
@@ -113,12 +153,14 @@ async function loadPortal() {
 
 function render() {
   bindExports();
+  bindRelevanceExports();
   renderDashboard();
   renderAnalytics();
   populateMonthFilter();
   bindFilters();
   bindSectionSwitcher();
   applyFilters();
+  updateRelevanceStatus();
 }
 
 function bindExports() {
@@ -132,6 +174,127 @@ function bindExports() {
   primaryButton.href = `${DATA_ROOT}/${primary}`;
   el('export-xlsx').href = `${DATA_ROOT}/${xlsx}`;
   el('export-json').href = `${DATA_ROOT}/${json}`;
+}
+
+function bindRelevanceExports() {
+  const csvButton = el('export-relevance-csv');
+  const jsonButton = el('export-relevance-json');
+  if (csvButton && csvButton.dataset.bound !== 'true') {
+    csvButton.dataset.bound = 'true';
+    csvButton.addEventListener('click', downloadRelevanceCsv);
+  }
+  if (jsonButton && jsonButton.dataset.bound !== 'true') {
+    jsonButton.dataset.bound = 'true';
+    jsonButton.addEventListener('click', downloadRelevanceJson);
+  }
+}
+
+function relevanceDecisionCount() {
+  return buildRelevanceExportRows().length;
+}
+
+function updateRelevanceStatus() {
+  const count = relevanceDecisionCount();
+  const label = count === 1 ? 'decision' : 'decisions';
+  const status = el('relevance-status');
+  if (status) status.textContent = count ? `${fmt.format(count)} ${label} saved locally` : 'Saved locally in this browser';
+  [el('export-relevance-csv'), el('export-relevance-json')].forEach((button) => {
+    if (button) button.disabled = count === 0;
+  });
+}
+
+function buildRelevanceExportRows() {
+  const rows = [];
+  const seenKeys = new Set();
+  state.events.forEach((event) => {
+    const key = getEventRelevanceKey(event);
+    const record = getSavedRelevanceRecord(key);
+    const value = record?.value;
+    if (value !== 'yes' && value !== 'no') return;
+    seenKeys.add(key);
+    const urls = event.urls || {};
+    rows.push({
+      relevance: value,
+      event_key: key,
+      event_ordinal: event.ordinal || '',
+      event_name: event.event_name || '',
+      date_start: event.dates?.start || '',
+      date_end: event.dates?.end || '',
+      dates_display: event.dates?.display || formatRange(event),
+      venue_name: event.venue?.name || '',
+      venue_city: event.venue?.city || '',
+      expomap_url: urls.expomap || event.source_audit?.detail_page_url || '',
+      official_site_url: event.official_website_url || urls.official_website || urls.external || '',
+      status: event.status || '',
+      parse_status: event.parse_status || '',
+      saved_at: record.savedAt || '',
+    });
+  });
+  Object.entries(state.relevance).forEach(([key, record]) => {
+    const normalized = typeof record === 'string' ? { value: record, savedAt: '' } : record;
+    if (seenKeys.has(key) || (normalized?.value !== 'yes' && normalized?.value !== 'no')) return;
+    rows.push({
+      relevance: normalized.value,
+      event_key: key,
+      event_ordinal: '',
+      event_name: '',
+      date_start: '',
+      date_end: '',
+      dates_display: '',
+      venue_name: '',
+      venue_city: '',
+      expomap_url: key.startsWith('url:') ? key.slice(4) : '',
+      official_site_url: '',
+      status: '',
+      parse_status: '',
+      saved_at: normalized.savedAt || '',
+    });
+  });
+  return rows;
+}
+
+function csvEscape(value) {
+  const normalized = text(value, '');
+  return /[",\n\r]/.test(normalized) ? `"${normalized.replace(/"/g, '""')}"` : normalized;
+}
+
+function timestampForFilename() {
+  return new Date().toISOString().replace(/[:.]/g, '-');
+}
+
+function downloadTextFile(filename, content, mimeType) {
+  const blob = new Blob([content], { type: mimeType });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
+function downloadRelevanceCsv() {
+  const rows = buildRelevanceExportRows();
+  if (!rows.length) return;
+  const columns = Object.keys(rows[0]);
+  const csv = [
+    columns.join(','),
+    ...rows.map((row) => columns.map((column) => csvEscape(row[column])).join(',')),
+  ].join('\n');
+  downloadTextFile(`vistavki-relevance-decisions-${timestampForFilename()}.csv`, csv, 'text/csv;charset=utf-8');
+}
+
+function downloadRelevanceJson() {
+  const rows = buildRelevanceExportRows();
+  if (!rows.length) return;
+  const payload = {
+    exported_at: new Date().toISOString(),
+    storage: 'browser localStorage only',
+    storage_key: RELEVANCE_STORAGE_KEY,
+    decisions: rows,
+  };
+  downloadTextFile(`vistavki-relevance-decisions-${timestampForFilename()}.json`, JSON.stringify(payload, null, 2), 'application/json;charset=utf-8');
 }
 
 function getDateRange() {
@@ -317,16 +480,22 @@ function renderTable() {
     button.addEventListener('click', () => showDetail(Number(button.dataset.ordinal)));
   });
   body.querySelectorAll('.relevance-select').forEach((select) => {
+    const savedLabel = select.closest('.relevance-control')?.querySelector('.relevance-saved');
     select.dataset.state = select.value || 'unset';
     select.addEventListener('change', () => {
-      const ordinal = String(select.dataset.ordinal);
+      const key = select.dataset.relevanceKey;
       if (select.value) {
-        state.relevance[ordinal] = select.value;
+        state.relevance[key] = {
+          value: select.value,
+          savedAt: new Date().toISOString(),
+        };
       } else {
-        delete state.relevance[ordinal];
+        delete state.relevance[key];
       }
       select.dataset.state = select.value || 'unset';
+      if (savedLabel) savedLabel.hidden = !select.value;
       saveRelevance();
+      updateRelevanceStatus();
     });
   });
 }

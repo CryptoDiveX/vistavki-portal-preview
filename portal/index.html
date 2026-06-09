@@ -8,7 +8,7 @@
       name="description"
       content="Public Stage 1 viewer for the SignoGroup Expomap Moscow 2026 exhibition dataset."
     />
-    <link rel="stylesheet" href="./styles.css?v=6" />
+    <link rel="stylesheet" href="./styles.css?v=7" />
   </head>
   <body>
     <a class="skip-link" href="#events-table">Skip to event table</a>
@@ -27,7 +27,10 @@
             </a>
             <a id="export-xlsx" class="button" href="#" download>XLSX</a>
             <a id="export-json" class="button" href="#" download>JSON</a>
+            <button id="export-relevance-csv" class="button" type="button" disabled>Relevance CSV</button>
+            <button id="export-relevance-json" class="button" type="button" disabled>Relevance JSON</button>
           </div>
+          <p id="relevance-status" class="local-save-note" aria-live="polite">Saved locally in this browser</p>
         </div>
         <aside class="hero-panel" aria-label="Dataset status">
           <span class="status-pill status-ok">Parser QA: loading…</span>
@@ -130,6 +133,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=6" defer></script>
+    <script src="./app.js?v=7" defer></script>
   </body>
 </html>

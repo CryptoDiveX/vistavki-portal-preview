@@ -104,7 +104,18 @@ a { color: var(--primary-dark); }
   cursor: pointer;
 }
 .button:hover, .button:focus-visible { border-color: var(--primary); box-shadow: 0 0 0 4px var(--primary-soft); }
+.button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
 .button-primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+.local-save-note {
+  margin: .6rem 0 0;
+  color: var(--muted);
+  font-size: .86rem;
+  font-weight: 750;
+}
 .hero-panel {
   min-width: 0;
   display: grid;
@@ -230,6 +241,10 @@ tbody tr:hover { background: #f9fbff; }
 .relevance-cell {
   min-width: 132px;
 }
+.relevance-control {
+  display: grid;
+  gap: 4px;
+}
 .relevance-select {
   width: 100%;
   min-height: 38px;
@@ -240,6 +255,12 @@ tbody tr:hover { background: #f9fbff; }
   color: var(--text);
   font-weight: 800;
   cursor: pointer;
+}
+.relevance-saved {
+  color: var(--success);
+  font-size: .72rem;
+  font-weight: 850;
+  line-height: 1;
 }
 .relevance-select:focus {
   outline: 3px solid var(--primary-soft);
