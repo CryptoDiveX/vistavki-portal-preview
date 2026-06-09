@@ -5,16 +5,43 @@ const DATA_URLS = {
   manifest: `${DATA_ROOT}/manifest.json`,
 };
 
+const RELEVANCE_STORAGE_KEY = 'vistavki:event-relevance:v1';
+
 const state = {
   events: [],
   summary: null,
   manifest: null,
   filtered: [],
   activeSection: 'exhibitions',
+  relevance: loadRelevance(),
 };
 
 const el = (id) => document.getElementById(id);
 const fmt = new Intl.NumberFormat('en-US');
+
+function loadRelevance() {
+  try {
+    return JSON.parse(localStorage.getItem(RELEVANCE_STORAGE_KEY) || '{}');
+  } catch (error) {
+    console.warn('Unable to read saved relevance choices:', error);
+    return {};
+  }
+}
+
+function saveRelevance() {
+  localStorage.setItem(RELEVANCE_STORAGE_KEY, JSON.stringify(state.relevance));
+}
+
+function relevanceSelect(event) {
+  const saved = state.relevance[String(event.ordinal)] || '';
+  return `
+    <select class="relevance-select" data-ordinal="${event.ordinal}" aria-label="Set relevance for ${escapeHtml(event.event_name)}">
+      <option value=""${saved === '' ? ' selected' : ''}>Select</option>
+      <option value="yes"${saved === 'yes' ? ' selected' : ''}>Yes</option>
+      <option value="no"${saved === 'no' ? ' selected' : ''}>No</option>
+    </select>
+  `;
+}
 
 function text(value, fallback = '—') {
   if (value === null || value === undefined || value === '') return fallback;
@@ -282,12 +309,25 @@ function renderTable() {
           ${links.external ? `<a href="${escapeHtml(links.external)}" target="_blank" rel="noreferrer">External</a>` : '<span class="muted">No external URL</span>'}
         </td>
         <td>${statusBadge(event.status, event.canceled)}</td>
-        <td><strong>${escapeHtml(event.parse_status || 'unknown')}</strong><div class="missing-list small">${missing.length ? escapeHtml(missing.join(', ')) : 'No missing fields'}</div></td>
+        <td class="relevance-cell">${relevanceSelect(event)}</td>
       </tr>
     `;
   }).join('');
   body.querySelectorAll('.event-button').forEach((button) => {
     button.addEventListener('click', () => showDetail(Number(button.dataset.ordinal)));
+  });
+  body.querySelectorAll('.relevance-select').forEach((select) => {
+    select.dataset.state = select.value || 'unset';
+    select.addEventListener('change', () => {
+      const ordinal = String(select.dataset.ordinal);
+      if (select.value) {
+        state.relevance[ordinal] = select.value;
+      } else {
+        delete state.relevance[ordinal];
+      }
+      select.dataset.state = select.value || 'unset';
+      saveRelevance();
+    });
   });
 }
 

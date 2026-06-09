@@ -227,6 +227,36 @@ tbody tr:hover { background: #f9fbff; }
 .small { font-size: .86rem; }
 .missing-list { color: var(--warning); font-weight: 750; }
 
+.relevance-cell {
+  min-width: 132px;
+}
+.relevance-select {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  padding: .5rem .65rem;
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 800;
+  cursor: pointer;
+}
+.relevance-select:focus {
+  outline: 3px solid var(--primary-soft);
+  border-color: var(--primary);
+}
+.relevance-select[data-state="yes"] {
+  border-color: #86efac;
+  background: var(--success-soft);
+  color: var(--success);
+}
+.relevance-select[data-state="no"] {
+  border-color: #fecaca;
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+
 .detail-panel {
   position: fixed;
   inset: 18px 18px 18px auto;
