@@ -1,0 +1,14 @@
+{
+  "api_reported_count": 347,
+  "event_count": 341,
+  "expected_event_count": 341,
+  "files_checked": [
+    "dashboard_summary.json",
+    "events.json",
+    "exports/expomap_moscow_expo_2026_public_events.csv",
+    "manifest.json"
+  ],
+  "findings": [],
+  "january_2026_count": 15,
+  "status": "pass"
+}

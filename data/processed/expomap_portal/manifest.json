@@ -1,0 +1,44 @@
+{
+  "data_package_version": "expomap-portal-package-v1.0.0",
+  "dataset": {
+    "api_reported_count": 347,
+    "count_exception": {
+      "accessible_events": 341,
+      "api_reported_count": 347,
+      "count_matches_api": false,
+      "difference": 6,
+      "documented_exception_found": true,
+      "exists": true,
+      "note": "Expomap API reports 347 events for Moscow expo 2026, but Stage 1 API page probes and QA validation exposed 341 unique accessible records. The portal package uses the 341 accessible public events and preserves this documented API count exception."
+    },
+    "event_count": 341,
+    "name": "Expomap Moscow exhibitions 2026",
+    "qa_verdict": "PASS_WITH_DOCUMENTED_API_COUNT_EXCEPTION",
+    "scope": "city=moscow; event_type=expo; date=2026-01-01:2026-12-31"
+  },
+  "export_action": {
+    "label": "Export all exhibitions",
+    "primary_href": "exports/expomap_moscow_expo_2026_public_events.csv",
+    "secondary_hrefs": [
+      "exports/expomap_moscow_expo_2026_public_events.xlsx",
+      "events.json"
+    ]
+  },
+  "files": {
+    "dashboard_summary_json": "dashboard_summary.json",
+    "events_json": "events.json",
+    "public_csv_export": "exports/expomap_moscow_expo_2026_public_events.csv",
+    "public_xlsx_export": "exports/expomap_moscow_expo_2026_public_events.xlsx",
+    "public_xlsx_export_created": true,
+    "validation_report_json": "validation_report.json"
+  },
+  "generated_at": "2026-06-08T08:09:25Z",
+  "safety": {
+    "contains_credentials_or_tokens": false,
+    "contains_crm_customer_data": false,
+    "public_fields_only": true,
+    "raw_filesystem_paths_exposed": false,
+    "raw_source_api_urls_exposed": false
+  },
+  "schema": "schemas/expomap_portal_package.schema.json"
+}

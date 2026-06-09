@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vistavki Parsing Portal · Expomap Stage 1</title>
+    <meta
+      name="description"
+      content="Public Stage 1 viewer for the SignoGroup Expomap Moscow 2026 exhibition dataset."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#events-table">Skip to event table</a>
+
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">SignoGroup · Vistavki Parsing</p>
+          <h1 id="page-title">Expomap Moscow exhibitions 2026</h1>
+          <p class="hero-lead">
+            Public Stage 1 viewer for 341 accessible Expomap Moscow 2026 exhibitions.
+          </p>
+          <div class="hero-actions" aria-label="Dataset exports">
+            <a id="export-primary" class="button button-primary" href="#" download>
+              Export all exhibitions
+            </a>
+            <a id="export-xlsx" class="button" href="#" download>XLSX</a>
+            <a id="export-json" class="button" href="#" download>JSON</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Dataset status">
+          <span class="status-pill status-ok">Parser QA: loading…</span>
+          <div id="count-caveat" class="status-list" aria-live="polite">Loading dataset counts…</div>
+        </aside>
+      </section>
+
+      <section id="loading-state" class="state-card" aria-live="polite">
+        Loading portal data…
+      </section>
+      <section id="error-state" class="state-card state-card-error" hidden aria-live="assertive"></section>
+
+      <section id="dashboard" class="dashboard-grid" aria-label="Dashboard cards"></section>
+
+      <section class="analytics-section" aria-labelledby="analytics-title">
+        <div class="section-heading">
+          <p class="eyebrow">Analytics</p>
+          <h2 id="analytics-title">Coverage and public data quality</h2>
+        </div>
+        <div id="analytics" class="analytics-grid"></div>
+      </section>
+
+      <section class="table-section" aria-labelledby="table-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">All records</p>
+            <h2 id="table-title">Exhibition search and review</h2>
+          </div>
+          <p id="result-count" class="result-count"></p>
+        </div>
+
+        <form id="filters" class="filters" aria-label="Filter exhibitions">
+          <label>
+            Search
+            <input id="query" type="search" placeholder="Name, venue, city, theme, tag…" autocomplete="off" />
+          </label>
+          <label>
+            Month
+            <select id="month-filter"><option value="all">All months</option></select>
+          </label>
+          <label>
+            Status
+            <select id="status-filter">
+              <option value="all">All statuses</option>
+              <option value="active">Active</option>
+              <option value="canceled">Canceled</option>
+            </select>
+          </label>
+          <label>
+            Parse status
+            <select id="parse-filter">
+              <option value="all">All parse states</option>
+              <option value="ok">OK</option>
+              <option value="partial">Partial</option>
+            </select>
+          </label>
+          <button class="button" type="reset">Reset filters</button>
+        </form>
+
+        <div id="empty-state" class="state-card" hidden>No exhibitions match the selected filters.</div>
+
+        <div class="table-wrap" role="region" aria-label="Scrollable exhibition table" tabindex="0">
+          <table id="events-table">
+            <thead>
+              <tr>
+                <th scope="col">Event</th>
+                <th scope="col">Dates</th>
+                <th scope="col">Venue / city</th>
+                <th scope="col">Themes / tags</th>
+                <th scope="col">Members / visitors</th>
+                <th scope="col">Links</th>
+                <th scope="col">Status</th>
+                <th scope="col">Parse / missing</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <aside id="detail-panel" class="detail-panel" aria-labelledby="detail-title" hidden>
+        <button id="detail-close" class="detail-close" type="button" aria-label="Close event details">×</button>
+        <div id="detail-content"></div>
+      </aside>
+
+      <section class="stage2-callout" aria-labelledby="stage2-title">
+        <p class="eyebrow">Next stage</p>
+        <h2 id="stage2-title">Stage 2 is intentionally gated</h2>
+        <ol>
+          <li>Approve or select SignoGroup relevance rules.</li>
+          <li>Parse official event and exhibitor sites for selected events.</li>
+          <li>Extract lead candidates only after relevance approval.</li>
+        </ol>
+        <p>No Stage 2 leads are invented or shown in this portal.</p>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
