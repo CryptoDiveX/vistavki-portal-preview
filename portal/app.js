@@ -6,7 +6,6 @@ const DATA_URLS = {
 };
 
 const RELEVANCE_STORAGE_KEY = 'vistavki:event-relevance:v1';
-const DATASET_STORAGE_KEY = 'vistavki:manual-datasets:v1';
 
 const state = {
   events: [],
@@ -15,7 +14,7 @@ const state = {
   filtered: [],
   activeSection: 'exhibitions',
   relevance: loadRelevance(),
-  datasets: loadDatasets(),
+  datasets: [{ name: 'ProductCenter', contacts: 4000, website: 'productcenter.ru' }],
 };
 
 const el = (id) => document.getElementById(id);
@@ -36,24 +35,6 @@ function saveRelevance() {
     localStorage.setItem(RELEVANCE_STORAGE_KEY, JSON.stringify(state.relevance));
   } catch (error) {
     console.warn('Unable to save relevance choices:', error);
-  }
-}
-
-function loadDatasets() {
-  try {
-    const saved = JSON.parse(localStorage.getItem(DATASET_STORAGE_KEY) || '[]');
-    return Array.isArray(saved) ? saved.filter((item) => item && typeof item === 'object') : [];
-  } catch (error) {
-    console.warn('Unable to read saved datasets:', error);
-    return [];
-  }
-}
-
-function saveDatasets() {
-  try {
-    localStorage.setItem(DATASET_STORAGE_KEY, JSON.stringify(state.datasets));
-  } catch (error) {
-    console.warn('Unable to save datasets:', error);
   }
 }
 
@@ -179,7 +160,6 @@ function render() {
   renderDatasets();
   populateMonthFilter();
   bindFilters();
-  bindDatasetForm();
   bindSectionSwitcher();
   applyFilters();
   updateRelevanceStatus();
@@ -425,11 +405,9 @@ function showSection(section, updateHash = true) {
 
 function renderDatasets() {
   const body = el('datasets-body');
-  const empty = el('datasets-empty');
-  if (!body || !empty) return;
-  empty.hidden = state.datasets.length !== 0;
+  if (!body) return;
   body.innerHTML = state.datasets.map((dataset) => {
-    const name = text(dataset.name, 'Untitled dataset');
+    const name = text(dataset.name, '—');
     const contacts = dataset.contacts === '' || dataset.contacts === null || dataset.contacts === undefined ? '—' : fmt.format(Number(dataset.contacts) || 0);
     const website = text(dataset.website, '');
     const websiteCell = website
@@ -440,47 +418,15 @@ function renderDatasets() {
         <td><strong>${escapeHtml(name)}</strong></td>
         <td>${escapeHtml(contacts)}</td>
         <td>${websiteCell}</td>
-        <td><button class="button button-small" type="button" data-dataset-id="${escapeHtml(dataset.id)}">Remove</button></td>
       </tr>
     `;
   }).join('');
-  body.querySelectorAll('[data-dataset-id]').forEach((button) => {
-    button.addEventListener('click', () => {
-      state.datasets = state.datasets.filter((dataset) => dataset.id !== button.dataset.datasetId);
-      saveDatasets();
-      renderDatasets();
-    });
-  });
 }
 
 function normalizeUrl(value) {
   const trimmed = text(value, '').trim();
   if (!trimmed) return '';
   return /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
-}
-
-function bindDatasetForm() {
-  const form = el('dataset-form');
-  if (!form || form.dataset.bound === 'true') return;
-  form.dataset.bound = 'true';
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const nameInput = el('dataset-name');
-    const contactsInput = el('dataset-contacts');
-    const websiteInput = el('dataset-website');
-    const name = nameInput.value.trim();
-    if (!name) return;
-    state.datasets.push({
-      id: `dataset-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-      name,
-      contacts: contactsInput.value.trim(),
-      website: websiteInput.value.trim(),
-      savedAt: new Date().toISOString(),
-    });
-    saveDatasets();
-    form.reset();
-    renderDatasets();
-  });
 }
 
 function bindSectionSwitcher() {

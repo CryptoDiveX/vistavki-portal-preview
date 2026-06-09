@@ -110,7 +110,6 @@ a { color: var(--primary-dark); }
   box-shadow: none;
 }
 .button-primary { background: var(--primary); border-color: var(--primary); color: #fff; }
-.button-small { min-height: 32px; padding: .42rem .72rem; font-size: .82rem; }
 .local-save-note {
   margin: .6rem 0 0;
   color: var(--muted);
@@ -212,12 +211,7 @@ a { color: var(--primary-dark); }
 .analytics-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 14px; }
 .analytics-card { padding: 18px; overflow: hidden; }
 .datasets-section { padding: 20px; }
-.dataset-form { display: grid; grid-template-columns: minmax(180px, 1.2fr) minmax(150px, .7fr) minmax(200px, 1fr) auto; gap: 12px; align-items: end; margin-bottom: 16px; }
-.dataset-form label { display: grid; gap: 6px; color: var(--muted); font-size: .86rem; font-weight: 800; }
-.dataset-form input { width: 100%; min-height: 42px; padding: .58rem .75rem; border: 1px solid var(--border-strong); border-radius: 12px; background: var(--surface); color: var(--text); }
-.dataset-form input:focus { outline: 3px solid var(--primary-soft); border-color: var(--primary); }
 .dataset-table { min-width: 720px; }
-.dataset-empty { margin-top: 12px; }
 .analytics-card h3 { margin: 0 0 14px; }
 .bar-row { display: grid; grid-template-columns: 82px minmax(80px, 1fr) 44px; gap: 10px; align-items: center; margin: 9px 0; color: var(--muted); font-size: .9rem; }
 .bar-track { min-height: 10px; background: #edf1f7; border-radius: 999px; overflow: hidden; }
@@ -313,12 +307,12 @@ tbody tr:hover { background: #f9fbff; }
   .dashboard-card, .dashboard-card--mini, .dashboard-card--wide { grid-column: span 2; }
   .dashboard-card--date { grid-column: span 4; }
   .analytics-grid { grid-template-columns: 1fr; }
-  .filters, .dataset-form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 680px) {
   .shell { width: min(100% - 20px, 1480px); padding-top: 10px; }
   .hero, .table-section, .datasets-section, .stage2-callout { border-radius: 18px; padding: 16px; }
-  .dashboard-grid, .filters, .dataset-form, .detail-grid { grid-template-columns: 1fr; }
+  .dashboard-grid, .filters, .detail-grid { grid-template-columns: 1fr; }
   .dashboard-card, .dashboard-card--mini, .dashboard-card--wide, .dashboard-card--date { grid-column: 1; }
   .dashboard-card--date .card-value { white-space: normal; }
   .hero-actions .button, .section-switcher .section-tab { flex: 1 1 100%; }

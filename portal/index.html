@@ -8,7 +8,7 @@
       name="description"
       content="Public Stage 1 viewer for the SignoGroup Expomap Moscow 2026 exhibition dataset."
     />
-    <link rel="stylesheet" href="./styles.css?v=8" />
+    <link rel="stylesheet" href="./styles.css?v=9" />
   </head>
   <body>
     <a class="skip-link" href="#events-table">Skip to event table</a>
@@ -122,35 +122,18 @@
           <p class="eyebrow">Datasets</p>
           <h2 id="datasets-title">Datasets</h2>
         </div>
-        <form id="dataset-form" class="dataset-form" aria-label="Add dataset">
-          <label>
-            Dataset
-            <input id="dataset-name" type="text" placeholder="ProductCenter" autocomplete="off" required />
-          </label>
-          <label>
-            Number of contacts
-            <input id="dataset-contacts" type="number" inputmode="numeric" min="0" placeholder="0" />
-          </label>
-          <label>
-            Website
-            <input id="dataset-website" type="text" placeholder="productcenter.ru" autocomplete="off" />
-          </label>
-          <button class="button button-primary" type="submit">Add dataset</button>
-        </form>
-        <div class="table-wrap dataset-wrap" role="region" aria-label="Saved datasets" tabindex="0">
+        <div class="table-wrap dataset-wrap" role="region" aria-label="Datasets table" tabindex="0">
           <table class="dataset-table">
             <thead>
               <tr>
-                <th scope="col">Dataset</th>
+                <th scope="col">Name</th>
                 <th scope="col">Number of contacts</th>
                 <th scope="col">Website</th>
-                <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody id="datasets-body"></tbody>
           </table>
         </div>
-        <div id="datasets-empty" class="state-card dataset-empty">No datasets added yet.</div>
       </section>
 
       <aside id="detail-panel" class="detail-panel" aria-labelledby="detail-title" hidden>
@@ -170,6 +153,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=8" defer></script>
+    <script src="./app.js?v=9" defer></script>
   </body>
 </html>
