@@ -212,7 +212,7 @@ a { color: var(--primary-dark); }
 .analytics-card { padding: 18px; overflow: hidden; }
 .datasets-section, .okved-section { padding: 20px; }
 .dataset-table { min-width: 720px; }
-.okved-table { min-width: 920px; }
+.okved-table { min-width: 1080px; }
 .analytics-card h3 { margin: 0 0 14px; }
 .bar-row { display: grid; grid-template-columns: 82px minmax(80px, 1fr) 44px; gap: 10px; align-items: center; margin: 9px 0; color: var(--muted); font-size: .9rem; }
 .bar-track { min-height: 10px; background: #edf1f7; border-radius: 999px; overflow: hidden; }

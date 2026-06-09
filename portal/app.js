@@ -436,12 +436,14 @@ function renderOkved() {
     const websiteCell = website
       ? `<a href="${escapeHtml(normalizeUrl(website))}" target="_blank" rel="noreferrer">${escapeHtml(website)}</a>`
       : '<span class="muted">No website</span>';
+    const location = text(record.location, '—');
     return `
       <tr>
         <td><strong>${escapeHtml(name)}</strong></td>
         <td>${escapeHtml(contacts)}</td>
         <td>${escapeHtml(okved)}</td>
         <td>${websiteCell}</td>
+        <td>${escapeHtml(location)}</td>
       </tr>
     `;
   }).join('');
