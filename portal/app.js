@@ -10,6 +10,7 @@ const state = {
   summary: null,
   manifest: null,
   filtered: [],
+  activeSection: 'exhibitions',
 };
 
 const el = (id) => document.getElementById(id);
@@ -89,6 +90,7 @@ function render() {
   renderAnalytics();
   populateMonthFilter();
   bindFilters();
+  bindSectionSwitcher();
   applyFilters();
 }
 
@@ -182,18 +184,40 @@ function renderList(title, entries) {
 
 function renderAnalytics() {
   const summary = state.summary;
-  const venueCounts = summary.venue_summary?.venue_counts || {};
+  const cityCounts = summary.venue_summary?.city_counts || {};
   el('analytics').innerHTML = [
     renderBars('By month', Object.entries(summary.by_month_counts || {}), (month) => month.replace('2026-', '')),
     renderList('Top themes', topEntries(summary.by_theme_counts, 10)),
-    renderList('Top tags', topEntries(summary.by_tag_counts, 10)),
-    renderList('Top venues', topEntries(venueCounts, 8)),
-    renderList('Data gaps', Object.entries({
-      'Venue/address missing': state.events.filter((event) => (event.missing_fields || []).some((field) => field.includes('venue'))).length,
-      'Canceled': state.events.filter((event) => event.canceled).length,
-      'Partial parse': state.events.filter((event) => event.parse_status === 'partial').length,
-    })),
+    renderList('By city', topEntries(cityCounts, 10)),
   ].join('');
+}
+
+function showSection(section, updateHash = true) {
+  const target = section === 'analytics' ? 'analytics' : 'exhibitions';
+  state.activeSection = target;
+  document.querySelectorAll('[data-section-panel]').forEach((panel) => {
+    const active = panel.dataset.sectionPanel === target;
+    panel.hidden = !active;
+    panel.classList.toggle('active', active);
+  });
+  document.querySelectorAll('[data-section]').forEach((tab) => {
+    const active = tab.dataset.section === target;
+    tab.classList.toggle('active', active);
+    tab.setAttribute('aria-selected', active ? 'true' : 'false');
+  });
+  if (updateHash) {
+    history.replaceState(null, '', target === 'analytics' ? '#analytics' : '#exhibitions');
+  }
+}
+
+function bindSectionSwitcher() {
+  document.querySelectorAll('[data-section]').forEach((tab) => {
+    if (tab.dataset.bound === 'true') return;
+    tab.dataset.bound = 'true';
+    tab.addEventListener('click', () => showSection(tab.dataset.section));
+  });
+  const initial = window.location.hash === '#analytics' ? 'analytics' : 'exhibitions';
+  showSection(initial, false);
 }
 
 function populateMonthFilter() {
