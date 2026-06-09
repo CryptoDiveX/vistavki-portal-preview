@@ -1,5 +1,5 @@
 {
-  "data_package_version": "expomap-portal-package-v1.0.0",
+  "data_package_version": "expomap-portal-package-v1.1.0",
   "dataset": {
     "api_reported_count": 347,
     "count_exception": {
@@ -27,12 +27,13 @@
   "files": {
     "dashboard_summary_json": "dashboard_summary.json",
     "events_json": "events.json",
+    "official_website_audit_json": "official_website_audit.json",
     "public_csv_export": "exports/expomap_moscow_expo_2026_public_events.csv",
     "public_xlsx_export": "exports/expomap_moscow_expo_2026_public_events.xlsx",
     "public_xlsx_export_created": true,
     "validation_report_json": "validation_report.json"
   },
-  "generated_at": "2026-06-08T08:09:25Z",
+  "generated_at": "2026-06-09T05:25:02Z",
   "safety": {
     "contains_credentials_or_tokens": false,
     "contains_crm_customer_data": false,
