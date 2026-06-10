@@ -1,0 +1,329 @@
+[
+  {
+    "id": "okved-01",
+    "name": "combined OKVED 10.82 + 10.85 + 20.41",
+    "number_of_contacts": 1088,
+    "okved_number_description": "10.82 + 10.85 + 20.41 — combined dataset / объединённая выборка: 10.82 производство какао, шоколада и сахаристых кондитерских изделий; 10.85 производство готовых пищевых продуктов и блюд; 20.41 производство мыла, моющих, чистящих и полирующих средств",
+    "website": "downloads/combined-okved-10-82-10-85-20-41.xlsx",
+    "download_href": "downloads/combined-okved-10-82-10-85-20-41.xlsx",
+    "file_type": "xlsx",
+    "source_filename": "Combined 10.82 + 10.85 + 20.41.xlsx",
+    "download_filename": "combined-okved-10-82-10-85-20-41.xlsx",
+    "generated_at": "2026-06-09T06:54:04Z",
+    "chosen_sheet": "All Ai cleaned",
+    "row_count_audit_notes": "Workbook count uses sheet 'All Ai cleaned' (preferred_sheet); 1088 non-empty data rows excluding header. Sheet dimension has 1129 data rows and 41 blank rows inside dimension. Choice rationale: Explicitly cleaned combined sheet; raw per-code sheets and raw All sheets remain listed in source_inventory.",
+    "source_inventory": {
+      "type": "xlsx",
+      "sheets": [
+        {
+          "sheet_name": "10.82",
+          "max_row_dimension": 152,
+          "max_column_dimension": 40,
+          "dimension_data_rows": 151,
+          "nonempty_data_rows": 151,
+          "blank_rows_inside_dimension_excluding_header": 0,
+          "primary_name_data_rows": 151,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Тип компании",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации",
+            "Основной ОКВЭД",
+            "Дополнительные ОКВЭД",
+            "Юридический адрес",
+            "Регион"
+          ]
+        },
+        {
+          "sheet_name": "10.85",
+          "max_row_dimension": 447,
+          "max_column_dimension": 40,
+          "dimension_data_rows": 446,
+          "nonempty_data_rows": 446,
+          "blank_rows_inside_dimension_excluding_header": 0,
+          "primary_name_data_rows": 446,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Тип компании",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации",
+            "Основной ОКВЭД",
+            "Дополнительные ОКВЭД",
+            "Юридический адрес",
+            "Регион"
+          ]
+        },
+        {
+          "sheet_name": "20.41",
+          "max_row_dimension": 533,
+          "max_column_dimension": 40,
+          "dimension_data_rows": 532,
+          "nonempty_data_rows": 532,
+          "blank_rows_inside_dimension_excluding_header": 0,
+          "primary_name_data_rows": 532,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Тип компании",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации",
+            "Основной ОКВЭД",
+            "Дополнительные ОКВЭД",
+            "Юридический адрес",
+            "Регион"
+          ]
+        },
+        {
+          "sheet_name": "All",
+          "max_row_dimension": 1130,
+          "max_column_dimension": 44,
+          "dimension_data_rows": 1129,
+          "nonempty_data_rows": 1129,
+          "blank_rows_inside_dimension_excluding_header": 0,
+          "primary_name_data_rows": 1129,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Company Name",
+            "Check",
+            "Тип компании",
+            "OKVED",
+            "Products",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации"
+          ]
+        },
+        {
+          "sheet_name": "All AI p",
+          "max_row_dimension": 1130,
+          "max_column_dimension": 44,
+          "dimension_data_rows": 1129,
+          "nonempty_data_rows": 1129,
+          "blank_rows_inside_dimension_excluding_header": 0,
+          "primary_name_data_rows": 1129,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Company Name",
+            "Check",
+            "Тип компании",
+            "OKVED",
+            "Products",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации"
+          ]
+        },
+        {
+          "sheet_name": "All Ai cleaned",
+          "max_row_dimension": 1130,
+          "max_column_dimension": 44,
+          "dimension_data_rows": 1129,
+          "nonempty_data_rows": 1088,
+          "blank_rows_inside_dimension_excluding_header": 41,
+          "primary_name_data_rows": 1088,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Company Name",
+            "Check",
+            "Тип компании",
+            "OKVED",
+            "Products",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации"
+          ]
+        }
+      ]
+    },
+    "ambiguity_note": "Raw/code-specific workbook sheets total 1129 data rows, while the cleaned combined sheet has 1088 non-empty data rows after 41 trailing blank rows. Manifest uses cleaned non-empty count."
+  },
+  {
+    "id": "okved-02",
+    "name": "20.41 Moscow + Moscow Oblast",
+    "number_of_contacts": 532,
+    "okved_number_description": "20.41 — Moscow + Moscow Oblast / Москва и Московская область; производство мыла, моющих, чистящих и полирующих средств",
+    "website": "downloads/okved-20-41-moscow-oblast.xlsx",
+    "download_href": "downloads/okved-20-41-moscow-oblast.xlsx",
+    "file_type": "xlsx",
+    "source_filename": "OKVED 20.41 Moscow + Oblst.xlsx",
+    "download_filename": "okved-20-41-moscow-oblast.xlsx",
+    "generated_at": "2026-06-09T06:54:04Z",
+    "chosen_sheet": "Sheet1",
+    "row_count_audit_notes": "Workbook count uses sheet 'Sheet1' (preferred_sheet); 532 non-empty data rows excluding header. Sheet dimension has 532 data rows and 0 blank rows inside dimension. Choice rationale: Single data sheet in workbook.",
+    "source_inventory": {
+      "type": "xlsx",
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "max_row_dimension": 533,
+          "max_column_dimension": 40,
+          "dimension_data_rows": 532,
+          "nonempty_data_rows": 532,
+          "blank_rows_inside_dimension_excluding_header": 0,
+          "primary_name_data_rows": 532,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Тип компании",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации",
+            "Основной ОКВЭД",
+            "Дополнительные ОКВЭД",
+            "Юридический адрес",
+            "Регион"
+          ]
+        }
+      ]
+    },
+    "ambiguity_note": ""
+  },
+  {
+    "id": "okved-03",
+    "name": "10.92 Moscow + Moscow Oblast",
+    "number_of_contacts": 192,
+    "okved_number_description": "10.92 — Moscow + Moscow Oblast / Москва и Московская область; производство готовых кормов для непродуктивных животных",
+    "website": "downloads/okved-10-92-moscow-oblast.xlsx",
+    "download_href": "downloads/okved-10-92-moscow-oblast.xlsx",
+    "file_type": "xlsx",
+    "source_filename": "OKVED 10.92 Moscow + Oblst p.xlsx",
+    "download_filename": "okved-10-92-moscow-oblast.xlsx",
+    "generated_at": "2026-06-09T06:54:04Z",
+    "chosen_sheet": "Cleaned - no ProductCent ConFab",
+    "row_count_audit_notes": "Workbook count uses sheet 'Cleaned - no ProductCent ConFab' (preferred_sheet); 192 non-empty data rows excluding header. Sheet dimension has 387 data rows and 195 blank rows inside dimension. Choice rationale: Explicitly cleaned sheet excluding ProductCenter/ConFab; raw All and Prompt sheets remain listed in source_inventory.",
+    "source_inventory": {
+      "type": "xlsx",
+      "sheets": [
+        {
+          "sheet_name": "All",
+          "max_row_dimension": 6914,
+          "max_column_dimension": 40,
+          "dimension_data_rows": 6913,
+          "nonempty_data_rows": 6908,
+          "blank_rows_inside_dimension_excluding_header": 5,
+          "primary_name_data_rows": 198,
+          "email_only_data_rows": 6710,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Тип компании",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации",
+            "Основной ОКВЭД",
+            "Дополнительные ОКВЭД",
+            "Юридический адрес",
+            "Регион"
+          ]
+        },
+        {
+          "sheet_name": "Cleaned - no ProductCent ConFab",
+          "max_row_dimension": 388,
+          "max_column_dimension": 42,
+          "dimension_data_rows": 387,
+          "nonempty_data_rows": 192,
+          "blank_rows_inside_dimension_excluding_header": 195,
+          "primary_name_data_rows": 192,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "Наименование",
+            "Company",
+            "Check",
+            "Тип компании",
+            "ИНН",
+            "КПП",
+            "ОГРН",
+            "Статус",
+            "Дата регистрации",
+            "Лет с регистрации",
+            "Основной ОКВЭД",
+            "Дополнительные ОКВЭД"
+          ]
+        },
+        {
+          "sheet_name": "Prompt",
+          "max_row_dimension": 26,
+          "max_column_dimension": 2,
+          "dimension_data_rows": 25,
+          "nonempty_data_rows": 9,
+          "blank_rows_inside_dimension_excluding_header": 15,
+          "primary_name_data_rows": 0,
+          "email_only_data_rows": 0,
+          "first_nonempty_row_preview": [
+            "",
+            "Prompt"
+          ]
+        }
+      ]
+    },
+    "ambiguity_note": "Cleaned sheet dimension has 387 data rows, but only 192 rows contain values; manifest uses non-empty data rows only. Raw All sheet contains many email-only rows and is not used for the portal contact count."
+  },
+  {
+    "id": "okved-04",
+    "name": "Stroi-materiali / construction materials OKVED dataset",
+    "number_of_contacts": 438,
+    "okved_number_description": "20.30/20.52 family — construction materials adjacent dataset / строительные материалы: paints, varnishes, coatings, printing inks, mastics, glues (codes inferred from CSV Основной ОКВЭД values)",
+    "website": "downloads/okved-stroi-materiali.csv",
+    "download_href": "downloads/okved-stroi-materiali.csv",
+    "file_type": "csv",
+    "source_filename": "OKVED Stroi-materiali.csv",
+    "download_filename": "okved-stroi-materiali.csv",
+    "generated_at": "2026-06-09T06:54:04Z",
+    "chosen_sheet": "CSV",
+    "row_count_audit_notes": "CSV count uses non-empty data rows excluding header: 438; encoding=utf-8-sig, delimiter=',', columns=41.",
+    "source_inventory": {
+      "type": "csv",
+      "encoding": "utf-8-sig",
+      "delimiter": ",",
+      "row_count_including_header": 439,
+      "nonempty_data_rows": 438,
+      "column_count": 41,
+      "header_preview": [
+        "email",
+        "ИНН",
+        "КПП",
+        "ОГРН",
+        "Город",
+        "Регион",
+        "Статус",
+        "Доп. сайт 1",
+        "Доп. сайт 2",
+        "Доп. сайт 3",
+        "Доп. почта 1",
+        "Доп. почта 2"
+      ]
+    },
+    "ambiguity_note": ""
+  }
+]

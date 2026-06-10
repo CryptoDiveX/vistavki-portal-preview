@@ -1036,12 +1036,12 @@
     "Dashboard should use a clean light background with readable cards/table and a clear export CTA.",
     "Show the API count caveat wherever total counts are displayed."
   ],
-  "generated_at": "2026-06-09T05:25:02Z",
+  "generated_at": "2026-06-09T05:28:46Z",
   "january_2026_count": 15,
   "official_website_summary": {
     "audit_file": "official_website_audit.json",
     "detail_pages_fetched": 341,
-    "generated_at": "2026-06-09T05:25:02Z",
+    "generated_at": "2026-06-09T05:28:46Z",
     "official_website_found_count": 142,
     "official_website_missing_count": 199,
     "parser_version": "expomap-official-website-detail-v1.0.0",

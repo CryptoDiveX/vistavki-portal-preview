@@ -1,8 +1,10 @@
 const DATA_ROOT = '../data/processed/expomap_portal';
+const OKVED_DATA_ROOT = '../data/processed/okved';
 const DATA_URLS = {
   summary: `${DATA_ROOT}/dashboard_summary.json`,
   events: `${DATA_ROOT}/events.json`,
   manifest: `${DATA_ROOT}/manifest.json`,
+  okvedManifest: `${OKVED_DATA_ROOT}/manifest.json`,
 };
 
 const RELEVANCE_STORAGE_KEY = 'vistavki:event-relevance:v1';
@@ -11,11 +13,11 @@ const state = {
   events: [],
   summary: null,
   manifest: null,
+  okvedManifest: null,
+  okvedRows: [],
   filtered: [],
   activeSection: 'exhibitions',
   relevance: loadRelevance(),
-  datasets: [{ name: 'ProductCenter', contacts: 4000, website: 'productcenter.ru' }],
-  okved: [],
 };
 
 const el = (id) => document.getElementById(id);
@@ -96,6 +98,40 @@ function escapeHtml(value) {
   })[char]);
 }
 
+function firstUrl(...values) {
+  return values.map((value) => text(value, '').trim()).find(Boolean) || '';
+}
+
+function getOfficialWebsiteUrl(event) {
+  const links = event.urls || {};
+  return firstUrl(event.official_website_url, links.official_website, links.external);
+}
+
+function getEventLinks(event) {
+  const links = event.urls || {};
+  const expomap = firstUrl(links.expomap, event.source_audit?.detail_page_url);
+  const official = getOfficialWebsiteUrl(event);
+  const external = firstUrl(links.external);
+  const items = [];
+
+  if (expomap) items.push({ label: 'Expomap', href: expomap });
+  if (official) items.push({ label: 'Official site', href: official });
+  if (external && external !== official) items.push({ label: 'External site', href: external });
+
+  return { items, hasOfficialSite: Boolean(official) };
+}
+
+function renderEventLinks(event, { detail = false } = {}) {
+  const { items, hasOfficialSite } = getEventLinks(event);
+  const links = items.map(({ label, href }) => `<a href="${escapeHtml(href)}" target="_blank" rel="noreferrer">${escapeHtml(detail && label === 'Expomap' ? 'Expomap source' : label)}</a>`);
+  if (!items.some((item) => item.label === 'Expomap')) links.unshift('<span class="muted">No Expomap</span>');
+  if (!hasOfficialSite) links.push('<span class="muted">No official site</span>');
+
+  const tag = detail ? 'p' : 'div';
+  const className = detail ? ' class="link-row detail-link-row"' : '';
+  return `<${tag}${className}>${links.join('')}</${tag}>`;
+}
+
 function formatDate(value) {
   if (!value) return '—';
   const date = new Date(value);
@@ -131,14 +167,17 @@ async function fetchJson(url) {
 
 async function loadPortal() {
   try {
-    const [summary, events, manifest] = await Promise.all([
+    const [summary, events, manifest, okvedManifest] = await Promise.all([
       fetchJson(DATA_URLS.summary),
       fetchJson(DATA_URLS.events),
       fetchJson(DATA_URLS.manifest).catch(() => null),
+      fetchJson(DATA_URLS.okvedManifest).catch(() => null),
     ]);
     state.summary = summary;
     state.events = events;
     state.manifest = manifest;
+    state.okvedManifest = okvedManifest;
+    state.okvedRows = Array.isArray(okvedManifest?.rows) ? okvedManifest.rows : [];
     state.filtered = events;
     render();
     el('loading-state').hidden = true;
@@ -158,8 +197,7 @@ function render() {
   bindRelevanceExports();
   renderDashboard();
   renderAnalytics();
-  renderDatasets();
-  renderOkved();
+  renderOkvedTable();
   populateMonthFilter();
   bindFilters();
   bindSectionSwitcher();
@@ -386,9 +424,47 @@ function renderAnalytics() {
   ].join('');
 }
 
+function isSafeOkvedDownloadHref(value) {
+  const href = text(value, '');
+  if (!href || href.startsWith('/') || href.startsWith('\\') || href.includes('..')) return false;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith('//')) return false;
+  return href.startsWith('downloads/');
+}
+
+function okvedDownloadHref(row) {
+  const href = row.download_href || row.website || '';
+  if (!isSafeOkvedDownloadHref(href)) return '';
+  return `${OKVED_DATA_ROOT}/${href}`;
+}
+
+function renderOkvedTable() {
+  const rows = state.okvedRows;
+  const body = el('okved-table-body');
+  const count = el('okved-count');
+  const empty = el('okved-empty-state');
+  if (!body || !count || !empty) return;
+
+  count.textContent = `${fmt.format(rows.length)} OKVED files · ${fmt.format(state.okvedManifest?.dataset?.total_number_of_contacts || 0)} contacts`;
+  empty.hidden = rows.length !== 0;
+  body.innerHTML = rows.map((row) => {
+    const href = okvedDownloadHref(row);
+    const fileType = text(row.file_type, '').toUpperCase();
+    return `
+      <tr>
+        <td><strong>${escapeHtml(row.name)}</strong><div class="muted small">${escapeHtml(row.source_filename || row.download_filename || '')}</div></td>
+        <td>${escapeHtml(fmt.format(row.number_of_contacts || 0))}</td>
+        <td>${escapeHtml(row.okved_number_description)}</td>
+        <td class="download-cell">
+          ${href ? `<a class="button button-compact" href="${escapeHtml(href)}" download="${escapeHtml(row.download_filename || '')}">Download${fileType ? ` ${escapeHtml(fileType)}` : ''}</a>` : '<span class="muted">No download</span>'}
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
 function showSection(section, updateHash = true) {
-  const allowedSections = new Set(['exhibitions', 'analytics', 'datasets', 'okved']);
-  const target = allowedSections.has(section) ? section : 'exhibitions';
+  const validSections = new Set(['exhibitions', 'analytics', 'okved']);
+  const target = validSections.has(section) ? section : 'exhibitions';
   state.activeSection = target;
   document.querySelectorAll('[data-section-panel]').forEach((panel) => {
     const active = panel.dataset.sectionPanel === target;
@@ -405,54 +481,9 @@ function showSection(section, updateHash = true) {
   }
 }
 
-function renderDatasets() {
-  const body = el('datasets-body');
-  if (!body) return;
-  body.innerHTML = state.datasets.map((dataset) => {
-    const name = text(dataset.name, '—');
-    const contacts = dataset.contacts === '' || dataset.contacts === null || dataset.contacts === undefined ? '—' : fmt.format(Number(dataset.contacts) || 0);
-    const website = text(dataset.website, '');
-    const websiteCell = website
-      ? `<a href="${escapeHtml(normalizeUrl(website))}" target="_blank" rel="noreferrer">${escapeHtml(website)}</a>`
-      : '<span class="muted">No website</span>';
-    return `
-      <tr>
-        <td><strong>${escapeHtml(name)}</strong></td>
-        <td>${escapeHtml(contacts)}</td>
-        <td>${websiteCell}</td>
-      </tr>
-    `;
-  }).join('');
-}
-
-function renderOkved() {
-  const body = el('okved-body');
-  if (!body) return;
-  body.innerHTML = state.okved.map((record) => {
-    const name = text(record.name, '—');
-    const contacts = record.contacts === '' || record.contacts === null || record.contacts === undefined ? '—' : fmt.format(Number(record.contacts) || 0);
-    const okved = text(record.okved, '—');
-    const website = text(record.website, '');
-    const websiteCell = website
-      ? `<a href="${escapeHtml(normalizeUrl(website))}" target="_blank" rel="noreferrer">${escapeHtml(website)}</a>`
-      : '<span class="muted">No website</span>';
-    const location = text(record.location, '—');
-    return `
-      <tr>
-        <td><strong>${escapeHtml(name)}</strong></td>
-        <td>${escapeHtml(contacts)}</td>
-        <td>${escapeHtml(okved)}</td>
-        <td>${websiteCell}</td>
-        <td>${escapeHtml(location)}</td>
-      </tr>
-    `;
-  }).join('');
-}
-
-function normalizeUrl(value) {
-  const trimmed = text(value, '').trim();
-  if (!trimmed) return '';
-  return /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+function sectionFromHash() {
+  const hash = window.location.hash.replace('#', '');
+  return ['analytics', 'okved'].includes(hash) ? hash : 'exhibitions';
 }
 
 function bindSectionSwitcher() {
@@ -461,8 +492,11 @@ function bindSectionSwitcher() {
     tab.dataset.bound = 'true';
     tab.addEventListener('click', () => showSection(tab.dataset.section));
   });
-  const initial = ['#analytics', '#datasets', '#okved'].includes(window.location.hash) ? window.location.hash.slice(1) : 'exhibitions';
-  showSection(initial, false);
+  if (document.body.dataset.sectionHashBound !== 'true') {
+    document.body.dataset.sectionHashBound = 'true';
+    window.addEventListener('hashchange', () => showSection(sectionFromHash(), false));
+  }
+  showSection(sectionFromHash(), false);
 }
 
 function populateMonthFilter() {
@@ -510,8 +544,6 @@ function renderTable() {
   el('result-count').textContent = `${fmt.format(state.filtered.length)} of ${fmt.format(state.events.length)} exhibitions shown`;
   el('empty-state').hidden = state.filtered.length !== 0;
   body.innerHTML = state.filtered.map((event) => {
-    const missing = event.missing_fields || [];
-    const links = event.urls || {};
     return `
       <tr>
         <td>
@@ -522,10 +554,7 @@ function renderTable() {
         <td><strong>${escapeHtml(event.venue?.name || 'Not specified')}</strong><div class="muted small">${escapeHtml([event.venue?.city, event.venue?.address].filter(Boolean).join(' · ') || 'No venue/address')}</div></td>
         <td>${renderChips([...(event.themes || []), ...(event.tags || [])].slice(0, 5))}</td>
         <td>${text(event.counts?.members)} / ${text(event.counts?.visitors)}</td>
-        <td class="link-row">
-          ${links.expomap ? `<a href="${escapeHtml(links.expomap)}" target="_blank" rel="noreferrer">Expomap</a>` : '<span class="muted">No Expomap URL</span>'}
-          ${links.external ? `<a href="${escapeHtml(links.external)}" target="_blank" rel="noreferrer">External</a>` : '<span class="muted">No external URL</span>'}
-        </td>
+        <td class="link-row">${renderEventLinks(event)}</td>
         <td>${statusBadge(event.status, event.canceled)}</td>
         <td class="relevance-cell">${relevanceSelect(event)}</td>
       </tr>
@@ -575,7 +604,6 @@ function showDetail(ordinal) {
   if (!event) return;
   const products = findProducts(event);
   const source = event.source_audit || {};
-  const links = event.urls || {};
   const description = event.description || event.event_description || event.summary || event.event_subtitle;
   el('detail-content').innerHTML = `
     <p class="eyebrow">Event #${escapeHtml(event.ordinal)}</p>

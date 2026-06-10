@@ -1,7 +1,7 @@
-# Vistavki / Expomap portal preview
+# Vistavki portal public preview
 
-Temporary sanitized static preview for Katya / SignoGroup review.
+Static sanitized GitHub Pages preview for the SignoGroup Vistavki portal.
 
-Preview URL: https://cryptodivex.github.io/vistavki-portal-preview/portal/?v=11
+Open: https://cryptodivex.github.io/vistavki-portal-preview/portal/
 
-Safety scope: public Stage 1 Expomap Moscow 2026 exhibition fields only; no secrets, browser sessions, CRM exports, tokens, or raw local filesystem paths. Relevance choices are saved client-side in browser localStorage only; the preview shows sanitized public Stage 1 dataset information.
+This repository contains only public portal assets and generated public data packages; no source repository, local filesystem paths, browser sessions, API tokens, CRM exports, or hidden Git metadata are included.

@@ -8,7 +8,7 @@
       name="description"
       content="Public Stage 1 viewer for the SignoGroup Expomap Moscow 2026 exhibition dataset."
     />
-    <link rel="stylesheet" href="./styles.css?v=11" />
+    <link rel="stylesheet" href="./styles.css?v=8" />
   </head>
   <body>
     <a class="skip-link" href="#events-table">Skip to event table</a>
@@ -48,7 +48,6 @@
       <nav class="section-switcher" aria-label="Portal sections">
         <button class="section-tab active" type="button" data-section="exhibitions" aria-controls="exhibitions-section" aria-selected="true">Exhibitions</button>
         <button class="section-tab" type="button" data-section="analytics" aria-controls="analytics-section" aria-selected="false">Analytics</button>
-        <button class="section-tab" type="button" data-section="datasets" aria-controls="datasets-section" aria-selected="false">Datasets</button>
         <button class="section-tab" type="button" data-section="okved" aria-controls="okved-section" aria-selected="false">OKVED</button>
       </nav>
 
@@ -118,42 +117,26 @@
         <div id="analytics" class="analytics-grid"></div>
       </section>
 
-      <section id="datasets-section" class="portal-view datasets-section" data-section-panel="datasets" aria-labelledby="datasets-title" hidden>
-        <div class="section-heading">
-          <p class="eyebrow">Datasets</p>
-          <h2 id="datasets-title">Datasets</h2>
+      <section id="okved-section" class="portal-view table-section" data-section-panel="okved" aria-labelledby="okved-title" hidden>
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">OKVED downloads</p>
+            <h2 id="okved-title">OKVED file review</h2>
+          </div>
+          <p id="okved-count" class="result-count"></p>
         </div>
-        <div class="table-wrap dataset-wrap" role="region" aria-label="Datasets table" tabindex="0">
-          <table class="dataset-table">
+        <div id="okved-empty-state" class="state-card inline-state" hidden>No OKVED files found.</div>
+        <div class="table-wrap" role="region" aria-label="Scrollable OKVED downloads table" tabindex="0">
+          <table id="okved-table" class="okved-table">
             <thead>
               <tr>
                 <th scope="col">Name</th>
-                <th scope="col">Number of contacts</th>
-                <th scope="col">Website</th>
+                <th scope="col">Number of Contacts</th>
+                <th scope="col">OKVED Number + Description</th>
+                <th scope="col">Download</th>
               </tr>
             </thead>
-            <tbody id="datasets-body"></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="okved-section" class="portal-view okved-section" data-section-panel="okved" aria-labelledby="okved-title" hidden>
-        <div class="section-heading">
-          <p class="eyebrow">OKVED</p>
-          <h2 id="okved-title">OKVED</h2>
-        </div>
-        <div class="table-wrap okved-wrap" role="region" aria-label="OKVED table" tabindex="0">
-          <table class="okved-table">
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Number of contacts</th>
-                <th scope="col">OKVED number + description</th>
-                <th scope="col">Website</th>
-                <th scope="col">Location</th>
-              </tr>
-            </thead>
-            <tbody id="okved-body"></tbody>
+            <tbody id="okved-table-body"></tbody>
           </table>
         </div>
       </section>
@@ -175,6 +158,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=11" defer></script>
+    <script src="./app.js?v=8" defer></script>
   </body>
 </html>

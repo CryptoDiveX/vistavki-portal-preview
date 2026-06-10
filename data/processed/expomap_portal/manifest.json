@@ -33,7 +33,7 @@
     "public_xlsx_export_created": true,
     "validation_report_json": "validation_report.json"
   },
-  "generated_at": "2026-06-09T05:25:02Z",
+  "generated_at": "2026-06-09T05:28:46Z",
   "safety": {
     "contains_credentials_or_tokens": false,
     "contains_crm_customer_data": false,
