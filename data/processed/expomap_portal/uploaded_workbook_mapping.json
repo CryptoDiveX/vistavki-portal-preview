@@ -3,7 +3,7 @@
     {
       "cleaned_rows": 340,
       "contact_display_name": "AGRAVIA_processed.xlsx",
-      "contact_list_note": "Attached to the matched exhibition detail; also retained in contact_exhibitions for complete frontend coverage.",
+      "contact_list_note": "Attached to the matched exhibition detail(s); also retained in contact_exhibitions for complete frontend coverage.",
       "display_filename": "AGRAVIA_processed.xlsx",
       "download_filename": "agravia-processed-public.xlsx",
       "download_href": "../vistavki_files/downloads/agravia-processed-public.xlsx",
@@ -11,6 +11,9 @@
       "file_type": "xlsx",
       "match_confidence": "exact_normalized_event_name_prefix",
       "match_reason": "Upload source names AGRAVIA and the portal event name starts with the same normalized event text AGRAVIA.",
+      "match_reasons": [
+        "Upload source names AGRAVIA and the portal event name starts with the same normalized event text AGRAVIA."
+      ],
       "match_status": "matched_to_expomap_event",
       "safety_scan_status": "pass",
       "sanitized_copy_verified": true,
@@ -39,8 +42,26 @@
       "source_file_id": "vistavki-file-01",
       "source_filename": "AGRAVIA_processed.xlsx",
       "target_event_name": "AGRAVIA 2026  (ранее AGROS / AGROTECH)",
+      "target_event_names": [
+        "AGRAVIA 2026  (ранее AGROS / AGROTECH)"
+      ],
       "target_event_ordinal": 7,
+      "target_event_ordinals": [
+        7
+      ],
+      "target_events": [
+        {
+          "match_confidence": "exact_normalized_event_name_prefix",
+          "match_reason": "Upload source names AGRAVIA and the portal event name starts with the same normalized event text AGRAVIA.",
+          "matched_event_name": "AGRAVIA 2026  (ранее AGROS / AGROTECH)",
+          "matched_event_ordinal": 7,
+          "matched_expomap_url": "https://expomap.ru/expo/agravia/2026/"
+        }
+      ],
       "target_expomap_url": "https://expomap.ru/expo/agravia/2026/",
+      "target_expomap_urls": [
+        "https://expomap.ru/expo/agravia/2026/"
+      ],
       "total_source_rows": 570,
       "vistavki_package_href": "downloads/agravia-processed-public.xlsx"
     },
@@ -106,15 +127,45 @@
     {
       "cleaned_rows": 166,
       "contact_display_name": "ShinyGotovo.xlsx",
-      "contact_list_note": "Attached to the matched exhibition detail; also retained in contact_exhibitions for complete frontend coverage.",
+      "contact_list_note": "Attached to the matched exhibition detail(s); also retained in contact_exhibitions for complete frontend coverage.",
       "display_filename": "ShinyGotovo.xlsx",
       "download_filename": "shinygotovo-public.xlsx",
       "download_href": "../vistavki_files/downloads/shinygotovo-public.xlsx",
       "event_source_name": "Shiny / Tires parsed exhibitors",
+      "exhibition_count": 2,
+      "exhibitions": [
+        {
+          "matched_event_name": "Шины, РТИ и каучуки 2026",
+          "matched_event_ordinal": 53,
+          "matched_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+          "sheet_row_counts": {
+            "Cleaned": 52,
+            "Combined": 227,
+            "Removed": 45
+          },
+          "source_exhibition_name": "ШИНЫ, РТИ И КАУЧУКИ-2026"
+        },
+        {
+          "matched_event_name": "GOTOVO 2026",
+          "matched_event_ordinal": 92,
+          "matched_expomap_url": "https://expomap.ru/expo/gotovo/",
+          "sheet_row_counts": {
+            "Cleaned": 114,
+            "Combined": 231,
+            "Removed": 61
+          },
+          "source_exhibition_name": "GOTOVO 2026"
+        }
+      ],
       "file_type": "xlsx",
       "match_confidence": "high_confidence_normalized_subject_match",
-      "match_reason": "Upload source names Shiny/Tires exhibitors and the portal event is the dedicated tires/rubber exhibition (Шины, РТИ и каучуки 2026).",
+      "match_reason": "ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows include ШИНЫ, РТИ И КАУЧУКИ-2026 and this portal event is the dedicated tires/rubber exhibition. ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows explicitly include GOTOVO 2026 and this portal event is the GOTOVO 2026 exhibition.",
+      "match_reasons": [
+        "ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows include ШИНЫ, РТИ И КАУЧУКИ-2026 and this portal event is the dedicated tires/rubber exhibition.",
+        "ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows explicitly include GOTOVO 2026 and this portal event is the GOTOVO 2026 exhibition."
+      ],
       "match_status": "matched_to_expomap_event",
+      "multi_exhibition_workbook": true,
       "safety_scan_status": "pass",
       "sanitized_copy_verified": true,
       "sanitized_public_filename": "shinygotovo-public.xlsx",
@@ -149,15 +200,43 @@
       "source_file_id": "vistavki-file-03",
       "source_filename": "ShinyGotovo.xlsx",
       "target_event_name": "Шины, РТИ и каучуки 2026",
+      "target_event_names": [
+        "Шины, РТИ и каучуки 2026",
+        "GOTOVO 2026"
+      ],
       "target_event_ordinal": 53,
+      "target_event_ordinals": [
+        53,
+        92
+      ],
+      "target_events": [
+        {
+          "match_confidence": "high_confidence_normalized_subject_match",
+          "match_reason": "ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows include ШИНЫ, РТИ И КАУЧУКИ-2026 and this portal event is the dedicated tires/rubber exhibition.",
+          "matched_event_name": "Шины, РТИ и каучуки 2026",
+          "matched_event_ordinal": 53,
+          "matched_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/"
+        },
+        {
+          "match_confidence": "high_confidence_explicit_multi_exhibition_workbook_match",
+          "match_reason": "ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows explicitly include GOTOVO 2026 and this portal event is the GOTOVO 2026 exhibition.",
+          "matched_event_name": "GOTOVO 2026",
+          "matched_event_ordinal": 92,
+          "matched_expomap_url": "https://expomap.ru/expo/gotovo/"
+        }
+      ],
       "target_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+      "target_expomap_urls": [
+        "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+        "https://expomap.ru/expo/gotovo/"
+      ],
       "total_source_rows": 458,
       "vistavki_package_href": "downloads/shinygotovo-public.xlsx"
     },
     {
       "cleaned_rows": 1069,
       "contact_display_name": "Prodexpo-2026.xlsx",
-      "contact_list_note": "Attached to the matched exhibition detail; also retained in contact_exhibitions for complete frontend coverage.",
+      "contact_list_note": "Attached to the matched exhibition detail(s); also retained in contact_exhibitions for complete frontend coverage.",
       "display_filename": "Prodexpo-2026.xlsx",
       "download_filename": "prodexpo-2026-public.xlsx",
       "download_href": "../vistavki_files/downloads/prodexpo-2026-public.xlsx",
@@ -165,6 +244,9 @@
       "file_type": "xlsx",
       "match_confidence": "exact_normalized_transliterated_event_name",
       "match_reason": "Upload source Prodexpo 2026 matches portal event Продэкспо 2026 after normalized Latin/Cyrillic transliteration and the year matches.",
+      "match_reasons": [
+        "Upload source Prodexpo 2026 matches portal event Продэкспо 2026 after normalized Latin/Cyrillic transliteration and the year matches."
+      ],
       "match_status": "matched_to_expomap_event",
       "safety_scan_status": "pass",
       "sanitized_copy_verified": true,
@@ -207,8 +289,26 @@
       "source_file_id": "vistavki-file-04",
       "source_filename": "Prodexpo-2026.xlsx",
       "target_event_name": "Продэкспо 2026",
+      "target_event_names": [
+        "Продэкспо 2026"
+      ],
       "target_event_ordinal": 22,
+      "target_event_ordinals": [
+        22
+      ],
+      "target_events": [
+        {
+          "match_confidence": "exact_normalized_transliterated_event_name",
+          "match_reason": "Upload source Prodexpo 2026 matches portal event Продэкспо 2026 after normalized Latin/Cyrillic transliteration and the year matches.",
+          "matched_event_name": "Продэкспо 2026",
+          "matched_event_ordinal": 22,
+          "matched_expomap_url": "https://expomap.ru/expo/prodexpo/2026/"
+        }
+      ],
       "target_expomap_url": "https://expomap.ru/expo/prodexpo/2026/",
+      "target_expomap_urls": [
+        "https://expomap.ru/expo/prodexpo/2026/"
+      ],
       "total_source_rows": 1982,
       "vistavki_package_href": "downloads/prodexpo-2026-public.xlsx"
     },
@@ -261,7 +361,7 @@
   "contact_exhibitions_count": 5,
   "data_package_version": "expomap-portal-package-v1.1.0",
   "generated_at": "2026-06-11T00:00:00Z",
-  "matched_files_count": 3,
+  "matched_files_count": 4,
   "matched_uploaded_files": [
     {
       "cleaned_rows": 340,
@@ -373,10 +473,36 @@
       "download_filename": "shinygotovo-public.xlsx",
       "download_href": "../vistavki_files/downloads/shinygotovo-public.xlsx",
       "event_source_name": "Shiny / Tires parsed exhibitors",
+      "exhibition_count": 2,
+      "exhibitions": [
+        {
+          "matched_event_name": "Шины, РТИ и каучуки 2026",
+          "matched_event_ordinal": 53,
+          "matched_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+          "sheet_row_counts": {
+            "Cleaned": 52,
+            "Combined": 227,
+            "Removed": 45
+          },
+          "source_exhibition_name": "ШИНЫ, РТИ И КАУЧУКИ-2026"
+        },
+        {
+          "matched_event_name": "GOTOVO 2026",
+          "matched_event_ordinal": 92,
+          "matched_expomap_url": "https://expomap.ru/expo/gotovo/",
+          "sheet_row_counts": {
+            "Cleaned": 114,
+            "Combined": 231,
+            "Removed": 61
+          },
+          "source_exhibition_name": "GOTOVO 2026"
+        }
+      ],
       "file_type": "xlsx",
       "match_confidence": "high_confidence_normalized_subject_match",
-      "match_reason": "Upload source names Shiny/Tires exhibitors and the portal event is the dedicated tires/rubber exhibition (Шины, РТИ и каучуки 2026).",
+      "match_reason": "ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows include ШИНЫ, РТИ И КАУЧУКИ-2026 and this portal event is the dedicated tires/rubber exhibition.",
       "match_status": "matched_to_expomap_event",
+      "multi_exhibition_workbook": true,
       "safety_scan_status": "pass",
       "sanitized_copy_verified": true,
       "sanitized_public_filename": "shinygotovo-public.xlsx",
@@ -413,6 +539,83 @@
       "target_event_name": "Шины, РТИ и каучуки 2026",
       "target_event_ordinal": 53,
       "target_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+      "total_source_rows": 458,
+      "vistavki_package_href": "downloads/shinygotovo-public.xlsx"
+    },
+    {
+      "cleaned_rows": 166,
+      "contact_display_name": "ShinyGotovo.xlsx",
+      "contact_list_note": "Attached to the matched exhibition detail; also retained in contact_exhibitions for complete frontend coverage.",
+      "display_filename": "ShinyGotovo.xlsx",
+      "download_filename": "shinygotovo-public.xlsx",
+      "download_href": "../vistavki_files/downloads/shinygotovo-public.xlsx",
+      "event_source_name": "Shiny / Tires parsed exhibitors",
+      "exhibition_count": 2,
+      "exhibitions": [
+        {
+          "matched_event_name": "Шины, РТИ и каучуки 2026",
+          "matched_event_ordinal": 53,
+          "matched_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+          "sheet_row_counts": {
+            "Cleaned": 52,
+            "Combined": 227,
+            "Removed": 45
+          },
+          "source_exhibition_name": "ШИНЫ, РТИ И КАУЧУКИ-2026"
+        },
+        {
+          "matched_event_name": "GOTOVO 2026",
+          "matched_event_ordinal": 92,
+          "matched_expomap_url": "https://expomap.ru/expo/gotovo/",
+          "sheet_row_counts": {
+            "Cleaned": 114,
+            "Combined": 231,
+            "Removed": 61
+          },
+          "source_exhibition_name": "GOTOVO 2026"
+        }
+      ],
+      "file_type": "xlsx",
+      "match_confidence": "high_confidence_explicit_multi_exhibition_workbook_match",
+      "match_reason": "ShinyGotovo.xlsx is a multi-exhibition workbook; its source rows explicitly include GOTOVO 2026 and this portal event is the GOTOVO 2026 exhibition.",
+      "match_status": "matched_to_expomap_event",
+      "multi_exhibition_workbook": true,
+      "safety_scan_status": "pass",
+      "sanitized_copy_verified": true,
+      "sanitized_public_filename": "shinygotovo-public.xlsx",
+      "selected_sheet": "Cleaned",
+      "selected_sheet_nonempty_rows": 166,
+      "selected_sheet_rows": 166,
+      "sheet_counts": [
+        {
+          "dimension_data_rows": 458,
+          "nonempty_data_rows": 458,
+          "observed_data_rows": 458,
+          "sheet_name": "Combined"
+        },
+        {
+          "dimension_data_rows": 166,
+          "nonempty_data_rows": 166,
+          "observed_data_rows": 166,
+          "sheet_name": "Cleaned"
+        },
+        {
+          "dimension_data_rows": 106,
+          "nonempty_data_rows": 106,
+          "observed_data_rows": 106,
+          "sheet_name": "Removed"
+        }
+      ],
+      "sheet_names": [
+        "Combined",
+        "Cleaned",
+        "Removed"
+      ],
+      "source_file_id": "vistavki-file-03",
+      "source_filename": "ShinyGotovo.xlsx",
+      "target_event_name": "GOTOVO 2026",
+      "target_event_ordinal": 92,
+      "target_expomap_url": "https://expomap.ru/expo/gotovo/",
       "total_source_rows": 458,
       "vistavki_package_href": "downloads/shinygotovo-public.xlsx"
     }

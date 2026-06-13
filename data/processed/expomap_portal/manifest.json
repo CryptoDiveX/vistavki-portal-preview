@@ -16,7 +16,7 @@
     "event_count": 341,
     "name": "Expomap Moscow exhibitions 2026",
     "qa_verdict": "PASS_WITH_DOCUMENTED_API_COUNT_EXCEPTION",
-    "related_files_count": 3,
+    "related_files_count": 4,
     "scope": "city=moscow; event_type=expo; date=2026-01-01:2026-12-31",
     "unmatched_or_ambiguous_uploaded_files_count": 2
   },

@@ -149,7 +149,33 @@
         "exact_copy_verified": false,
         "sanitized_copy_verified": true,
         "file_size_bytes": 182151
-      }
+      },
+      "multi_exhibition_workbook": true,
+      "exhibition_count": 2,
+      "exhibitions": [
+        {
+          "source_exhibition_name": "ШИНЫ, РТИ И КАУЧУКИ-2026",
+          "matched_event_name": "Шины, РТИ и каучуки 2026",
+          "matched_event_ordinal": 53,
+          "matched_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+          "sheet_row_counts": {
+            "Combined": 227,
+            "Cleaned": 52,
+            "Removed": 45
+          }
+        },
+        {
+          "source_exhibition_name": "GOTOVO 2026",
+          "matched_event_name": "GOTOVO 2026",
+          "matched_event_ordinal": 92,
+          "matched_expomap_url": "https://expomap.ru/expo/gotovo/",
+          "sheet_row_counts": {
+            "Combined": 231,
+            "Cleaned": 114,
+            "Removed": 61
+          }
+        }
+      ]
     },
     {
       "id": "vistavki-file-04",

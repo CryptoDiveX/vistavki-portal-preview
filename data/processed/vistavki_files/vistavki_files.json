@@ -261,7 +261,7 @@
     "source_filename": "ShinyGotovo.xlsx",
     "download_filename": "shinygotovo-public.xlsx",
     "generated_at": "2026-06-11T00:00:00Z",
-    "audit_note": "Observed inventory from upload handoff: Combined=458 data rows; Cleaned=166; Removed=106. Main/source sheet 'Combined' observed rows: 458. Selected sheet 'Cleaned' observed rows: 166; non-empty rows by audit: 166. Workbook public copy is rebuilt/sanitized for public download; private local path metadata and external workbook connections are removed.",
+    "audit_note": "Observed inventory from upload handoff: Combined=458 data rows split as ШИНЫ, РТИ И КАУЧУКИ-2026=227 and GOTOVO 2026=231; Cleaned=166 split as ШИНЫ, РТИ И КАУЧУКИ-2026=52 and GOTOVO 2026=114; Removed=106 split as ШИНЫ, РТИ И КАУЧУКИ-2026=45 and GOTOVO 2026=61. Workbook is an explicit multi-exhibition Shiny/GOTOVO workbook mapped to Expomap ordinals 53 and 92. Main/source sheet 'Combined' observed rows: 458. Selected sheet 'Cleaned' observed rows: 166; non-empty rows by audit: 166. Workbook public copy is rebuilt/sanitized for public download; private local path metadata and external workbook connections are removed.",
     "source_inventory": {
       "type": "xlsx",
       "sheets": [
@@ -363,7 +363,33 @@
       },
       "dropped_workbook_internals": [],
       "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped."
-    }
+    },
+    "multi_exhibition_workbook": true,
+    "exhibition_count": 2,
+    "exhibitions": [
+      {
+        "source_exhibition_name": "ШИНЫ, РТИ И КАУЧУКИ-2026",
+        "matched_event_name": "Шины, РТИ и каучуки 2026",
+        "matched_event_ordinal": 53,
+        "matched_expomap_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
+        "sheet_row_counts": {
+          "Combined": 227,
+          "Cleaned": 52,
+          "Removed": 45
+        }
+      },
+      {
+        "source_exhibition_name": "GOTOVO 2026",
+        "matched_event_name": "GOTOVO 2026",
+        "matched_event_ordinal": 92,
+        "matched_expomap_url": "https://expomap.ru/expo/gotovo/",
+        "sheet_row_counts": {
+          "Combined": 231,
+          "Cleaned": 114,
+          "Removed": 61
+        }
+      }
+    ]
   },
   {
     "id": "vistavki-file-04",

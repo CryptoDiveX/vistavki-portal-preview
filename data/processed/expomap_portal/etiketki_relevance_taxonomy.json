@@ -1,0 +1,460 @@
+{
+  "source": "data/processed/expomap_portal/events.json",
+  "source_public_fields": [
+    "event_name",
+    "event_subtitle",
+    "themes",
+    "tags",
+    "exhibited_products",
+    "description",
+    "status",
+    "canceled"
+  ],
+  "labels": {
+    "yes": "Strong evidence exhibitors showcase packaged physical products or packaging/label/marking ecosystem relevant to etiketki.",
+    "maybe": "Mixed/broad/adjacent evidence; product terms are weak or mixed with equipment/services/infrastructure.",
+    "no": "No clear product/packaging evidence; pure equipment, infrastructure, construction, finance, education, services, conferences, IT/security/logistics-only, or beverage/drinks-only events."
+  },
+  "term_groups": {
+    "food_agri_products_non_beverage": [
+      "Пищевая индустрия",
+      "Продукты питания",
+      "Пищевые продукты",
+      "Пищевые ингредиенты",
+      "Пищевые добавки",
+      "Пищевое производство",
+      "Шоколад",
+      "Кондитерские изделия",
+      "Хлебобулочные изделия",
+      "Молочная индустрия",
+      "Сыры",
+      "Мороженое",
+      "Мясная промышленность",
+      "Рыба",
+      "Деликатесы",
+      "Фрукты",
+      "Овощи",
+      "Фрукты и овощи",
+      "Сельскохозяйственная продукция",
+      "Фермерские продукты",
+      "Органические продукты",
+      "Эко-продукты",
+      "Натуральные продукты",
+      "Семена",
+      "Зерновые культуры",
+      "Масла и жиры",
+      "Растительные масла",
+      "Агрокомплекс"
+    ],
+    "beauty_cosmetics_personal_care": [
+      "Индустрия красоты",
+      "Косметика и парфюмерия",
+      "Косметика",
+      "Натуральная косметика",
+      "Косметическая промышленность",
+      "Фармацевтика и косметика",
+      "Парфюмерная промышленность",
+      "Макияж",
+      "Маникюр и педикюр",
+      "Средства личной гигиены",
+      "Товары для красоты и здоровья"
+    ],
+    "household_chemistry_fmcg": [
+      "Бытовая химия",
+      "Профессиональная химия",
+      "МСТХ",
+      "Средства личной гигиены",
+      "Моющие средства",
+      "Чистящие средства",
+      "Дезинфекция",
+      "Клининг",
+      "FMCG"
+    ],
+    "auto_products_consumables": [
+      "Автозапчасти",
+      "Запчасти",
+      "Аксессуары для авто",
+      "Автохимия",
+      "ГСМ",
+      "Шины",
+      "Тюнинг",
+      "Автомобильная электроника",
+      "Мотозапчасти",
+      "Мотоэкипировка"
+    ],
+    "pharma_supplements_pet_vet": [
+      "Фармацевтика",
+      "Фармацевтические препараты",
+      "Фармацевтические ингредиенты",
+      "Фармацевтическая химия",
+      "Фармацевтическая промышленность",
+      "БАД",
+      "Биопрепараты",
+      "Здоровое питание",
+      "Товары для здоровья",
+      "Зоотовары",
+      "Домашние животные",
+      "Питомцы",
+      "Корма",
+      "Кормовые добавки",
+      "Ветеринария",
+      "Аксессуары для животных"
+    ],
+    "consumer_goods_retail": [
+      "Потребительские товары",
+      "Товары для дома",
+      "Посуда",
+      "Кухонные принадлежности",
+      "Товары для праздника",
+      "Подарки",
+      "Подарки и сувениры",
+      "Детские товары",
+      "Детское питание",
+      "Товары для будущих мам",
+      "Игрушки и игры",
+      "Контрактное производство",
+      "Собственная торговая марка",
+      "Private label",
+      "СТМ"
+    ],
+    "packaging_printing_label_marking": [
+      "Упаковка",
+      "Тара",
+      "Упаковочные материалы",
+      "Упаковочное оборудование",
+      "Упаковочные машины",
+      "Упаковочные технологии",
+      "Хранение и упаковка",
+      "Пакетирование",
+      "Дизайн упаковки",
+      "Этикетки",
+      "Маркировка",
+      "Полиграфия",
+      "Печатные технологии",
+      "Цифровая печать",
+      "Рекламная продукция",
+      "Мерч"
+    ]
+  },
+  "broad_ambiguous_terms": [
+    "Здравоохранение и медицина",
+    "Химическая промышленность",
+    "Авто и мото-индустрия",
+    "Промышленность",
+    "Сельское хозяйство",
+    "Медицина",
+    "Оборудование",
+    "Технологии",
+    "Материалы",
+    "Сырье",
+    "Аксессуары",
+    "Ритейл",
+    "Транспорт"
+  ],
+  "negative_default_terms": [
+    "Промышленное оборудование",
+    "Станки",
+    "Металлообработка",
+    "Машиностроение",
+    "Робототехника",
+    "Автоматизация",
+    "Аддитивные технологии",
+    "Литейное оборудование",
+    "Сварочные работы",
+    "Строительство",
+    "Недвижимость",
+    "Девелопмент",
+    "ЖКХ",
+    "Урбанистика",
+    "Дорожное строительство",
+    "Финансы",
+    "Банки",
+    "Инвестиции",
+    "Образование",
+    "EdTech",
+    "HR",
+    "Бизнес-школы",
+    "Конференция",
+    "Форум",
+    "Премии",
+    "Конкурс",
+    "IT и цифровые технологии",
+    "Связь",
+    "Телеком",
+    "Информационная безопасность",
+    "ПО",
+    "Системная интеграция",
+    "Логистика",
+    "Складское оборудование",
+    "Коммерческий транспорт",
+    "Автобусы",
+    "Спецтехника"
+  ],
+  "rules": [
+    "Strong product positives in event_name/event_subtitle/tags/exhibited_products override broad equipment terms when product family is clear.",
+    "Broad themes alone are insufficient for yes; require product tags or maybe.",
+    "Negative infrastructure/service/conference terms override weak positives when no product evidence exists.",
+    "Canceled/status is not a relevance signal; filter availability after relevance scoring.",
+    "Generic terms like Аксессуары, Оборудование, Технологии, Материалы, Сырье require context.",
+    "Apply beverage_exclusion before final yes: beverage-only/drinks-only/brewing/wine/beer/coffee/tea/cacao/beverage-equipment/beverage-ingredient events are no.",
+    "Mixed beverage plus other packaged consumer goods should be maybe unless clear non-beverage product evidence independently justifies yes.",
+    "Do not treat packaging/tara/ingredients as positive when they occur only inside a beverage production/sales context."
+  ],
+  "examples": [
+    {
+      "ordinal": 7,
+      "event": "AGRAVIA 2026 (ранее AGROS / AGROTECH)",
+      "expected": "maybe",
+      "rationale": "Agri/vet with product terms but mostly technologies/equipment."
+    },
+    {
+      "ordinal": 12,
+      "event": "DairyTech 2026",
+      "expected": "yes",
+      "rationale": "Milk/cheese/meat/food products plus packaging."
+    },
+    {
+      "ordinal": 14,
+      "event": "UPAKEXPO 2026",
+      "expected": "yes",
+      "rationale": "Packaging, packaging materials/machines/design."
+    },
+    {
+      "ordinal": 18,
+      "event": "ДРОНТЕХ 2026",
+      "expected": "no",
+      "rationale": "Drones/robotics/autonomous systems."
+    },
+    {
+      "ordinal": 22,
+      "event": "Продэкспо 2026",
+      "expected": "yes",
+      "rationale": "Strong non-beverage food/product evidence (fish, fruit/vegetables, ingredients, pet feed); beverage terms ignored as positives."
+    },
+    {
+      "ordinal": 34,
+      "event": "ТБ Форум 2026",
+      "expected": "no",
+      "rationale": "Security forum/services."
+    },
+    {
+      "ordinal": 46,
+      "event": "Образование и карьера Москва 2026",
+      "expected": "no",
+      "rationale": "Education/career services."
+    },
+    {
+      "ordinal": 52,
+      "event": "Нефтегаз 2026",
+      "expected": "no",
+      "rationale": "Oil/gas equipment/infrastructure."
+    },
+    {
+      "ordinal": 59,
+      "event": "Беларусь-Россия. Март 2026",
+      "expected": "yes",
+      "rationale": "Food and consumer goods."
+    },
+    {
+      "ordinal": 63,
+      "event": "Eco Beauty Expo Весна 2026",
+      "expected": "yes",
+      "rationale": "Natural cosmetics."
+    },
+    {
+      "ordinal": 70,
+      "event": "ChemiPack 2026",
+      "expected": "yes",
+      "rationale": "FMCG packaging."
+    },
+    {
+      "ordinal": 72,
+      "event": "Zoo ExpoPlace 2026",
+      "expected": "yes",
+      "rationale": "Pet products salon."
+    },
+    {
+      "ordinal": 75,
+      "event": "BeautyChemiCos 2026",
+      "expected": "yes",
+      "rationale": "Cosmetics/perfumery/hygiene/supplements."
+    },
+    {
+      "ordinal": 76,
+      "event": "ChemiCos 2026",
+      "expected": "yes",
+      "rationale": "Household/professional chemistry and personal hygiene."
+    },
+    {
+      "ordinal": 87,
+      "event": "БАД-EXPO 2026",
+      "expected": "yes",
+      "rationale": "Supplements and healthy food."
+    },
+    {
+      "ordinal": 91,
+      "event": "Modern Bakery Moscow | Confex 2026",
+      "expected": "yes",
+      "rationale": "Bakery/confectionery market."
+    },
+    {
+      "ordinal": 122,
+      "event": "R-BEAUTY 2026",
+      "expected": "yes",
+      "rationale": "Perfumery/cosmetics plus packaging."
+    },
+    {
+      "ordinal": 127,
+      "event": "BeviTec 2026",
+      "expected": "no",
+      "rationale": "Explicit beverage false-positive guard: drinks equipment/ingredients/packaging/brewing/winemaking are not Signo positives; not a pilot."
+    },
+    {
+      "ordinal": 131,
+      "event": "SobMaExpo 2026",
+      "expected": "yes",
+      "rationale": "Contract manufacturing/private-label/consumer goods."
+    },
+    {
+      "ordinal": 132,
+      "event": "Coffee Tea Cacao Expo 2026",
+      "expected": "maybe",
+      "rationale": "Beverage-led coffee/tea/cacao event; chocolate/confectionery/packaging hints require manual non-beverage evidence and are not enough for yes."
+    },
+    {
+      "ordinal": 157,
+      "event": "ЗОЖ-Экспо 2026",
+      "expected": "yes",
+      "rationale": "Healthy food, health goods, natural products/cosmetics."
+    },
+    {
+      "ordinal": 161,
+      "event": "Global Ingredients Show 2026",
+      "expected": "yes",
+      "rationale": "Food additives/ingredients plus household/cosmetic chemistry."
+    },
+    {
+      "ordinal": 171,
+      "event": "Мясная промышленность, Куриный Король / MAP Russia 2026",
+      "expected": "yes",
+      "rationale": "Meat/poultry/feed/agri food plus packaging."
+    },
+    {
+      "ordinal": 203,
+      "event": "Printech 2026",
+      "expected": "maybe",
+      "rationale": "Printing is label-adjacent but mostly equipment/ad production."
+    },
+    {
+      "ordinal": 205,
+      "event": "RosUpack 2026",
+      "expected": "yes",
+      "rationale": "Packaging industry with labels."
+    },
+    {
+      "ordinal": 219,
+      "event": "InterAutoMechanica 2026",
+      "expected": "yes",
+      "rationale": "Auto parts/accessories/chemicals/GSM/tires."
+    },
+    {
+      "ordinal": 242,
+      "event": "HouseHold Expo. Осень 2026",
+      "expected": "yes",
+      "rationale": "Household consumer goods/kitchenware/dishes/kids goods."
+    },
+    {
+      "ordinal": 311,
+      "event": "RIMTOS 2026",
+      "expected": "no",
+      "rationale": "Machine tools/metallurgy/industrial equipment."
+    },
+    {
+      "ordinal": 319,
+      "event": "Global Fresh Market: Vegetables&Fruits 2026",
+      "expected": "yes",
+      "rationale": "Fresh produce/agricultural products."
+    },
+    {
+      "ordinal": 333,
+      "event": "Pharmtech & Ingredients 2026",
+      "expected": "yes",
+      "rationale": "Pharma ingredients/materials/preparations/contract manufacturing."
+    }
+  ],
+  "beverage_exclusion_terms": [
+    "Напитки",
+    "Кофе",
+    "Чай",
+    "Какао",
+    "Вино",
+    "Пиво",
+    "Пивоварение",
+    "Алкогольные напитки",
+    "Безалкогольные напитки",
+    "Спиртные напитки",
+    "Производство напитков",
+    "Машины для розлива напитков",
+    "Оборудование для производства напитков",
+    "Оборудование для производства пива",
+    "Оборудование для производства вина",
+    "Сырье для производства пива",
+    "Beverage",
+    "Drinks",
+    "Brewing",
+    "Wine",
+    "Beer",
+    "Coffee",
+    "Tea",
+    "Cacao"
+  ],
+  "beverage_guard_rules": [
+    "SignoGroup does not do beverage labels; beverage/drinks terms are not positive relevance signals.",
+    "Classify beverage-only/drinks-only/brewing/wine/beer/coffee/tea/cacao/beverage-equipment/beverage-ingredient events as no even when packaging/tara/ingredient terms appear in beverage context.",
+    "If an event mixes beverages with other packaged consumer goods, classify maybe unless clear non-beverage product categories independently justify yes.",
+    "BeviTec 2026 is an explicit false-positive guard and must not be selected as a pilot.",
+    "Coffee Tea Cacao Expo 2026 is beverage-led; do not classify as yes solely from coffee/tea/cacao or generic packaging terms."
+  ],
+  "april_may_2026_pilot_recommendations": [
+    {
+      "priority": 1,
+      "ordinal": 122,
+      "event": "R-BEAUTY 2026",
+      "month": "2026-04",
+      "recommendation": "yes",
+      "rationale": "Perfumery/cosmetics, beauty industry, hygiene, packaging; no beverage dependency."
+    },
+    {
+      "priority": 2,
+      "ordinal": 121,
+      "event": "BEAUNITY by InterCHARM 2026",
+      "month": "2026-04",
+      "recommendation": "yes",
+      "rationale": "Beauty/cosmetics/perfumery/personal-care product categories."
+    },
+    {
+      "priority": 3,
+      "ordinal": 131,
+      "event": "SobMaExpo 2026",
+      "month": "2026-04",
+      "recommendation": "yes",
+      "rationale": "Contract manufacturing/private label plus cosmetics, household chemistry, food/confectionery, pharma/pet/auto chemistry; beverages are present but not the reason."
+    },
+    {
+      "priority": 4,
+      "ordinal": 161,
+      "event": "Global Ingredients Show 2026",
+      "month": "2026-04",
+      "recommendation": "yes",
+      "rationale": "Food additives/ingredients plus household/cosmetic/perfumery industry; no beverage-only signal."
+    },
+    {
+      "priority": 5,
+      "ordinal": 171,
+      "event": "Мясная промышленность, Куриный Король / MAP Russia 2026",
+      "month": "2026-05",
+      "recommendation": "yes",
+      "rationale": "Meat/poultry/feed/veterinary plus packaging/marking; strong non-beverage packaged-food fit."
+    }
+  ]
+}

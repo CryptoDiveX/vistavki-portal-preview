@@ -1080,10 +1080,11 @@
     "event_ordinals_with_related_files": [
       7,
       22,
-      53
+      53,
+      92
     ],
     "mapping_file": "uploaded_workbook_mapping.json",
-    "matched_files_count": 3,
+    "matched_files_count": 4,
     "other_exhibitions_with_contacts_count": 2,
     "source_upload_manifest": "../vistavki_files/manifest.json",
     "unmatched_contact_files_count": 2,
