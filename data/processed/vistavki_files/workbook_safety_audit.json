@@ -1,0 +1,258 @@
+{
+  "data_package_version": "vistavki-files-package-v1.1.0",
+  "generated_at": "2026-06-11T00:00:00Z",
+  "audit_scope": "Public downloadable XLSX workbooks rebuilt to remove private local path metadata and external connection parts.",
+  "rows_checked": 5,
+  "all_sanitized_outputs_safe": true,
+  "rows": [
+    {
+      "id": "vistavki-file-01",
+      "display_name": "AGRAVIA_processed.xlsx",
+      "event_name": "AGRAVIA",
+      "source_filename": "AGRAVIA_processed.xlsx",
+      "sanitized_output_href": "downloads/agravia-processed-public.xlsx",
+      "sanitized_output_filename": "agravia-processed-public.xlsx",
+      "selected_sheet": "Cleaned",
+      "total_source_rows": 570,
+      "cleaned_rows": 340,
+      "selected_sheet_rows": 340,
+      "selected_sheet_nonempty_rows": 340,
+      "sheet_counts": [
+        {
+          "sheet_name": "Scraped",
+          "dimension_data_rows": 570,
+          "nonempty_data_rows": 570,
+          "observed_data_rows": 570
+        },
+        {
+          "sheet_name": "Cleaned",
+          "dimension_data_rows": 340,
+          "nonempty_data_rows": 340,
+          "observed_data_rows": 340
+        }
+      ],
+      "safety_scan_status": "pass",
+      "unsafe_internal_parts_before": [
+        "xl/workbook.xml"
+      ],
+      "unsafe_internal_parts_after": [],
+      "dropped_workbook_internals": [
+        "xl/workbook.xml"
+      ],
+      "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped.",
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "ade85a060f06e42e4bdbc8e5a7833dbd7ffc8f848dd12e9f8b028aa1587050ea",
+        "download_sha256": "557f6b9f700fdbd087378fd85a31e8e7acd490c8612d6b99595c0ff628e592ba",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 508139
+      }
+    },
+    {
+      "id": "vistavki-file-02",
+      "display_name": "Vistavka Zdorovie DEC 2025.xlsx",
+      "event_name": "Vistavka Zdorovie DEC 2025",
+      "source_filename": "Vistavka Zdorovie DEC 2025.xlsx",
+      "sanitized_output_href": "downloads/vistavka-zdorovie-dec-2025-public.xlsx",
+      "sanitized_output_filename": "vistavka-zdorovie-dec-2025-public.xlsx",
+      "selected_sheet": "Cleaned",
+      "total_source_rows": 999,
+      "cleaned_rows": 476,
+      "selected_sheet_rows": 476,
+      "selected_sheet_nonempty_rows": 425,
+      "sheet_counts": [
+        {
+          "sheet_name": "ZOZH 2025",
+          "dimension_data_rows": 999,
+          "nonempty_data_rows": 132,
+          "observed_data_rows": 999
+        },
+        {
+          "sheet_name": "All - Zdorovie 2025",
+          "dimension_data_rows": 517,
+          "nonempty_data_rows": 517,
+          "observed_data_rows": 517
+        },
+        {
+          "sheet_name": "Cleaned",
+          "dimension_data_rows": 476,
+          "nonempty_data_rows": 425,
+          "observed_data_rows": 476
+        },
+        {
+          "sheet_name": "Prompt",
+          "dimension_data_rows": 20,
+          "nonempty_data_rows": 7,
+          "observed_data_rows": null
+        }
+      ],
+      "safety_scan_status": "pass",
+      "unsafe_internal_parts_before": [
+        "xl/workbook.xml"
+      ],
+      "unsafe_internal_parts_after": [],
+      "dropped_workbook_internals": [
+        "xl/workbook.xml"
+      ],
+      "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped.",
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "c3195f5d12c116006161385e43149300e5793c871a311fed6b75ae56c7977e61",
+        "download_sha256": "819abd521e1ee9445530a6ddaba44df1de487293a6b4abfcc825f1af1e5d1e90",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 384651
+      }
+    },
+    {
+      "id": "vistavki-file-03",
+      "display_name": "ShinyGotovo.xlsx",
+      "event_name": "Shiny / Tires parsed exhibitors",
+      "source_filename": "ShinyGotovo.xlsx",
+      "sanitized_output_href": "downloads/shinygotovo-public.xlsx",
+      "sanitized_output_filename": "shinygotovo-public.xlsx",
+      "selected_sheet": "Cleaned",
+      "total_source_rows": 458,
+      "cleaned_rows": 166,
+      "selected_sheet_rows": 166,
+      "selected_sheet_nonempty_rows": 166,
+      "sheet_counts": [
+        {
+          "sheet_name": "Combined",
+          "dimension_data_rows": 458,
+          "nonempty_data_rows": 458,
+          "observed_data_rows": 458
+        },
+        {
+          "sheet_name": "Cleaned",
+          "dimension_data_rows": 166,
+          "nonempty_data_rows": 166,
+          "observed_data_rows": 166
+        },
+        {
+          "sheet_name": "Removed",
+          "dimension_data_rows": 106,
+          "nonempty_data_rows": 106,
+          "observed_data_rows": 106
+        }
+      ],
+      "safety_scan_status": "pass",
+      "unsafe_internal_parts_before": [],
+      "unsafe_internal_parts_after": [],
+      "dropped_workbook_internals": [],
+      "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped.",
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "375a1ede29eabfd9c538b56a93265e4fd478b6d652339e44ffbc0f471edb64a2",
+        "download_sha256": "0a327ee049366691937e19b375f7fd2ae90a1e9b0cc033aaa74689c15a5b69aa",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 182151
+      }
+    },
+    {
+      "id": "vistavki-file-04",
+      "display_name": "Prodexpo-2026.xlsx",
+      "event_name": "Prodexpo 2026",
+      "source_filename": "Prodexpo-2026.xlsx",
+      "sanitized_output_href": "downloads/prodexpo-2026-public.xlsx",
+      "sanitized_output_filename": "prodexpo-2026-public.xlsx",
+      "selected_sheet": "Cleaned - no All with AI",
+      "total_source_rows": 1982,
+      "cleaned_rows": 1069,
+      "selected_sheet_rows": 1069,
+      "selected_sheet_nonempty_rows": 1069,
+      "sheet_counts": [
+        {
+          "sheet_name": "All",
+          "dimension_data_rows": 1982,
+          "nonempty_data_rows": 1982,
+          "observed_data_rows": 1982
+        },
+        {
+          "sheet_name": "Russia",
+          "dimension_data_rows": 1422,
+          "nonempty_data_rows": 1422,
+          "observed_data_rows": 1422
+        },
+        {
+          "sheet_name": "Cleaned - no All",
+          "dimension_data_rows": 1273,
+          "nonempty_data_rows": 1071,
+          "observed_data_rows": 1273
+        },
+        {
+          "sheet_name": "Cleaned - no All with AI",
+          "dimension_data_rows": 1069,
+          "nonempty_data_rows": 1069,
+          "observed_data_rows": 1069
+        }
+      ],
+      "safety_scan_status": "pass",
+      "unsafe_internal_parts_before": [
+        "xl/connections.xml",
+        "xl/workbook.xml"
+      ],
+      "unsafe_internal_parts_after": [],
+      "dropped_workbook_internals": [
+        "xl/connections.xml",
+        "xl/workbook.xml"
+      ],
+      "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped.",
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "ce3d25c99c51537cd571ffc87145ea1aee027a9847082a46f4f936761871ef8f",
+        "download_sha256": "8c98d9122182d7cbf6c02d48071d855db8a54187a7bc68eea295aa2aee362e25",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 4276383
+      }
+    },
+    {
+      "id": "vistavki-file-05",
+      "display_name": "yugbuild_exhibitors.xlsx",
+      "event_name": "YugBuild exhibitors",
+      "source_filename": "yugbuild_exhibitors.xlsx",
+      "sanitized_output_href": "downloads/yugbuild-exhibitors-public.xlsx",
+      "sanitized_output_filename": "yugbuild-exhibitors-public.xlsx",
+      "selected_sheet": "Yugobuild cleaned",
+      "total_source_rows": 139,
+      "cleaned_rows": 130,
+      "selected_sheet_rows": 130,
+      "selected_sheet_nonempty_rows": 130,
+      "sheet_counts": [
+        {
+          "sheet_name": "Yugobuild",
+          "dimension_data_rows": 139,
+          "nonempty_data_rows": 139,
+          "observed_data_rows": 139
+        },
+        {
+          "sheet_name": "Yugobuild cleaned",
+          "dimension_data_rows": 130,
+          "nonempty_data_rows": 130,
+          "observed_data_rows": 130
+        }
+      ],
+      "safety_scan_status": "pass",
+      "unsafe_internal_parts_before": [
+        "xl/workbook.xml"
+      ],
+      "unsafe_internal_parts_after": [],
+      "dropped_workbook_internals": [
+        "xl/workbook.xml"
+      ],
+      "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped.",
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "44d6113c4a8eb41c898535b1901e677444a0488c2b205c5dd872678338e883c0",
+        "download_sha256": "9c3959bc5f45de6999b0197310277df02ddf10cef54f7e2e28baa23ef602eeec",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 2805730
+      }
+    }
+  ],
+  "removed_unreferenced_downloads": []
+}

@@ -4,6 +4,7 @@ const DATA_URLS = {
   summary: `${DATA_ROOT}/dashboard_summary.json`,
   events: `${DATA_ROOT}/events.json`,
   manifest: `${DATA_ROOT}/manifest.json`,
+  uploadedWorkbooks: `${DATA_ROOT}/uploaded_workbook_mapping.json`,
   okvedManifest: `${OKVED_DATA_ROOT}/manifest.json`,
 };
 
@@ -13,6 +14,7 @@ const state = {
   events: [],
   summary: null,
   manifest: null,
+  uploadedWorkbooks: null,
   okvedManifest: null,
   okvedRows: [],
   filtered: [],
@@ -127,9 +129,8 @@ function renderEventLinks(event, { detail = false } = {}) {
   if (!items.some((item) => item.label === 'Expomap')) links.unshift('<span class="muted">No Expomap</span>');
   if (!hasOfficialSite) links.push('<span class="muted">No official site</span>');
 
-  const tag = detail ? 'p' : 'div';
-  const className = detail ? ' class="link-row detail-link-row"' : '';
-  return `<${tag}${className}>${links.join('')}</${tag}>`;
+  if (!detail) return links.join('');
+  return `<p class="link-row detail-link-row">${links.join('')}</p>`;
 }
 
 function formatDate(value) {
@@ -167,15 +168,17 @@ async function fetchJson(url) {
 
 async function loadPortal() {
   try {
-    const [summary, events, manifest, okvedManifest] = await Promise.all([
+    const [summary, events, manifest, uploadedWorkbooks, okvedManifest] = await Promise.all([
       fetchJson(DATA_URLS.summary),
       fetchJson(DATA_URLS.events),
       fetchJson(DATA_URLS.manifest).catch(() => null),
+      fetchJson(DATA_URLS.uploadedWorkbooks).catch(() => null),
       fetchJson(DATA_URLS.okvedManifest).catch(() => null),
     ]);
     state.summary = summary;
     state.events = events;
     state.manifest = manifest;
+    state.uploadedWorkbooks = uploadedWorkbooks;
     state.okvedManifest = okvedManifest;
     state.okvedRows = Array.isArray(okvedManifest?.rows) ? okvedManifest.rows : [];
     state.filtered = events;
@@ -198,6 +201,7 @@ function render() {
   renderDashboard();
   renderAnalytics();
   renderOkvedTable();
+  renderContactFiles();
   populateMonthFilter();
   bindFilters();
   bindSectionSwitcher();
@@ -424,9 +428,95 @@ function renderAnalytics() {
   ].join('');
 }
 
+function isSafeContactDownloadHref(value) {
+  const href = text(value, '');
+  if (!href || href.startsWith('/') || href.startsWith('\\\\') || href.startsWith('//')) return false;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return false;
+  return href.startsWith('../vistavki_files/downloads/') && !href.slice(3).includes('..');
+}
+
+function contactDownloadHref(row) {
+  const href = row.download_href || '';
+  if (row.safety_scan_status !== 'pass' || !isSafeContactDownloadHref(href)) return '';
+  return `${DATA_ROOT}/${href}`;
+}
+
+function contactRows() {
+  const rows = state.uploadedWorkbooks?.unmatched_contact_files || state.uploadedWorkbooks?.unmatched_or_ambiguous_uploaded_files || [];
+  return Array.isArray(rows) ? rows : [];
+}
+
+function compactFileMeta(row) {
+  const selectedRows = row.selected_sheet_nonempty_rows ?? row.cleaned_rows ?? 0;
+  const selectedSheet = row.selected_sheet || (row.sheet_names || [])[0] || 'sheet';
+  const parts = [
+    selectedRows ? `${fmt.format(selectedRows)} rows` : '',
+    selectedSheet,
+    row.safety_scan_status === 'pass' ? 'sanitized' : '',
+  ].filter(Boolean);
+  return parts.join(' · ');
+}
+
+function renderDownloadButton(row, label = 'Download') {
+  const href = contactDownloadHref(row);
+  const fileType = text(row.file_type, '').toUpperCase();
+  if (!href) return '<span class="muted">No uploaded file</span>';
+  return `<a class="button button-compact" href="${escapeHtml(href)}" download="${escapeHtml(row.download_filename || '')}">${escapeHtml(label)}${fileType ? ` ${escapeHtml(fileType)}` : ''}</a>`;
+}
+
+function renderRelatedFiles(event) {
+  const rows = Array.isArray(event.related_files) ? event.related_files : [];
+  if (!rows.length) {
+    return '<p class="muted">No uploaded file</p>';
+  }
+  return `<div class="related-file-list">${rows.map((row) => `
+    <article class="related-file-card">
+      <div>
+        <strong>${escapeHtml(row.display_filename || row.source_filename || 'Uploaded workbook')}</strong>
+        <p class="muted small">${escapeHtml(compactFileMeta(row))}</p>
+        <p class="small">${escapeHtml(row.audit_note || row.match_reason || 'Matched by backend coverage audit.')}</p>
+      </div>
+      ${renderDownloadButton(row)}
+    </article>
+  `).join('')}</div>`;
+}
+
+function renderContactFiles() {
+  const container = el('contact-files');
+  if (!container) return;
+  const rows = contactRows();
+  container.hidden = rows.length === 0;
+  if (!rows.length) {
+    container.innerHTML = '';
+    return;
+  }
+  container.innerHTML = `
+    <div class="contact-files-heading">
+      <div>
+        <p class="eyebrow">Contact workbooks</p>
+        <h3 id="contact-files-title">Other exhibitions with contacts</h3>
+      </div>
+      <span class="result-count">${fmt.format(rows.length)} contact-only files</span>
+    </div>
+    <div class="contact-file-list">
+      ${rows.map((row) => `
+        <article class="contact-file-card">
+          <div>
+            <strong>${escapeHtml(row.event_source_name || row.display_filename || 'Contact workbook')}</strong>
+            <p class="muted small">${escapeHtml(row.display_filename || row.source_filename || '')}</p>
+            <p class="small">${escapeHtml(compactFileMeta(row))}</p>
+            <p class="muted small">${escapeHtml(row.contact_list_note || row.match_reason || row.reason || 'Kept separate because no reliable Expomap event match was available.')}</p>
+          </div>
+          ${renderDownloadButton(row)}
+        </article>
+      `).join('')}
+    </div>
+  `;
+}
+
 function isSafeOkvedDownloadHref(value) {
   const href = text(value, '');
-  if (!href || href.startsWith('/') || href.startsWith('\\') || href.includes('..')) return false;
+  if (!href || href.startsWith('/') || href.startsWith('\\\\') || href.includes('..')) return false;
   if (/^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith('//')) return false;
   return href.startsWith('downloads/');
 }
@@ -509,6 +599,18 @@ function bindFilters() {
   el('filters').addEventListener('input', applyFilters);
   el('filters').addEventListener('change', applyFilters);
   el('filters').addEventListener('reset', () => setTimeout(applyFilters, 0));
+  const tableBody = el('table-body');
+  if (tableBody && tableBody.dataset.detailBound !== 'true') {
+    tableBody.dataset.detailBound = 'true';
+    const openDetailFromTrigger = (event) => {
+      const trigger = event.target.closest('.event-button');
+      if (!trigger) return;
+      event.preventDefault();
+      showDetail(trigger.dataset.ordinal);
+    };
+    tableBody.addEventListener('pointerdown', openDetailFromTrigger);
+    tableBody.addEventListener('click', openDetailFromTrigger);
+  }
   el('detail-close').addEventListener('click', () => { el('detail-panel').hidden = true; });
 }
 
@@ -547,8 +649,16 @@ function renderTable() {
     return `
       <tr>
         <td>
-          <button class="event-button" type="button" data-ordinal="${event.ordinal}">${escapeHtml(event.event_name)}</button>
+          <div class="event-title-line">
+            <button class="event-button event-button-with-detail" type="button" data-ordinal="${event.ordinal}">
+              <span>${escapeHtml(event.event_name)}</span>
+              <span class="detail-pill" aria-hidden="true">Details</span>
+            </button>
+          </div>
           <div class="muted small">${escapeHtml(event.event_subtitle || 'No subtitle')}</div>
+          <div class="event-row-actions">
+            <span class="muted small">${Array.isArray(event.related_files) && event.related_files.length ? `${event.related_files.length} file` : 'No file'}</span>
+          </div>
         </td>
         <td>${escapeHtml(formatRange(event))}</td>
         <td><strong>${escapeHtml(event.venue?.name || 'Not specified')}</strong><div class="muted small">${escapeHtml([event.venue?.city, event.venue?.address].filter(Boolean).join(' · ') || 'No venue/address')}</div></td>
@@ -600,7 +710,7 @@ function findProducts(event) {
 }
 
 function showDetail(ordinal) {
-  const event = state.events.find((item) => item.ordinal === ordinal);
+  const event = state.events.find((item) => String(item.ordinal) === String(ordinal));
   if (!event) return;
   const products = findProducts(event);
   const source = event.source_audit || {};
@@ -614,10 +724,11 @@ function showDetail(ordinal) {
       <section class="detail-section"><h3>Exhibited products</h3>${products.length ? renderChips(products) : '<p class="muted">No exhibited products field in the current public package.</p>'}</section>
       <section class="detail-section"><h3>Venue and address</h3><p><strong>${escapeHtml(event.venue?.name || 'Not specified')}</strong></p><p>${escapeHtml([event.venue?.city, event.venue?.address].filter(Boolean).join(' · ') || 'No venue/address')}</p></section>
       <section class="detail-section"><h3>Dates and counts</h3><p>${escapeHtml(formatRange(event))}</p><p>Members / visitors: ${text(event.counts?.members)} / ${text(event.counts?.visitors)}</p></section>
+      <section class="detail-section detail-section-wide"><h3>Uploaded workbook</h3>${renderRelatedFiles(event)}</section>
       <section class="detail-section"><h3>Themes</h3>${renderChips(event.themes || [])}</section>
       <section class="detail-section"><h3>Tags</h3>${renderChips(event.tags || [])}</section>
       <section class="detail-section"><h3>Source and audit summary</h3><p>Parser: ${escapeHtml(source.parser_version || state.summary.parser_version || 'not reported')}</p><p>Scraped: ${escapeHtml(source.scraped_at || state.summary.stage1_scraped_at || 'not reported')}</p><p>Source page: ${escapeHtml(source.source_page || 'not reported')}</p></section>
-      <section class="detail-section"><h3>Links</h3><p>${links.expomap ? `<a href="${escapeHtml(links.expomap)}" target="_blank" rel="noreferrer">Expomap source</a>` : 'No Expomap URL'}</p><p>${links.external ? `<a href="${escapeHtml(links.external)}" target="_blank" rel="noreferrer">External event site</a>` : 'No external URL'}</p></section>
+      <section class="detail-section"><h3>Source links</h3>${renderEventLinks(event, { detail: true })}</section>
       <section class="detail-section"><h3>Parser notes</h3><p>Status: ${escapeHtml(event.status || 'unknown')} · parse_status: ${escapeHtml(event.parse_status || 'unknown')}</p><p>Missing fields: ${escapeHtml((event.missing_fields || []).join(', ') || 'none')}</p><p>${escapeHtml(event.parser_notes || 'No parser notes for this event.')}</p></section>
     </div>
   `;

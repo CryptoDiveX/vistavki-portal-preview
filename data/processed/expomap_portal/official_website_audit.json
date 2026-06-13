@@ -1,11 +1,11 @@
 {
-  "detail_fetch_workers": 8,
+  "detail_fetch_workers": 4,
   "detail_pages_fetched": 341,
   "events": [
     {
       "detail_url": "https://expomap.ru/expo/smouk-na-prode/",
       "event_name": "Смоук на Проде",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -15,7 +15,7 @@
     {
       "detail_url": "https://expomap.ru/expo/kontaktnye-kanikuly/",
       "event_name": "Контактные каникулы 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -25,7 +25,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bal-kukol-v-moskve/",
       "event_name": "Бал Кукол в Москве 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -35,7 +35,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sport-casual-moscow/",
       "event_name": "Sport Casual Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://sportcasualmoscow.ru/?utm_source=expomap",
@@ -45,7 +45,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sam-expo/",
       "event_name": "SAM Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -55,7 +55,7 @@
     {
       "detail_url": "https://expomap.ru/expo/iagri/2026/jan/",
       "event_name": "iAGRI 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -65,7 +65,7 @@
     {
       "detail_url": "https://expomap.ru/expo/agravia/2026/",
       "event_name": "AGRAVIA 2026  (ранее AGROS / AGROTECH)",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -75,7 +75,7 @@
     {
       "detail_url": "https://expomap.ru/expo/simfonija-samotsvetov/",
       "event_name": "Симфония самоцветов 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -85,7 +85,7 @@
     {
       "detail_url": "https://expomap.ru/expo/unikalnaja-rossija/",
       "event_name": "Уникальная Россия 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -95,7 +95,7 @@
     {
       "detail_url": "https://expomap.ru/expo/recycling-solutions/2026/jan/",
       "event_name": "RECYCLING SOLUTIONS 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -105,7 +105,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ruplastica/2026/jan/",
       "event_name": "RUPLASTICA 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -115,7 +115,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dairytech/",
       "event_name": "DairyTech 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -125,7 +125,7 @@
     {
       "detail_url": "https://expomap.ru/expo/additive-minded/",
       "event_name": "Additive Minded 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://ruplastica.ru/news/20250916-additive-minded-2026-vystavka-gde-promyshlennost-vstrechaetsya-s-3d-pechatyu",
@@ -135,7 +135,7 @@
     {
       "detail_url": "https://expomap.ru/expo/upakexpo/2026/jan/",
       "event_name": "UPAKEXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -145,7 +145,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bloshinyj-rynok/",
       "event_name": "Блошиный рынок Январь 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -155,7 +155,7 @@
     {
       "detail_url": "https://expomap.ru/expo/aquaflame-by-aquatherm-moscow/",
       "event_name": "Aquaflame 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -165,7 +165,7 @@
     {
       "detail_url": "https://expomap.ru/expo/airvent/2026/",
       "event_name": "AIRVent 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -175,7 +175,7 @@
     {
       "detail_url": "https://expomap.ru/expo/drontech/2026/",
       "event_name": "ДРОНТЕХ 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -185,7 +185,7 @@
     {
       "detail_url": "https://expomap.ru/expo/nais/2026/",
       "event_name": "НАИС 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -195,7 +195,7 @@
     {
       "detail_url": "https://expomap.ru/expo/pervozdannaja-rossija/",
       "event_name": "Первозданная Россия 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -205,7 +205,7 @@
     {
       "detail_url": "https://expomap.ru/expo/strajkkon/",
       "event_name": "СтрайкКон 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -215,7 +215,7 @@
     {
       "detail_url": "https://expomap.ru/expo/prodexpo/2026/",
       "event_name": "Продэкспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.prod-expo.ru/",
@@ -225,7 +225,7 @@
     {
       "detail_url": "https://expomap.ru/expo/izmajlovo-shuz/",
       "event_name": "Измайлово Шуз 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://измайловошуз.рф",
@@ -235,7 +235,7 @@
     {
       "detail_url": "https://expomap.ru/expo/skrepka-expo/",
       "event_name": "Скрепка Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -245,7 +245,7 @@
     {
       "detail_url": "https://expomap.ru/expo/lingerie-show-forum/",
       "event_name": "Lingerie Show-Forum. Winter 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -255,7 +255,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mir-klimata/2026/feb/",
       "event_name": "Мир Климата 26",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -265,7 +265,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cjf-detskaja-moda/2026/feb/",
       "event_name": "CJF – Детская мода 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -275,7 +275,7 @@
     {
       "detail_url": "https://expomap.ru/expo/textile-salon/2026/feb/",
       "event_name": "Textile Salon 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -285,7 +285,7 @@
     {
       "detail_url": "https://expomap.ru/expo/hospitality-online-expo/",
       "event_name": "Hospitality Online Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -295,7 +295,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dreams-by-cpm/2026/feb/",
       "event_name": "dreams by CPM. Зима 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -305,7 +305,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cstbpromedia/",
       "event_name": "CSTB.PRO.MEDIA 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://cstb.ru/",
@@ -315,7 +315,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cpm-collection-premiere-moscow/2026/feb/",
       "event_name": "CPM – Collection Première Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://cpm-moscow.com/?lang=ru/?erid=2VfnxyWEqvi",
@@ -325,7 +325,7 @@
     {
       "detail_url": "https://expomap.ru/expo/miof/",
       "event_name": "MIOF 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://www.optica-expo.ru/optica/exhibition/",
@@ -335,7 +335,7 @@
     {
       "detail_url": "https://expomap.ru/expo/tb-forum/",
       "event_name": "ТБ Форум 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -345,7 +345,7 @@
     {
       "detail_url": "https://expomap.ru/expo/artdom/",
       "event_name": "ARTDOM 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -356,7 +356,7 @@
       "detail_url": "https://expomap.ru/expo/moscow-dive-show/",
       "error": "TooManyRedirects",
       "event_name": "Moscow Dive Show 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "fetch_error",
       "http_status": null,
       "official_website_url": null,
@@ -366,7 +366,7 @@
     {
       "detail_url": "https://expomap.ru/expo/graduate-awards/",
       "event_name": "Graduate Awards 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://clck.ru/3Meg3N",
@@ -376,7 +376,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ohota-i-rybolovstvo-na-rusi/",
       "event_name": "Охота и рыболовство на Руси 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.hunting-expo.ru/",
@@ -386,7 +386,7 @@
     {
       "detail_url": "https://expomap.ru/expo/kurt-cobain-birthday-fest-moscow/",
       "event_name": "Kurt Cobain Birthday Fest Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -396,7 +396,7 @@
     {
       "detail_url": "https://expomap.ru/expo/modnaja-volna/",
       "event_name": "Модная Волна. Зима 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -406,7 +406,7 @@
     {
       "detail_url": "https://expomap.ru/expo/interlakokraska/2026/",
       "event_name": "Интерлакокраска 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -416,7 +416,7 @@
     {
       "detail_url": "https://expomap.ru/expo/moskovskoe-bout-shou-moscow-boat-show/",
       "event_name": "Московское Боут Шоу / Moscow Boat Show 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -426,7 +426,7 @@
     {
       "detail_url": "https://expomap.ru/expo/formula-rukodelija-moskva/",
       "event_name": "Формула рукоделия Москва. Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -436,7 +436,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mir-ohoty-i-rybalki/",
       "event_name": "МИР Охоты и Рыбалки. 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.huntfishexpo.ru/",
@@ -446,7 +446,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bizhufest/",
       "event_name": "Бижуфест 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://bijou-moscow.com/",
@@ -456,7 +456,7 @@
     {
       "detail_url": "https://expomap.ru/expo/obrazovanie-i-karera-moskva/",
       "event_name": "Образование и карьера Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -466,7 +466,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zhit-krasivo/",
       "event_name": "Жить Красиво 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://zkrasivo.ru/",
@@ -476,7 +476,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mipif-moskva/2026/feb/",
       "event_name": "MIPIF Москва. 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -486,7 +486,7 @@
     {
       "detail_url": "https://expomap.ru/expo/festival-stoljarnogo-dela/",
       "event_name": "Фестиваль столярного дела 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://rubankov.ru/festival/",
@@ -496,7 +496,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mybabyko/",
       "event_name": "MybabyKO. Февраль 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://mybabyko.ru/",
@@ -506,7 +506,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sobytie-goda/",
       "event_name": "Событие года 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://eventawardsrussia.com/?utm_source=expomap",
@@ -516,7 +516,7 @@
     {
       "detail_url": "https://expomap.ru/expo/neftegaz/2026/",
       "event_name": "Нефтегаз 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -526,7 +526,7 @@
     {
       "detail_url": "https://expomap.ru/expo/shiny-rti-i-kauchuki/2026/",
       "event_name": "Шины, РТИ и каучуки 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -536,7 +536,7 @@
     {
       "detail_url": "https://expomap.ru/expo/tekstillegprom/2026/mar/",
       "event_name": "Текстильлегпром. 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://textilexpo.ru/",
@@ -546,7 +546,7 @@
     {
       "detail_url": "https://expomap.ru/expo/textile-collection-moscow/",
       "event_name": "Textile Collection Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://textile-collection.com/?utm_medium=partner_free&utm_campaign=expomap",
@@ -556,7 +556,7 @@
     {
       "detail_url": "https://expomap.ru/expo/euro-shoes-premiere-collection/2026/mar/",
       "event_name": "Euro Shoes Premiere Collection 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -566,7 +566,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rosbuild/2026/",
       "event_name": "RosBuild 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -576,7 +576,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mir-stekla/2026/",
       "event_name": "Мир стекла 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -586,7 +586,7 @@
     {
       "detail_url": "https://expomap.ru/expo/belarus-rossija/",
       "event_name": "Беларусь-Россия. Март 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -596,7 +596,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cabex/2026/",
       "event_name": "Cabex-2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -606,7 +606,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mitt/2026/",
       "event_name": "MITT 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -616,7 +616,7 @@
     {
       "detail_url": "https://expomap.ru/expo/navigatsija-i-svjaz-v-osobyh-uslovijah/",
       "event_name": "Навигация и связь в особых условиях 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://navicomexpo.ru/",
@@ -626,7 +626,7 @@
     {
       "detail_url": "https://expomap.ru/expo/eco-beauty-expo/2026/mar/",
       "event_name": "Eco Beauty Expo Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://eco-beauty-expo.ru/?utm_source=expomap",
@@ -636,7 +636,7 @@
     {
       "detail_url": "https://expomap.ru/expo/best-russia/",
       "event_name": "Best Russia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.bestrussia.org/ru",
@@ -646,7 +646,7 @@
     {
       "detail_url": "https://expomap.ru/expo/obuchenie-za-rubezhom-education-show/",
       "event_name": "Обучение за рубежом — Education Show 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -656,7 +656,7 @@
     {
       "detail_url": "https://expomap.ru/expo/moscow-overseas-property-investment-show/",
       "event_name": "Moscow Overseas Property & Investment Show весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -666,7 +666,7 @@
     {
       "detail_url": "https://expomap.ru/expo/pro-chastnoe-dlya-roditelej/2026/",
       "event_name": "Про частное для родителей 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://xn--80akxccchkj1c.xn--p1ai/?ysclid=mm35qy0qmv243008381",
@@ -676,7 +676,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rossijskaja-tekstilnaja-nedelja/",
       "event_name": "Российская текстильная неделя 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -686,7 +686,7 @@
     {
       "detail_url": "https://expomap.ru/expo/inlegmash/",
       "event_name": "Инлегмаш 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -696,7 +696,7 @@
     {
       "detail_url": "https://expomap.ru/expo/chemipack/2026/mar/",
       "event_name": "ChemiPack 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -706,7 +706,7 @@
     {
       "detail_url": "https://expomap.ru/expo/transrussia/2026/",
       "event_name": "TransRussia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -716,7 +716,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zoo-expoplace/",
       "event_name": "Zoo ExpoPlace 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -726,7 +726,7 @@
     {
       "detail_url": "https://expomap.ru/expo/housetech-expo/",
       "event_name": "HouseTech Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -736,7 +736,7 @@
     {
       "detail_url": "https://expomap.ru/expo/skladtech/2026/mar/",
       "event_name": "SkladTech 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -746,7 +746,7 @@
     {
       "detail_url": "https://expomap.ru/expo/beautychemicos/2026/mar/",
       "event_name": "BeautyChemiCos 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -756,7 +756,7 @@
     {
       "detail_url": "https://expomap.ru/expo/chemicos/2026/",
       "event_name": "ChemiCos 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -766,7 +766,7 @@
     {
       "detail_url": "https://expomap.ru/expo/igrushka-market/",
       "event_name": "Игрушка Маркет 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -776,7 +776,7 @@
     {
       "detail_url": "https://expomap.ru/expo/outdoor-dacha/",
       "event_name": "Outdoor Dacha 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -786,7 +786,7 @@
     {
       "detail_url": "https://expomap.ru/expo/household-expo/2026/mar/",
       "event_name": "HouseHold Expo. Spring 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -796,7 +796,7 @@
     {
       "detail_url": "https://expomap.ru/expo/intertkan/2026/",
       "event_name": "ИНТЕРТКАНЬ 2026. ВЕСНА",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -806,7 +806,7 @@
     {
       "detail_url": "https://expomap.ru/expo/design/2026/mar/",
       "event_name": "Design+ весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://design-plus.ru/",
@@ -816,7 +816,7 @@
     {
       "detail_url": "https://expomap.ru/expo/christmasbox-podarki/",
       "event_name": "ChristmasBox Podarki 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -826,7 +826,7 @@
     {
       "detail_url": "https://expomap.ru/expo/arhimed/",
       "event_name": "Архимед 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -836,7 +836,7 @@
     {
       "detail_url": "https://expomap.ru/expo/chemicos-industry/2026/mar/",
       "event_name": "ChemiCos Industry 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -846,7 +846,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rappa-expo/2026/mar/",
       "event_name": "РАППА Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://raapa-expo.ru/",
@@ -856,7 +856,7 @@
     {
       "detail_url": "https://expomap.ru/expo/robototechnika-i-iskusstvennyj-intellekt/",
       "event_name": "Робототехника и искусственный интеллект 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://raiexpo.ru/",
@@ -866,7 +866,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bad-expo/2026/mar/",
       "event_name": "БАД-EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -876,7 +876,7 @@
     {
       "detail_url": "https://expomap.ru/expo/lifestyle-expo/",
       "event_name": "Lifestyle Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://school.smart-and-talented.ru/lifestyleexpo2026",
@@ -886,7 +886,7 @@
     {
       "detail_url": "https://expomap.ru/expo/babylifeexpo/",
       "event_name": "BabyLifeExpo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -896,7 +896,7 @@
     {
       "detail_url": "https://expomap.ru/expo/otkrytyj-sklad/",
       "event_name": "Открытый склад 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://openshowroom.ru/menswomens_and_childrens_clothingfootwear_and_accessories",
@@ -906,7 +906,7 @@
     {
       "detail_url": "https://expomap.ru/expo/modern-bakery-moscow-confex/",
       "event_name": "Modern Bakery Moscow | Confex 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -916,7 +916,7 @@
     {
       "detail_url": "https://expomap.ru/expo/gotovo/",
       "event_name": "GOTOVO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -926,7 +926,7 @@
     {
       "detail_url": "https://expomap.ru/expo/obuv-mir-kozhi/",
       "event_name": "Обувь. Мир кожи Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -936,7 +936,7 @@
     {
       "detail_url": "https://expomap.ru/expo/massage-service-expo/",
       "event_name": "MASSAGE & SERVICE EXPO весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -946,7 +946,7 @@
     {
       "detail_url": "https://expomap.ru/expo/profbeauty-expo/",
       "event_name": "PROFBEAUTY EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://profbeauty-expo.ru/?utm_source=expomap",
@@ -956,7 +956,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rusartstil/",
       "event_name": "РусАртСтиль. Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.expo-resurs.ru",
@@ -966,7 +966,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cps/",
       "event_name": "CPS 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -976,7 +976,7 @@
     {
       "detail_url": "https://expomap.ru/expo/luchshij-otso-rossii-i-sng/",
       "event_name": "Лучший ОЦО России и СНГ 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://clck.ru/3FBhgV",
@@ -986,7 +986,7 @@
     {
       "detail_url": "https://expomap.ru/expo/global-tech-forum/",
       "event_name": "GLOBAL TЕCH FORUM 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -996,7 +996,7 @@
     {
       "detail_url": "https://expomap.ru/expo/wedding-fashion-moscow/",
       "event_name": "Wedding Fashion Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://wedding-fashion.ru/",
@@ -1006,7 +1006,7 @@
     {
       "detail_url": "https://expomap.ru/expo/modatex-expo/",
       "event_name": "MODATEX Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1016,7 +1016,7 @@
     {
       "detail_url": "https://expomap.ru/expo/moshome/",
       "event_name": "MosHome 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1026,7 +1026,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mosbuild/",
       "event_name": "MosBuild 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1036,7 +1036,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ekspertnaya-gostinaya/",
       "event_name": "Экспертная гостиная 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://forumsmartcity.ru/mosbuild2026/?utm_source=expomap",
@@ -1046,7 +1046,7 @@
     {
       "detail_url": "https://expomap.ru/expo/fotonika-mir-lazerov-i-optiki/2026/",
       "event_name": "Фотоника. Мир лазеров и оптики 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1056,7 +1056,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mmso/",
       "event_name": "ММСО 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1066,7 +1066,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dacha-sad-landshaft-malaja-mehanizatsija/",
       "event_name": "Дача. Сад. Ландшафт. Малая механизация 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://dacha.interopttorg.ru/?utm_source=expomap",
@@ -1076,7 +1076,7 @@
     {
       "detail_url": "https://expomap.ru/expo/edrajv/",
       "event_name": "ЕДрайв 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://edriveexpo.ru/",
@@ -1086,7 +1086,7 @@
     {
       "detail_url": "https://expomap.ru/expo/reaktivnyj-otdyh/",
       "event_name": "РЕактивный отдых. Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://activerestexpo.ru/",
@@ -1096,7 +1096,7 @@
     {
       "detail_url": "https://expomap.ru/expo/motovesna/",
       "event_name": "Мотовесна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://motospring.ru/",
@@ -1106,7 +1106,7 @@
     {
       "detail_url": "https://expomap.ru/expo/velokult/",
       "event_name": "Велокульт 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://velocultexpo.ru/",
@@ -1116,7 +1116,7 @@
     {
       "detail_url": "https://expomap.ru/expo/klinok-v-moskve/2026/apr/",
       "event_name": "Клинок в Москве. Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1126,7 +1126,7 @@
     {
       "detail_url": "https://expomap.ru/expo/lodki-expo/2026/apr/",
       "event_name": "Лодки Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://lodkiexpo.ru/",
@@ -1136,7 +1136,7 @@
     {
       "detail_url": "https://expomap.ru/expo/art-russia-fair/",
       "event_name": "Art Russia Fair 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://artrussiafair.com/?ysclid=mid54tcie6399601886",
@@ -1146,7 +1146,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zhit-krasivo-3-5-aprelya/",
       "event_name": "Жить красиво 2026 (3–5 апреля)",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1156,7 +1156,7 @@
     {
       "detail_url": "https://expomap.ru/expo/samocvetnyj-razval/",
       "event_name": "Самоцветный развал. Апрель 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1166,7 +1166,7 @@
     {
       "detail_url": "https://expomap.ru/expo/portable-hi-fi-audio-show/2026/",
       "event_name": "Portable Hi-Fi & Audio Show 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://portablehifiaudio.ru/",
@@ -1176,7 +1176,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rossijskaya-nedelya-vysokih-technologij/",
       "event_name": "Российская неделя высоких технологий 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://hi-techweek.ru/",
@@ -1186,7 +1186,7 @@
     {
       "detail_url": "https://expomap.ru/expo/renwex/",
       "event_name": "RENWEX 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1196,7 +1196,7 @@
     {
       "detail_url": "https://expomap.ru/expo/finnext/",
       "event_name": "FINNEXT 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1206,7 +1206,7 @@
     {
       "detail_url": "https://expomap.ru/expo/intercharm-professional/",
       "event_name": "BEAUNITY by InterCHARM 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1216,7 +1216,7 @@
     {
       "detail_url": "https://expomap.ru/expo/r-beauty/2026/",
       "event_name": "R-BEAUTY 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1226,7 +1226,7 @@
     {
       "detail_url": "https://expomap.ru/expo/navitech/2026/",
       "event_name": "Навитех 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1236,7 +1236,7 @@
     {
       "detail_url": "https://expomap.ru/expo/svjaz/",
       "event_name": "Связь 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1246,7 +1246,7 @@
     {
       "detail_url": "https://expomap.ru/expo/krasivye-doma/",
       "event_name": "Красивые дома. Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://houses.ru/",
@@ -1256,7 +1256,7 @@
     {
       "detail_url": "https://expomap.ru/expo/aqua-salon-wellness-spa-bassejny-i-sauny/2026/",
       "event_name": "Aqua Salon: Wellness & SPA. Бассейны и сауны 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1266,7 +1266,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bevitec/2026/",
       "event_name": "BeviTec 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://bevitec.ru/",
@@ -1276,7 +1276,7 @@
     {
       "detail_url": "https://expomap.ru/expo/expocifra/2026/",
       "event_name": "ExpoCifra 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1286,7 +1286,7 @@
     {
       "detail_url": "https://expomap.ru/expo/natmallexpo/",
       "event_name": "NATMALL 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://natmall.ru/?utm_source=expomap_page&utm_medium=referral&utm_campaign=nm26",
@@ -1296,7 +1296,7 @@
     {
       "detail_url": "https://expomap.ru/expo/expoelectronica/",
       "event_name": "ExpoElectronica 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1306,7 +1306,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sobmaexpo/2026/",
       "event_name": "SobMaExpo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1316,7 +1316,7 @@
     {
       "detail_url": "https://expomap.ru/expo/coffee-tea-cacao-russian-expo/",
       "event_name": "Coffee Tea Cacao Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1326,7 +1326,7 @@
     {
       "detail_url": "https://expomap.ru/expo/horeca-expo-moskva/",
       "event_name": "HORECA Expo 2026 (Москва)",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1336,7 +1336,7 @@
     {
       "detail_url": "https://expomap.ru/expo/wellbeing-expo/2026/apr/",
       "event_name": "WELLBEING EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1346,7 +1346,7 @@
     {
       "detail_url": "https://expomap.ru/expo/chempionat-roznichnyh-professij/",
       "event_name": "Чемпионат розничных профессий 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1356,7 +1356,7 @@
     {
       "detail_url": "https://expomap.ru/expo/moscow-international-property-show/",
       "event_name": "Moscow International Property Show 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://internationalproperty.ru/",
@@ -1366,7 +1366,7 @@
     {
       "detail_url": "https://expomap.ru/expo/lom-chernyh-i-tsvetnyh-metallov/",
       "event_name": "Лом черных и цветных металлов 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://lom.rusmet.ru",
@@ -1376,7 +1376,7 @@
     {
       "detail_url": "https://expomap.ru/expo/moscow-international-recycling-expo-mir/",
       "event_name": "Moscow International Recycling Expo (MIR) 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1386,7 +1386,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mir-expo/2026/",
       "event_name": "MIR-EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1396,7 +1396,7 @@
     {
       "detail_url": "https://expomap.ru/expo/hi-tech-building/2026/",
       "event_name": "Hi-Tech Building 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1406,7 +1406,7 @@
     {
       "detail_url": "https://expomap.ru/expo/prointegration-tech/",
       "event_name": "ProIntegration Tech 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1416,7 +1416,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dental-salon/",
       "event_name": "Дентал Салон 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1426,7 +1426,7 @@
     {
       "detail_url": "https://expomap.ru/expo/pro-intergation-tech/",
       "event_name": "PRO Intergation Tech 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1436,7 +1436,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dental-expo-moskva/2026/apr/",
       "event_name": "Дентал-Экспо. Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.dental-expo.com/?format=feed&type=atom",
@@ -1446,7 +1446,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dental-salon-the-59th-moscow-international-dental-forum-exhibition/",
       "event_name": "Dental Salon The 59th Moscow International Dental Forum & Exhibition 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://en.dental-expo.com/dental-salon-en",
@@ -1456,7 +1456,7 @@
     {
       "detail_url": "https://expomap.ru/expo/integratsija/",
       "event_name": "Интеграция 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1466,7 +1466,7 @@
     {
       "detail_url": "https://expomap.ru/expo/analitika-expo/",
       "event_name": "Аналитика Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1476,7 +1476,7 @@
     {
       "detail_url": "https://expomap.ru/expo/klei-i-germetiki/2026/",
       "event_name": "Клеи и герметики 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1486,7 +1486,7 @@
     {
       "detail_url": "https://expomap.ru/expo/kompozit-expo/",
       "event_name": "Композит-Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1496,7 +1496,7 @@
     {
       "detail_url": "https://expomap.ru/expo/securika-moscow/2026/",
       "event_name": "Securika Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1506,7 +1506,7 @@
     {
       "detail_url": "https://expomap.ru/expo/poliuretaneks/",
       "event_name": "Полиуретанэкс 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1516,7 +1516,7 @@
     {
       "detail_url": "https://expomap.ru/expo/parkseason-expo/",
       "event_name": "ParkSeason Expo весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://expo.urbanparks.ru/",
@@ -1526,7 +1526,7 @@
     {
       "detail_url": "https://expomap.ru/expo/stsena/",
       "event_name": "Сцена 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://clck.ru/3HPGjr",
@@ -1536,7 +1536,7 @@
     {
       "detail_url": "https://expomap.ru/expo/miningworld-russia/2026/",
       "event_name": "MiningWorld Russia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1546,7 +1546,7 @@
     {
       "detail_url": "https://expomap.ru/expo/psycoach-expo/2026/apr/",
       "event_name": "PSYCOACH EXPO Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://psycoach-expo.ru/",
@@ -1556,7 +1556,7 @@
     {
       "detail_url": "https://expomap.ru/expo/arsenal/2026/apr/",
       "event_name": "Арсенал. Весна 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1566,7 +1566,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zozh-expo/2026/apr/",
       "event_name": "ЗОЖ-Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1576,7 +1576,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ekogorodexpo/",
       "event_name": "ЭкоГородЭкспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1586,7 +1586,7 @@
     {
       "detail_url": "https://expomap.ru/expo/wasma/2026/",
       "event_name": "Wasma 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1596,7 +1596,7 @@
     {
       "detail_url": "https://expomap.ru/expo/vacuumtechexpo/",
       "event_name": "VacuumCryoTech 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1606,7 +1606,7 @@
     {
       "detail_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
       "event_name": "Global Ingredients Show 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1616,7 +1616,7 @@
     {
       "detail_url": "https://expomap.ru/expo/premiya-beauty-awards/2026/",
       "event_name": "Премия BEAUTY AWARDS 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://beauty-awards.ru",
@@ -1626,7 +1626,7 @@
     {
       "detail_url": "https://expomap.ru/expo/technoforum/",
       "event_name": "Технофорум 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1636,7 +1636,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rusweld/",
       "event_name": "Rusweld 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1646,7 +1646,7 @@
     {
       "detail_url": "https://expomap.ru/expo/metalloobrabotka/",
       "event_name": "Металлообработка 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1656,7 +1656,7 @@
     {
       "detail_url": "https://expomap.ru/expo/goszakaz/",
       "event_name": "Госзаказ 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://forum-goszakaz.ru/",
@@ -1666,7 +1666,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bloshinyj-rynok-maj/",
       "event_name": "Блошиный рынок Май 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1676,7 +1676,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sport-sport-sport/",
       "event_name": "Спорт. Спорт. Спорт 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1686,7 +1686,7 @@
     {
       "detail_url": "https://expomap.ru/expo/konnaja/",
       "event_name": "КОННАЯ ВЕСНА 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://equinerussia.ru/",
@@ -1696,7 +1696,7 @@
     {
       "detail_url": "https://expomap.ru/expo/refcold-russia/",
       "event_name": "RefCold Russia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://holodexpo.ru/",
@@ -1706,7 +1706,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mjasnaja-promyshlennost-kurinyj-korol-industrija-holoda-dlja-apk-map-russia/2026/",
       "event_name": "Мясная промышленность, Куриный Король. Индустрия холода для АПК / MAP Russia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1716,7 +1716,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dorozhnoe-stroitelstvo/",
       "event_name": "Дорожное строительство 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1726,7 +1726,7 @@
     {
       "detail_url": "https://expomap.ru/expo/teplo-i-energetika-heat-electro/",
       "event_name": "Тепло и Энергетика | Heat & Electro 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.machinery-fair.ru/",
@@ -1736,7 +1736,7 @@
     {
       "detail_url": "https://expomap.ru/expo/vodexpo/",
       "event_name": "VODEXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1746,7 +1746,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mice-excellence-awards/",
       "event_name": "MICE Excellence Awards 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://mice-awards.com/#subscribe",
@@ -1756,7 +1756,7 @@
     {
       "detail_url": "https://expomap.ru/expo/russian-grill-fest/",
       "event_name": "Russian Grill Fest 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://russiangrillfest.ru",
@@ -1766,7 +1766,7 @@
     {
       "detail_url": "https://expomap.ru/expo/wire/2026/",
       "event_name": "WIRE 2026. Москва",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1776,7 +1776,7 @@
     {
       "detail_url": "https://expomap.ru/expo/metallurgija/",
       "event_name": "Металлургия. Литмаш 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1786,7 +1786,7 @@
     {
       "detail_url": "https://expomap.ru/expo/meditsinskaja-diagnostika/",
       "event_name": "Медицинская Диагностика 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.mediexpo.ru/calendar/forums/med-2026/index/",
@@ -1796,7 +1796,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mining-ctt/",
       "event_name": "MINING CTT 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1806,7 +1806,7 @@
     {
       "detail_url": "https://expomap.ru/expo/comvex/",
       "event_name": "COMvex 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1816,7 +1816,7 @@
     {
       "detail_url": "https://expomap.ru/expo/metallokonstruktsii/",
       "event_name": "Металлоконструкции 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1826,7 +1826,7 @@
     {
       "detail_url": "https://expomap.ru/expo/stt-expo/2026/",
       "event_name": "СТТ Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.ctt-expo.ru/",
@@ -1836,7 +1836,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ctt-expo/",
       "event_name": "CTT Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1846,7 +1846,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sto-expo/",
       "event_name": "СТО Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.cto-expo.ru/",
@@ -1856,17 +1856,17 @@
     {
       "detail_url": "https://expomap.ru/expo/logistika-expo/",
       "event_name": "Logistika Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
-      "extraction_status": "missing_on_detail_page",
+      "extracted_at": "2026-06-11T00:00:00Z",
+      "extraction_status": "found_in_detail_page",
       "http_status": 200,
-      "official_website_url": null,
+      "official_website_url": "https://logistika-expo.ru/",
       "ordinal": 186,
       "parser_version": "expomap-official-website-detail-v1.0.0"
     },
     {
       "detail_url": "https://expomap.ru/expo/cto-expo/",
       "event_name": "CTO Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1876,7 +1876,7 @@
     {
       "detail_url": "https://expomap.ru/expo/seller-fest/",
       "event_name": "SELLER FEST 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1886,7 +1886,7 @@
     {
       "detail_url": "https://expomap.ru/expo/nachalnaja-voennaja-podgotovka/",
       "event_name": "Начальная военная подготовка 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://nvpexpo.ru/",
@@ -1896,7 +1896,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ekipirovka/",
       "event_name": "Экипировка 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://equipexpo.ru/",
@@ -1906,7 +1906,7 @@
     {
       "detail_url": "https://expomap.ru/expo/arh-moskva/",
       "event_name": "АРХ Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.archmoscow.ru/",
@@ -1916,7 +1916,7 @@
     {
       "detail_url": "https://expomap.ru/expo/next-home/",
       "event_name": "Next Home 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://forum-nexthome.ru/?ysclid=miirwte46m91445796",
@@ -1926,7 +1926,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bee-together/",
       "event_name": "BEE-TOGETHER 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1936,7 +1936,7 @@
     {
       "detail_url": "https://expomap.ru/expo/helirussia/",
       "event_name": "HeliRussia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1946,7 +1946,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mipif-moskva/",
       "event_name": "MIPIF Москва. Июнь 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1956,7 +1956,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sakvoyazh/2026/jun/",
       "event_name": "Саквояж 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://sakvoyazhlife.ru/",
@@ -1966,7 +1966,7 @@
     {
       "detail_url": "https://expomap.ru/expo/electro-expo/",
       "event_name": "Electro expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1976,7 +1976,7 @@
     {
       "detail_url": "https://expomap.ru/expo/elektro/",
       "event_name": "ЭЛЕКТРО 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -1986,7 +1986,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rosmould-3d-tech-jun/2026/",
       "event_name": "Rosmould 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://rosmould.ru/",
@@ -1996,7 +1996,7 @@
     {
       "detail_url": "https://expomap.ru/expo/technotekstil-technokompozit-technopolimer/",
       "event_name": "Техтекстиль | Техкомпозит 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://tech-textile.ru/?ysclid=mgkoblrveu489153325",
@@ -2006,7 +2006,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rosplast/",
       "event_name": "Rosplast 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://rosplast-expo.ru/",
@@ -2016,7 +2016,7 @@
     {
       "detail_url": "https://expomap.ru/expo/3d-tech-by-rosmould/",
       "event_name": "3D-TECH by Rosmould 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://3dtech-expo.ru/",
@@ -2026,7 +2026,7 @@
     {
       "detail_url": "https://expomap.ru/expo/printech/",
       "event_name": "Printech 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2036,7 +2036,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rosmould-3d-tech/",
       "event_name": "Rosmould & 3D-TECH 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://rosmould.ru/",
@@ -2046,7 +2046,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rosupack/",
       "event_name": "RosUpack 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2056,7 +2056,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sptokrany/",
       "event_name": "СПТО.Краны 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.crane-expo.ru",
@@ -2066,7 +2066,7 @@
     {
       "detail_url": "https://expomap.ru/expo/moscow-yacht-show/",
       "event_name": "Moscow Yacht Show 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2076,7 +2076,7 @@
     {
       "detail_url": "https://expomap.ru/expo/wowbiz/",
       "event_name": "WOWBIZ 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://wowbiz.global/",
@@ -2086,7 +2086,7 @@
     {
       "detail_url": "https://expomap.ru/expo/reindustry-expo/2026/",
       "event_name": "ReIndustry Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://reindustry-expo.ru/",
@@ -2096,7 +2096,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ecom-expo/",
       "event_name": "ECOM Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2106,7 +2106,7 @@
     {
       "detail_url": "https://expomap.ru/expo/industrija-kamnja/",
       "event_name": "Индустрия Камня 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2116,7 +2116,7 @@
     {
       "detail_url": "https://expomap.ru/expo/wellbeing-expo/",
       "event_name": "WELLBEING EXPO Summer 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2126,7 +2126,7 @@
     {
       "detail_url": "https://expomap.ru/expo/suntree-oil-grain-expo/",
       "event_name": "SUNTREE 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2136,7 +2136,7 @@
     {
       "detail_url": "https://expomap.ru/expo/media-menedzher-rossii/",
       "event_name": "Медиа-Менеджер России 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.media-manager.ru/",
@@ -2146,7 +2146,7 @@
     {
       "detail_url": "https://expomap.ru/expo/epiccon-russia-moskva/",
       "event_name": "EpicCon Russia. Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://epiccon.ru/",
@@ -2156,7 +2156,7 @@
     {
       "detail_url": "https://expomap.ru/expo/open-village/",
       "event_name": "Open Village 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2166,7 +2166,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rft/2026/",
       "event_name": "RFT EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2176,7 +2176,7 @@
     {
       "detail_url": "https://expomap.ru/expo/den-polya-moskovskoj-oblasti/",
       "event_name": "День поля Московской области 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://pole50.ru/",
@@ -2186,7 +2186,7 @@
     {
       "detail_url": "https://expomap.ru/expo/interautomechanica/",
       "event_name": "InterAutoMechanica 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2196,7 +2196,7 @@
     {
       "detail_url": "https://expomap.ru/expo/interavtomehanika/",
       "event_name": "ИнтерАвтоМеханика 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2206,7 +2206,7 @@
     {
       "detail_url": "https://expomap.ru/expo/comautotrans/",
       "event_name": "ComAutoTrans 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2216,7 +2216,7 @@
     {
       "detail_url": "https://expomap.ru/expo/autobusexpo/",
       "event_name": "AutoBusExpo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2226,7 +2226,7 @@
     {
       "detail_url": "https://expomap.ru/expo/leshow-moskva/",
       "event_name": "LeShow Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2236,7 +2236,7 @@
     {
       "detail_url": "https://expomap.ru/expo/technologii-voennoj-meditsiny-i-reabilitatsii/",
       "event_name": "Технологии военной медицины и реабилитации 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://vphexpo.ru/",
@@ -2246,7 +2246,7 @@
     {
       "detail_url": "https://expomap.ru/expo/voenno-polevaja-hirurgija-i-reabilitatsija/",
       "event_name": "Военно-полевая хирургия и реабилитация. 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2256,7 +2256,7 @@
     {
       "detail_url": "https://expomap.ru/expo/avtoavtomehanika-moscow/",
       "event_name": "Авто+Автомеханика Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2266,7 +2266,7 @@
     {
       "detail_url": "https://expomap.ru/expo/china-machinery-fair/",
       "event_name": "China Machinery Fair 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2276,7 +2276,7 @@
     {
       "detail_url": "https://expomap.ru/expo/china-commodity-fair/",
       "event_name": "China Commodity Fair 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://en.icf-expo.ru",
@@ -2286,7 +2286,7 @@
     {
       "detail_url": "https://expomap.ru/expo/euro-shoes-premiere-collection/",
       "event_name": "Euro Shoes 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2296,7 +2296,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ipsa/",
       "event_name": "IPSA 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2306,7 +2306,7 @@
     {
       "detail_url": "https://expomap.ru/expo/home-estate-expo-vystavka-novostroek/",
       "event_name": "HOME ESTATE EXPO (Выставка новостроек) Лето 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://home-estate-expo.ru/",
@@ -2316,7 +2316,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cpm-collection-premiere-moscow/",
       "event_name": "CPM – Collection Première Moscow Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://cpm-moscow.com/?lang=ru/?erid=2VfnxyWEqvi",
@@ -2326,7 +2326,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dreams-by-cpm/",
       "event_name": "dreams by CPM Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://dreams-moscow.com/?lang=ru/?erid=2VfnxwmRgmG",
@@ -2336,7 +2336,7 @@
     {
       "detail_url": "https://expomap.ru/expo/otdyh-leisure/",
       "event_name": "ОТДЫХ Leisure 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://tourismexpo.ru/?erid=2VfnxxBd5eq",
@@ -2346,7 +2346,7 @@
     {
       "detail_url": "https://expomap.ru/expo/textile-salon/",
       "event_name": "Textile Salon Autumn 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://textile-salon.ru/",
@@ -2356,7 +2356,7 @@
     {
       "detail_url": "https://expomap.ru/expo/forum-dlya-proav-i-it-specialistov/2026/sep/",
       "event_name": "Форум для proAV- и IT-специалистов - Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.avclub.pro/event/avfocus26moskva/",
@@ -2366,7 +2366,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bani-expo/",
       "event_name": "БАНИ-ЭКСПО 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2376,7 +2376,7 @@
     {
       "detail_url": "https://expomap.ru/expo/flowersexpo-tsvetyexpo/",
       "event_name": "ЦветыЭкспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.flowers-expo.ru/",
@@ -2386,7 +2386,7 @@
     {
       "detail_url": "https://expomap.ru/expo/flowers-expo/",
       "event_name": "Flowers Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://www.flowers-expo.ru",
@@ -2396,7 +2396,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ekvatek/",
       "event_name": "ЭкваТэк 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2406,7 +2406,7 @@
     {
       "detail_url": "https://expomap.ru/expo/vejsttek/",
       "event_name": "ВэйстТэк 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2416,7 +2416,7 @@
     {
       "detail_url": "https://expomap.ru/expo/household-expo/",
       "event_name": "HouseHold Expo. Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2426,7 +2426,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sititerm/",
       "event_name": "СитиТерм 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2436,7 +2436,7 @@
     {
       "detail_url": "https://expomap.ru/expo/re-waste/",
       "event_name": "[Re] Waste 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2446,7 +2446,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sekrety-otelera-moskva/",
       "event_name": "Секреты отельера. Москва 2025",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://hoteliersecret.pro/moscow",
@@ -2456,7 +2456,7 @@
     {
       "detail_url": "https://expomap.ru/expo/sitipajp/",
       "event_name": "СитиПайп 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://ecwatech.ru/citypipe",
@@ -2466,7 +2466,7 @@
     {
       "detail_url": "https://expomap.ru/expo/no-dig-moskva/",
       "event_name": "No-Dig Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://ecwatech.ru/nodig",
@@ -2476,7 +2476,7 @@
     {
       "detail_url": "https://expomap.ru/expo/worldfood-moscow/",
       "event_name": "WorldFood Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://expoworldfood.com/?erid=2VfnxyRv47s",
@@ -2486,7 +2486,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cemat-russia/",
       "event_name": "CeMAT RUSSIA 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2496,7 +2496,7 @@
     {
       "detail_url": "https://expomap.ru/expo/tekstillegprom/",
       "event_name": "Текстильлегпром Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://textilexpo.ru/",
@@ -2506,7 +2506,7 @@
     {
       "detail_url": "https://expomap.ru/expo/light-audio-tec/",
       "event_name": "Light + Audio Tec 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2516,7 +2516,7 @@
     {
       "detail_url": "https://expomap.ru/expo/teploenergetika-rossii-stroitelstvo-i-modernizatsija-stantsij/",
       "event_name": "Теплоэнергетика России: строительство и модернизация станций 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.thermalpowerrussia.ru/?utm_source=expomap",
@@ -2526,7 +2526,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mir-detstva/",
       "event_name": "Мир детства 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2536,7 +2536,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cjf-detskaja-moda/",
       "event_name": "CJF – Детская мода. Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2546,7 +2546,7 @@
     {
       "detail_url": "https://expomap.ru/expo/termoobrabotka/",
       "event_name": "Термообработка 2025",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2556,7 +2556,7 @@
     {
       "detail_url": "https://expomap.ru/expo/design/",
       "event_name": "Design+ Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://design-plus.ru/",
@@ -2566,7 +2566,7 @@
     {
       "detail_url": "https://expomap.ru/expo/homefest/",
       "event_name": "HomeFest Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://homefest.ru/",
@@ -2576,7 +2576,7 @@
     {
       "detail_url": "https://expomap.ru/expo/dental-expo-the-60th-moscow-international-dental-forum-exhibition/",
       "event_name": "Dental-Expo The 60th Moscow International Dental Forum & Exhibition 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://en.dental-expo.com/dental-expo-en",
@@ -2586,7 +2586,7 @@
     {
       "detail_url": "https://expomap.ru/expo/hometextile-design/",
       "event_name": "Hometextile & Design 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2596,7 +2596,7 @@
     {
       "detail_url": "https://expomap.ru/expo/parkzoo/",
       "event_name": "ПаркЗоо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.parkzoo.ru/",
@@ -2606,7 +2606,7 @@
     {
       "detail_url": "https://expomap.ru/expo/junwex-moskva/",
       "event_name": "Junwex Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2616,7 +2616,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mir-ohoty-i-rybalki/2026/sep/",
       "event_name": "МИР Охоты и Рыбалки. Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.huntfishexpo.ru/",
@@ -2626,7 +2626,7 @@
     {
       "detail_url": "https://expomap.ru/expo/muzhskoe-zdorove-i-dolgoletie/",
       "event_name": "Мужское здоровье и долголетие 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://qlm-expo.ru/",
@@ -2636,7 +2636,7 @@
     {
       "detail_url": "https://expomap.ru/expo/eco-beauty-expo/",
       "event_name": "Eco Beauty Expo Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://eco-beauty-expo.ru/?ysclid=mpfcu5eekb658205766",
@@ -2646,7 +2646,7 @@
     {
       "detail_url": "https://expomap.ru/expo/makeup-expo/",
       "event_name": "MAKEUP EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://makeup-expo.ru/?utm_source=expomap",
@@ -2656,7 +2656,7 @@
     {
       "detail_url": "https://expomap.ru/expo/healthy-hair-expo/",
       "event_name": "HEALTHY HAIR EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://healthy-hair-expo.ru/?utm_source=expomap",
@@ -2666,7 +2666,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zozh-expo/",
       "event_name": "ЗОЖ-Экспо Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://zozhexpo.ru/",
@@ -2676,7 +2676,7 @@
     {
       "detail_url": "https://expomap.ru/expo/agroprodmash/",
       "event_name": "Агропродмаш 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.agroprodmash-expo.ru/",
@@ -2686,7 +2686,7 @@
     {
       "detail_url": "https://expomap.ru/expo/apteka/",
       "event_name": "АПТЕКА 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://aptekaexpo.ru/?erid=2VfnxveUQbj",
@@ -2696,7 +2696,7 @@
     {
       "detail_url": "https://expomap.ru/expo/citybus/",
       "event_name": "CityBus 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://citybus-expo.ru/",
@@ -2706,7 +2706,7 @@
     {
       "detail_url": "https://expomap.ru/expo/buybrand-expo/",
       "event_name": "BUYBRAND 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2716,7 +2716,7 @@
     {
       "detail_url": "https://expomap.ru/expo/versous/",
       "event_name": "VerSous 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2726,7 +2726,7 @@
     {
       "detail_url": "https://expomap.ru/expo/elektronika-transport/",
       "event_name": "Электроника-Транспорт 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://e-transport.ru/",
@@ -2736,7 +2736,7 @@
     {
       "detail_url": "https://expomap.ru/expo/intertkan/",
       "event_name": "Интерткань Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://intertkan.ru/",
@@ -2746,7 +2746,7 @@
     {
       "detail_url": "https://expomap.ru/expo/elektrotrans/",
       "event_name": "ЭлектроТранс 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://electrotrans-expo.ru/",
@@ -2756,7 +2756,7 @@
     {
       "detail_url": "https://expomap.ru/expo/transportlight/",
       "event_name": "TransportLight 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://transport-light.ru/about",
@@ -2766,7 +2766,7 @@
     {
       "detail_url": "https://expomap.ru/expo/tsement-beton-suhie-smesi/",
       "event_name": "Цемент. Бетон. Сухие смеси 2025",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://infocem.info/",
@@ -2776,7 +2776,7 @@
     {
       "detail_url": "https://expomap.ru/expo/universe-ecom-convention-globalnaya-cifrovaya-transformaciya-budushego/2026/",
       "event_name": "UNIVERSE ECOM CONVENTION 2026 I Глобальная цифровая трансформация будущего",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://universeecomconvention.ru",
@@ -2786,7 +2786,7 @@
     {
       "detail_url": "https://expomap.ru/expo/iskusstvo-kukly/",
       "event_name": "Искусство куклы 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://xn--b1algbagsvbaljg8i.xn--p1ai/",
@@ -2796,7 +2796,7 @@
     {
       "detail_url": "https://expomap.ru/expo/bal-kukol-moskva/",
       "event_name": "Бал Кукол Москва Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2806,7 +2806,7 @@
     {
       "detail_url": "https://expomap.ru/expo/agrosalon/2026/oct/",
       "event_name": "Agrosalon 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.agrosalon.ru/",
@@ -2816,7 +2816,7 @@
     {
       "detail_url": "https://expomap.ru/expo/fastenex/",
       "event_name": "Fastenex 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2826,7 +2826,7 @@
     {
       "detail_url": "https://expomap.ru/expo/nmf-expo/",
       "event_name": "NMF EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2836,7 +2836,7 @@
     {
       "detail_url": "https://expomap.ru/expo/agrosalon/",
       "event_name": "Агросалон 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2846,7 +2846,7 @@
     {
       "detail_url": "https://expomap.ru/expo/weldex/",
       "event_name": "Weldex 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2856,7 +2856,7 @@
     {
       "detail_url": "https://expomap.ru/expo/russkij-dom-kreativnye-regiony/",
       "event_name": "Русский дом. Креативные регионы 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://rdmoscow.ru/?utm_source=tgexpomap",
@@ -2866,7 +2866,7 @@
     {
       "detail_url": "https://expomap.ru/expo/jarmarka-uk/",
       "event_name": "Ярмарка УК Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2876,7 +2876,7 @@
     {
       "detail_url": "https://expomap.ru/expo/edtech-expo/",
       "event_name": "EDTECH EXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.edtechexpo.ru/",
@@ -2886,7 +2886,7 @@
     {
       "detail_url": "https://expomap.ru/expo/konnaja-rossija/",
       "event_name": "Конная Россия 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://equinerussia.ru/",
@@ -2896,7 +2896,7 @@
     {
       "detail_url": "https://expomap.ru/expo/obuv-mir-kozhi-osen1777362553.5382404temporary/2026/oct/",
       "event_name": "Обувь. Мир кожи 2026. Осень",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2906,7 +2906,7 @@
     {
       "detail_url": "https://expomap.ru/expo/intercharm/",
       "event_name": "InterCHARM 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2916,7 +2916,7 @@
     {
       "detail_url": "https://expomap.ru/expo/ndt-russia/",
       "event_name": "NDT Russia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.ndt-russia.ru/ru-RU/",
@@ -2926,7 +2926,7 @@
     {
       "detail_url": "https://expomap.ru/expo/expocoating-moscow/",
       "event_name": "ExpoCoating Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2936,7 +2936,7 @@
     {
       "detail_url": "https://expomap.ru/expo/testingcontrol/",
       "event_name": "Testing&Control 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2946,7 +2946,7 @@
     {
       "detail_url": "https://expomap.ru/expo/actuators-engines/",
       "event_name": "Actuators & Engines 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://www.pcvexpo.ru/en-GB",
@@ -2956,7 +2956,7 @@
     {
       "detail_url": "https://expomap.ru/expo/fasttec/",
       "event_name": "FastTec 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2966,7 +2966,7 @@
     {
       "detail_url": "https://expomap.ru/expo/gassuf/",
       "event_name": "GasSuf 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.gassuf.ru/ru-RU/",
@@ -2976,7 +2976,7 @@
     {
       "detail_url": "https://expomap.ru/expo/aerospace-testing-russia-industrial-testing-control/",
       "event_name": "Aerospace Testing Russia / Industrial Testing & Control 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://www.testing-control.ru/en-GB",
@@ -2986,7 +2986,7 @@
     {
       "detail_url": "https://expomap.ru/expo/heatpower/",
       "event_name": "Heat&Power 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -2996,7 +2996,7 @@
     {
       "detail_url": "https://expomap.ru/expo/pcvexpo/",
       "event_name": "PCVExpo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3006,7 +3006,7 @@
     {
       "detail_url": "https://expomap.ru/expo/diagnopolis/",
       "event_name": "Диагнополис 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://congress.fedlab.ru/exhibition/about/",
@@ -3016,7 +3016,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rappa-expo/",
       "event_name": "РАППА Экспо Осень 2025",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://raapa-expo.ru/",
@@ -3026,7 +3026,7 @@
     {
       "detail_url": "https://expomap.ru/expo/vodolej/",
       "event_name": "Водолей 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3036,7 +3036,7 @@
     {
       "detail_url": "https://expomap.ru/expo/orelexpo/2026/oct/",
       "event_name": "ОРЁЛЭКСПО (ORЁLEXPO) 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3046,7 +3046,7 @@
     {
       "detail_url": "https://expomap.ru/expo/orelexpo/",
       "event_name": "ORЁLEXPO 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3056,7 +3056,7 @@
     {
       "detail_url": "https://expomap.ru/expo/international-exhibition-pir-expo/",
       "event_name": "International Exhibition Pir Expo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://pirexpo.com/en",
@@ -3066,7 +3066,7 @@
     {
       "detail_url": "https://expomap.ru/expo/pir-expo/",
       "event_name": "ПИР Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://pirexpo.com/contacts",
@@ -3076,7 +3076,7 @@
     {
       "detail_url": "https://expomap.ru/expo/reklama/2026/",
       "event_name": "Реклама 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.reklama-expo.ru/?utm_source=Partners&utm_medium=referral&utm_campaign=expomap.ru_imidz_page",
@@ -3086,7 +3086,7 @@
     {
       "detail_url": "https://expomap.ru/expo/kormvetgrejn/2026/oct/",
       "event_name": "КормВетГрейн 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3096,7 +3096,7 @@
     {
       "detail_url": "https://expomap.ru/expo/interlight-smart-city-home-russia/",
       "event_name": "INTERLIGHT | SMART CITY & HOME Russia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.interlight-building.ru/",
@@ -3106,7 +3106,7 @@
     {
       "detail_url": "https://expomap.ru/expo/rimtos/",
       "event_name": "RIMTOS 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://rimtos.ru/",
@@ -3116,7 +3116,7 @@
     {
       "detail_url": "https://expomap.ru/expo/city-build-russia-moscow/",
       "event_name": "City Build Russia Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://citybuildrussia.tilda.ws/",
@@ -3126,7 +3126,7 @@
     {
       "detail_url": "https://expomap.ru/expo/beautiful-houses/",
       "event_name": "Beautiful Houses 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "http://www.weg.ru/en",
@@ -3136,7 +3136,7 @@
     {
       "detail_url": "https://expomap.ru/expo/klinok-v-moskve/",
       "event_name": "Клинок в Москве. Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3146,7 +3146,7 @@
     {
       "detail_url": "https://expomap.ru/expo/himija/",
       "event_name": "Химия 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3156,7 +3156,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zelenaja-himija/",
       "event_name": "Зеленая химия 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3166,7 +3166,7 @@
     {
       "detail_url": "https://expomap.ru/expo/lift-expo-russia/",
       "event_name": "Lift Expo. Москва 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3176,7 +3176,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mir-klimata/",
       "event_name": "Мир Климата",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3186,7 +3186,7 @@
     {
       "detail_url": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
       "event_name": "Global Fresh Market: Vegetables&Fruits 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://mosexpo.su/global-fresh-market/",
@@ -3196,7 +3196,7 @@
     {
       "detail_url": "https://expomap.ru/expo/parking-russia/",
       "event_name": "Parking Russia 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://parking-expo.ru/ru-RU/",
@@ -3206,7 +3206,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mitex-park/",
       "event_name": "MITEX Парк 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3216,7 +3216,7 @@
     {
       "detail_url": "https://expomap.ru/expo/utilicon/",
       "event_name": "UtiliCon 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3226,7 +3226,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mitex/",
       "event_name": "MITEX 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3236,7 +3236,7 @@
     {
       "detail_url": "https://expomap.ru/expo/vezdehoder/",
       "event_name": "Вездеходер 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://vezdehoder.ru/?ysclid=mimwdpol3t901117147",
@@ -3246,7 +3246,7 @@
     {
       "detail_url": "https://expomap.ru/expo/lodki-expo/",
       "event_name": "Лодки Экспо 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://lodkiexpo.ru/",
@@ -3256,7 +3256,7 @@
     {
       "detail_url": "https://expomap.ru/expo/moskovskoe-avtoshou/",
       "event_name": "Московское Автошоу 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://autoshow.moscow",
@@ -3266,7 +3266,7 @@
     {
       "detail_url": "https://expomap.ru/expo/poehali/",
       "event_name": "Поехали 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://poehaliexpo.ru/",
@@ -3276,7 +3276,7 @@
     {
       "detail_url": "https://expomap.ru/expo/cleanexpo-moscow/",
       "event_name": "CleanExpo Moscow 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3286,7 +3286,7 @@
     {
       "detail_url": "https://expomap.ru/expo/biot/2026/",
       "event_name": "БИОТ 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://biot-expo.ru/",
@@ -3296,7 +3296,7 @@
     {
       "detail_url": "https://expomap.ru/expo/arka/2026/nov/",
       "event_name": "АРКА 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://vdnh.ru/arca/",
@@ -3306,7 +3306,7 @@
     {
       "detail_url": "https://expomap.ru/expo/psycoach-expo/2026/nov/",
       "event_name": "PSYCOACH EXPO Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://psycoach-expo.ru/",
@@ -3316,7 +3316,7 @@
     {
       "detail_url": "https://expomap.ru/expo/mebel/",
       "event_name": "Мебель 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3326,7 +3326,7 @@
     {
       "detail_url": "https://expomap.ru/expo/pharmtech-ingredients/",
       "event_name": "Pharmtech & Ingredients 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3336,7 +3336,7 @@
     {
       "detail_url": "https://expomap.ru/expo/elektronika-rossii/",
       "event_name": "Электроника России 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3346,7 +3346,7 @@
     {
       "detail_url": "https://expomap.ru/expo/arsenal/",
       "event_name": "Арсенал. Осень 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://arsenalexpo.ru/?ysclid=mp5rsg8boc755450552",
@@ -3356,7 +3356,7 @@
     {
       "detail_url": "https://expomap.ru/expo/toolmash/",
       "event_name": "ToolMash 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://toolmash.ru/",
@@ -3366,7 +3366,7 @@
     {
       "detail_url": "https://expomap.ru/expo/woodex/",
       "event_name": "Woodex 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://woodexpo.ru/ru/",
@@ -3376,7 +3376,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zdravoohranenie/",
       "event_name": "Здравоохранение 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3386,7 +3386,7 @@
     {
       "detail_url": "https://expomap.ru/expo/zdorovyj-obraz-zhizni/",
       "event_name": "Здоровый образ жизни 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "missing_on_detail_page",
       "http_status": 200,
       "official_website_url": null,
@@ -3397,7 +3397,7 @@
       "detail_url": "https://expomap.ru/expo/medtravelexpo/",
       "error": "TooManyRedirects",
       "event_name": "MedTravelExpo 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "fetch_error",
       "http_status": null,
       "official_website_url": null,
@@ -3407,7 +3407,7 @@
     {
       "detail_url": "https://expomap.ru/expo/promediatech/",
       "event_name": "ProMediaTech 2026",
-      "extracted_at": "2026-06-09T05:28:46Z",
+      "extracted_at": "2026-06-11T00:00:00Z",
       "extraction_status": "found_in_detail_page",
       "http_status": 200,
       "official_website_url": "https://www.pmtf.ru/pmtf/visiteur/benefits.php?utm_source=expomap",
@@ -3415,14 +3415,14 @@
       "parser_version": "expomap-official-website-detail-v1.0.0"
     }
   ],
-  "generated_at": "2026-06-09T05:28:46Z",
-  "official_website_found_count": 142,
-  "official_website_missing_count": 199,
+  "generated_at": "2026-06-11T00:00:00Z",
+  "official_website_found_count": 143,
+  "official_website_missing_count": 198,
   "parser_version": "expomap-official-website-detail-v1.0.0",
   "status_counts": {
     "fetch_error": 2,
-    "found_in_detail_page": 142,
-    "missing_on_detail_page": 197
+    "found_in_detail_page": 143,
+    "missing_on_detail_page": 196
   },
   "total_events": 341
 }

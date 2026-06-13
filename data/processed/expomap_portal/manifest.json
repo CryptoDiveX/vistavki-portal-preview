@@ -2,6 +2,8 @@
   "data_package_version": "expomap-portal-package-v1.1.0",
   "dataset": {
     "api_reported_count": 347,
+    "contact_only_files_count": 2,
+    "contact_workbooks_count": 5,
     "count_exception": {
       "accessible_events": 341,
       "api_reported_count": 347,
@@ -14,7 +16,9 @@
     "event_count": 341,
     "name": "Expomap Moscow exhibitions 2026",
     "qa_verdict": "PASS_WITH_DOCUMENTED_API_COUNT_EXCEPTION",
-    "scope": "city=moscow; event_type=expo; date=2026-01-01:2026-12-31"
+    "related_files_count": 3,
+    "scope": "city=moscow; event_type=expo; date=2026-01-01:2026-12-31",
+    "unmatched_or_ambiguous_uploaded_files_count": 2
   },
   "export_action": {
     "label": "Export all exhibitions",
@@ -25,15 +29,18 @@
     ]
   },
   "files": {
+    "contact_workbook_coverage_audit_csv": "contact_workbook_coverage_audit.csv",
+    "contact_workbook_coverage_audit_json": "contact_workbook_coverage_audit.json",
     "dashboard_summary_json": "dashboard_summary.json",
     "events_json": "events.json",
     "official_website_audit_json": "official_website_audit.json",
     "public_csv_export": "exports/expomap_moscow_expo_2026_public_events.csv",
     "public_xlsx_export": "exports/expomap_moscow_expo_2026_public_events.xlsx",
     "public_xlsx_export_created": true,
+    "uploaded_workbook_mapping_json": "uploaded_workbook_mapping.json",
     "validation_report_json": "validation_report.json"
   },
-  "generated_at": "2026-06-09T05:28:46Z",
+  "generated_at": "2026-06-11T00:00:00Z",
   "safety": {
     "contains_credentials_or_tokens": false,
     "contains_crm_customer_data": false,

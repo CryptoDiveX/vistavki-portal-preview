@@ -1,0 +1,683 @@
+{
+  "data_package_version": "vistavki-files-package-v1.1.0",
+  "generated_at": "2026-06-11T00:00:00Z",
+  "dataset": {
+    "name": "SignoGroup parsed Vistavki/exhibitor workbook downloads",
+    "row_count": 5,
+    "total_source_rows": 4148,
+    "total_cleaned_rows": 2181,
+    "scope": "Previously parsed Vistavki/exhibitor XLSX workbooks prepared as clickable portal downloads, separate from OKVED downloads."
+  },
+  "files": {
+    "manifest_json": "manifest.json",
+    "vistavki_files_json": "vistavki_files.json",
+    "vistavki_files_csv": "vistavki_files.csv",
+    "downloads_dir": "downloads/",
+    "workbook_safety_audit_json": "workbook_safety_audit.json"
+  },
+  "columns_supported": [
+    "display_name",
+    "event_name",
+    "file_type",
+    "main_sheet",
+    "selected_sheet",
+    "total_source_rows",
+    "cleaned_rows",
+    "selected_sheet_rows",
+    "selected_sheet_nonempty_rows",
+    "download_href",
+    "source_filename",
+    "generated_at",
+    "audit_note"
+  ],
+  "rows": [
+    {
+      "id": "vistavki-file-01",
+      "display_name": "AGRAVIA_processed.xlsx",
+      "event_name": "AGRAVIA",
+      "file_type": "xlsx",
+      "main_sheet": "Scraped",
+      "selected_sheet": "Cleaned",
+      "selected_sheet_reason": "Explicit cleaned exhibitor sheet is preferred for the portal download table; raw scraped sheet remains in the workbook inventory.",
+      "total_source_rows": 570,
+      "cleaned_rows": 340,
+      "removed_rows": null,
+      "selected_sheet_rows": 340,
+      "selected_sheet_nonempty_rows": 340,
+      "download_href": "downloads/agravia-processed-public.xlsx",
+      "source_filename": "AGRAVIA_processed.xlsx",
+      "download_filename": "agravia-processed-public.xlsx",
+      "generated_at": "2026-06-11T00:00:00Z",
+      "audit_note": "Observed inventory from upload handoff: Scraped=570 data rows; Cleaned=340 data rows. Main/source sheet 'Scraped' observed rows: 570. Selected sheet 'Cleaned' observed rows: 340; non-empty rows by audit: 340. Workbook public copy is rebuilt/sanitized for public download; private local path metadata and external workbook connections are removed.",
+      "source_inventory": {
+        "type": "xlsx",
+        "sheets": [
+          {
+            "sheet_name": "Scraped",
+            "max_row_dimension": 571,
+            "max_column_dimension": 17,
+            "dimension_data_rows": 570,
+            "nonempty_data_rows": 570,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Name",
+              "Country",
+              "Description",
+              "Full Name",
+              "Address",
+              "Website",
+              "Email",
+              "Phone",
+              "URL",
+              "Products",
+              "Company Name",
+              "Производитель / Поставщик Услуг"
+            ],
+            "observed_data_rows": 570
+          },
+          {
+            "sheet_name": "Cleaned",
+            "max_row_dimension": 341,
+            "max_column_dimension": 17,
+            "dimension_data_rows": 340,
+            "nonempty_data_rows": 340,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Name",
+              "Country",
+              "Description",
+              "Full Name",
+              "Address",
+              "Website",
+              "Email",
+              "Phone",
+              "URL",
+              "Products",
+              "Company Name",
+              "Производитель / Поставщик Услуг"
+            ],
+            "observed_data_rows": 340
+          }
+        ]
+      },
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "ade85a060f06e42e4bdbc8e5a7833dbd7ffc8f848dd12e9f8b028aa1587050ea",
+        "download_sha256": "557f6b9f700fdbd087378fd85a31e8e7acd490c8612d6b99595c0ff628e592ba",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 508139
+      },
+      "ambiguity_note": "",
+      "workbook_safety": {
+        "sanitization_mode": "openpyxl_rebuilt_public_copy",
+        "input_scan": {
+          "status": "fail",
+          "private_path_hit_parts": [
+            "xl/workbook.xml"
+          ],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {
+            "xl/workbook.xml": 4
+          },
+          "unsafe_part_count": 1
+        },
+        "output_scan": {
+          "status": "pass",
+          "private_path_hit_parts": [],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {},
+          "unsafe_part_count": 0
+        },
+        "dropped_workbook_internals": [
+          "xl/workbook.xml"
+        ],
+        "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped."
+      }
+    },
+    {
+      "id": "vistavki-file-02",
+      "display_name": "Vistavka Zdorovie DEC 2025.xlsx",
+      "event_name": "Vistavka Zdorovie DEC 2025",
+      "file_type": "xlsx",
+      "main_sheet": "ZOZH 2025",
+      "selected_sheet": "Cleaned",
+      "selected_sheet_reason": "Explicit cleaned sheet is preferred; ZOZH 2025 and All - Zdorovie 2025 remain available inside the workbook.",
+      "total_source_rows": 999,
+      "cleaned_rows": 476,
+      "removed_rows": null,
+      "selected_sheet_rows": 476,
+      "selected_sheet_nonempty_rows": 425,
+      "download_href": "downloads/vistavka-zdorovie-dec-2025-public.xlsx",
+      "source_filename": "Vistavka Zdorovie DEC 2025.xlsx",
+      "download_filename": "vistavka-zdorovie-dec-2025-public.xlsx",
+      "generated_at": "2026-06-11T00:00:00Z",
+      "audit_note": "Observed inventory from upload handoff: ZOZH 2025=999 data rows; All - Zdorovie 2025=517; Cleaned=476. Main/source sheet 'ZOZH 2025' observed rows: 999. Selected sheet 'Cleaned' observed rows: 476; non-empty rows by audit: 425. Workbook public copy is rebuilt/sanitized for public download; private local path metadata and external workbook connections are removed. The selected Cleaned worksheet has blank rows inside the worksheet dimension; product-facing count follows the observed inventory (476), while non-empty-row audit is recorded separately.",
+      "source_inventory": {
+        "type": "xlsx",
+        "sheets": [
+          {
+            "sheet_name": "ZOZH 2025",
+            "max_row_dimension": 1000,
+            "max_column_dimension": 15,
+            "dimension_data_rows": 999,
+            "nonempty_data_rows": 132,
+            "blank_rows_inside_dimension_excluding_header": 867,
+            "first_nonempty_row_preview": [
+              "Компания",
+              "Стенд",
+              "Страна",
+              "Город",
+              "Адрес",
+              "Сайт",
+              "E-mail",
+              "Описание",
+              "Рубрики",
+              "Производитель / Поставщик Услуг",
+              "Проверка",
+              "Продукция"
+            ],
+            "observed_data_rows": 999,
+            "observed_vs_nonempty_note": "Observed inventory count is 999, while openpyxl sees 132 non-empty data rows and 867 blank rows inside dimension."
+          },
+          {
+            "sheet_name": "All - Zdorovie 2025",
+            "max_row_dimension": 518,
+            "max_column_dimension": 15,
+            "dimension_data_rows": 517,
+            "nonempty_data_rows": 517,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Компания",
+              "Стенд",
+              "Страна",
+              "Город",
+              "Адрес",
+              "Сайт",
+              "E-mail",
+              "Описание",
+              "Рубрики",
+              "Производитель / Поставщик Услуг",
+              "Проверка",
+              "Продукция"
+            ],
+            "observed_data_rows": 517
+          },
+          {
+            "sheet_name": "Cleaned",
+            "max_row_dimension": 477,
+            "max_column_dimension": 15,
+            "dimension_data_rows": 476,
+            "nonempty_data_rows": 425,
+            "blank_rows_inside_dimension_excluding_header": 51,
+            "first_nonempty_row_preview": [
+              "Компания",
+              "Стенд",
+              "Страна",
+              "Город",
+              "Адрес",
+              "Сайт",
+              "E-mail",
+              "Описание",
+              "Рубрики",
+              "Производитель / Поставщик Услуг",
+              "Проверка",
+              "Продукция"
+            ],
+            "observed_data_rows": 476,
+            "observed_vs_nonempty_note": "Observed inventory count is 476, while openpyxl sees 425 non-empty data rows and 51 blank rows inside dimension."
+          },
+          {
+            "sheet_name": "Prompt",
+            "max_row_dimension": 21,
+            "max_column_dimension": 2,
+            "dimension_data_rows": 20,
+            "nonempty_data_rows": 7,
+            "blank_rows_inside_dimension_excluding_header": 12,
+            "first_nonempty_row_preview": [
+              "",
+              "Prompt"
+            ]
+          }
+        ]
+      },
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "c3195f5d12c116006161385e43149300e5793c871a311fed6b75ae56c7977e61",
+        "download_sha256": "819abd521e1ee9445530a6ddaba44df1de487293a6b4abfcc825f1af1e5d1e90",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 384651
+      },
+      "ambiguity_note": "The selected Cleaned worksheet has blank rows inside the worksheet dimension; product-facing count follows the observed inventory (476), while non-empty-row audit is recorded separately.",
+      "workbook_safety": {
+        "sanitization_mode": "openpyxl_rebuilt_public_copy",
+        "input_scan": {
+          "status": "fail",
+          "private_path_hit_parts": [
+            "xl/workbook.xml"
+          ],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {
+            "xl/workbook.xml": 4
+          },
+          "unsafe_part_count": 1
+        },
+        "output_scan": {
+          "status": "pass",
+          "private_path_hit_parts": [],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {},
+          "unsafe_part_count": 0
+        },
+        "dropped_workbook_internals": [
+          "xl/workbook.xml"
+        ],
+        "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped."
+      }
+    },
+    {
+      "id": "vistavki-file-03",
+      "display_name": "ShinyGotovo.xlsx",
+      "event_name": "Shiny / Tires parsed exhibitors",
+      "file_type": "xlsx",
+      "main_sheet": "Combined",
+      "selected_sheet": "Cleaned",
+      "selected_sheet_reason": "Explicit cleaned sheet is preferred; Combined and Removed remain available inside the workbook.",
+      "total_source_rows": 458,
+      "cleaned_rows": 166,
+      "removed_rows": 106,
+      "selected_sheet_rows": 166,
+      "selected_sheet_nonempty_rows": 166,
+      "download_href": "downloads/shinygotovo-public.xlsx",
+      "source_filename": "ShinyGotovo.xlsx",
+      "download_filename": "shinygotovo-public.xlsx",
+      "generated_at": "2026-06-11T00:00:00Z",
+      "audit_note": "Observed inventory from upload handoff: Combined=458 data rows; Cleaned=166; Removed=106. Main/source sheet 'Combined' observed rows: 458. Selected sheet 'Cleaned' observed rows: 166; non-empty rows by audit: 166. Workbook public copy is rebuilt/sanitized for public download; private local path metadata and external workbook connections are removed.",
+      "source_inventory": {
+        "type": "xlsx",
+        "sheets": [
+          {
+            "sheet_name": "Combined",
+            "max_row_dimension": 459,
+            "max_column_dimension": 14,
+            "dimension_data_rows": 458,
+            "nonempty_data_rows": 458,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Exhibition",
+              "Company",
+              "Email",
+              "Website",
+              "Country",
+              "City",
+              "Stand",
+              "Description",
+              "Address",
+              "Pavilion/Hall",
+              "Categories",
+              "Phone"
+            ],
+            "observed_data_rows": 458
+          },
+          {
+            "sheet_name": "Cleaned",
+            "max_row_dimension": 167,
+            "max_column_dimension": 14,
+            "dimension_data_rows": 166,
+            "nonempty_data_rows": 166,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Exhibition",
+              "Company",
+              "Processed Name",
+              "Email",
+              "Website",
+              "Country",
+              "City",
+              "Stand",
+              "Description",
+              "Address",
+              "Pavilion/Hall",
+              "Categories"
+            ],
+            "observed_data_rows": 166
+          },
+          {
+            "sheet_name": "Removed",
+            "max_row_dimension": 107,
+            "max_column_dimension": 14,
+            "dimension_data_rows": 106,
+            "nonempty_data_rows": 106,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Exhibition",
+              "Company",
+              "Email",
+              "Website",
+              "Country",
+              "City",
+              "Stand",
+              "Description",
+              "Address",
+              "Pavilion/Hall",
+              "Categories",
+              "Phone"
+            ],
+            "observed_data_rows": 106
+          }
+        ]
+      },
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "375a1ede29eabfd9c538b56a93265e4fd478b6d652339e44ffbc0f471edb64a2",
+        "download_sha256": "0a327ee049366691937e19b375f7fd2ae90a1e9b0cc033aaa74689c15a5b69aa",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 182151
+      },
+      "ambiguity_note": "",
+      "workbook_safety": {
+        "sanitization_mode": "openpyxl_rebuilt_public_copy",
+        "input_scan": {
+          "status": "pass",
+          "private_path_hit_parts": [],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {},
+          "unsafe_part_count": 0
+        },
+        "output_scan": {
+          "status": "pass",
+          "private_path_hit_parts": [],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {},
+          "unsafe_part_count": 0
+        },
+        "dropped_workbook_internals": [],
+        "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped."
+      }
+    },
+    {
+      "id": "vistavki-file-04",
+      "display_name": "Prodexpo-2026.xlsx",
+      "event_name": "Prodexpo 2026",
+      "file_type": "xlsx",
+      "main_sheet": "All",
+      "selected_sheet": "Cleaned - no All with AI",
+      "selected_sheet_reason": "Most curated cleaned sheet with AI enrichment is preferred; raw All, Russia, and intermediate cleaned sheets remain available inside the workbook.",
+      "total_source_rows": 1982,
+      "cleaned_rows": 1069,
+      "removed_rows": null,
+      "selected_sheet_rows": 1069,
+      "selected_sheet_nonempty_rows": 1069,
+      "download_href": "downloads/prodexpo-2026-public.xlsx",
+      "source_filename": "Prodexpo-2026.xlsx",
+      "download_filename": "prodexpo-2026-public.xlsx",
+      "generated_at": "2026-06-11T00:00:00Z",
+      "audit_note": "Observed inventory from upload handoff: All=1982 data rows; Russia=1422; Cleaned - no All=1273; Cleaned - no All with AI=1069. Main/source sheet 'All' observed rows: 1982. Selected sheet 'Cleaned - no All with AI' observed rows: 1069; non-empty rows by audit: 1069. Workbook public copy is rebuilt/sanitized for public download; private local path metadata and external workbook connections are removed. The Russia worksheet has a very large formatted dimension; product-facing counts follow observed inventory/non-empty source audit rather than the formatted worksheet dimension.",
+      "source_inventory": {
+        "type": "xlsx",
+        "sheets": [
+          {
+            "sheet_name": "All",
+            "max_row_dimension": 1983,
+            "max_column_dimension": 12,
+            "dimension_data_rows": 1982,
+            "nonempty_data_rows": 1982,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Компания",
+              "Павильон/Зал",
+              "Стенд",
+              "Страна",
+              "Город",
+              "Адрес",
+              "Сайт",
+              "E-mail",
+              "Описание",
+              "Рубрики",
+              "Конференция",
+              "Вебсайт"
+            ],
+            "observed_data_rows": 1982
+          },
+          {
+            "sheet_name": "Russia",
+            "max_row_dimension": 1423,
+            "max_column_dimension": 12,
+            "dimension_data_rows": 1422,
+            "nonempty_data_rows": 1422,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Компания",
+              "Павильон/Зал",
+              "Стенд",
+              "Страна",
+              "Город",
+              "Адрес",
+              "Сайт",
+              "E-mail",
+              "Описание",
+              "Рубрики",
+              "Конференция",
+              "Вебсайт"
+            ],
+            "observed_data_rows": 1422
+          },
+          {
+            "sheet_name": "Cleaned - no All",
+            "max_row_dimension": 1274,
+            "max_column_dimension": 16,
+            "dimension_data_rows": 1273,
+            "nonempty_data_rows": 1071,
+            "blank_rows_inside_dimension_excluding_header": 202,
+            "first_nonempty_row_preview": [
+              "Компания",
+              "Name",
+              "Check",
+              "Павильон/Зал",
+              "Стенд",
+              "Страна",
+              "Город",
+              "Адрес",
+              "Сайт",
+              "E-mail",
+              "Description",
+              "Rubrics"
+            ],
+            "observed_data_rows": 1273,
+            "observed_vs_nonempty_note": "Observed inventory count is 1273, while openpyxl sees 1071 non-empty data rows and 202 blank rows inside dimension."
+          },
+          {
+            "sheet_name": "Cleaned - no All with AI",
+            "max_row_dimension": 1070,
+            "max_column_dimension": 16,
+            "dimension_data_rows": 1069,
+            "nonempty_data_rows": 1069,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "Компания",
+              "Name",
+              "Check",
+              "Павильон/Зал",
+              "Стенд",
+              "Страна",
+              "Город",
+              "Адрес",
+              "Сайт",
+              "E-mail",
+              "Description",
+              "Rubrics"
+            ],
+            "observed_data_rows": 1069
+          }
+        ]
+      },
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "ce3d25c99c51537cd571ffc87145ea1aee027a9847082a46f4f936761871ef8f",
+        "download_sha256": "8c98d9122182d7cbf6c02d48071d855db8a54187a7bc68eea295aa2aee362e25",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 4276383
+      },
+      "ambiguity_note": "The Russia worksheet has a very large formatted dimension; product-facing counts follow observed inventory/non-empty source audit rather than the formatted worksheet dimension.",
+      "workbook_safety": {
+        "sanitization_mode": "openpyxl_rebuilt_public_copy",
+        "input_scan": {
+          "status": "fail",
+          "private_path_hit_parts": [
+            "xl/connections.xml",
+            "xl/workbook.xml"
+          ],
+          "external_connection_parts": [
+            "xl/connections.xml"
+          ],
+          "unsafe_part_hit_counts": {
+            "xl/connections.xml": 4,
+            "xl/workbook.xml": 4
+          },
+          "unsafe_part_count": 2
+        },
+        "output_scan": {
+          "status": "pass",
+          "private_path_hit_parts": [],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {},
+          "unsafe_part_count": 0
+        },
+        "dropped_workbook_internals": [
+          "xl/connections.xml",
+          "xl/workbook.xml"
+        ],
+        "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped."
+      }
+    },
+    {
+      "id": "vistavki-file-05",
+      "display_name": "yugbuild_exhibitors.xlsx",
+      "event_name": "YugBuild exhibitors",
+      "file_type": "xlsx",
+      "main_sheet": "Yugobuild",
+      "selected_sheet": "Yugobuild cleaned",
+      "selected_sheet_reason": "Explicit cleaned YugBuild sheet is preferred; raw Yugobuild sheet remains available inside the workbook.",
+      "total_source_rows": 139,
+      "cleaned_rows": 130,
+      "removed_rows": null,
+      "selected_sheet_rows": 130,
+      "selected_sheet_nonempty_rows": 130,
+      "download_href": "downloads/yugbuild-exhibitors-public.xlsx",
+      "source_filename": "yugbuild_exhibitors.xlsx",
+      "download_filename": "yugbuild-exhibitors-public.xlsx",
+      "generated_at": "2026-06-11T00:00:00Z",
+      "audit_note": "Observed inventory from upload handoff: Yugobuild=139 data rows; Yugobuild cleaned=130. Main/source sheet 'Yugobuild' observed rows: 139. Selected sheet 'Yugobuild cleaned' observed rows: 130; non-empty rows by audit: 130. Workbook public copy is rebuilt/sanitized for public download; private local path metadata and external workbook connections are removed. The raw Yugobuild worksheet has a very large formatted dimension; product-facing counts follow observed inventory/non-empty source audit rather than the formatted worksheet dimension.",
+      "source_inventory": {
+        "type": "xlsx",
+        "sheets": [
+          {
+            "sheet_name": "Yugobuild",
+            "max_row_dimension": 140,
+            "max_column_dimension": 11,
+            "dimension_data_rows": 139,
+            "nonempty_data_rows": 139,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "ID",
+              "Vistavka",
+              "Name",
+              "Country",
+              "Description",
+              "Full Name",
+              "Address",
+              "Website",
+              "Email",
+              "Phone",
+              "Brands"
+            ],
+            "observed_data_rows": 139
+          },
+          {
+            "sheet_name": "Yugobuild cleaned",
+            "max_row_dimension": 131,
+            "max_column_dimension": 11,
+            "dimension_data_rows": 130,
+            "nonempty_data_rows": 130,
+            "blank_rows_inside_dimension_excluding_header": 0,
+            "first_nonempty_row_preview": [
+              "ID",
+              "Vistavka",
+              "Name",
+              "Country",
+              "Description",
+              "Full Name",
+              "Address",
+              "Website",
+              "Email",
+              "Phone",
+              "Brands"
+            ],
+            "observed_data_rows": 130
+          }
+        ]
+      },
+      "integrity": {
+        "copy_mode": "openpyxl_rebuilt_sanitized_copy",
+        "source_sha256": "44d6113c4a8eb41c898535b1901e677444a0488c2b205c5dd872678338e883c0",
+        "download_sha256": "9c3959bc5f45de6999b0197310277df02ddf10cef54f7e2e28baa23ef602eeec",
+        "exact_copy_verified": false,
+        "sanitized_copy_verified": true,
+        "file_size_bytes": 2805730
+      },
+      "ambiguity_note": "The raw Yugobuild worksheet has a very large formatted dimension; product-facing counts follow observed inventory/non-empty source audit rather than the formatted worksheet dimension.",
+      "workbook_safety": {
+        "sanitization_mode": "openpyxl_rebuilt_public_copy",
+        "input_scan": {
+          "status": "fail",
+          "private_path_hit_parts": [
+            "xl/workbook.xml"
+          ],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {
+            "xl/workbook.xml": 4
+          },
+          "unsafe_part_count": 1
+        },
+        "output_scan": {
+          "status": "pass",
+          "private_path_hit_parts": [],
+          "external_connection_parts": [],
+          "unsafe_part_hit_counts": {},
+          "unsafe_part_count": 0
+        },
+        "dropped_workbook_internals": [
+          "xl/workbook.xml"
+        ],
+        "visible_difference_note": "Workbook was re-saved with openpyxl keep_links=False. Cell values/formulas, worksheets, dimensions, merges, column widths, and openpyxl-readable styles are preserved; unsupported Excel-only artifacts such as external connections are intentionally dropped."
+      }
+    }
+  ],
+  "ambiguous_files_requiring_confirmation": [
+    {
+      "source_filename": "Vistavka Zdorovie DEC 2025.xlsx",
+      "note": "The selected Cleaned worksheet has blank rows inside the worksheet dimension; product-facing count follows the observed inventory (476), while non-empty-row audit is recorded separately."
+    },
+    {
+      "source_filename": "Prodexpo-2026.xlsx",
+      "note": "The Russia worksheet has a very large formatted dimension; product-facing counts follow observed inventory/non-empty source audit rather than the formatted worksheet dimension."
+    },
+    {
+      "source_filename": "yugbuild_exhibitors.xlsx",
+      "note": "The raw Yugobuild worksheet has a very large formatted dimension; product-facing counts follow observed inventory/non-empty source audit rather than the formatted worksheet dimension."
+    }
+  ],
+  "safety": {
+    "contains_credentials_or_tokens": false,
+    "raw_filesystem_paths_exposed": false,
+    "download_hrefs_are_relative": true,
+    "source_paths_omitted_from_manifest": true,
+    "crm_or_customer_data_indexes_exposed": false,
+    "public_manifest_private_pattern_hits": [],
+    "downloadable_workbook_internals_sanitized": true,
+    "unsafe_raw_download_copies_removed": true
+  }
+}

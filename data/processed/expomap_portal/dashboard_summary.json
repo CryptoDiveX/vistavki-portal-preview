@@ -1036,19 +1036,19 @@
     "Dashboard should use a clean light background with readable cards/table and a clear export CTA.",
     "Show the API count caveat wherever total counts are displayed."
   ],
-  "generated_at": "2026-06-09T05:28:46Z",
+  "generated_at": "2026-06-11T00:00:00Z",
   "january_2026_count": 15,
   "official_website_summary": {
     "audit_file": "official_website_audit.json",
     "detail_pages_fetched": 341,
-    "generated_at": "2026-06-09T05:28:46Z",
-    "official_website_found_count": 142,
-    "official_website_missing_count": 199,
+    "generated_at": "2026-06-11T00:00:00Z",
+    "official_website_found_count": 143,
+    "official_website_missing_count": 198,
     "parser_version": "expomap-official-website-detail-v1.0.0",
     "status_counts": {
       "fetch_error": 2,
-      "found_in_detail_page": 142,
-      "missing_on_detail_page": 197
+      "found_in_detail_page": 143,
+      "missing_on_detail_page": 196
     }
   },
   "parser_version": "expomap-stage1-v1.0.0",
@@ -1073,6 +1073,22 @@
     "partial_count": 89
   },
   "total_accessible_events": 341,
+  "uploaded_workbook_mapping_summary": {
+    "contact_exhibitions_count": 5,
+    "contact_workbook_coverage_audit_csv": "contact_workbook_coverage_audit.csv",
+    "contact_workbook_coverage_audit_file": "contact_workbook_coverage_audit.json",
+    "event_ordinals_with_related_files": [
+      7,
+      22,
+      53
+    ],
+    "mapping_file": "uploaded_workbook_mapping.json",
+    "matched_files_count": 3,
+    "other_exhibitions_with_contacts_count": 2,
+    "source_upload_manifest": "../vistavki_files/manifest.json",
+    "unmatched_contact_files_count": 2,
+    "unmatched_or_ambiguous_count": 2
+  },
   "venue_summary": {
     "city_counts": {
       "Москва": 341

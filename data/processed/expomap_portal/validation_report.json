@@ -3,11 +3,14 @@
   "event_count": 341,
   "expected_event_count": 341,
   "files_checked": [
+    "contact_workbook_coverage_audit.csv",
+    "contact_workbook_coverage_audit.json",
     "dashboard_summary.json",
     "events.json",
     "exports/expomap_moscow_expo_2026_public_events.csv",
     "manifest.json",
-    "official_website_audit.json"
+    "official_website_audit.json",
+    "uploaded_workbook_mapping.json"
   ],
   "findings": [],
   "january_2026_count": 15,
