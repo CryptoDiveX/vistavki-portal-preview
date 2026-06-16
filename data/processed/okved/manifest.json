@@ -1,6 +1,6 @@
 {
-  "data_package_version": "okved-downloads-package-v1.0.0",
-  "generated_at": "2026-06-09T06:54:04Z",
+  "data_package_version": "okved-downloads-package-v1.0.1",
+  "generated_at": "2026-06-16T01:08:21Z",
   "dataset": {
     "name": "SignoGroup OKVED portal downloads",
     "row_count": 4,
@@ -44,7 +44,7 @@
       "file_type": "xlsx",
       "source_filename": "Combined 10.82 + 10.85 + 20.41.xlsx",
       "download_filename": "combined-okved-10-82-10-85-20-41.xlsx",
-      "generated_at": "2026-06-09T06:54:04Z",
+      "generated_at": "2026-06-16T01:08:21Z",
       "chosen_sheet": "All Ai cleaned",
       "row_count_audit_notes": "Workbook count uses sheet 'All Ai cleaned' (preferred_sheet); 1088 non-empty data rows excluding header. Sheet dimension has 1129 data rows and 41 blank rows inside dimension. Choice rationale: Explicitly cleaned combined sheet; raw per-code sheets and raw All sheets remain listed in source_inventory.",
       "source_inventory": {
@@ -213,7 +213,7 @@
       "file_type": "xlsx",
       "source_filename": "OKVED 20.41 Moscow + Oblst.xlsx",
       "download_filename": "okved-20-41-moscow-oblast.xlsx",
-      "generated_at": "2026-06-09T06:54:04Z",
+      "generated_at": "2026-06-16T01:08:21Z",
       "chosen_sheet": "Sheet1",
       "row_count_audit_notes": "Workbook count uses sheet 'Sheet1' (preferred_sheet); 532 non-empty data rows excluding header. Sheet dimension has 532 data rows and 0 blank rows inside dimension. Choice rationale: Single data sheet in workbook.",
       "source_inventory": {
@@ -262,7 +262,7 @@
       "file_type": "xlsx",
       "source_filename": "OKVED 10.92 Moscow + Oblst p.xlsx",
       "download_filename": "okved-10-92-moscow-oblast.xlsx",
-      "generated_at": "2026-06-09T06:54:04Z",
+      "generated_at": "2026-06-16T01:08:21Z",
       "chosen_sheet": "Cleaned - no ProductCent ConFab",
       "row_count_audit_notes": "Workbook count uses sheet 'Cleaned - no ProductCent ConFab' (preferred_sheet); 192 non-empty data rows excluding header. Sheet dimension has 387 data rows and 195 blank rows inside dimension. Choice rationale: Explicitly cleaned sheet excluding ProductCenter/ConFab; raw All and Prompt sheets remain listed in source_inventory.",
       "source_inventory": {
@@ -349,7 +349,7 @@
       "file_type": "csv",
       "source_filename": "OKVED Stroi-materiali.csv",
       "download_filename": "okved-stroi-materiali.csv",
-      "generated_at": "2026-06-09T06:54:04Z",
+      "generated_at": "2026-06-16T01:08:21Z",
       "chosen_sheet": "CSV",
       "row_count_audit_notes": "CSV count uses non-empty data rows excluding header: 438; encoding=utf-8-sig, delimiter=',', columns=41.",
       "source_inventory": {
