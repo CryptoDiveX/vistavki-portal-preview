@@ -436,34 +436,66 @@ function renderAnalytics() {
   ].join('');
 }
 
-function isSafeContactDownloadHref(value) {
+function isSafeRelatedDownloadHref(value) {
   const href = text(value, '');
   if (!href || href.startsWith('/') || href.startsWith('\\\\') || href.startsWith('//')) return false;
   if (/^[a-z][a-z0-9+.-]*:/i.test(href)) return false;
-  return href.startsWith('../vistavki_files/downloads/') && !href.slice(3).includes('..');
+  if (href.startsWith('../vistavki_files/downloads/')) return !href.slice(3).includes('..') && href.endsWith('-public.xlsx');
+  if (href.startsWith('downloads/')) return !href.includes('..') && /-public\.(csv|xlsx|json)$/i.test(href);
+  return false;
 }
 
-function contactDownloadHref(row) {
+function relatedDownloadHref(row) {
   const href = row.download_href || '';
-  if (row.safety_scan_status !== 'pass' || !isSafeContactDownloadHref(href)) return '';
+  if (row.safety_scan_status !== 'pass' || !isSafeRelatedDownloadHref(href)) return '';
   return `${DATA_ROOT}/${href}`;
 }
 
+function isParserPilotFile(row) {
+  return row.source_kind === 'website_catalogue_parser_pilot';
+}
+
+function parserPilotFiles(event) {
+  return (event.related_files || []).filter(isParserPilotFile);
+}
+
+function hasParserPilotFiles(event) {
+  return parserPilotFiles(event).length > 0;
+}
+
+function parserPilotPrimary(event) {
+  return parserPilotFiles(event)[0] || null;
+}
+
+function rowCountForRelatedFile(row) {
+  return row.row_count ?? row.selected_sheet_nonempty_rows ?? row.cleaned_rows ?? 0;
+}
+
 function compactFileMeta(row) {
-  const selectedRows = row.selected_sheet_nonempty_rows ?? row.cleaned_rows ?? 0;
-  const selectedSheet = row.selected_sheet || (row.sheet_names || [])[0] || 'sheet';
+  const selectedRows = rowCountForRelatedFile(row);
+  const selectedSheet = isParserPilotFile(row) ? 'normalized public export' : (row.selected_sheet || (row.sheet_names || [])[0] || 'sheet');
   const parts = [
-    selectedRows ? `${fmt.format(selectedRows)} rows` : '',
+    selectedRows ? `${fmt.format(selectedRows)} ${isParserPilotFile(row) ? 'public exhibitor rows' : 'rows'}` : '',
     selectedSheet,
     row.safety_scan_status === 'pass' ? 'sanitized' : '',
   ].filter(Boolean);
   return parts.join(' · ');
 }
 
+function getFileCount(event) {
+  return event.downloadable_files_count || (Array.isArray(event.related_files) ? event.related_files.length : 0);
+}
+
+function getRelatedFileRowCount(event) {
+  const parserCounts = parserPilotFiles(event).map(rowCountForRelatedFile).filter(Boolean);
+  if (parserCounts.length) return Math.max(...parserCounts);
+  return (event.related_files || []).reduce((total, row) => total + (row.selected_sheet_nonempty_rows ?? row.cleaned_rows ?? 0), 0);
+}
+
 function renderDownloadButton(row, label = 'Download') {
-  const href = contactDownloadHref(row);
+  const href = relatedDownloadHref(row);
   const fileType = text(row.file_type, '').toUpperCase();
-  if (!href) return '<span class="muted">No uploaded file</span>';
+  if (!href) return '<span class="muted">No public download</span>';
   return `<a class="button button-compact" href="${escapeHtml(href)}" download="${escapeHtml(row.download_filename || '')}">${escapeHtml(label)}${fileType ? ` ${escapeHtml(fileType)}` : ''}</a>`;
 }
 
@@ -477,15 +509,25 @@ function hasParsedDownloadableData(event) {
 
 function contactOnlySummary(event) {
   if (event.record_id === 'contact-only-vistavka-zdorovie-dec-2025') {
-    return 'Contact file available; not matched to a current Expomap 2026 row. Source campaign is DEC 2025.';
+    return 'Uploaded parsed workbook / contact campaign; not a newly parsed Expomap 2026 event. Source campaign is DEC 2025.';
   }
   if (event.record_id === 'contact-only-yugbuild-exhibitors') {
-    return 'Contact file available; not matched to a current Expomap 2026 row. No high-confidence Moscow 2026 Expomap match.';
+    return 'Uploaded parsed workbook / contact campaign; not a newly parsed Expomap 2026 event. No high-confidence Moscow 2026 Expomap match.';
   }
-  return 'Contact file available; not matched to a current Expomap 2026 row.';
+  return 'Uploaded parsed workbook / contact campaign; not a newly parsed Expomap 2026 event.';
 }
 
 function publicFileNote(row, event) {
+  if (isParserPilotFile(row)) {
+    const publicRows = rowCountForRelatedFile(row);
+    return [
+      'True parsed exhibitor/catalogue pilot — not an uploaded workbook or contact-only campaign',
+      publicRows ? `${fmt.format(publicRows)} public exhibitor rows` : '',
+      `catalogue: ${text(row.catalog_url, 'catalogue URL unavailable')}`,
+      `parser: ${text(row.parser_version, 'parser version unknown')}`,
+      text(row.qa_verdict, 'QA status unknown'),
+    ].filter(Boolean).join(' · ');
+  }
   if (isContactOnlyEvent(event)) return contactOnlySummary(event);
   if (row.multi_exhibition_workbook && row.exhibition_count) {
     return `Matched contact workbook for this exhibition; shared file covers ${fmt.format(row.exhibition_count)} exhibition rows.`;
@@ -493,21 +535,59 @@ function publicFileNote(row, event) {
   return 'Matched contact workbook for this exhibition.';
 }
 
+function relatedFilesEmptyCopy(event) {
+  if (hasParserPilotFiles(event)) return 'No parser-pilot public downloads';
+  if (isContactOnlyEvent(event)) return 'No uploaded workbook';
+  return 'No parsed/downloadable file';
+}
+
 function renderRelatedFiles(event) {
   const rows = Array.isArray(event.related_files) ? event.related_files : [];
   if (!rows.length) {
-    return '<p class="muted">No uploaded file</p>';
+    return `<p class="muted">${escapeHtml(relatedFilesEmptyCopy(event))}</p>`;
   }
   return `<div class="related-file-list">${rows.map((row) => `
-    <article class="related-file-card">
+    <article class="related-file-card${isParserPilotFile(row) ? ' related-file-card-parser-pilot' : ''}">
       <div>
-        <strong>${escapeHtml(row.display_filename || row.source_filename || 'Uploaded workbook')}</strong>
+        <strong>${escapeHtml(row.display_filename || row.source_filename || (isParserPilotFile(row) ? 'Parser pilot export' : 'Uploaded workbook'))}</strong>
         <p class="muted small">${escapeHtml(compactFileMeta(row))}</p>
         <p class="small">${escapeHtml(publicFileNote(row, event))}</p>
       </div>
       ${renderDownloadButton(row)}
     </article>
   `).join('')}</div>`;
+}
+
+function renderParserPilotFacts(event) {
+  const primary = parserPilotPrimary(event);
+  if (!primary) return '';
+  const publicRows = rowCountForRelatedFile(primary);
+  const catalogUrl = text(primary.catalog_url, '');
+  const fileTypes = [...new Set(parserPilotFiles(event).map((row) => text(row.file_type, '').toUpperCase()).filter(Boolean))];
+  const facts = [
+    publicRows ? ['Public exhibitor rows', fmt.format(publicRows)] : null,
+    ['Catalogue URL', catalogUrl || 'not provided'],
+    ['Parser version', text(primary.parser_version, 'not reported')],
+    ['QA', text(primary.qa_verdict, 'not reported')],
+    fileTypes.length ? ['Downloads', fileTypes.join(' / ')] : null,
+  ].filter(Boolean);
+  return `
+    <section class="detail-section detail-section-wide parser-pilot-facts">
+      <h3>True parsed exhibitor/catalogue pilot</h3>
+      <p>This ChemiCos row is a real public exhibitor/catalogue parser pilot, not an uploaded workbook or contact-only campaign.</p>
+      <dl class="fact-list">
+        ${facts.map(([label, value]) => `
+          <div><dt>${escapeHtml(label)}</dt><dd>${label === 'Catalogue URL' && catalogUrl ? `<a href="${escapeHtml(catalogUrl)}" target="_blank" rel="noreferrer">${escapeHtml(catalogUrl)}</a>` : escapeHtml(value)}</dd></div>
+        `).join('')}
+      </dl>
+    </section>
+  `;
+}
+
+function relatedFilesSectionTitle(event) {
+  if (hasParserPilotFiles(event)) return 'Parsed exhibitor/catalogue downloads';
+  if (isContactOnlyEvent(event)) return 'Uploaded workbook';
+  return 'Parsed/downloadable files';
 }
 
 function isSafeOkvedDownloadHref(value) {
@@ -588,13 +668,33 @@ function bindSectionSwitcher() {
 function populateMonthFilter() {
   const select = el('month-filter');
   const months = [...new Set(state.exhibitionRecords.map((event) => event.dates?.month).filter(Boolean))].sort();
-  select.innerHTML = '<option value="all">All months</option>' + months.map((month) => `<option value="${escapeHtml(month)}">${escapeHtml(month)}</option>`).join('');
+  const monthOptionLabel = (month) => month === 'contact-only' ? 'contact-only uploads (workbooks)' : month;
+  select.innerHTML = '<option value="all">All months</option>' + months.map((month) => `<option value="${escapeHtml(month)}">${escapeHtml(monthOptionLabel(month))}</option>`).join('');
+}
+
+function downloadableRows() {
+  return state.exhibitionRecords.filter(hasParsedDownloadableData);
 }
 
 function bindFilters() {
   el('filters').addEventListener('input', applyFilters);
   el('filters').addEventListener('change', applyFilters);
   el('filters').addEventListener('reset', () => setTimeout(applyFilters, 0));
+  const filterAssist = el('filter-assist');
+  if (filterAssist && filterAssist.dataset.bound !== 'true') {
+    filterAssist.dataset.bound = 'true';
+    filterAssist.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-reset-downloadable-view]');
+      if (!button) return;
+      event.preventDefault();
+      el('query').value = '';
+      el('month-filter').value = 'all';
+      el('status-filter').value = 'all';
+      el('parse-filter').value = 'all';
+      el('data-filter').value = 'downloadable';
+      applyFilters();
+    });
+  }
   const tableBody = el('table-body');
   if (tableBody && tableBody.dataset.detailBound !== 'true') {
     tableBody.dataset.detailBound = 'true';
@@ -615,13 +715,23 @@ function eventHaystack(event) {
     event.event_name,
     event.event_subtitle,
     event.record_type,
-    hasParsedDownloadableData(event) ? 'parsed downloadable download file xlsx contact workbook campaign' : '',
+    hasParsedDownloadableData(event) ? 'parsed downloadable download file xlsx csv audit contact workbook campaign parser pilot catalogue exhibitor' : '',
+    hasParserPilotFiles(event) ? 'true parsed exhibitor catalogue pilot not uploaded workbook qa pass public rows' : '',
     event.venue?.name,
     event.venue?.city,
     event.venue?.address,
     ...(event.themes || []),
     ...(event.tags || []),
-    ...(event.related_files || []).flatMap((row) => [row.display_filename, row.source_filename, row.download_filename]),
+    ...(event.related_files || []).flatMap((row) => [
+      row.display_filename,
+      row.source_filename,
+      row.download_filename,
+      row.source_kind,
+      row.catalog_url,
+      row.parser_version,
+      row.qa_verdict,
+      row.parser_pilot_label,
+    ]),
   ].join(' ').toLowerCase();
 }
 
@@ -640,6 +750,56 @@ function applyFilters() {
     return true;
   });
   renderTable();
+  renderFilterAssist({ query, month, status, parse, data });
+}
+
+function parsedRowSummary(event) {
+  const fileCount = getFileCount(event) || 1;
+  const rowCount = getRelatedFileRowCount(event);
+  const dataKind = hasParserPilotFiles(event)
+    ? 'true parsed exhibitor/catalogue pilot'
+    : (isContactOnlyEvent(event) ? 'uploaded parsed workbook / contact campaign' : 'matched parsed/downloadable event');
+  const parts = [
+    `${fmt.format(fileCount)} file${fileCount === 1 ? '' : 's'}`,
+    rowCount ? `${fmt.format(rowCount)} ${hasParserPilotFiles(event) ? 'public exhibitor rows' : 'rows'}` : '',
+    event.dates?.month === 'contact-only' ? 'contact-only uploads' : event.dates?.month,
+    dataKind,
+  ].filter(Boolean);
+  return parts.join(' · ');
+}
+
+function renderFilterAssist({ query, month, status, parse, data }) {
+  const assist = el('filter-assist');
+  if (!assist) return;
+  if (data !== 'downloadable') {
+    assist.hidden = true;
+    assist.innerHTML = '';
+    return;
+  }
+  const rows = downloadableRows();
+  const constrained = Boolean(query || month !== 'all' || status !== 'all' || parse !== 'all');
+  const contactOnlyNames = rows.filter(isContactOnlyEvent).map((event) => event.event_name).join(' and ');
+  const parserPilotNames = rows.filter(hasParserPilotFiles).map((event) => event.event_name).join(' and ');
+  const parserCopy = parserPilotNames ? ` True parser pilots: ${escapeHtml(parserPilotNames)}.` : '';
+  assist.hidden = false;
+  assist.innerHTML = `
+    <div class="filter-assist-copy">
+      <strong>Parsed/downloadable filter: ${fmt.format(rows.length)} total rows · ${fmt.format(state.filtered.length)} visible now.</strong>
+      <p>${constrained ? 'Other filters still apply. Clear search/month/status/parse filters to show every parsed/downloadable row, including true parser pilots and contact-only uploads.' : `All parsed/downloadable rows are visible, including true parser pilots and contact-only uploads: ${escapeHtml(contactOnlyNames)}.${parserCopy}`}</p>
+      <p class="small muted">Tip: ChemiCos is a true parsed exhibitor/catalogue pilot; contact-only uploads also appear under Month = contact-only uploads (workbooks).</p>
+    </div>
+    ${constrained ? '<button class="button button-compact" type="button" data-reset-downloadable-view>Show all parsed/downloadable rows</button>' : ''}
+    <ul class="downloadable-summary-list">
+      ${rows.map((event) => `
+        <li>
+          <strong>${escapeHtml(event.event_name)}</strong>
+          <span>${escapeHtml(parsedRowSummary(event))}</span>
+          ${hasParserPilotFiles(event) ? '<em>True parsed exhibitor/catalogue pilot</em>' : ''}
+          ${isContactOnlyEvent(event) ? '<em>Not a newly parsed Expomap 2026 event</em>' : ''}
+        </li>
+      `).join('')}
+    </ul>
+  `;
 }
 
 function renderTable() {
@@ -647,7 +807,7 @@ function renderTable() {
   el('result-count').textContent = `${fmt.format(state.filtered.length)} of ${fmt.format(state.exhibitionRecords.length)} exhibitions shown`;
   el('empty-state').hidden = state.filtered.length !== 0;
   body.innerHTML = state.filtered.map((event) => {
-    const fileCount = event.downloadable_files_count || (Array.isArray(event.related_files) ? event.related_files.length : 0);
+    const fileCount = getFileCount(event);
     return `
       <tr>
         <td>
@@ -659,7 +819,8 @@ function renderTable() {
           </div>
           <div class="muted small">${escapeHtml(event.event_subtitle || 'No subtitle')}</div>
           <div class="event-row-actions">
-            ${isContactOnlyEvent(event) ? '<span class="status-pill status-warn">Contact-file row</span>' : ''}
+            ${hasParserPilotFiles(event) ? '<span class="status-pill status-ok">True parser pilot</span><span class="status-pill status-ok">Not an uploaded workbook</span>' : ''}
+            ${isContactOnlyEvent(event) ? '<span class="status-pill status-warn">Uploaded parsed workbook / contact campaign</span><span class="status-pill status-warn">Not newly parsed from Expomap</span>' : ''}
             ${hasParsedDownloadableData(event) ? `<span class="status-pill status-ok">${fmt.format(fileCount || 1)} downloadable file${(fileCount || 1) === 1 ? '' : 's'}</span>` : '<span class="muted small">No downloadable file</span>'}
           </div>
         </td>
@@ -717,9 +878,22 @@ function showDetail(recordKey) {
   if (!event) return;
   const products = findProducts(event);
   const source = event.source_audit || {};
-  const description = isContactOnlyEvent(event) ? contactOnlySummary(event) : event.description || event.event_description || event.summary || event.event_subtitle;
-  const parserNote = isContactOnlyEvent(event) ? contactOnlySummary(event) : event.parser_notes || 'No parser notes for this event.';
-  const recordLabel = event.record_type === 'contact_only_exhibition' ? `Contact campaign · ${event.record_id}` : `Event #${event.ordinal}`;
+  const description = isContactOnlyEvent(event)
+    ? contactOnlySummary(event)
+    : (hasParserPilotFiles(event)
+      ? 'True parsed exhibitor/catalogue pilot from the public ChemiCos catalogue; not an uploaded workbook/contact-only campaign.'
+      : event.description || event.event_description || event.summary || event.event_subtitle);
+  const parserNote = isContactOnlyEvent(event)
+    ? contactOnlySummary(event)
+    : (hasParserPilotFiles(event)
+      ? (parserPilotPrimary(event)?.audit_note || 'QA PASS: true parsed exhibitor/catalogue parser pilot.')
+      : event.parser_notes || 'No parser notes for this event.');
+  const recordLabel = event.record_type === 'contact_only_exhibition'
+    ? `Contact campaign · ${event.record_id}`
+    : (hasParserPilotFiles(event) ? `Parser pilot · Event #${event.ordinal}` : `Event #${event.ordinal}`);
+  const sourceAudit = isContactOnlyEvent(event)
+    ? `<p>Source: uploaded parsed workbook / contact campaign.</p><p>Expomap parser: not applicable; not a newly parsed Expomap 2026 event.</p><p>Workbook sheet: ${escapeHtml(source.source_page_summary?.selected_sheet || 'not reported')}</p>`
+    : `<p>Parser: ${escapeHtml(source.parser_version || state.summary.parser_version || 'not reported')}</p><p>Scraped: ${escapeHtml(source.scraped_at || state.summary.stage1_scraped_at || 'not reported')}</p><p>Source page: ${escapeHtml(source.source_page || 'not reported')}</p>`;
   el('detail-content').innerHTML = `
     <p class="eyebrow">${escapeHtml(recordLabel)}</p>
     <h2 id="detail-title">${escapeHtml(event.event_name)}</h2>
@@ -729,10 +903,11 @@ function showDetail(recordKey) {
       <section class="detail-section"><h3>Exhibited products</h3>${products.length ? renderChips(products) : '<p class="muted">No exhibited products field in the current public package.</p>'}</section>
       <section class="detail-section"><h3>Venue and address</h3><p><strong>${escapeHtml(event.venue?.name || 'Not specified')}</strong></p><p>${escapeHtml([event.venue?.city, event.venue?.address].filter(Boolean).join(' · ') || 'No venue/address')}</p></section>
       <section class="detail-section"><h3>Dates and counts</h3><p>${escapeHtml(formatRange(event))}</p><p>Members / visitors: ${text(event.counts?.members)} / ${text(event.counts?.visitors)}</p></section>
-      <section class="detail-section detail-section-wide"><h3>Uploaded workbook</h3>${renderRelatedFiles(event)}</section>
+      ${renderParserPilotFacts(event)}
+      <section class="detail-section detail-section-wide"><h3>${escapeHtml(relatedFilesSectionTitle(event))}</h3>${renderRelatedFiles(event)}</section>
       <section class="detail-section"><h3>Themes</h3>${renderChips(event.themes || [])}</section>
       <section class="detail-section"><h3>Tags</h3>${renderChips(event.tags || [])}</section>
-      <section class="detail-section"><h3>Source and audit summary</h3><p>Parser: ${escapeHtml(source.parser_version || state.summary.parser_version || 'not reported')}</p><p>Scraped: ${escapeHtml(source.scraped_at || state.summary.stage1_scraped_at || 'not reported')}</p><p>Source page: ${escapeHtml(source.source_page || 'not reported')}</p></section>
+      <section class="detail-section"><h3>Source and audit summary</h3>${sourceAudit}</section>
       <section class="detail-section"><h3>Source links</h3>${renderEventLinks(event, { detail: true })}</section>
       <section class="detail-section"><h3>Parser notes</h3><p>Status: ${escapeHtml(event.status || 'unknown')} · parse_status: ${escapeHtml(event.parse_status || 'unknown')}</p><p>Missing fields: ${escapeHtml((event.missing_fields || []).join(', ') || 'none')}</p><p>${escapeHtml(parserNote)}</p></section>
     </div>

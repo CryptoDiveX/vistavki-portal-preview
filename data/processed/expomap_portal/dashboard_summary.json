@@ -1025,6 +1025,16 @@
     "note": "Expomap API reports 347 events for Moscow expo 2026, but Stage 1 API page probes and QA validation exposed 341 unique accessible records. The portal package uses the 341 accessible public events and preserves this documented API count exception."
   },
   "data_package_version": "expomap-portal-package-v1.1.0",
+  "exhibitor_parser_pilot_summary": {
+    "downloadable_files_count": 2,
+    "mapping_file": "exhibitor_parser_pilots.json",
+    "matched_event_ordinals": [
+      76
+    ],
+    "matched_parser_pilots_count": 1,
+    "note": "Website/catalogue parser pilots are true parser outputs attached to exact Expomap rows, distinct from uploaded contact workbooks.",
+    "unmatched_parser_pilots_count": 0
+  },
   "exports": {
     "csv": "exports/expomap_moscow_expo_2026_public_events.csv",
     "export_button_label": "Export all exhibitions",
@@ -1035,17 +1045,18 @@
     "Use exhibition_records.json as the canonical table/list when contact-only campaign rows should appear beside Expomap rows.",
     "Use events.json when you need only the 341 Moscow 2026 Expomap API records.",
     "Contact-only campaign rows have record_type=contact_only_exhibition, stable record_id/slug, campaign_metadata, and related_files[0] with the sanitized XLSX download.",
+    "ChemiCos 2026 has true website/catalogue parser-pilot related files from the public ChemiCos catalogue: normalized CSV and XLSX downloads with row_count=208 and QA PASS metadata.",
     "Matched workbook files remain on their matched Expomap event related_files arrays; do not duplicate them as standalone campaign rows.",
     "Use predicted_relevance, predicted_relevance_confidence, predicted_relevance_reason, matched_relevance_terms, and matched_relevance_categories to pre-fill Katya's relevance review; preserve Maybe for mixed/unsure cases.",
     "Dashboard should use a clean light background with readable cards/table and a clear export CTA.",
     "Show the API count caveat wherever total Expomap counts are displayed."
   ],
-  "generated_at": "2026-06-16T00:46:46Z",
+  "generated_at": "2026-06-15T00:00:00Z",
   "january_2026_count": 15,
   "official_website_summary": {
     "audit_file": "official_website_audit.json",
     "detail_pages_fetched": 341,
-    "generated_at": "2026-06-16T00:46:46Z",
+    "generated_at": "2026-06-15T00:00:00Z",
     "official_website_found_count": 144,
     "official_website_missing_count": 197,
     "parser_version": "expomap-official-website-detail-v1.0.0",
