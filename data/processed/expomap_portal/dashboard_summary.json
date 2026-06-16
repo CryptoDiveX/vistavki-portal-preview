@@ -1032,27 +1032,52 @@
     "xlsx": "exports/expomap_moscow_expo_2026_public_events.xlsx"
   },
   "frontend_notes": [
-    "Use all events from events.json for the table/list; do not sample only a subset.",
+    "Use exhibition_records.json as the canonical table/list when contact-only campaign rows should appear beside Expomap rows.",
+    "Use events.json when you need only the 341 Moscow 2026 Expomap API records.",
+    "Contact-only campaign rows have record_type=contact_only_exhibition, stable record_id/slug, campaign_metadata, and related_files[0] with the sanitized XLSX download.",
+    "Matched workbook files remain on their matched Expomap event related_files arrays; do not duplicate them as standalone campaign rows.",
+    "Use predicted_relevance, predicted_relevance_confidence, predicted_relevance_reason, matched_relevance_terms, and matched_relevance_categories to pre-fill Katya's relevance review; preserve Maybe for mixed/unsure cases.",
     "Dashboard should use a clean light background with readable cards/table and a clear export CTA.",
-    "Show the API count caveat wherever total counts are displayed."
+    "Show the API count caveat wherever total Expomap counts are displayed."
   ],
-  "generated_at": "2026-06-11T00:00:00Z",
+  "generated_at": "2026-06-16T00:46:46Z",
   "january_2026_count": 15,
   "official_website_summary": {
     "audit_file": "official_website_audit.json",
     "detail_pages_fetched": 341,
-    "generated_at": "2026-06-11T00:00:00Z",
-    "official_website_found_count": 143,
-    "official_website_missing_count": 198,
+    "generated_at": "2026-06-16T00:46:46Z",
+    "official_website_found_count": 144,
+    "official_website_missing_count": 197,
     "parser_version": "expomap-official-website-detail-v1.0.0",
     "status_counts": {
       "fetch_error": 2,
-      "found_in_detail_page": 143,
-      "missing_on_detail_page": 196
+      "found_in_detail_page": 144,
+      "missing_on_detail_page": 195
     }
   },
   "parser_version": "expomap-stage1-v1.0.0",
   "qa_verdict": "PASS_WITH_DOCUMENTED_API_COUNT_EXCEPTION",
+  "relevance_prediction_summary": {
+    "audit_fields": [
+      "predicted_relevance",
+      "predicted_relevance_confidence",
+      "predicted_relevance_reason",
+      "matched_relevance_terms",
+      "matched_relevance_categories"
+    ],
+    "classifier_version": "etiketki-relevance-v1.0.0",
+    "counts": {
+      "maybe": 84,
+      "no": 183,
+      "yes": 74
+    },
+    "criterion": "relevant = exhibitors showcase products that might need etiketki/labels; maybe is used conservatively for mixed or unsure cases",
+    "labels": [
+      "yes",
+      "maybe",
+      "no"
+    ]
+  },
   "source_artifacts": {
     "stage1_api_audit": "expomap_moscow_expo_2026_stage1.api_audit.json",
     "stage1_csv": "expomap_moscow_expo_2026_stage1.csv",
@@ -1074,7 +1099,9 @@
   },
   "total_accessible_events": 341,
   "uploaded_workbook_mapping_summary": {
+    "canonical_exhibition_records_file": "exhibition_records.json",
     "contact_exhibitions_count": 5,
+    "contact_only_exhibition_records_count": 2,
     "contact_workbook_coverage_audit_csv": "contact_workbook_coverage_audit.csv",
     "contact_workbook_coverage_audit_file": "contact_workbook_coverage_audit.json",
     "event_ordinals_with_related_files": [

@@ -8,6 +8,7 @@
     "dashboard_summary.json",
     "etiketki_relevance_taxonomy.json",
     "events.json",
+    "exhibition_records.json",
     "exports/expomap_moscow_expo_2026_public_events.csv",
     "manifest.json",
     "official_website_audit.json",

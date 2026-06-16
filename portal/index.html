@@ -8,7 +8,7 @@
       name="description"
       content="Public Stage 1 viewer for the SignoGroup Expomap Moscow 2026 exhibition dataset."
     />
-    <link rel="stylesheet" href="./styles.css?v=11" />
+    <link rel="stylesheet" href="./styles.css?v=12" />
   </head>
   <body>
     <a class="skip-link" href="#events-table">Skip to event table</a>
@@ -85,10 +85,15 @@
               <option value="partial">Partial</option>
             </select>
           </label>
+          <label>
+            Parsed data / file
+            <select id="data-filter">
+              <option value="all">All rows</option>
+              <option value="downloadable">Parsed/downloadable only</option>
+            </select>
+          </label>
           <button class="button" type="reset">Reset filters</button>
         </form>
-
-        <section id="contact-files" class="contact-files" aria-labelledby="contact-files-title" hidden></section>
 
         <div id="empty-state" class="state-card" hidden>No exhibitions match the selected filters.</div>
 
@@ -160,6 +165,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=11" defer></script>
+    <script src="./app.js?v=12" defer></script>
   </body>
 </html>

@@ -222,7 +222,7 @@ a { color: var(--primary-dark); }
 
 .table-section { padding: 20px; }
 .result-count { margin: 0; color: var(--muted); font-weight: 750; }
-.filters { display: grid; grid-template-columns: minmax(220px, 2fr) repeat(3, minmax(130px, 1fr)) auto; gap: 12px; align-items: end; margin-bottom: 16px; }
+.filters { display: grid; grid-template-columns: minmax(220px, 2fr) repeat(4, minmax(130px, 1fr)) auto; gap: 12px; align-items: end; margin-bottom: 16px; }
 .filters label { display: grid; gap: 6px; color: var(--muted); font-size: .86rem; font-weight: 800; }
 .filters input, .filters select {
   width: 100%; min-height: 42px; padding: .58rem .75rem;
@@ -322,32 +322,6 @@ tbody tr:hover { background: #f9fbff; }
   border-radius: 14px;
   background: var(--surface);
 }
-.contact-files {
-  margin: -4px 0 16px;
-  padding: 14px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: linear-gradient(180deg, #ffffff, #f5f8ff);
-}
-.contact-files-heading {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: end;
-  margin-bottom: 10px;
-}
-.contact-files-heading h3 { margin: .2rem 0 0; font-size: 1.05rem; }
-.contact-file-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-.contact-file-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 12px;
-  align-items: start;
-  padding: 12px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface);
-}
 .stage2-callout { padding: 22px; background: linear-gradient(135deg, #ffffff, #eff4ff); }
 .stage2-callout ol { margin: 12px 0; padding-left: 1.4rem; }
 
@@ -362,9 +336,8 @@ tbody tr:hover { background: #f9fbff; }
 @media (max-width: 680px) {
   .shell { width: min(100% - 20px, 1480px); padding-top: 10px; }
   .hero, .table-section, .stage2-callout { border-radius: 18px; padding: 16px; }
-  .dashboard-grid, .filters, .detail-grid, .contact-file-list { grid-template-columns: 1fr; }
-  .related-file-card, .contact-file-card { grid-template-columns: 1fr; }
-  .contact-files-heading { align-items: start; flex-direction: column; }
+  .dashboard-grid, .filters, .detail-grid { grid-template-columns: 1fr; }
+  .related-file-card { grid-template-columns: 1fr; }
   .dashboard-card, .dashboard-card--mini, .dashboard-card--wide, .dashboard-card--date { grid-column: 1; }
   .dashboard-card--date .card-value { white-space: normal; }
   .hero-actions .button, .section-switcher .section-tab { flex: 1 1 100%; }
