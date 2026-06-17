@@ -680,21 +680,6 @@ function bindFilters() {
   el('filters').addEventListener('input', applyFilters);
   el('filters').addEventListener('change', applyFilters);
   el('filters').addEventListener('reset', () => setTimeout(applyFilters, 0));
-  const filterAssist = el('filter-assist');
-  if (filterAssist && filterAssist.dataset.bound !== 'true') {
-    filterAssist.dataset.bound = 'true';
-    filterAssist.addEventListener('click', (event) => {
-      const button = event.target.closest('[data-reset-downloadable-view]');
-      if (!button) return;
-      event.preventDefault();
-      el('query').value = '';
-      el('month-filter').value = 'all';
-      el('status-filter').value = 'all';
-      el('parse-filter').value = 'all';
-      el('data-filter').value = 'downloadable';
-      applyFilters();
-    });
-  }
   const tableBody = el('table-body');
   if (tableBody && tableBody.dataset.detailBound !== 'true') {
     tableBody.dataset.detailBound = 'true';
@@ -768,38 +753,11 @@ function parsedRowSummary(event) {
   return parts.join(' · ');
 }
 
-function renderFilterAssist({ query, month, status, parse, data }) {
+function renderFilterAssist() {
   const assist = el('filter-assist');
   if (!assist) return;
-  if (data !== 'downloadable') {
-    assist.hidden = true;
-    assist.innerHTML = '';
-    return;
-  }
-  const rows = downloadableRows();
-  const constrained = Boolean(query || month !== 'all' || status !== 'all' || parse !== 'all');
-  const contactOnlyNames = rows.filter(isContactOnlyEvent).map((event) => event.event_name).join(' and ');
-  const parserPilotNames = rows.filter(hasParserPilotFiles).map((event) => event.event_name).join(' and ');
-  const parserCopy = parserPilotNames ? ` True parser pilots: ${escapeHtml(parserPilotNames)}.` : '';
-  assist.hidden = false;
-  assist.innerHTML = `
-    <div class="filter-assist-copy">
-      <strong>Parsed/downloadable filter: ${fmt.format(rows.length)} total rows · ${fmt.format(state.filtered.length)} visible now.</strong>
-      <p>${constrained ? 'Other filters still apply. Clear search/month/status/parse filters to show every parsed/downloadable row, including true parser pilots and contact-only uploads.' : `All parsed/downloadable rows are visible, including true parser pilots and contact-only uploads: ${escapeHtml(contactOnlyNames)}.${parserCopy}`}</p>
-      <p class="small muted">Tip: ChemiCos is a true parsed exhibitor/catalogue pilot; contact-only uploads also appear under Month = contact-only uploads (workbooks).</p>
-    </div>
-    ${constrained ? '<button class="button button-compact" type="button" data-reset-downloadable-view>Show all parsed/downloadable rows</button>' : ''}
-    <ul class="downloadable-summary-list">
-      ${rows.map((event) => `
-        <li>
-          <strong>${escapeHtml(event.event_name)}</strong>
-          <span>${escapeHtml(parsedRowSummary(event))}</span>
-          ${hasParserPilotFiles(event) ? '<em>True parsed exhibitor/catalogue pilot</em>' : ''}
-          ${isContactOnlyEvent(event) ? '<em>Not a newly parsed Expomap 2026 event</em>' : ''}
-        </li>
-      `).join('')}
-    </ul>
-  `;
+  assist.hidden = true;
+  assist.innerHTML = '';
 }
 
 function renderTable() {
