@@ -1,0 +1,39 @@
+{
+  "data_package_version": "okved-20-41-current-twenty-v1.0.0",
+  "generated_at": "2026-07-06T11:12:29Z",
+  "dataset": {
+    "id": "okved-20-41-all-regions-exc-moscow-oblast",
+    "name": "OKVED 20.41 All Regions (excluding Moscow + Moscow Oblast)",
+    "okved_numbers": "20.41",
+    "okved_description": "производство мыла, моющих, чистящих и полирующих средств",
+    "region": "Все регионы РФ, кроме Москвы и Московской области",
+    "financials": "Any",
+    "raw_rows": 430,
+    "processed_rows": 430,
+    "status_removed_rows": 5,
+    "repeat_removed_rows": 121,
+    "number_of_contacts": 304
+  },
+  "downloads": {
+    "processed_workbook": "downloads/okved-20-41-all-regions-exc-moscow-oblast-current-twenty.xlsx",
+    "cleaned_csv": "downloads/okved-20-41-all-regions-exc-moscow-oblast-cleaned-current-twenty.csv",
+    "dataset_manifest": "okved-20-41-all-regions-exc-moscow-oblast-manifest-current-twenty.json"
+  },
+  "audit": {
+    "repeat_index_source": "current Twenty CRM repeat index exported by t_15622d3b",
+    "repeat_matching_order": [
+      "exact INN",
+      "exact normalized email",
+      "safe company-owned domain"
+    ],
+    "company_name_matching": "not used for repeat decisions; company names are evidence only",
+    "summary_file_private": "okved_20_41_all_regions_exc_moscow_oblast_summary_current_twenty.json",
+    "workbook_sha256": "d972cb5ea9b9dd7de5f3360c90a28c19315b0606ba70118b54e2bb9a1445bfdc",
+    "cleaned_csv_sha256": "0610764416cee9c08835de30cc627251abb6a2e2035b1719ceee182eb9224554"
+  },
+  "safety": {
+    "public_urls_relative_only": true,
+    "raw_filesystem_paths_exposed": false,
+    "public_download_private_pattern_hits": []
+  }
+}

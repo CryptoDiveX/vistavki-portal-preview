@@ -345,5 +345,52 @@
       ]
     },
     "ambiguity_note": ""
+  },
+  {
+    "id": "okved-20-41-all-regions-exc-moscow-oblast",
+    "name": "20.41 All Regions (exc. Moscow + Moscow Oblast) — current Twenty deduped",
+    "number_of_contacts": 304,
+    "okved_numbers": "20.41",
+    "okved_description": "производство мыла, моющих, чистящих и полирующих средств",
+    "region": "Все регионы РФ, кроме Москвы и Московской области",
+    "financials": "Any",
+    "okved_number_description": "20.41 — all Russian regions excluding Moscow + Moscow Oblast; производство мыла, моющих, чистящих и полирующих средств",
+    "region_audit_note": "Source upload name states all regions excluding Moscow + Moscow Oblast; source Region column preserved in workbook.",
+    "website": "downloads/okved-20-41-all-regions-exc-moscow-oblast-current-twenty.xlsx",
+    "download_href": "downloads/okved-20-41-all-regions-exc-moscow-oblast-current-twenty.xlsx",
+    "cleaned_csv_href": "downloads/okved-20-41-all-regions-exc-moscow-oblast-cleaned-current-twenty.csv",
+    "dataset_manifest_href": "okved-20-41-all-regions-exc-moscow-oblast-manifest-current-twenty.json",
+    "file_type": "xlsx",
+    "source_filename": "20.41 All Regions (exc. Mosc + obl.).csv",
+    "download_filename": "okved-20-41-all-regions-exc-moscow-oblast-current-twenty.xlsx",
+    "generated_at": "2026-07-06T11:12:29Z",
+    "chosen_sheet": "Cleaned",
+    "row_count_audit_notes": "Workbook count uses Cleaned sheet after excluding 5 bankruptcy/liquidation rows and 121 current Twenty CRM repeats; 304 final new rows.",
+    "ambiguity_note": "Repeat matching uses exact INN, exact normalized email, or safe company-owned domain only; no company-name-only repeats.",
+    "source_inventory": {
+      "type": "xlsx",
+      "sheets": [
+        {
+          "sheet_name": "Raw Parsed",
+          "nonempty_data_rows": 430
+        },
+        {
+          "sheet_name": "Processed",
+          "nonempty_data_rows": 430
+        },
+        {
+          "sheet_name": "Cleaned",
+          "nonempty_data_rows": 304
+        },
+        {
+          "sheet_name": "Removed",
+          "nonempty_data_rows": 5
+        },
+        {
+          "sheet_name": "Repeat Signo",
+          "nonempty_data_rows": 121
+        }
+      ]
+    }
   }
 ]

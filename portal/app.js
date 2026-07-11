@@ -574,7 +574,7 @@ function renderParserPilotFacts(event) {
   return `
     <section class="detail-section detail-section-wide parser-pilot-facts">
       <h3>True parsed exhibitor/catalogue pilot</h3>
-      <p>This ChemiCos row is a real public exhibitor/catalogue parser pilot, not an uploaded workbook or contact-only campaign.</p>
+      <p>This row is a real public exhibitor/catalogue parser pilot, not an uploaded workbook or contact-only campaign.</p>
       <dl class="fact-list">
         ${facts.map(([label, value]) => `
           <div><dt>${escapeHtml(label)}</dt><dd>${label === 'Catalogue URL' && catalogUrl ? `<a href="${escapeHtml(catalogUrl)}" target="_blank" rel="noreferrer">${escapeHtml(catalogUrl)}</a>` : escapeHtml(value)}</dd></div>
@@ -676,6 +676,12 @@ function downloadableRows() {
   return state.exhibitionRecords.filter(hasParsedDownloadableData);
 }
 
+function parserPilotRowBadge(event) {
+  if (!hasParserPilotFiles(event)) return '';
+  const rowCount = getRelatedFileRowCount(event);
+  return rowCount ? `<span class="status-pill status-ok">${fmt.format(rowCount)} public exhibitor rows</span>` : '';
+}
+
 function bindFilters() {
   el('filters').addEventListener('input', applyFilters);
   el('filters').addEventListener('change', applyFilters);
@@ -735,7 +741,6 @@ function applyFilters() {
     return true;
   });
   renderTable();
-  renderFilterAssist({ query, month, status, parse, data });
 }
 
 function parsedRowSummary(event) {
@@ -751,13 +756,6 @@ function parsedRowSummary(event) {
     dataKind,
   ].filter(Boolean);
   return parts.join(' · ');
-}
-
-function renderFilterAssist() {
-  const assist = el('filter-assist');
-  if (!assist) return;
-  assist.hidden = true;
-  assist.innerHTML = '';
 }
 
 function renderTable() {
@@ -778,6 +776,7 @@ function renderTable() {
           <div class="muted small">${escapeHtml(event.event_subtitle || 'No subtitle')}</div>
           <div class="event-row-actions">
             ${hasParserPilotFiles(event) ? '<span class="status-pill status-ok">True parser pilot</span><span class="status-pill status-ok">Not an uploaded workbook</span>' : ''}
+            ${parserPilotRowBadge(event)}
             ${isContactOnlyEvent(event) ? '<span class="status-pill status-warn">Uploaded parsed workbook / contact campaign</span><span class="status-pill status-warn">Not newly parsed from Expomap</span>' : ''}
             ${hasParsedDownloadableData(event) ? `<span class="status-pill status-ok">${fmt.format(fileCount || 1)} downloadable file${(fileCount || 1) === 1 ? '' : 's'}</span>` : '<span class="muted small">No downloadable file</span>'}
           </div>
@@ -839,7 +838,7 @@ function showDetail(recordKey) {
   const description = isContactOnlyEvent(event)
     ? contactOnlySummary(event)
     : (hasParserPilotFiles(event)
-      ? 'True parsed exhibitor/catalogue pilot from the public ChemiCos catalogue; not an uploaded workbook/contact-only campaign.'
+      ? 'True parsed exhibitor/catalogue pilot from a public event catalogue; not an uploaded workbook/contact-only campaign.'
       : event.description || event.event_description || event.summary || event.event_subtitle);
   const parserNote = isContactOnlyEvent(event)
     ? contactOnlySummary(event)
