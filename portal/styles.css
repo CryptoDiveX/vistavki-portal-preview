@@ -347,6 +347,16 @@ tbody tr:hover { background: #f9fbff; }
   text-transform: uppercase;
 }
 .fact-list dd { margin: 4px 0 0; font-weight: 700; overflow-wrap: anywhere; }
+.source-limitations {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid rgba(146, 64, 14, .18);
+  border-radius: 12px;
+  background: #fff7ed;
+}
+.source-limitations h4 { margin: 0 0 8px; color: #92400e; }
+.source-limitations ul { margin: 0; padding-left: 1.2rem; }
+.source-limitations li { margin: .35rem 0; line-height: 1.45; }
 .stage2-callout { padding: 22px; background: linear-gradient(135deg, #ffffff, #eff4ff); }
 .stage2-callout ol { margin: 12px 0; padding-left: 1.4rem; }
 

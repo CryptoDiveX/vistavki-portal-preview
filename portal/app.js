@@ -523,6 +523,8 @@ function publicFileNote(row, event) {
     return [
       'True parsed exhibitor/catalogue pilot — not an uploaded workbook or contact-only campaign',
       publicRows ? `${fmt.format(publicRows)} public exhibitor rows` : '',
+      row.source_scope ? `source scope: ${row.source_scope}` : '',
+      row.parsed_workbook_type ? `workbook: ${row.parsed_workbook_type}` : '',
       `catalogue: ${text(row.catalog_url, 'catalogue URL unavailable')}`,
       `parser: ${text(row.parser_version, 'parser version unknown')}`,
       text(row.qa_verdict, 'QA status unknown'),
@@ -558,17 +560,48 @@ function renderRelatedFiles(event) {
   `).join('')}</div>`;
 }
 
+function parserPilotFact(event) {
+  const facts = Array.isArray(event.parser_pilot_facts) ? event.parser_pilot_facts : [];
+  return facts[0] || parserPilotPrimary(event) || {};
+}
+
+function renderSourceLimitations(fact) {
+  const limitations = Array.isArray(fact.source_limitations) ? fact.source_limitations.filter(Boolean) : [];
+  const sourceDecision = fact.source_decision || {};
+  if (!limitations.length && !sourceDecision.limitations && !sourceDecision.why) return '';
+  const items = [
+    ...limitations,
+    sourceDecision.limitations,
+    sourceDecision.why ? `Source decision: ${sourceDecision.why}` : '',
+  ].filter(Boolean);
+  return `
+    <div class="source-limitations">
+      <h4>Source limitations</h4>
+      <ul>
+        ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}
+      </ul>
+    </div>
+  `;
+}
+
 function renderParserPilotFacts(event) {
   const primary = parserPilotPrimary(event);
   if (!primary) return '';
-  const publicRows = rowCountForRelatedFile(primary);
-  const catalogUrl = text(primary.catalog_url, '');
+  const fact = parserPilotFact(event);
+  const publicRows = fact.row_count || rowCountForRelatedFile(primary);
+  const cleanedRows = fact.cleaned_row_count || primary.cleaned_rows || fact.row_counts?.cleaned_rows || primary.row_counts?.cleaned_rows;
+  const catalogUrl = text(primary.catalog_url || fact.source_decision?.used, '');
+  const sourceScope = fact.source_scope || primary.source_scope || '';
   const fileTypes = [...new Set(parserPilotFiles(event).map((row) => text(row.file_type, '').toUpperCase()).filter(Boolean))];
   const facts = [
     publicRows ? ['Public exhibitor rows', fmt.format(publicRows)] : null,
-    ['Catalogue URL', catalogUrl || 'not provided'],
-    ['Parser version', text(primary.parser_version, 'not reported')],
-    ['QA', text(primary.qa_verdict, 'not reported')],
+    cleanedRows ? ['Cleaned rows', fmt.format(cleanedRows)] : null,
+    ['Catalogue/source URL', catalogUrl || 'not provided'],
+    ['Parser version', text(fact.parser_version || primary.parser_version, 'not reported')],
+    ['QA', text(fact.qa_verdict || primary.qa_verdict, 'not reported')],
+    fact.parsed_workbook_type || primary.parsed_workbook_type ? ['Workbook type', text(fact.parsed_workbook_type || primary.parsed_workbook_type)] : null,
+    sourceScope ? ['Source scope', sourceScope] : null,
+    fact.twenty_repeat_status || primary.twenty_repeat_status ? ['Twenty repeat status', text(fact.twenty_repeat_status || primary.twenty_repeat_status)] : null,
     fileTypes.length ? ['Downloads', fileTypes.join(' / ')] : null,
   ].filter(Boolean);
   return `
@@ -577,9 +610,10 @@ function renderParserPilotFacts(event) {
       <p>This row is a real public exhibitor/catalogue parser pilot, not an uploaded workbook or contact-only campaign.</p>
       <dl class="fact-list">
         ${facts.map(([label, value]) => `
-          <div><dt>${escapeHtml(label)}</dt><dd>${label === 'Catalogue URL' && catalogUrl ? `<a href="${escapeHtml(catalogUrl)}" target="_blank" rel="noreferrer">${escapeHtml(catalogUrl)}</a>` : escapeHtml(value)}</dd></div>
+          <div><dt>${escapeHtml(label)}</dt><dd>${label === 'Catalogue/source URL' && catalogUrl ? `<a href="${escapeHtml(catalogUrl)}" target="_blank" rel="noreferrer">${escapeHtml(catalogUrl)}</a>` : escapeHtml(value)}</dd></div>
         `).join('')}
       </dl>
+      ${renderSourceLimitations(fact)}
     </section>
   `;
 }

@@ -1,10 +1,11 @@
 {
   "data_package_version": "expomap-portal-package-v1.1.0",
-  "downloadable_files_count": 6,
-  "generated_at": "2026-06-16T00:00:00Z",
+  "downloadable_files_count": 12,
+  "generated_at": "2026-07-11T23:45:00Z",
   "matched_parser_pilots": [
     {
       "catalog_url": "https://chemicos.ru/ru/catalogue/company",
+      "cleaned_row_count": null,
       "downloadable_files_count": 2,
       "downloads": [
         {
@@ -31,6 +32,7 @@
           "selected_sheet_rows": 208,
           "source_filename": "chemicos_2026_normalized.csv",
           "source_kind": "website_catalogue_parser_pilot",
+          "source_scope": "public ChemiCos 2026 website catalogue company parser pilot",
           "total_source_rows": 208
         },
         {
@@ -57,6 +59,7 @@
           "selected_sheet_rows": 208,
           "source_filename": "chemicos_2026_normalized.xlsx",
           "source_kind": "website_catalogue_parser_pilot",
+          "source_scope": "public ChemiCos 2026 website catalogue company parser pilot",
           "total_source_rows": 208
         }
       ],
@@ -66,11 +69,16 @@
       "match_confidence": "exact_expomap_event_and_catalog_pilot_match",
       "match_reason": "Parser pilot artifact matched by exact Expomap row ordinal/url/name.",
       "match_status": "matched_to_expomap_event",
+      "parsed_workbook_type": null,
       "parser_version": "chemicos-joomla-catalog-v1.0.0",
       "qa_note": "QA PASS: ChemiCos parser pilot artifacts were validated before portal exposure; public normalized CSV/XLSX only.",
       "qa_verdict": "PASS",
       "row_count": 208,
+      "row_counts": null,
+      "source_decision": null,
       "source_kind": "website_catalogue_parser_pilot",
+      "source_limitations": null,
+      "source_scope": "public ChemiCos 2026 website catalogue company parser pilot",
       "target_event_name": "ChemiCos 2026",
       "target_event_names": [
         "ChemiCos 2026"
@@ -107,6 +115,7 @@
               "selected_sheet_rows": 208,
               "source_filename": "chemicos_2026_normalized.csv",
               "source_kind": "website_catalogue_parser_pilot",
+              "source_scope": "public ChemiCos 2026 website catalogue company parser pilot",
               "total_source_rows": 208
             },
             {
@@ -133,6 +142,7 @@
               "selected_sheet_rows": 208,
               "source_filename": "chemicos_2026_normalized.xlsx",
               "source_kind": "website_catalogue_parser_pilot",
+              "source_scope": "public ChemiCos 2026 website catalogue company parser pilot",
               "total_source_rows": 208
             }
           ],
@@ -146,10 +156,12 @@
       "target_expomap_url": "https://expomap.ru/expo/chemicos/2026/",
       "target_expomap_urls": [
         "https://expomap.ru/expo/chemicos/2026/"
-      ]
+      ],
+      "twenty_repeat_status": null
     },
     {
       "catalog_url": "https://zozhexpo.ru/catalog/",
+      "cleaned_row_count": null,
       "downloadable_files_count": 4,
       "downloads": [
         {
@@ -182,6 +194,7 @@
           "selected_sheet_rows": 82,
           "source_filename": "ecogorod_zozh_2026_normalized.csv",
           "source_kind": "website_catalogue_parser_pilot",
+          "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
           "total_source_rows": 82
         },
         {
@@ -214,6 +227,7 @@
           "selected_sheet_rows": 82,
           "source_filename": "ecogorod_zozh_2026_normalized.xlsx",
           "source_kind": "website_catalogue_parser_pilot",
+          "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
           "total_source_rows": 82
         },
         {
@@ -246,6 +260,7 @@
           "selected_sheet_rows": 82,
           "source_filename": "ecogorod_zozh_2026_normalized.csv",
           "source_kind": "website_catalogue_parser_pilot",
+          "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
           "total_source_rows": 82
         },
         {
@@ -278,6 +293,7 @@
           "selected_sheet_rows": 82,
           "source_filename": "ecogorod_zozh_2026_normalized.xlsx",
           "source_kind": "website_catalogue_parser_pilot",
+          "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
           "total_source_rows": 82
         }
       ],
@@ -292,11 +308,16 @@
         "https://zozhexpo.ru/catalog/ and https://ecogorod-expo.ru/ show 24-25 апреля 2026, Москва, Дубининская, 71 Event Hall Даниловский",
         "https://ecogorod-expo.ru/ title: Переадресация на ЗОЖ-Экспо, with exhibitor link to https://zozhexpo.ru/catalog"
       ],
+      "parsed_workbook_type": null,
       "parser_version": "zozh-tilda-catalog-v1.0.0",
       "qa_note": "QA PASS: EcoGorodExpo / ZOZH-Expo parser pilot artifacts were validated before portal exposure; public normalized CSV/XLSX only.",
       "qa_verdict": "PASS",
       "row_count": 82,
+      "row_counts": null,
+      "source_decision": null,
       "source_kind": "website_catalogue_parser_pilot",
+      "source_limitations": null,
+      "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
       "target_event_names": [
         "ЗОЖ-Экспо 2026",
         "ЭкоГородЭкспо 2026"
@@ -339,6 +360,7 @@
               "selected_sheet_rows": 82,
               "source_filename": "ecogorod_zozh_2026_normalized.csv",
               "source_kind": "website_catalogue_parser_pilot",
+              "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
               "total_source_rows": 82
             },
             {
@@ -371,6 +393,7 @@
               "selected_sheet_rows": 82,
               "source_filename": "ecogorod_zozh_2026_normalized.xlsx",
               "source_kind": "website_catalogue_parser_pilot",
+              "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
               "total_source_rows": 82
             }
           ],
@@ -413,6 +436,7 @@
               "selected_sheet_rows": 82,
               "source_filename": "ecogorod_zozh_2026_normalized.csv",
               "source_kind": "website_catalogue_parser_pilot",
+              "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
               "total_source_rows": 82
             },
             {
@@ -445,6 +469,7 @@
               "selected_sheet_rows": 82,
               "source_filename": "ecogorod_zozh_2026_normalized.xlsx",
               "source_kind": "website_catalogue_parser_pilot",
+              "source_scope": "public combined EcoGorodExpo / ZOZH-Expo 2026 website catalogue parser pilot",
               "total_source_rows": 82
             }
           ],
@@ -458,10 +483,878 @@
       "target_expomap_urls": [
         "https://expomap.ru/expo/zozh-expo/2026/apr/",
         "https://expomap.ru/expo/ekogorodexpo/"
-      ]
+      ],
+      "twenty_repeat_status": null
+    },
+    {
+      "catalog_url": "https://t.me/s/SobMaExpo",
+      "cleaned_row_count": 17,
+      "downloadable_files_count": 3,
+      "downloads": [
+        {
+          "artifact_role": "normalized_csv",
+          "audit_note": "QA PASS: SobMaExpo 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source scope is limited to public official SobMaExpo Telegram 2026 posts because the current public sobmaexpo.ru directory shows a 2027 placeholder; parser_version sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0; row_count 21; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://t.me/s/SobMaExpo",
+          "cleaned_rows": 17,
+          "display_filename": "SobMaExpo 2026 — website/catalogue parser pilot (CSV)",
+          "download_filename": "sobmaexpo-2026-normalized-public.csv",
+          "download_href": "downloads/sobmaexpo-2026-normalized-public.csv",
+          "event_source_name": "SobMaExpo 2026",
+          "file_type": "csv",
+          "id": "sobmaexpo-2026-parser-pilot-normalized-csv",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+          "matched_event_name": "SobMaExpo 2026",
+          "matched_event_ordinal": 131,
+          "matched_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/",
+          "official_site_evidence": [
+            "Current sobmaexpo.ru site/directory pages show 2027 placeholder/no parseable 2026 cards.",
+            "Workbook rows cite official public Telegram 2026 posts and the source limitation is documented."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "source-limited QA-passed parser/workbook output; not an uploaded contact workbook",
+          "parser_version": "sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0",
+          "qa_note": "QA PASS: SobMaExpo 2026 parser workbook validated before portal exposure; source-limited to public official Telegram posts, not the full 250+ directory.",
+          "qa_verdict": "PASS",
+          "row_count": 21,
+          "row_counts": {
+            "cleaned_rows": 17,
+            "new_signo_rows": 14,
+            "processed_rows": 21,
+            "raw_rows": 21,
+            "removed_rows": 4,
+            "repeat_signo_rows": 3
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 21,
+          "selected_sheet_rows": 21,
+          "source_filename": "sobmaexpo_2026_normalized.csv",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "This is not the full 250+ exhibitor directory; public static directory no longer exposes 2026 cards.",
+            "Raw Parsed row count reconciles to the selected official Telegram posts, not to the full exhibitor claim.",
+            "Retailer/private-label-owner rows without an identifiable manufacturer are kept in Removed for audit and excluded from New Signo."
+          ],
+          "source_scope": "source-limited public official SobMaExpo Telegram 2026 posts; not the full 250+ exhibitor directory",
+          "source_urls": {
+            "official_directory": "https://sobmaexpo.ru/exhibitor-directory?type=exhibitors&event=696e2ce91684231f4b641f22&lang=ru",
+            "official_site": "https://sobmaexpo.ru/",
+            "telegram_channel": "https://t.me/s/SobMaExpo",
+            "telegram_posts": [
+              "https://t.me/SobMaExpo/655",
+              "https://t.me/SobMaExpo/657",
+              "https://t.me/SobMaExpo/663",
+              "https://t.me/SobMaExpo/672",
+              "https://t.me/SobMaExpo/674",
+              "https://t.me/SobMaExpo/684",
+              "https://t.me/SobMaExpo/686",
+              "https://t.me/SobMaExpo/689",
+              "https://t.me/SobMaExpo/692",
+              "https://t.me/SobMaExpo/695",
+              "https://t.me/SobMaExpo/697",
+              "https://t.me/SobMaExpo/723"
+            ]
+          },
+          "total_source_rows": 21
+        },
+        {
+          "artifact_role": "normalized_xlsx",
+          "audit_note": "QA PASS: SobMaExpo 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source scope is limited to public official SobMaExpo Telegram 2026 posts because the current public sobmaexpo.ru directory shows a 2027 placeholder; parser_version sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0; row_count 21; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://t.me/s/SobMaExpo",
+          "cleaned_rows": 17,
+          "display_filename": "SobMaExpo 2026 — website/catalogue parser pilot (normalized XLSX)",
+          "download_filename": "sobmaexpo-2026-normalized-public.xlsx",
+          "download_href": "downloads/sobmaexpo-2026-normalized-public.xlsx",
+          "event_source_name": "SobMaExpo 2026",
+          "file_type": "xlsx",
+          "id": "sobmaexpo-2026-parser-pilot-normalized-xlsx",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+          "matched_event_name": "SobMaExpo 2026",
+          "matched_event_ordinal": 131,
+          "matched_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/",
+          "official_site_evidence": [
+            "Current sobmaexpo.ru site/directory pages show 2027 placeholder/no parseable 2026 cards.",
+            "Workbook rows cite official public Telegram 2026 posts and the source limitation is documented."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "source-limited QA-passed parser/workbook output; not an uploaded contact workbook",
+          "parser_version": "sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0",
+          "qa_note": "QA PASS: SobMaExpo 2026 parser workbook validated before portal exposure; source-limited to public official Telegram posts, not the full 250+ directory.",
+          "qa_verdict": "PASS",
+          "row_count": 21,
+          "row_counts": {
+            "cleaned_rows": 17,
+            "new_signo_rows": 14,
+            "processed_rows": 21,
+            "raw_rows": 21,
+            "removed_rows": 4,
+            "repeat_signo_rows": 3
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 21,
+          "selected_sheet_rows": 21,
+          "source_filename": "sobmaexpo_2026_normalized.xlsx",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "This is not the full 250+ exhibitor directory; public static directory no longer exposes 2026 cards.",
+            "Raw Parsed row count reconciles to the selected official Telegram posts, not to the full exhibitor claim.",
+            "Retailer/private-label-owner rows without an identifiable manufacturer are kept in Removed for audit and excluded from New Signo."
+          ],
+          "source_scope": "source-limited public official SobMaExpo Telegram 2026 posts; not the full 250+ exhibitor directory",
+          "source_urls": {
+            "official_directory": "https://sobmaexpo.ru/exhibitor-directory?type=exhibitors&event=696e2ce91684231f4b641f22&lang=ru",
+            "official_site": "https://sobmaexpo.ru/",
+            "telegram_channel": "https://t.me/s/SobMaExpo",
+            "telegram_posts": [
+              "https://t.me/SobMaExpo/655",
+              "https://t.me/SobMaExpo/657",
+              "https://t.me/SobMaExpo/663",
+              "https://t.me/SobMaExpo/672",
+              "https://t.me/SobMaExpo/674",
+              "https://t.me/SobMaExpo/684",
+              "https://t.me/SobMaExpo/686",
+              "https://t.me/SobMaExpo/689",
+              "https://t.me/SobMaExpo/692",
+              "https://t.me/SobMaExpo/695",
+              "https://t.me/SobMaExpo/697",
+              "https://t.me/SobMaExpo/723"
+            ]
+          },
+          "total_source_rows": 21
+        },
+        {
+          "artifact_role": "full_processing_workbook",
+          "audit_note": "QA PASS: SobMaExpo 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source scope is limited to public official SobMaExpo Telegram 2026 posts because the current public sobmaexpo.ru directory shows a 2027 placeholder; parser_version sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0; row_count 21; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://t.me/s/SobMaExpo",
+          "cleaned_rows": 17,
+          "display_filename": "SobMaExpo 2026 — website/catalogue parser pilot (full processing workbook XLSX)",
+          "download_filename": "sobmaexpo-2026-full-processing-current-twenty-public.xlsx",
+          "download_href": "downloads/sobmaexpo-2026-full-processing-current-twenty-public.xlsx",
+          "event_source_name": "SobMaExpo 2026",
+          "file_type": "xlsx",
+          "id": "sobmaexpo-2026-parser-pilot-full-processing-workbook",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+          "matched_event_name": "SobMaExpo 2026",
+          "matched_event_ordinal": 131,
+          "matched_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/",
+          "official_site_evidence": [
+            "Current sobmaexpo.ru site/directory pages show 2027 placeholder/no parseable 2026 cards.",
+            "Workbook rows cite official public Telegram 2026 posts and the source limitation is documented."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "source-limited QA-passed parser/workbook output; not an uploaded contact workbook",
+          "parser_version": "sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0",
+          "qa_note": "QA PASS: SobMaExpo 2026 parser workbook validated before portal exposure; source-limited to public official Telegram posts, not the full 250+ directory.",
+          "qa_verdict": "PASS",
+          "row_count": 21,
+          "row_counts": {
+            "cleaned_rows": 17,
+            "new_signo_rows": 14,
+            "processed_rows": 21,
+            "raw_rows": 21,
+            "removed_rows": 4,
+            "repeat_signo_rows": 3
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 21,
+          "selected_sheet_rows": 21,
+          "source_filename": "SobMaExpo_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "This is not the full 250+ exhibitor directory; public static directory no longer exposes 2026 cards.",
+            "Raw Parsed row count reconciles to the selected official Telegram posts, not to the full exhibitor claim.",
+            "Retailer/private-label-owner rows without an identifiable manufacturer are kept in Removed for audit and excluded from New Signo."
+          ],
+          "source_scope": "source-limited public official SobMaExpo Telegram 2026 posts; not the full 250+ exhibitor directory",
+          "source_urls": {
+            "official_directory": "https://sobmaexpo.ru/exhibitor-directory?type=exhibitors&event=696e2ce91684231f4b641f22&lang=ru",
+            "official_site": "https://sobmaexpo.ru/",
+            "telegram_channel": "https://t.me/s/SobMaExpo",
+            "telegram_posts": [
+              "https://t.me/SobMaExpo/655",
+              "https://t.me/SobMaExpo/657",
+              "https://t.me/SobMaExpo/663",
+              "https://t.me/SobMaExpo/672",
+              "https://t.me/SobMaExpo/674",
+              "https://t.me/SobMaExpo/684",
+              "https://t.me/SobMaExpo/686",
+              "https://t.me/SobMaExpo/689",
+              "https://t.me/SobMaExpo/692",
+              "https://t.me/SobMaExpo/695",
+              "https://t.me/SobMaExpo/697",
+              "https://t.me/SobMaExpo/723"
+            ]
+          },
+          "total_source_rows": 21
+        }
+      ],
+      "event_name": "SobMaExpo 2026",
+      "id": "sobmaexpo-2026-parser-pilot",
+      "label": "SobMaExpo 2026 — QA-passed source-limited parser/workbook output",
+      "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+      "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+      "match_status": "matched_to_expomap_event",
+      "official_site_evidence": [
+        "Current sobmaexpo.ru site/directory pages show 2027 placeholder/no parseable 2026 cards.",
+        "Workbook rows cite official public Telegram 2026 posts and the source limitation is documented."
+      ],
+      "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+      "parser_version": "sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0",
+      "qa_note": "QA PASS: SobMaExpo 2026 parser workbook validated before portal exposure; source-limited to public official Telegram posts, not the full 250+ directory.",
+      "qa_verdict": "PASS",
+      "row_count": 21,
+      "row_counts": {
+        "cleaned_rows": 17,
+        "new_signo_rows": 14,
+        "processed_rows": 21,
+        "raw_rows": 21,
+        "removed_rows": 4,
+        "repeat_signo_rows": 3
+      },
+      "source_decision": null,
+      "source_kind": "website_catalogue_parser_pilot",
+      "source_limitations": [
+        "This is not the full 250+ exhibitor directory; public static directory no longer exposes 2026 cards.",
+        "Raw Parsed row count reconciles to the selected official Telegram posts, not to the full exhibitor claim.",
+        "Retailer/private-label-owner rows without an identifiable manufacturer are kept in Removed for audit and excluded from New Signo."
+      ],
+      "source_scope": "source-limited public official SobMaExpo Telegram 2026 posts; not the full 250+ exhibitor directory",
+      "target_event_name": "SobMaExpo 2026",
+      "target_event_names": [
+        "SobMaExpo 2026"
+      ],
+      "target_event_ordinal": 131,
+      "target_event_ordinals": [
+        131
+      ],
+      "target_events": [
+        {
+          "downloadable_files_count": 3,
+          "downloads": [
+            {
+              "artifact_role": "normalized_csv",
+              "audit_note": "QA PASS: SobMaExpo 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source scope is limited to public official SobMaExpo Telegram 2026 posts because the current public sobmaexpo.ru directory shows a 2027 placeholder; parser_version sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0; row_count 21; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://t.me/s/SobMaExpo",
+              "cleaned_rows": 17,
+              "display_filename": "SobMaExpo 2026 — website/catalogue parser pilot (CSV)",
+              "download_filename": "sobmaexpo-2026-normalized-public.csv",
+              "download_href": "downloads/sobmaexpo-2026-normalized-public.csv",
+              "event_source_name": "SobMaExpo 2026",
+              "file_type": "csv",
+              "id": "sobmaexpo-2026-parser-pilot-normalized-csv",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+              "matched_event_name": "SobMaExpo 2026",
+              "matched_event_ordinal": 131,
+              "matched_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/",
+              "official_site_evidence": [
+                "Current sobmaexpo.ru site/directory pages show 2027 placeholder/no parseable 2026 cards.",
+                "Workbook rows cite official public Telegram 2026 posts and the source limitation is documented."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "source-limited QA-passed parser/workbook output; not an uploaded contact workbook",
+              "parser_version": "sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0",
+              "qa_note": "QA PASS: SobMaExpo 2026 parser workbook validated before portal exposure; source-limited to public official Telegram posts, not the full 250+ directory.",
+              "qa_verdict": "PASS",
+              "row_count": 21,
+              "row_counts": {
+                "cleaned_rows": 17,
+                "new_signo_rows": 14,
+                "processed_rows": 21,
+                "raw_rows": 21,
+                "removed_rows": 4,
+                "repeat_signo_rows": 3
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 21,
+              "selected_sheet_rows": 21,
+              "source_filename": "sobmaexpo_2026_normalized.csv",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "This is not the full 250+ exhibitor directory; public static directory no longer exposes 2026 cards.",
+                "Raw Parsed row count reconciles to the selected official Telegram posts, not to the full exhibitor claim.",
+                "Retailer/private-label-owner rows without an identifiable manufacturer are kept in Removed for audit and excluded from New Signo."
+              ],
+              "source_scope": "source-limited public official SobMaExpo Telegram 2026 posts; not the full 250+ exhibitor directory",
+              "source_urls": {
+                "official_directory": "https://sobmaexpo.ru/exhibitor-directory?type=exhibitors&event=696e2ce91684231f4b641f22&lang=ru",
+                "official_site": "https://sobmaexpo.ru/",
+                "telegram_channel": "https://t.me/s/SobMaExpo",
+                "telegram_posts": [
+                  "https://t.me/SobMaExpo/655",
+                  "https://t.me/SobMaExpo/657",
+                  "https://t.me/SobMaExpo/663",
+                  "https://t.me/SobMaExpo/672",
+                  "https://t.me/SobMaExpo/674",
+                  "https://t.me/SobMaExpo/684",
+                  "https://t.me/SobMaExpo/686",
+                  "https://t.me/SobMaExpo/689",
+                  "https://t.me/SobMaExpo/692",
+                  "https://t.me/SobMaExpo/695",
+                  "https://t.me/SobMaExpo/697",
+                  "https://t.me/SobMaExpo/723"
+                ]
+              },
+              "total_source_rows": 21
+            },
+            {
+              "artifact_role": "normalized_xlsx",
+              "audit_note": "QA PASS: SobMaExpo 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source scope is limited to public official SobMaExpo Telegram 2026 posts because the current public sobmaexpo.ru directory shows a 2027 placeholder; parser_version sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0; row_count 21; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://t.me/s/SobMaExpo",
+              "cleaned_rows": 17,
+              "display_filename": "SobMaExpo 2026 — website/catalogue parser pilot (normalized XLSX)",
+              "download_filename": "sobmaexpo-2026-normalized-public.xlsx",
+              "download_href": "downloads/sobmaexpo-2026-normalized-public.xlsx",
+              "event_source_name": "SobMaExpo 2026",
+              "file_type": "xlsx",
+              "id": "sobmaexpo-2026-parser-pilot-normalized-xlsx",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+              "matched_event_name": "SobMaExpo 2026",
+              "matched_event_ordinal": 131,
+              "matched_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/",
+              "official_site_evidence": [
+                "Current sobmaexpo.ru site/directory pages show 2027 placeholder/no parseable 2026 cards.",
+                "Workbook rows cite official public Telegram 2026 posts and the source limitation is documented."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "source-limited QA-passed parser/workbook output; not an uploaded contact workbook",
+              "parser_version": "sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0",
+              "qa_note": "QA PASS: SobMaExpo 2026 parser workbook validated before portal exposure; source-limited to public official Telegram posts, not the full 250+ directory.",
+              "qa_verdict": "PASS",
+              "row_count": 21,
+              "row_counts": {
+                "cleaned_rows": 17,
+                "new_signo_rows": 14,
+                "processed_rows": 21,
+                "raw_rows": 21,
+                "removed_rows": 4,
+                "repeat_signo_rows": 3
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 21,
+              "selected_sheet_rows": 21,
+              "source_filename": "sobmaexpo_2026_normalized.xlsx",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "This is not the full 250+ exhibitor directory; public static directory no longer exposes 2026 cards.",
+                "Raw Parsed row count reconciles to the selected official Telegram posts, not to the full exhibitor claim.",
+                "Retailer/private-label-owner rows without an identifiable manufacturer are kept in Removed for audit and excluded from New Signo."
+              ],
+              "source_scope": "source-limited public official SobMaExpo Telegram 2026 posts; not the full 250+ exhibitor directory",
+              "source_urls": {
+                "official_directory": "https://sobmaexpo.ru/exhibitor-directory?type=exhibitors&event=696e2ce91684231f4b641f22&lang=ru",
+                "official_site": "https://sobmaexpo.ru/",
+                "telegram_channel": "https://t.me/s/SobMaExpo",
+                "telegram_posts": [
+                  "https://t.me/SobMaExpo/655",
+                  "https://t.me/SobMaExpo/657",
+                  "https://t.me/SobMaExpo/663",
+                  "https://t.me/SobMaExpo/672",
+                  "https://t.me/SobMaExpo/674",
+                  "https://t.me/SobMaExpo/684",
+                  "https://t.me/SobMaExpo/686",
+                  "https://t.me/SobMaExpo/689",
+                  "https://t.me/SobMaExpo/692",
+                  "https://t.me/SobMaExpo/695",
+                  "https://t.me/SobMaExpo/697",
+                  "https://t.me/SobMaExpo/723"
+                ]
+              },
+              "total_source_rows": 21
+            },
+            {
+              "artifact_role": "full_processing_workbook",
+              "audit_note": "QA PASS: SobMaExpo 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source scope is limited to public official SobMaExpo Telegram 2026 posts because the current public sobmaexpo.ru directory shows a 2027 placeholder; parser_version sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0; row_count 21; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://t.me/s/SobMaExpo",
+              "cleaned_rows": 17,
+              "display_filename": "SobMaExpo 2026 — website/catalogue parser pilot (full processing workbook XLSX)",
+              "download_filename": "sobmaexpo-2026-full-processing-current-twenty-public.xlsx",
+              "download_href": "downloads/sobmaexpo-2026-full-processing-current-twenty-public.xlsx",
+              "event_source_name": "SobMaExpo 2026",
+              "file_type": "xlsx",
+              "id": "sobmaexpo-2026-parser-pilot-full-processing-workbook",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+              "matched_event_name": "SobMaExpo 2026",
+              "matched_event_ordinal": 131,
+              "matched_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/",
+              "official_site_evidence": [
+                "Current sobmaexpo.ru site/directory pages show 2027 placeholder/no parseable 2026 cards.",
+                "Workbook rows cite official public Telegram 2026 posts and the source limitation is documented."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "source-limited QA-passed parser/workbook output; not an uploaded contact workbook",
+              "parser_version": "sobmaexpo-2026-public-telegram-signo-pipeline-v1.0.0",
+              "qa_note": "QA PASS: SobMaExpo 2026 parser workbook validated before portal exposure; source-limited to public official Telegram posts, not the full 250+ directory.",
+              "qa_verdict": "PASS",
+              "row_count": 21,
+              "row_counts": {
+                "cleaned_rows": 17,
+                "new_signo_rows": 14,
+                "processed_rows": 21,
+                "raw_rows": 21,
+                "removed_rows": 4,
+                "repeat_signo_rows": 3
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 21,
+              "selected_sheet_rows": 21,
+              "source_filename": "SobMaExpo_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "This is not the full 250+ exhibitor directory; public static directory no longer exposes 2026 cards.",
+                "Raw Parsed row count reconciles to the selected official Telegram posts, not to the full exhibitor claim.",
+                "Retailer/private-label-owner rows without an identifiable manufacturer are kept in Removed for audit and excluded from New Signo."
+              ],
+              "source_scope": "source-limited public official SobMaExpo Telegram 2026 posts; not the full 250+ exhibitor directory",
+              "source_urls": {
+                "official_directory": "https://sobmaexpo.ru/exhibitor-directory?type=exhibitors&event=696e2ce91684231f4b641f22&lang=ru",
+                "official_site": "https://sobmaexpo.ru/",
+                "telegram_channel": "https://t.me/s/SobMaExpo",
+                "telegram_posts": [
+                  "https://t.me/SobMaExpo/655",
+                  "https://t.me/SobMaExpo/657",
+                  "https://t.me/SobMaExpo/663",
+                  "https://t.me/SobMaExpo/672",
+                  "https://t.me/SobMaExpo/674",
+                  "https://t.me/SobMaExpo/684",
+                  "https://t.me/SobMaExpo/686",
+                  "https://t.me/SobMaExpo/689",
+                  "https://t.me/SobMaExpo/692",
+                  "https://t.me/SobMaExpo/695",
+                  "https://t.me/SobMaExpo/697",
+                  "https://t.me/SobMaExpo/723"
+                ]
+              },
+              "total_source_rows": 21
+            }
+          ],
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "SobMaExpo 2026 parser artifacts matched by exact Expomap row ordinal/url/name; source limitation is explicit because the public directory now shows a 2027 placeholder.",
+          "target_event_name": "SobMaExpo 2026",
+          "target_event_ordinal": 131,
+          "target_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/"
+        }
+      ],
+      "target_expomap_url": "https://expomap.ru/expo/sobmaexpo/2026/",
+      "target_expomap_urls": [
+        "https://expomap.ru/expo/sobmaexpo/2026/"
+      ],
+      "twenty_repeat_status": null
+    },
+    {
+      "catalog_url": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+      "cleaned_row_count": 17,
+      "downloadable_files_count": 3,
+      "downloads": [
+        {
+          "artifact_role": "normalized_csv",
+          "audit_note": "QA PASS with interim limitations: Global Ingredients Show 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the source-limited full Signo processing workbook are exposed. The source is the Expomap named-participants article, not a full official catalogue; current globalingredients.ru was not a usable official catalogue source; parser_version global-ingredients-show-signo-source-limited-v1.0.0; row_count 21; workbook type FULL_processing_INTERIM_PENDING_TWENTY.",
+          "catalog_url": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+          "cleaned_rows": 17,
+          "display_filename": "Global Ingredients Show 2026 — website/catalogue parser pilot (CSV)",
+          "download_filename": "global-ingredients-show-2026-normalized-public.csv",
+          "download_href": "downloads/global-ingredients-show-2026-normalized-public.csv",
+          "event_source_name": "Global Ingredients Show 2026",
+          "file_type": "csv",
+          "id": "global-ingredients-show-2026-parser-pilot-normalized-csv",
+          "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+          "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+          "matched_event_name": "Global Ingredients Show 2026",
+          "matched_event_ordinal": 161,
+          "matched_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
+          "official_site_evidence": [
+            "Expomap event row matches https://expomap.ru/expo/global-ingredients-show/2026/.",
+            "Expomap named-participants article exposed 21 named examples; current globalingredients.ru was not a usable official catalogue source."
+          ],
+          "parsed_workbook_type": "FULL_processing_INTERIM_PENDING_TWENTY",
+          "parser_pilot_label": "source-limited interim QA-passed parser/workbook output; not an uploaded contact workbook and not a full official catalogue",
+          "parser_version": "global-ingredients-show-signo-source-limited-v1.0.0",
+          "qa_note": "QA PASS: Global Ingredients Show 2026 interim workbook validated before portal exposure; source-limited to named Expomap article examples and pending current Twenty repeat split.",
+          "qa_verdict": "PASS_WITH_INTERIM_LIMITATIONS",
+          "row_count": 21,
+          "row_counts": {
+            "cleaned_rows": 17,
+            "new_signo_rows": 17,
+            "processed_rows": 21,
+            "raw_rows": 21,
+            "removed_rows": 4,
+            "repeat_signo_rows": 0
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 21,
+          "selected_sheet_rows": 21,
+          "source_decision": {
+            "limitations": "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+            "used": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+            "why": "Only public source found with parseable named company leads; direct Expomap detail has no official site URL, and current globalingredients.ru is a domain-for-sale page."
+          },
+          "source_filename": "global_ingredients_show_2026_normalized.csv",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+            "Twenty CRM repeat split was not run because current live Twenty export was unavailable; workbook is labeled INTERIM_PENDING_TWENTY."
+          ],
+          "source_scope": "source-limited Expomap named-participants article examples; not a full official catalogue; INTERIM_PENDING_TWENTY",
+          "source_urls": {
+            "expomap_event": "https://expomap.ru/expo/global-ingredients-show/2026/",
+            "expomap_news_named_participants": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+            "official_domain_current_check": "https://globalingredients.ru/"
+          },
+          "total_source_rows": 21,
+          "twenty_repeat_status": "pending_current_twenty_export_unavailable"
+        },
+        {
+          "artifact_role": "normalized_xlsx",
+          "audit_note": "QA PASS with interim limitations: Global Ingredients Show 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the source-limited full Signo processing workbook are exposed. The source is the Expomap named-participants article, not a full official catalogue; current globalingredients.ru was not a usable official catalogue source; parser_version global-ingredients-show-signo-source-limited-v1.0.0; row_count 21; workbook type FULL_processing_INTERIM_PENDING_TWENTY.",
+          "catalog_url": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+          "cleaned_rows": 17,
+          "display_filename": "Global Ingredients Show 2026 — website/catalogue parser pilot (normalized XLSX)",
+          "download_filename": "global-ingredients-show-2026-normalized-public.xlsx",
+          "download_href": "downloads/global-ingredients-show-2026-normalized-public.xlsx",
+          "event_source_name": "Global Ingredients Show 2026",
+          "file_type": "xlsx",
+          "id": "global-ingredients-show-2026-parser-pilot-normalized-xlsx",
+          "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+          "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+          "matched_event_name": "Global Ingredients Show 2026",
+          "matched_event_ordinal": 161,
+          "matched_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
+          "official_site_evidence": [
+            "Expomap event row matches https://expomap.ru/expo/global-ingredients-show/2026/.",
+            "Expomap named-participants article exposed 21 named examples; current globalingredients.ru was not a usable official catalogue source."
+          ],
+          "parsed_workbook_type": "FULL_processing_INTERIM_PENDING_TWENTY",
+          "parser_pilot_label": "source-limited interim QA-passed parser/workbook output; not an uploaded contact workbook and not a full official catalogue",
+          "parser_version": "global-ingredients-show-signo-source-limited-v1.0.0",
+          "qa_note": "QA PASS: Global Ingredients Show 2026 interim workbook validated before portal exposure; source-limited to named Expomap article examples and pending current Twenty repeat split.",
+          "qa_verdict": "PASS_WITH_INTERIM_LIMITATIONS",
+          "row_count": 21,
+          "row_counts": {
+            "cleaned_rows": 17,
+            "new_signo_rows": 17,
+            "processed_rows": 21,
+            "raw_rows": 21,
+            "removed_rows": 4,
+            "repeat_signo_rows": 0
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 21,
+          "selected_sheet_rows": 21,
+          "source_decision": {
+            "limitations": "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+            "used": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+            "why": "Only public source found with parseable named company leads; direct Expomap detail has no official site URL, and current globalingredients.ru is a domain-for-sale page."
+          },
+          "source_filename": "global_ingredients_show_2026_normalized.xlsx",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+            "Twenty CRM repeat split was not run because current live Twenty export was unavailable; workbook is labeled INTERIM_PENDING_TWENTY."
+          ],
+          "source_scope": "source-limited Expomap named-participants article examples; not a full official catalogue; INTERIM_PENDING_TWENTY",
+          "source_urls": {
+            "expomap_event": "https://expomap.ru/expo/global-ingredients-show/2026/",
+            "expomap_news_named_participants": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+            "official_domain_current_check": "https://globalingredients.ru/"
+          },
+          "total_source_rows": 21,
+          "twenty_repeat_status": "pending_current_twenty_export_unavailable"
+        },
+        {
+          "artifact_role": "full_processing_workbook",
+          "audit_note": "QA PASS with interim limitations: Global Ingredients Show 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the source-limited full Signo processing workbook are exposed. The source is the Expomap named-participants article, not a full official catalogue; current globalingredients.ru was not a usable official catalogue source; parser_version global-ingredients-show-signo-source-limited-v1.0.0; row_count 21; workbook type FULL_processing_INTERIM_PENDING_TWENTY.",
+          "catalog_url": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+          "cleaned_rows": 17,
+          "display_filename": "Global Ingredients Show 2026 — website/catalogue parser pilot (interim full processing workbook XLSX)",
+          "download_filename": "global-ingredients-show-2026-full-processing-interim-pending-twenty-public.xlsx",
+          "download_href": "downloads/global-ingredients-show-2026-full-processing-interim-pending-twenty-public.xlsx",
+          "event_source_name": "Global Ingredients Show 2026",
+          "file_type": "xlsx",
+          "id": "global-ingredients-show-2026-parser-pilot-full-processing-workbook",
+          "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+          "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+          "matched_event_name": "Global Ingredients Show 2026",
+          "matched_event_ordinal": 161,
+          "matched_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
+          "official_site_evidence": [
+            "Expomap event row matches https://expomap.ru/expo/global-ingredients-show/2026/.",
+            "Expomap named-participants article exposed 21 named examples; current globalingredients.ru was not a usable official catalogue source."
+          ],
+          "parsed_workbook_type": "FULL_processing_INTERIM_PENDING_TWENTY",
+          "parser_pilot_label": "source-limited interim QA-passed parser/workbook output; not an uploaded contact workbook and not a full official catalogue",
+          "parser_version": "global-ingredients-show-signo-source-limited-v1.0.0",
+          "qa_note": "QA PASS: Global Ingredients Show 2026 interim workbook validated before portal exposure; source-limited to named Expomap article examples and pending current Twenty repeat split.",
+          "qa_verdict": "PASS_WITH_INTERIM_LIMITATIONS",
+          "row_count": 21,
+          "row_counts": {
+            "cleaned_rows": 17,
+            "new_signo_rows": 17,
+            "processed_rows": 21,
+            "raw_rows": 21,
+            "removed_rows": 4,
+            "repeat_signo_rows": 0
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 21,
+          "selected_sheet_rows": 21,
+          "source_decision": {
+            "limitations": "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+            "used": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+            "why": "Only public source found with parseable named company leads; direct Expomap detail has no official site URL, and current globalingredients.ru is a domain-for-sale page."
+          },
+          "source_filename": "Global_Ingredients_Show_2026_FULL_processing_INTERIM_PENDING_TWENTY.xlsx",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+            "Twenty CRM repeat split was not run because current live Twenty export was unavailable; workbook is labeled INTERIM_PENDING_TWENTY."
+          ],
+          "source_scope": "source-limited Expomap named-participants article examples; not a full official catalogue; INTERIM_PENDING_TWENTY",
+          "source_urls": {
+            "expomap_event": "https://expomap.ru/expo/global-ingredients-show/2026/",
+            "expomap_news_named_participants": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+            "official_domain_current_check": "https://globalingredients.ru/"
+          },
+          "total_source_rows": 21,
+          "twenty_repeat_status": "pending_current_twenty_export_unavailable"
+        }
+      ],
+      "event_name": "Global Ingredients Show 2026",
+      "id": "global-ingredients-show-2026-parser-pilot",
+      "label": "Global Ingredients Show 2026 — QA-passed source-limited interim parser/workbook output",
+      "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+      "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+      "match_status": "matched_to_expomap_event",
+      "official_site_evidence": [
+        "Expomap event row matches https://expomap.ru/expo/global-ingredients-show/2026/.",
+        "Expomap named-participants article exposed 21 named examples; current globalingredients.ru was not a usable official catalogue source."
+      ],
+      "parsed_workbook_type": "FULL_processing_INTERIM_PENDING_TWENTY",
+      "parser_version": "global-ingredients-show-signo-source-limited-v1.0.0",
+      "qa_note": "QA PASS: Global Ingredients Show 2026 interim workbook validated before portal exposure; source-limited to named Expomap article examples and pending current Twenty repeat split.",
+      "qa_verdict": "PASS_WITH_INTERIM_LIMITATIONS",
+      "row_count": 21,
+      "row_counts": {
+        "cleaned_rows": 17,
+        "new_signo_rows": 17,
+        "processed_rows": 21,
+        "raw_rows": 21,
+        "removed_rows": 4,
+        "repeat_signo_rows": 0
+      },
+      "source_decision": {
+        "limitations": "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+        "used": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+        "why": "Only public source found with parseable named company leads; direct Expomap detail has no official site URL, and current globalingredients.ru is a domain-for-sale page."
+      },
+      "source_kind": "website_catalogue_parser_pilot",
+      "source_limitations": [
+        "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+        "Twenty CRM repeat split was not run because current live Twenty export was unavailable; workbook is labeled INTERIM_PENDING_TWENTY."
+      ],
+      "source_scope": "source-limited Expomap named-participants article examples; not a full official catalogue; INTERIM_PENDING_TWENTY",
+      "target_event_name": "Global Ingredients Show 2026",
+      "target_event_names": [
+        "Global Ingredients Show 2026"
+      ],
+      "target_event_ordinal": 161,
+      "target_event_ordinals": [
+        161
+      ],
+      "target_events": [
+        {
+          "downloadable_files_count": 3,
+          "downloads": [
+            {
+              "artifact_role": "normalized_csv",
+              "audit_note": "QA PASS with interim limitations: Global Ingredients Show 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the source-limited full Signo processing workbook are exposed. The source is the Expomap named-participants article, not a full official catalogue; current globalingredients.ru was not a usable official catalogue source; parser_version global-ingredients-show-signo-source-limited-v1.0.0; row_count 21; workbook type FULL_processing_INTERIM_PENDING_TWENTY.",
+              "catalog_url": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+              "cleaned_rows": 17,
+              "display_filename": "Global Ingredients Show 2026 — website/catalogue parser pilot (CSV)",
+              "download_filename": "global-ingredients-show-2026-normalized-public.csv",
+              "download_href": "downloads/global-ingredients-show-2026-normalized-public.csv",
+              "event_source_name": "Global Ingredients Show 2026",
+              "file_type": "csv",
+              "id": "global-ingredients-show-2026-parser-pilot-normalized-csv",
+              "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+              "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+              "matched_event_name": "Global Ingredients Show 2026",
+              "matched_event_ordinal": 161,
+              "matched_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
+              "official_site_evidence": [
+                "Expomap event row matches https://expomap.ru/expo/global-ingredients-show/2026/.",
+                "Expomap named-participants article exposed 21 named examples; current globalingredients.ru was not a usable official catalogue source."
+              ],
+              "parsed_workbook_type": "FULL_processing_INTERIM_PENDING_TWENTY",
+              "parser_pilot_label": "source-limited interim QA-passed parser/workbook output; not an uploaded contact workbook and not a full official catalogue",
+              "parser_version": "global-ingredients-show-signo-source-limited-v1.0.0",
+              "qa_note": "QA PASS: Global Ingredients Show 2026 interim workbook validated before portal exposure; source-limited to named Expomap article examples and pending current Twenty repeat split.",
+              "qa_verdict": "PASS_WITH_INTERIM_LIMITATIONS",
+              "row_count": 21,
+              "row_counts": {
+                "cleaned_rows": 17,
+                "new_signo_rows": 17,
+                "processed_rows": 21,
+                "raw_rows": 21,
+                "removed_rows": 4,
+                "repeat_signo_rows": 0
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 21,
+              "selected_sheet_rows": 21,
+              "source_decision": {
+                "limitations": "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+                "used": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+                "why": "Only public source found with parseable named company leads; direct Expomap detail has no official site URL, and current globalingredients.ru is a domain-for-sale page."
+              },
+              "source_filename": "global_ingredients_show_2026_normalized.csv",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+                "Twenty CRM repeat split was not run because current live Twenty export was unavailable; workbook is labeled INTERIM_PENDING_TWENTY."
+              ],
+              "source_scope": "source-limited Expomap named-participants article examples; not a full official catalogue; INTERIM_PENDING_TWENTY",
+              "source_urls": {
+                "expomap_event": "https://expomap.ru/expo/global-ingredients-show/2026/",
+                "expomap_news_named_participants": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+                "official_domain_current_check": "https://globalingredients.ru/"
+              },
+              "total_source_rows": 21,
+              "twenty_repeat_status": "pending_current_twenty_export_unavailable"
+            },
+            {
+              "artifact_role": "normalized_xlsx",
+              "audit_note": "QA PASS with interim limitations: Global Ingredients Show 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the source-limited full Signo processing workbook are exposed. The source is the Expomap named-participants article, not a full official catalogue; current globalingredients.ru was not a usable official catalogue source; parser_version global-ingredients-show-signo-source-limited-v1.0.0; row_count 21; workbook type FULL_processing_INTERIM_PENDING_TWENTY.",
+              "catalog_url": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+              "cleaned_rows": 17,
+              "display_filename": "Global Ingredients Show 2026 — website/catalogue parser pilot (normalized XLSX)",
+              "download_filename": "global-ingredients-show-2026-normalized-public.xlsx",
+              "download_href": "downloads/global-ingredients-show-2026-normalized-public.xlsx",
+              "event_source_name": "Global Ingredients Show 2026",
+              "file_type": "xlsx",
+              "id": "global-ingredients-show-2026-parser-pilot-normalized-xlsx",
+              "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+              "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+              "matched_event_name": "Global Ingredients Show 2026",
+              "matched_event_ordinal": 161,
+              "matched_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
+              "official_site_evidence": [
+                "Expomap event row matches https://expomap.ru/expo/global-ingredients-show/2026/.",
+                "Expomap named-participants article exposed 21 named examples; current globalingredients.ru was not a usable official catalogue source."
+              ],
+              "parsed_workbook_type": "FULL_processing_INTERIM_PENDING_TWENTY",
+              "parser_pilot_label": "source-limited interim QA-passed parser/workbook output; not an uploaded contact workbook and not a full official catalogue",
+              "parser_version": "global-ingredients-show-signo-source-limited-v1.0.0",
+              "qa_note": "QA PASS: Global Ingredients Show 2026 interim workbook validated before portal exposure; source-limited to named Expomap article examples and pending current Twenty repeat split.",
+              "qa_verdict": "PASS_WITH_INTERIM_LIMITATIONS",
+              "row_count": 21,
+              "row_counts": {
+                "cleaned_rows": 17,
+                "new_signo_rows": 17,
+                "processed_rows": 21,
+                "raw_rows": 21,
+                "removed_rows": 4,
+                "repeat_signo_rows": 0
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 21,
+              "selected_sheet_rows": 21,
+              "source_decision": {
+                "limitations": "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+                "used": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+                "why": "Only public source found with parseable named company leads; direct Expomap detail has no official site URL, and current globalingredients.ru is a domain-for-sale page."
+              },
+              "source_filename": "global_ingredients_show_2026_normalized.xlsx",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+                "Twenty CRM repeat split was not run because current live Twenty export was unavailable; workbook is labeled INTERIM_PENDING_TWENTY."
+              ],
+              "source_scope": "source-limited Expomap named-participants article examples; not a full official catalogue; INTERIM_PENDING_TWENTY",
+              "source_urls": {
+                "expomap_event": "https://expomap.ru/expo/global-ingredients-show/2026/",
+                "expomap_news_named_participants": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+                "official_domain_current_check": "https://globalingredients.ru/"
+              },
+              "total_source_rows": 21,
+              "twenty_repeat_status": "pending_current_twenty_export_unavailable"
+            },
+            {
+              "artifact_role": "full_processing_workbook",
+              "audit_note": "QA PASS with interim limitations: Global Ingredients Show 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the source-limited full Signo processing workbook are exposed. The source is the Expomap named-participants article, not a full official catalogue; current globalingredients.ru was not a usable official catalogue source; parser_version global-ingredients-show-signo-source-limited-v1.0.0; row_count 21; workbook type FULL_processing_INTERIM_PENDING_TWENTY.",
+              "catalog_url": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+              "cleaned_rows": 17,
+              "display_filename": "Global Ingredients Show 2026 — website/catalogue parser pilot (interim full processing workbook XLSX)",
+              "download_filename": "global-ingredients-show-2026-full-processing-interim-pending-twenty-public.xlsx",
+              "download_href": "downloads/global-ingredients-show-2026-full-processing-interim-pending-twenty-public.xlsx",
+              "event_source_name": "Global Ingredients Show 2026",
+              "file_type": "xlsx",
+              "id": "global-ingredients-show-2026-parser-pilot-full-processing-workbook",
+              "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+              "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+              "matched_event_name": "Global Ingredients Show 2026",
+              "matched_event_ordinal": 161,
+              "matched_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
+              "official_site_evidence": [
+                "Expomap event row matches https://expomap.ru/expo/global-ingredients-show/2026/.",
+                "Expomap named-participants article exposed 21 named examples; current globalingredients.ru was not a usable official catalogue source."
+              ],
+              "parsed_workbook_type": "FULL_processing_INTERIM_PENDING_TWENTY",
+              "parser_pilot_label": "source-limited interim QA-passed parser/workbook output; not an uploaded contact workbook and not a full official catalogue",
+              "parser_version": "global-ingredients-show-signo-source-limited-v1.0.0",
+              "qa_note": "QA PASS: Global Ingredients Show 2026 interim workbook validated before portal exposure; source-limited to named Expomap article examples and pending current Twenty repeat split.",
+              "qa_verdict": "PASS_WITH_INTERIM_LIMITATIONS",
+              "row_count": 21,
+              "row_counts": {
+                "cleaned_rows": 17,
+                "new_signo_rows": 17,
+                "processed_rows": 21,
+                "raw_rows": 21,
+                "removed_rows": 4,
+                "repeat_signo_rows": 0
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 21,
+              "selected_sheet_rows": 21,
+              "source_decision": {
+                "limitations": "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+                "used": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+                "why": "Only public source found with parseable named company leads; direct Expomap detail has no official site URL, and current globalingredients.ru is a domain-for-sale page."
+              },
+              "source_filename": "Global_Ingredients_Show_2026_FULL_processing_INTERIM_PENDING_TWENTY.xlsx",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Article says more than 160 companies but exposes only named examples; output is source-limited/interim, not a complete official catalogue parse.",
+                "Twenty CRM repeat split was not run because current live Twenty export was unavailable; workbook is labeled INTERIM_PENDING_TWENTY."
+              ],
+              "source_scope": "source-limited Expomap named-participants article examples; not a full official catalogue; INTERIM_PENDING_TWENTY",
+              "source_urls": {
+                "expomap_event": "https://expomap.ru/expo/global-ingredients-show/2026/",
+                "expomap_news_named_participants": "https://expomap.ru/news/global-ingredients-show-2026-ingredienty-i-dobavki-dlya-produktov-pitaniya-kosmetiki-i-bad/",
+                "official_domain_current_check": "https://globalingredients.ru/"
+              },
+              "total_source_rows": 21,
+              "twenty_repeat_status": "pending_current_twenty_export_unavailable"
+            }
+          ],
+          "match_confidence": "exact_expomap_event_and_source_limited_qa_passed_parser_artifact_match",
+          "match_reason": "Global Ingredients Show 2026 parser artifacts matched by exact Expomap row ordinal/url/name; retained as source-limited interim output pending Twenty and no full official public catalogue was found.",
+          "target_event_name": "Global Ingredients Show 2026",
+          "target_event_ordinal": 161,
+          "target_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/"
+        }
+      ],
+      "target_expomap_url": "https://expomap.ru/expo/global-ingredients-show/2026/",
+      "target_expomap_urls": [
+        "https://expomap.ru/expo/global-ingredients-show/2026/"
+      ],
+      "twenty_repeat_status": "pending_current_twenty_export_unavailable"
     }
   ],
-  "matched_parser_pilots_count": 2,
+  "matched_parser_pilots_count": 4,
   "safety": {
     "contains_credentials_or_tokens": false,
     "download_hrefs_are_relative": true,
