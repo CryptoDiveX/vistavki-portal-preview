@@ -177,6 +177,8 @@ a { color: var(--primary-dark); }
 .status-ok { color: var(--success); background: var(--success-soft); }
 .status-warn { color: var(--warning); background: var(--warning-soft); }
 .status-danger { color: var(--danger); background: var(--danger-soft); }
+.status-info { color: #1e40af; background: #dbeafe; }
+.status-pill-muted { color: var(--muted); background: var(--surface-soft); }
 .chip { color: #334155; background: #eef2f7; font-weight: 700; }
 
 .section-switcher {
@@ -252,7 +254,7 @@ tbody tr:hover { background: #f9fbff; }
 .relevance-cell {
   min-width: 132px;
 }
-.download-cell {
+.presence-cell {
   min-width: 140px;
 }
 .relevance-control {
@@ -291,7 +293,37 @@ tbody tr:hover { background: #f9fbff; }
   color: var(--danger);
 }
 
+.relevance-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.relevance-saved {
+  color: var(--success);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1;
+}
+.relevance-auto {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1;
+  background: var(--surface-soft);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.relevance-auto[hidden],
+.relevance-saved[hidden] {
+  display: none;
+}
 
+.presence-cell {
+  min-width: 140px;
+}
+.presence-cell .status-pill {
+  white-space: nowrap;
+}
 .detail-panel {
   position: fixed;
   inset: 18px 18px 18px auto;

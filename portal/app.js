@@ -24,6 +24,12 @@ const state = {
   relevance: loadRelevance(),
 };
 
+const PRESENCE_LABELS = {
+  yes: { label: 'Yes', class: 'status-ok' },
+  no: { label: 'No', class: 'status-warn' },
+  unknown: { label: 'Unknown', class: 'status-warn' },
+};
+
 const el = (id) => document.getElementById(id);
 const fmt = new Intl.NumberFormat('en-US');
 
@@ -84,14 +90,21 @@ function getSavedRelevanceValue(event) {
 function relevanceSelect(event) {
   const key = getEventRelevanceKey(event);
   const saved = getSavedRelevanceValue(event);
+  const auto = event.relevance_auto === 'yes' ? 'yes' : event.relevance_auto === 'no' ? 'no' : '';
+  // If user has saved a value, show that; otherwise show the auto value
+  const displayValue = saved || auto;
+  const isAuto = !saved && auto;
   return `
     <div class="relevance-control">
       <select class="relevance-select" data-relevance-key="${escapeHtml(key)}" aria-label="Set relevance for ${escapeHtml(event.event_name)}">
-        <option value=""${saved === '' ? ' selected' : ''}>Select</option>
-        <option value="yes"${saved === 'yes' ? ' selected' : ''}>Yes</option>
-        <option value="no"${saved === 'no' ? ' selected' : ''}>No</option>
+        <option value=""${displayValue === '' ? ' selected' : ''}>Select</option>
+        <option value="yes"${displayValue === 'yes' ? ' selected' : ''}>Yes</option>
+        <option value="no"${displayValue === 'no' ? ' selected' : ''}>No</option>
       </select>
-      <span class="relevance-saved"${saved ? '' : ' hidden'}>Saved</span>
+      <div class="relevance-labels">
+        ${saved ? '<span class="relevance-saved" aria-label="User saved">Saved</span>' : ''}
+        ${isAuto ? '<span class="relevance-auto" aria-label="Auto classified">Auto</span>' : ''}
+      </div>
     </div>
   `;
 }
@@ -263,12 +276,27 @@ function buildRelevanceExportRows() {
   state.exhibitionRecords.forEach((event) => {
     const key = getEventRelevanceKey(event);
     const record = getSavedRelevanceRecord(key);
-    const value = record?.value;
-    if (value !== 'yes' && value !== 'no') return;
+    const userValue = record?.value;
+    const autoValue = event.relevance_auto === 'yes' ? 'yes' : event.relevance_auto === 'no' ? 'no' : '';
+    const isUserOverride = userValue === 'yes' || userValue === 'no';
+    const displayValue = userValue || autoValue;
+    if (displayValue !== 'yes' && displayValue !== 'no') return;
     seenKeys.add(key);
     const urls = event.urls || {};
     rows.push({
-      relevance: value,
+      relevance_user: userValue || '',
+      relevance_auto: autoValue,
+      relevance_auto_reason: event.relevance_reason || '',
+      relevance_confidence: event.relevance_confidence ?? '',
+      relevance_needs_review: event.relevance_needs_review ?? '',
+      coldy_added_status: coldyPresence(event).status,
+      coldy_campaign_name_or_id: coldyPresence(event).name,
+      coldy_evidence_reason: coldyPresence(event).reason,
+      coldy_checked_at: coldyPresence(event).checkedAt,
+      twenty_crm_added_status: twentyPresence(event).status,
+      twenty_crm_source: twentyPresence(event).name,
+      twenty_crm_evidence_reason: twentyPresence(event).reason,
+      twenty_crm_checked_at: twentyPresence(event).checkedAt,
       event_key: key,
       event_ordinal: event.ordinal || '',
       event_name: event.event_name || '',
@@ -281,14 +309,26 @@ function buildRelevanceExportRows() {
       official_site_url: event.official_website_url || urls.official_website || urls.external || '',
       status: event.status || '',
       parse_status: event.parse_status || '',
-      saved_at: record.savedAt || '',
+      saved_at: record?.savedAt || '',
     });
   });
   Object.entries(state.relevance).forEach(([key, record]) => {
     const normalized = typeof record === 'string' ? { value: record, savedAt: '' } : record;
     if (seenKeys.has(key) || (normalized?.value !== 'yes' && normalized?.value !== 'no')) return;
     rows.push({
-      relevance: normalized.value,
+      relevance_user: normalized.value,
+      relevance_auto: '',
+      relevance_auto_reason: '',
+      relevance_confidence: '',
+      relevance_needs_review: '',
+      coldy_added_status: '',
+      coldy_campaign_name_or_id: '',
+      coldy_evidence_reason: '',
+      coldy_checked_at: '',
+      twenty_crm_added_status: '',
+      twenty_crm_source: '',
+      twenty_crm_evidence_reason: '',
+      twenty_crm_checked_at: '',
       event_key: key,
       event_ordinal: '',
       event_name: '',
@@ -821,6 +861,8 @@ function renderTable() {
         <td>${text(event.counts?.members)} / ${text(event.counts?.visitors)}</td>
         <td class="link-row">${renderEventLinks(event)}</td>
         <td>${statusBadge(event.status, event.canceled)}</td>
+        ${presenceCell(coldyPresence(event), 'Coldy')}
+        ${presenceCell(twentyPresence(event), 'Twenty CRM')}
         <td class="relevance-cell">${relevanceSelect(event)}</td>
       </tr>
     `;
@@ -829,7 +871,9 @@ function renderTable() {
     button.addEventListener('click', () => showDetail(button.dataset.recordKey || button.dataset.ordinal));
   });
   body.querySelectorAll('.relevance-select').forEach((select) => {
-    const savedLabel = select.closest('.relevance-control')?.querySelector('.relevance-saved');
+    const labelsContainer = select.closest('.relevance-control')?.querySelector('.relevance-labels');
+    const savedLabel = labelsContainer?.querySelector('.relevance-saved');
+    const autoLabel = labelsContainer?.querySelector('.relevance-auto');
     select.dataset.state = select.value || 'unset';
     select.addEventListener('change', () => {
       const key = select.dataset.relevanceKey;
@@ -843,6 +887,7 @@ function renderTable() {
       }
       select.dataset.state = select.value || 'unset';
       if (savedLabel) savedLabel.hidden = !select.value;
+      if (autoLabel) autoLabel.hidden = !!select.value;
       saveRelevance();
       updateRelevanceStatus();
     });
@@ -854,14 +899,79 @@ function renderChips(items) {
   return `<div class="chip-row">${items.map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join('')}</div>`;
 }
 
+function findProducts(event) {
+  return Array.isArray(event.exhibited_products) ? event.exhibited_products.filter(Boolean) : [];
+}
+
+function legacyPresence(event, target) {
+  const status = event.campaign_crm_status || 'unknown';
+  const map = {
+    coldy: { 'campaign+crm': 'yes', campaign_only: 'yes', crm_only: 'no', not_added: 'no', unknown: 'unknown' },
+    twenty: { 'campaign+crm': 'yes', campaign_only: 'no', crm_only: 'yes', not_added: 'no', unknown: 'unknown' },
+  };
+  return map[target][status] || 'unknown';
+}
+
+function normalizePresenceStatus(value) {
+  return value === 'yes' || value === 'no' ? value : 'unknown';
+}
+
+function coldyPresence(event) {
+  const hasSplit = Object.prototype.hasOwnProperty.call(event, 'coldy_added_status');
+  return {
+    status: normalizePresenceStatus(hasSplit ? event.coldy_added_status : legacyPresence(event, 'coldy')),
+    name: event.coldy_campaign_name_or_id || event.campaign_name_or_id || '',
+    reason: event.coldy_evidence_reason || (hasSplit ? '' : 'Legacy combined Campaign / CRM fallback; waiting for split evidence field.'),
+    checkedAt: event.coldy_checked_at || event.campaign_crm_checked_at || '',
+  };
+}
+
+function twentyPresence(event) {
+  const hasSplit = Object.prototype.hasOwnProperty.call(event, 'twenty_crm_added_status');
+  return {
+    status: normalizePresenceStatus(hasSplit ? event.twenty_crm_added_status : legacyPresence(event, 'twenty')),
+    name: event.twenty_crm_source || event.crm_import_source || '',
+    reason: event.twenty_crm_evidence_reason || (hasSplit ? '' : 'Legacy combined Campaign / CRM fallback; waiting for split evidence field.'),
+    checkedAt: event.twenty_crm_checked_at || event.campaign_crm_checked_at || '',
+  };
+}
+
+function presenceCell(presence, label) {
+  const labelConfig = PRESENCE_LABELS[presence.status] || PRESENCE_LABELS.unknown;
+  const tooltipParts = [presence.reason];
+  if (presence.name) tooltipParts.push(`${label}: ${presence.name}`);
+  if (presence.checkedAt) tooltipParts.push(`Checked: ${presence.checkedAt}`);
+  const tooltip = tooltipParts.filter(Boolean).join(' · ') || 'No audit evidence available';
+  return `<td class="presence-cell"><span class="status-pill ${labelConfig.class}" title="${escapeHtml(tooltip)}">${escapeHtml(labelConfig.label)}</span></td>`;
+}
+
+function presencePill(presence, label) {
+  return presenceCell(presence, label).replace(/^<td[^>]*>|<\/td>$/g, '');
+}
+
+function renderPresenceDetail(event) {
+  const coldy = coldyPresence(event);
+  const twenty = twentyPresence(event);
+  return `
+    <section class="detail-section detail-section-wide">
+      <h3>Coldy / Twenty CRM</h3>
+      <dl class="fact-list">
+        <div><dt>Coldy</dt><dd>${presencePill(coldy, 'Coldy')}</dd></div>
+        ${coldy.name ? `<div><dt>Coldy campaign</dt><dd>${escapeHtml(coldy.name)}</dd></div>` : ''}
+        <div><dt>Coldy evidence</dt><dd>${escapeHtml(coldy.reason || 'No audit evidence available')}</dd></div>
+        ${coldy.checkedAt ? `<div><dt>Coldy checked</dt><dd>${escapeHtml(coldy.checkedAt)}</dd></div>` : ''}
+        <div><dt>Twenty CRM</dt><dd>${presencePill(twenty, 'Twenty CRM')}</dd></div>
+        ${twenty.name ? `<div><dt>Twenty source</dt><dd>${escapeHtml(twenty.name)}</dd></div>` : ''}
+        <div><dt>Twenty evidence</dt><dd>${escapeHtml(twenty.reason || 'No audit evidence available')}</dd></div>
+        ${twenty.checkedAt ? `<div><dt>Twenty checked</dt><dd>${escapeHtml(twenty.checkedAt)}</dd></div>` : ''}
+      </dl>
+    </section>
+  `;
+}
+
 function statusBadge(status, canceled) {
   if (canceled || status === 'canceled') return '<span class="status-pill status-danger">Canceled</span>';
   return '<span class="status-pill status-ok">Active</span>';
-}
-
-function findProducts(event) {
-  const candidates = [event.exhibited_products, event.products, event.product_groups, event.product_categories].filter(Boolean);
-  return candidates.flatMap((value) => Array.isArray(value) ? value : String(value).split(/[;,]/)).map((value) => String(value).trim()).filter(Boolean);
 }
 
 function showDetail(recordKey) {
@@ -900,6 +1010,7 @@ function showDetail(recordKey) {
       <section class="detail-section"><h3>Tags</h3>${renderChips(event.tags || [])}</section>
       <section class="detail-section"><h3>Source and audit summary</h3>${sourceAudit}</section>
       <section class="detail-section"><h3>Source links</h3>${renderEventLinks(event, { detail: true })}</section>
+      ${renderPresenceDetail(event)}
       <section class="detail-section"><h3>Parser notes</h3><p>Status: ${escapeHtml(event.status || 'unknown')} · parse_status: ${escapeHtml(event.parse_status || 'unknown')}</p><p>Missing fields: ${escapeHtml((event.missing_fields || []).join(', ') || 'none')}</p><p>${escapeHtml(parserNote)}</p></section>
     </div>
   `;
