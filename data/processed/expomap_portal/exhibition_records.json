@@ -43471,5 +43471,294 @@
     "campaign_name_or_id": "Yugbuild",
     "crm_import_source": "local Twenty exact-email index",
     "campaign_crm_checked_at": "2026-08-03"
+  },
+  {
+    "record_id": "contact-only-mims26-itemf-catalogue",
+    "record_type": "contact_only_exhibition",
+    "slug": "mims26-itemf-catalogue",
+    "ordinal": -2001,
+    "event_name": "MIMS Automobility Санкт-Петербург 2026",
+    "event_subtitle": "ITEMF public catalogue parser pilot",
+    "description": "QA-passed MIMS26 / ITEMF public catalogue parser pilot exposed as its own portal record because it is outside the Expomap Moscow 2026 source scope. The public ITEMF catalogue count=ALL source produced 1,475 parsed exhibitor rows; the Signo-cleaned workbook contains 144 contacts: 130 new and 14 repeat. Generic/public mailbox domains were excluded from domain-only repeat matching before QA PASS.",
+    "parser_notes": "QA-passed MIMS26 / ITEMF public catalogue parser pilot exposed as its own portal record because it is outside the Expomap Moscow 2026 source scope. The public ITEMF catalogue count=ALL source produced 1,475 parsed exhibitor rows; the Signo-cleaned workbook contains 144 contacts: 130 new and 14 repeat. Generic/public mailbox domains were excluded from domain-only repeat matching before QA PASS.",
+    "dates": {
+      "display": "25–28 августа 2026",
+      "start": "2026-08-25",
+      "end": "2026-08-28",
+      "month": "2026-08"
+    },
+    "venue": {
+      "name": "MIMS Automobility Санкт-Петербург",
+      "city": "Санкт-Петербург",
+      "address": null,
+      "country": "Россия"
+    },
+    "counts": {
+      "members": 1475,
+      "visitors": null
+    },
+    "themes": [
+      "Automotive aftermarket",
+      "ITEMF catalogue",
+      "Parser pilot"
+    ],
+    "tags": [
+      "website_catalogue_parser_pilot",
+      "mims26",
+      "itemf",
+      "qa_pass",
+      "sanitized_public_downloads"
+    ],
+    "exhibited_products": [],
+    "urls": {
+      "expomap": null,
+      "external": "https://online.itemf.ru/info/MIMS26/catalog/",
+      "official_website": "https://mims.ru/"
+    },
+    "official_website_url": "https://mims.ru/",
+    "status": "active",
+    "canceled": false,
+    "parse_status": "website_catalogue_parser_pilot",
+    "missing_fields": [],
+    "related_files": [
+      {
+        "id": "mims26-itemf-parser-pilot-normalized-csv",
+        "display_filename": "MIMS Automobility Санкт-Петербург 2026 — parser/workbook (CSV)",
+        "event_source_name": "MIMS Automobility Санкт-Петербург 2026",
+        "source_filename": "mims26_normalized.csv",
+        "file_type": "csv",
+        "artifact_role": "normalized_csv",
+        "download_filename": "mims26-itemf-normalized-public.csv",
+        "download_href": "downloads/mims26-itemf-normalized-public.csv",
+        "safety_scan_status": "pass",
+        "source_kind": "website_catalogue_parser_pilot",
+        "parser_pilot_label": "ITEMF public catalogue parser workbook; not an uploaded contact workbook",
+        "row_count": 1475,
+        "total_source_rows": 1475,
+        "cleaned_rows": 144,
+        "selected_sheet_rows": 1475,
+        "selected_sheet_nonempty_rows": 1475,
+        "contacts_with_main_email": 123,
+        "catalog_url": "https://online.itemf.ru/info/MIMS26/catalog/",
+        "parser_version": "mims26-itemf-public-catalog-signo-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated; generic-provider repeat-domain remediation validated; safety rescan clean.",
+        "source_scope": "public ITEMF MIMS26 catalogue parser with current Twenty repeat split",
+        "row_counts": {
+          "catalog_public_email_rows_cleaned": 123,
+          "cleaned_rows": 144,
+          "contacts_with_main_email": 123,
+          "new_signo_rows": 130,
+          "processed_rows": 1475,
+          "raw_rows": 1475,
+          "removed_rows": 1331,
+          "repeat_signo_rows": 14,
+          "website_email_enrichment_attempts": 0
+        },
+        "match_confidence": "not_in_expomap_moscow_scope_itemf_catalogue_qa_passed",
+        "matched_event_name": null,
+        "matched_event_ordinal": null,
+        "matched_expomap_url": null,
+        "audit_note": "QA PASS: MIMS26 / ITEMF public catalogue parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source is the public unauthenticated ITEMF catalogue count=ALL page; no cookies, credentials, captcha solving, or private endpoints used. parser_version mims26-itemf-public-catalog-signo-v1.0.1; parsed 1475; contacts 144; new 130; repeat 14; workbook type FULL_processing_CURRENT_TWENTY. Generic/public mailbox domains are excluded from domain-only repeat matching; exact-email matching remains allowed.",
+        "match_reason": "MIMS26 is a Санкт-Петербург ITEMF public-catalogue parser pilot, outside the Expomap Moscow 2026 event set; exposed as its own portal parser-pilot record after QA PASS.",
+        "official_site_evidence": [
+          "ITEMF public catalogue count=ALL exposed 1,475 exhibitor cards and detail pages parsed successfully.",
+          "QA audit reconciles raw/match/email audits, manifest counts, source hashes, and workbook safety scan."
+        ],
+        "source_urls": {
+          "provided_itemf_catalog": "https://online.itemf.ru/info/MIMS26/catalog/",
+          "all_count_catalog": "https://online.itemf.ru/info/MIMS26/catalog/?count=ALL",
+          "event_confirmation": [
+            "https://itemfexpo.ru/",
+            "https://mims.ru/"
+          ]
+        },
+        "sha256": "ffd897e5b78250623aa7aee628454ab8d2bfe4e7b8286964c3417136729d92d8",
+        "size_bytes": 2525436
+      },
+      {
+        "id": "mims26-itemf-parser-pilot-normalized-xlsx",
+        "display_filename": "MIMS Automobility Санкт-Петербург 2026 — parser/workbook (normalized XLSX)",
+        "event_source_name": "MIMS Automobility Санкт-Петербург 2026",
+        "source_filename": "mims26_normalized.xlsx",
+        "file_type": "xlsx",
+        "artifact_role": "normalized_xlsx",
+        "download_filename": "mims26-itemf-normalized-public.xlsx",
+        "download_href": "downloads/mims26-itemf-normalized-public.xlsx",
+        "safety_scan_status": "pass",
+        "source_kind": "website_catalogue_parser_pilot",
+        "parser_pilot_label": "ITEMF public catalogue parser workbook; not an uploaded contact workbook",
+        "row_count": 1475,
+        "total_source_rows": 1475,
+        "cleaned_rows": 144,
+        "selected_sheet_rows": 1475,
+        "selected_sheet_nonempty_rows": 1475,
+        "contacts_with_main_email": 123,
+        "catalog_url": "https://online.itemf.ru/info/MIMS26/catalog/",
+        "parser_version": "mims26-itemf-public-catalog-signo-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated; generic-provider repeat-domain remediation validated; safety rescan clean.",
+        "source_scope": "public ITEMF MIMS26 catalogue parser with current Twenty repeat split",
+        "row_counts": {
+          "catalog_public_email_rows_cleaned": 123,
+          "cleaned_rows": 144,
+          "contacts_with_main_email": 123,
+          "new_signo_rows": 130,
+          "processed_rows": 1475,
+          "raw_rows": 1475,
+          "removed_rows": 1331,
+          "repeat_signo_rows": 14,
+          "website_email_enrichment_attempts": 0
+        },
+        "match_confidence": "not_in_expomap_moscow_scope_itemf_catalogue_qa_passed",
+        "matched_event_name": null,
+        "matched_event_ordinal": null,
+        "matched_expomap_url": null,
+        "audit_note": "QA PASS: MIMS26 / ITEMF public catalogue parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source is the public unauthenticated ITEMF catalogue count=ALL page; no cookies, credentials, captcha solving, or private endpoints used. parser_version mims26-itemf-public-catalog-signo-v1.0.1; parsed 1475; contacts 144; new 130; repeat 14; workbook type FULL_processing_CURRENT_TWENTY. Generic/public mailbox domains are excluded from domain-only repeat matching; exact-email matching remains allowed.",
+        "match_reason": "MIMS26 is a Санкт-Петербург ITEMF public-catalogue parser pilot, outside the Expomap Moscow 2026 event set; exposed as its own portal parser-pilot record after QA PASS.",
+        "official_site_evidence": [
+          "ITEMF public catalogue count=ALL exposed 1,475 exhibitor cards and detail pages parsed successfully.",
+          "QA audit reconciles raw/match/email audits, manifest counts, source hashes, and workbook safety scan."
+        ],
+        "source_urls": {
+          "provided_itemf_catalog": "https://online.itemf.ru/info/MIMS26/catalog/",
+          "all_count_catalog": "https://online.itemf.ru/info/MIMS26/catalog/?count=ALL",
+          "event_confirmation": [
+            "https://itemfexpo.ru/",
+            "https://mims.ru/"
+          ]
+        },
+        "sha256": "dd84cbb2edcbad065f519811fe60c2c91ce7987b478a79b72d2967f8c3f1cf5e",
+        "size_bytes": 834986
+      },
+      {
+        "id": "mims26-itemf-parser-pilot-full-processing-workbook",
+        "display_filename": "MIMS Automobility Санкт-Петербург 2026 — parser/workbook (full processing workbook XLSX)",
+        "event_source_name": "MIMS Automobility Санкт-Петербург 2026",
+        "source_filename": "MIMS26_ITEMF_FULL_processing_CURRENT_TWENTY.xlsx",
+        "file_type": "xlsx",
+        "artifact_role": "full_processing_workbook",
+        "download_filename": "mims26-itemf-full-processing-current-twenty-public.xlsx",
+        "download_href": "downloads/mims26-itemf-full-processing-current-twenty-public.xlsx",
+        "safety_scan_status": "pass",
+        "source_kind": "website_catalogue_parser_pilot",
+        "parser_pilot_label": "ITEMF public catalogue parser workbook; not an uploaded contact workbook",
+        "row_count": 1475,
+        "total_source_rows": 1475,
+        "cleaned_rows": 144,
+        "selected_sheet_rows": 1475,
+        "selected_sheet_nonempty_rows": 1475,
+        "contacts_with_main_email": 123,
+        "catalog_url": "https://online.itemf.ru/info/MIMS26/catalog/",
+        "parser_version": "mims26-itemf-public-catalog-signo-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated; generic-provider repeat-domain remediation validated; safety rescan clean.",
+        "source_scope": "public ITEMF MIMS26 catalogue parser with current Twenty repeat split",
+        "row_counts": {
+          "catalog_public_email_rows_cleaned": 123,
+          "cleaned_rows": 144,
+          "contacts_with_main_email": 123,
+          "new_signo_rows": 130,
+          "processed_rows": 1475,
+          "raw_rows": 1475,
+          "removed_rows": 1331,
+          "repeat_signo_rows": 14,
+          "website_email_enrichment_attempts": 0
+        },
+        "match_confidence": "not_in_expomap_moscow_scope_itemf_catalogue_qa_passed",
+        "matched_event_name": null,
+        "matched_event_ordinal": null,
+        "matched_expomap_url": null,
+        "audit_note": "QA PASS: MIMS26 / ITEMF public catalogue parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source is the public unauthenticated ITEMF catalogue count=ALL page; no cookies, credentials, captcha solving, or private endpoints used. parser_version mims26-itemf-public-catalog-signo-v1.0.1; parsed 1475; contacts 144; new 130; repeat 14; workbook type FULL_processing_CURRENT_TWENTY. Generic/public mailbox domains are excluded from domain-only repeat matching; exact-email matching remains allowed.",
+        "match_reason": "MIMS26 is a Санкт-Петербург ITEMF public-catalogue parser pilot, outside the Expomap Moscow 2026 event set; exposed as its own portal parser-pilot record after QA PASS.",
+        "official_site_evidence": [
+          "ITEMF public catalogue count=ALL exposed 1,475 exhibitor cards and detail pages parsed successfully.",
+          "QA audit reconciles raw/match/email audits, manifest counts, source hashes, and workbook safety scan."
+        ],
+        "source_urls": {
+          "provided_itemf_catalog": "https://online.itemf.ru/info/MIMS26/catalog/",
+          "all_count_catalog": "https://online.itemf.ru/info/MIMS26/catalog/?count=ALL",
+          "event_confirmation": [
+            "https://itemfexpo.ru/",
+            "https://mims.ru/"
+          ]
+        },
+        "sha256": "aa44069ebe6be4c8956cd4c8cf0099f50e34d6df9d4a8becffe1b69f26bce644",
+        "size_bytes": 2894679
+      }
+    ],
+    "has_parsed_data": true,
+    "has_downloadable_file": true,
+    "downloadable_files_count": 3,
+    "source_filename": "MIMS26_ITEMF_FULL_processing_CURRENT_TWENTY.xlsx",
+    "source_audit": {
+      "detail_page_url": "https://online.itemf.ru/info/MIMS26/catalog/",
+      "official_website_extracted_at": null,
+      "official_website_extraction_status": "provided_by_itemf_manifest",
+      "official_website_missing": false,
+      "official_website_parser_version": null,
+      "parser_version": "expomap-portal-package-v1.1.0",
+      "scraped_at": "2026-08-22T20:43:34Z",
+      "source_page": "https://online.itemf.ru/info/MIMS26/catalog/",
+      "source_page_summary": {
+        "source_filename": "MIMS26_ITEMF_FULL_processing_CURRENT_TWENTY.xlsx",
+        "source_catalog_url": "https://online.itemf.ru/info/MIMS26/catalog/",
+        "all_count_catalog_url": "https://online.itemf.ru/info/MIMS26/catalog/?count=ALL",
+        "qa_task_id": "t_4b12160a",
+        "backend_remediation_task_id": "t_f3f5ffe7"
+      },
+      "source_scope": "itemf_public_catalogue_parser_pilot",
+      "source_site": "ITEMF public catalogue"
+    },
+    "campaign_metadata": {
+      "event_source_name": "MIMS Automobility Санкт-Петербург 2026",
+      "source_filename": "MIMS26_ITEMF_FULL_processing_CURRENT_TWENTY.xlsx",
+      "download_filename": "mims26-itemf-full-processing-current-twenty-public.xlsx",
+      "download_href": "downloads/mims26-itemf-full-processing-current-twenty-public.xlsx",
+      "match_status": "portal_parser_pilot_not_expomap_moscow_scope",
+      "match_reason": "MIMS26 is a Санкт-Петербург ITEMF public-catalogue parser pilot, outside the Expomap Moscow 2026 event set; exposed as its own portal parser-pilot record after QA PASS.",
+      "safety_scan_status": "pass",
+      "cleaned_rows": 144,
+      "selected_sheet_rows": 1475,
+      "selected_sheet_nonempty_rows": 1475
+    },
+    "parser_pilot_facts": [
+      {
+        "id": "mims26-itemf-parser-pilot",
+        "event_name": "MIMS Automobility Санкт-Петербург 2026",
+        "matched_event_name": null,
+        "matched_event_ordinal": null,
+        "matched_expomap_url": null,
+        "row_count": 1475,
+        "cleaned_row_count": 144,
+        "contacts_with_main_email": 123,
+        "row_counts": {
+          "catalog_public_email_rows_cleaned": 123,
+          "cleaned_rows": 144,
+          "contacts_with_main_email": 123,
+          "new_signo_rows": 130,
+          "processed_rows": 1475,
+          "raw_rows": 1475,
+          "removed_rows": 1331,
+          "repeat_signo_rows": 14,
+          "website_email_enrichment_attempts": 0
+        },
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated; generic-provider repeat-domain remediation validated; safety rescan clean.",
+        "parser_version": "mims26-itemf-public-catalog-signo-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "source_scope": "public ITEMF MIMS26 catalogue parser with current Twenty repeat split",
+        "source_limitations": [
+          "Not part of the Expomap Moscow 2026 source set; exposed as its own parser-pilot portal record."
+        ],
+        "downloadable_files_count": 3,
+        "match_confidence": "not_in_expomap_moscow_scope_itemf_catalogue_qa_passed",
+        "match_reason": "MIMS26 parser artifacts exposed after QA PASS from t_4b12160a.",
+        "twenty_repeat_status": "current Twenty repeat split applied; generic-provider repeat-domain remediation validated"
+      }
+    ]
   }
 ]

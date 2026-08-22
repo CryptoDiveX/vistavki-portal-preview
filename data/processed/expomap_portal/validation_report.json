@@ -25,5 +25,7 @@
   ],
   "findings": [],
   "january_2026_count": 15,
-  "status": "pass"
+  "status": "pass",
+  "exhibition_record_count": 344,
+  "parser_pilot_downloadable_files_count": 24
 }
