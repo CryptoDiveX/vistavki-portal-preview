@@ -27799,14 +27799,14 @@
       "start": "2026-08-18T00:00:00"
     },
     "description": null,
-    "downloadable_files_count": 0,
+    "downloadable_files_count": 3,
     "event_name": "ИнтерАвтоМеханика 2026",
     "event_subtitle": "Международная выставка автомобильной индустрии №1 в России",
     "exhibited_products": [
       "<p>Запчасти, автокомпоненты</p>\r\n\r\n<p>Масла и автохимия Автоаксессуары</p>\r\n\r\n<p>Лакокрасочные материалы</p>\r\n\r\n<p>Гаражное и диагностическое оборудование</p>\r\n\r\n<p>Оборудование для кузовного ремонта</p>\r\n\r\n<p>Шины, резинотехнические изделия</p>\r\n\r\n<p>Оборудование и комплектующие для автомоек</p>\r\n\r\n<p>Автоэлектрика и автоэлектроника</p>"
     ],
-    "has_downloadable_file": false,
-    "has_parsed_data": false,
+    "has_downloadable_file": true,
+    "has_parsed_data": true,
     "matched_relevance_categories": [
       "auto_products_consumables"
     ],
@@ -27851,7 +27851,155 @@
     "predicted_relevance": "yes",
     "predicted_relevance_confidence": 0.9,
     "predicted_relevance_reason": "strong non-beverage packaged/product or packaging-label evidence",
-    "related_files": [],
+    "related_files": [
+      {
+        "id": "interavtomehanika-2026-parser-pilot-normalized-csv",
+        "display_filename": "ИнтерАвтоМеханика 2026 — parser/workbook (CSV)",
+        "event_source_name": "ИнтерАвтоМеханика 2026",
+        "source_filename": "interavtomehanika_2026_normalized.csv",
+        "file_type": "csv",
+        "artifact_role": "normalized_csv",
+        "download_filename": "interavtomehanika-2026-normalized-public.csv",
+        "download_href": "downloads/interavtomehanika-2026-normalized-public.csv",
+        "safety_scan_status": "pass",
+        "source_kind": "website_catalogue_parser_pilot",
+        "parser_pilot_label": "official floorplans/exhibitors parser workbook; not an uploaded contact workbook",
+        "row_count": 353,
+        "total_source_rows": 353,
+        "cleaned_rows": 44,
+        "selected_sheet_rows": 353,
+        "selected_sheet_nonempty_rows": 353,
+        "catalog_url": "https://interauto-mechanica-floorplans-2026.pages.dev/",
+        "parser_version": "interavtomehanika-2026-signo-workbook-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated; Cleaned/New/Repeat are Russia-only yes/keep rows and workbook safety scan is clean.",
+        "source_scope": "official public InterAutoMechanica 2026 floorplans/exhibitors parser with current Twenty repeat split",
+        "row_counts": {
+          "raw_rows": 353,
+          "processed_rows": 353,
+          "cleaned_rows": 44,
+          "removed_rows": 309,
+          "new_signo_rows": 42,
+          "repeat_signo_rows": 2,
+          "website_email_found_rows": 0
+        },
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "matched_event_name": "ИнтерАвтоМеханика 2026",
+        "matched_event_ordinal": 220,
+        "matched_expomap_url": "https://expomap.ru/expo/interavtomehanika/",
+        "audit_note": "QA PASS: ИнтерАвтоМеханика 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source is the official floorplans/exhibitors public data; Expomap captcha copy is not primary evidence; parser_version interavtomehanika-2026-signo-workbook-v1.0.1; parsed 353; contacts 44; new 42; repeat 2; workbook type FULL_processing_CURRENT_TWENTY.",
+        "match_reason": "ИнтерАвтоМеханика 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff.",
+        "official_site_evidence": [
+          "Official floorplans source exposes 353 company records for InterAutoMechanica 2026.",
+          "QA audit reconciles raw/match/email audits, manifest counts, source hashes, and workbook safety scan."
+        ],
+        "source_urls": {
+          "official_home": "https://interauto-mechanica.ru/",
+          "official_exhibitors": "https://interauto-mechanica.ru/exhibitors/",
+          "official_floorplans": "https://interauto-mechanica-floorplans-2026.pages.dev/",
+          "expomap_event": "https://expomap.ru/expo/interavtomehanika/"
+        }
+      },
+      {
+        "id": "interavtomehanika-2026-parser-pilot-normalized-xlsx",
+        "display_filename": "ИнтерАвтоМеханика 2026 — parser/workbook (normalized XLSX)",
+        "event_source_name": "ИнтерАвтоМеханика 2026",
+        "source_filename": "interavtomehanika_2026_normalized.xlsx",
+        "file_type": "xlsx",
+        "artifact_role": "normalized_xlsx",
+        "download_filename": "interavtomehanika-2026-normalized-public.xlsx",
+        "download_href": "downloads/interavtomehanika-2026-normalized-public.xlsx",
+        "safety_scan_status": "pass",
+        "source_kind": "website_catalogue_parser_pilot",
+        "parser_pilot_label": "official floorplans/exhibitors parser workbook; not an uploaded contact workbook",
+        "row_count": 353,
+        "total_source_rows": 353,
+        "cleaned_rows": 44,
+        "selected_sheet_rows": 353,
+        "selected_sheet_nonempty_rows": 353,
+        "catalog_url": "https://interauto-mechanica-floorplans-2026.pages.dev/",
+        "parser_version": "interavtomehanika-2026-signo-workbook-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated; Cleaned/New/Repeat are Russia-only yes/keep rows and workbook safety scan is clean.",
+        "source_scope": "official public InterAutoMechanica 2026 floorplans/exhibitors parser with current Twenty repeat split",
+        "row_counts": {
+          "raw_rows": 353,
+          "processed_rows": 353,
+          "cleaned_rows": 44,
+          "removed_rows": 309,
+          "new_signo_rows": 42,
+          "repeat_signo_rows": 2,
+          "website_email_found_rows": 0
+        },
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "matched_event_name": "ИнтерАвтоМеханика 2026",
+        "matched_event_ordinal": 220,
+        "matched_expomap_url": "https://expomap.ru/expo/interavtomehanika/",
+        "audit_note": "QA PASS: ИнтерАвтоМеханика 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source is the official floorplans/exhibitors public data; Expomap captcha copy is not primary evidence; parser_version interavtomehanika-2026-signo-workbook-v1.0.1; parsed 353; contacts 44; new 42; repeat 2; workbook type FULL_processing_CURRENT_TWENTY.",
+        "match_reason": "ИнтерАвтоМеханика 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff.",
+        "official_site_evidence": [
+          "Official floorplans source exposes 353 company records for InterAutoMechanica 2026.",
+          "QA audit reconciles raw/match/email audits, manifest counts, source hashes, and workbook safety scan."
+        ],
+        "source_urls": {
+          "official_home": "https://interauto-mechanica.ru/",
+          "official_exhibitors": "https://interauto-mechanica.ru/exhibitors/",
+          "official_floorplans": "https://interauto-mechanica-floorplans-2026.pages.dev/",
+          "expomap_event": "https://expomap.ru/expo/interavtomehanika/"
+        }
+      },
+      {
+        "id": "interavtomehanika-2026-parser-pilot-full-processing-workbook",
+        "display_filename": "ИнтерАвтоМеханика 2026 — parser/workbook (full processing workbook XLSX)",
+        "event_source_name": "ИнтерАвтоМеханика 2026",
+        "source_filename": "INTERAUTOMECHANIKA_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+        "file_type": "xlsx",
+        "artifact_role": "full_processing_workbook",
+        "download_filename": "interavtomehanika-2026-full-processing-current-twenty-public.xlsx",
+        "download_href": "downloads/interavtomehanika-2026-full-processing-current-twenty-public.xlsx",
+        "safety_scan_status": "pass",
+        "source_kind": "website_catalogue_parser_pilot",
+        "parser_pilot_label": "official floorplans/exhibitors parser workbook; not an uploaded contact workbook",
+        "row_count": 353,
+        "total_source_rows": 353,
+        "cleaned_rows": 44,
+        "selected_sheet_rows": 353,
+        "selected_sheet_nonempty_rows": 353,
+        "catalog_url": "https://interauto-mechanica-floorplans-2026.pages.dev/",
+        "parser_version": "interavtomehanika-2026-signo-workbook-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated; Cleaned/New/Repeat are Russia-only yes/keep rows and workbook safety scan is clean.",
+        "source_scope": "official public InterAutoMechanica 2026 floorplans/exhibitors parser with current Twenty repeat split",
+        "row_counts": {
+          "raw_rows": 353,
+          "processed_rows": 353,
+          "cleaned_rows": 44,
+          "removed_rows": 309,
+          "new_signo_rows": 42,
+          "repeat_signo_rows": 2,
+          "website_email_found_rows": 0
+        },
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "matched_event_name": "ИнтерАвтоМеханика 2026",
+        "matched_event_ordinal": 220,
+        "matched_expomap_url": "https://expomap.ru/expo/interavtomehanika/",
+        "audit_note": "QA PASS: ИнтерАвтоМеханика 2026 parser/workbook artifacts were validated before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed. Source is the official floorplans/exhibitors public data; Expomap captcha copy is not primary evidence; parser_version interavtomehanika-2026-signo-workbook-v1.0.1; parsed 353; contacts 44; new 42; repeat 2; workbook type FULL_processing_CURRENT_TWENTY.",
+        "match_reason": "ИнтерАвтоМеханика 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff.",
+        "official_site_evidence": [
+          "Official floorplans source exposes 353 company records for InterAutoMechanica 2026.",
+          "QA audit reconciles raw/match/email audits, manifest counts, source hashes, and workbook safety scan."
+        ],
+        "source_urls": {
+          "official_home": "https://interauto-mechanica.ru/",
+          "official_exhibitors": "https://interauto-mechanica.ru/exhibitors/",
+          "official_floorplans": "https://interauto-mechanica-floorplans-2026.pages.dev/",
+          "expomap_event": "https://expomap.ru/expo/interavtomehanika/"
+        }
+      }
+    ],
     "relevance_auto": "yes",
     "relevance_confidence": 0.9,
     "relevance_matched_beverage_exclusion_terms": [],
@@ -27950,7 +28098,35 @@
     "campaign_crm_status_reason": "Compatibility field derived from separate Coldy and Twenty CRM statuses. UI acceptance uses the split fields.",
     "campaign_name_or_id": "",
     "crm_import_source": "",
-    "campaign_crm_checked_at": "2026-08-03"
+    "campaign_crm_checked_at": "2026-08-03",
+    "parser_pilot_facts": [
+      {
+        "id": "interavtomehanika-2026-parser-pilot",
+        "event_name": "ИнтерАвтоМеханика 2026",
+        "matched_event_name": "ИнтерАвтоМеханика 2026",
+        "matched_event_ordinal": 220,
+        "matched_expomap_url": "https://expomap.ru/expo/interavtomehanika/",
+        "row_count": 353,
+        "cleaned_row_count": 44,
+        "row_counts": {
+          "raw_rows": 353,
+          "processed_rows": 353,
+          "cleaned_rows": 44,
+          "removed_rows": 309,
+          "new_signo_rows": 42,
+          "repeat_signo_rows": 2,
+          "website_email_found_rows": 0
+        },
+        "qa_verdict": "PASS",
+        "qa_note": "QA PASS: regenerated workbook validated before portal exposure.",
+        "parser_version": "interavtomehanika-2026-signo-workbook-v1.0.1",
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "source_scope": "official public InterAutoMechanica 2026 floorplans/exhibitors parser with current Twenty repeat split",
+        "downloadable_files_count": 3,
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "match_reason": "Parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff."
+      }
+    ]
   },
   {
     "canceled": false,
