@@ -1026,16 +1026,19 @@
   },
   "data_package_version": "expomap-portal-package-v1.1.0",
   "exhibitor_parser_pilot_summary": {
-    "downloadable_files_count": 12,
+    "downloadable_files_count": 21,
     "mapping_file": "exhibitor_parser_pilots.json",
     "matched_event_ordinals": [
+      41,
       76,
       131,
       157,
       158,
-      161
+      161,
+      220,
+      248
     ],
-    "matched_parser_pilots_count": 4,
+    "matched_parser_pilots_count": 7,
     "note": "Website/catalogue/source-limited parser pilots are parser/workbook outputs attached to exact Expomap rows, distinct from uploaded contact workbooks.",
     "unmatched_parser_pilots_count": 0
   },
