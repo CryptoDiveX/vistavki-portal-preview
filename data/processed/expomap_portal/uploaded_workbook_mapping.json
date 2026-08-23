@@ -633,7 +633,7 @@
   ],
   "contact_only_exhibition_records_count": 2,
   "data_package_version": "expomap-portal-package-v1.1.0",
-  "generated_at": "2026-07-11T23:45:00Z",
+  "generated_at": "2026-08-23T20:39:07Z",
   "legacy_contact_download_arrays": {
     "contact_exhibitions": "Audit/coverage array; matched files stay attached to Expomap event related_files, contact-only campaigns are also materialized as contact_only_exhibition_records.",
     "unmatched_contact_files": "Legacy compatibility only; canonical expandable-row rendering should use contact_only_exhibition_records / exhibition_records.json.",

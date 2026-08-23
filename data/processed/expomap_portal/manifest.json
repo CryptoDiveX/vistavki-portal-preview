@@ -2,7 +2,7 @@
   "data_package_version": "expomap-portal-package-v1.1.0",
   "dataset": {
     "api_reported_count": 347,
-    "contact_only_exhibition_records_count": 3,
+    "contact_only_exhibition_records_count": 2,
     "contact_only_files_count": 2,
     "contact_workbooks_count": 5,
     "count_exception": {
@@ -15,12 +15,12 @@
       "note": "Expomap API reports 347 events for Moscow expo 2026, but Stage 1 API page probes and QA validation exposed 341 unique accessible records. The portal package uses the 341 accessible public events and preserves this documented API count exception."
     },
     "event_count": 341,
-    "exhibition_record_count": 344,
-    "exhibitor_parser_pilot_downloadable_files_count": 24,
-    "exhibitor_parser_pilots_count": 8,
+    "exhibition_record_count": 343,
+    "exhibitor_parser_pilot_downloadable_files_count": 27,
+    "exhibitor_parser_pilots_count": 9,
     "name": "Expomap Moscow exhibitions 2026",
     "qa_verdict": "PASS_WITH_DOCUMENTED_API_COUNT_EXCEPTION",
-    "related_files_count": 30,
+    "related_files_count": 31,
     "scope": "city=moscow; event_type=expo; date=2026-01-01:2026-12-31",
     "unmatched_or_ambiguous_uploaded_files_count": 2,
     "uploaded_workbook_related_files_count": 4
@@ -43,11 +43,11 @@
     "official_website_audit_json": "official_website_audit.json",
     "public_csv_export": "exports/expomap_moscow_expo_2026_public_events.csv",
     "public_xlsx_export": "exports/expomap_moscow_expo_2026_public_events.xlsx",
-    "public_xlsx_export_created": false,
+    "public_xlsx_export_created": true,
     "uploaded_workbook_mapping_json": "uploaded_workbook_mapping.json",
     "validation_report_json": "validation_report.json"
   },
-  "generated_at": "2026-08-22T21:03:37Z",
+  "generated_at": "2026-08-23T20:39:07Z",
   "safety": {
     "contains_credentials_or_tokens": false,
     "contains_crm_customer_data": false,
