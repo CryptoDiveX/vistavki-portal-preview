@@ -1,0 +1,145 @@
+{
+  "dataset": "bani_expo_2026",
+  "eventName": "БАНИ-ЭКСПО 2026",
+  "event_name": "БАНИ-ЭКСПО 2026",
+  "startDate": "2026-09-04",
+  "endDate": "2026-09-05",
+  "city": "Москва",
+  "sourceEventKey": "bani-expo",
+  "sourceUrl": "https://expomap.ru/expo/bani-expo/",
+  "officialWebsiteUrl": "https://expo-bani.ru/",
+  "relevant": true,
+  "parserStatus": "PARSED",
+  "qaStatus": "PENDING",
+  "parserTaskId": "t_9afde04e",
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-manifest-public.json",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-full-processing-current-twenty-public.xlsx",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-normalized-public.csv",
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-raw-audit-public.json",
+  "sourceCaveat": "Official site currently exposes 12 public participant/partner company rows; Expomap API reports member_count=40, so non-public/unlisted exhibitors remain unavailable until organizer publishes a fuller catalogue.",
+  "campaignRelationEvidence": "No Coldy campaign relation checked or written by this parser run.",
+  "generated_at": "2026-08-24T05:25:49Z",
+  "parsedDate": "2026-08-24T05:25:49Z",
+  "parser_version": "bani-expo-2026-official-site-signo-v1.0.1",
+  "counts": {
+    "raw_rows": 12,
+    "processed_rows": 12,
+    "cleaned_rows": 12,
+    "removed_rows": 0,
+    "new_signo_rows": 7,
+    "repeat_signo_rows": 5,
+    "contacts_with_main_email": 6,
+    "website_email_enrichment_attempts": 9,
+    "website_email_found_rows": 6
+  },
+  "source_urls": {
+    "official_home": "https://expo-bani.ru/",
+    "expomap_event": "https://expomap.ru/expo/bani-expo/",
+    "expomap_api": "https://expomap.ru/api/v2/events/?event_type=expo&city=moscow&date=2026-09-01:2026-09-30&order_by=date_begin&page=1&page_size=100",
+    "onefoodexpo_crosscheck": "https://1foodexpo.com/events/bani-ekspo-2026"
+  },
+  "source_audit": {
+    "generated_at": "2026-08-24T05:24:39Z",
+    "source_policy": "public official website + public Expomap JSON API only",
+    "official_home": {
+      "url": "https://expo-bani.ru/",
+      "status_code": 200,
+      "final_url": "https://expo-bani.ru/",
+      "content_type": "text/html; charset=UTF-8",
+      "length_bytes": 1712170,
+      "sha256": "f2e676de9785a5166f659ed0a6e3fa9853e75c9ff35c16fe85109cda4df09928",
+      "title": "Бани-Экспо - выставка-ярмарка о банях: от парения до строительства",
+      "visible_excerpt": "Бани-Экспо - выставка-ярмарка о банях: от парения до строительства О выставке Разделы выставки Посетителям Участникам Контакты Выставка-ярмарка БАНИ-ЭКСПО О выставке Разделы выставки Посетителям Участникам Мастер-классы Контакты сКАЧАТЬ ПРОГРАММУ Выставка-ярмарка о банях: ОТ ПАРЕНИЯ ДО СТРОИТЕЛЬСТВА Выставка-ярмарка БАНИ-ЭКСПО О выставке Разделы выставки Посетителям Участникам Мастер-классы Контакты 4-5 сентября 2026 Выставка-ярмарка о банях: ОТ ПАРЕНИЯ ДО СТРОИТЕЛЬСТВА Выставка-ярмарка о банях: ОТ ПАРЕНИЯ ДО СТРОИТЕЛЬСТВА Комплексное событие для всех, кто любит париться, строит баню или хочет узнать больше о банной культуре — от классических русских бань до современных компактных решений и восточных традиций. Стать экспонентом ДЛЯ ТЕХ, КТО ЛЮБИТ БАНЮ И ЗОЖ ДЛЯ ТЕХ, КТО СТРОИТ СВОЮ БАНЮ ДЛЯ ПРОФЕССИОНАЛОВ ПАРЕНИЯ И ОБУСТРОЙСТВА БАНИ Стать спикером Купить билет сКАЧАТЬ ПРОГРАММУ сКАЧАТЬ ПРОГРАММУ Мы используем cookie, чтобы сайт работал корректно, и Яндекс Метрику для сбора статистики посещений. Нажимая «Принять», вы соглашаетесь на обработку cookie. Подробнее в политике конфиденциальности. Принять производителей 50+ 15+ мастер-классов Почему у одного получается пар «лёгкий», а у другого — нет? Разбираем вживую: температура, влажность, техника подачи. Лучшие банщики Москвы познакомят с основами правильного парения в русской бане. Узнайте, как продлить молодость правильным парением Баня и молодость. Секреты пара Травяные чаи, банный мёд, варенье, настойки — то, без чего баня не баня. Чай из каких трав на какой стадии парения наиболее полезен. Чайные мастера познакомят со всем",
+      "participant_section_present": true,
+      "participant_names_found": [
+        "ВяткаДомСтрой",
+        "YAMAGUCHI",
+        "Рапсалин",
+        "Siberian Wellness",
+        "Деликатес-Дичь",
+        "Russkaya Banya",
+        "СТЛ",
+        "Барель",
+        "Solar Stone Studio",
+        "Лапин Сыр",
+        "Ярославская овчинно-меховая фабрика",
+        "Банная Мекка"
+      ]
+    },
+    "expomap_api": {
+      "url": "https://expomap.ru/api/v2/events/?event_type=expo&city=moscow&date=2026-09-01:2026-09-30&order_by=date_begin&page=1&page_size=100",
+      "status_code": 200,
+      "final_url": "https://expomap.ru/api/v2/events/?event_type=expo&city=moscow&date=2026-09-01:2026-09-30&order_by=date_begin&page=1&page_size=100",
+      "content_type": "application/json",
+      "event_found": true,
+      "event_id": "bani-expo",
+      "slug": "bani-expo",
+      "title": "БАНИ-ЭКСПО 2026",
+      "date_start": "2026-09-04T00:00:00",
+      "date_end": "2026-09-05T23:59:59.999999",
+      "member_count": 40,
+      "visitor_count": 5000,
+      "link": "/expo-b/click/18490/",
+      "official_website_url": null
+    },
+    "onefoodexpo_crosscheck": {
+      "url": "https://1foodexpo.com/events/bani-ekspo-2026",
+      "status_code": 200,
+      "final_url": "https://1foodexpo.com/events/bani-ekspo-2026",
+      "content_type": "text/html; charset=utf-8",
+      "length_bytes": 110113,
+      "links_to_official_site": true,
+      "visible_excerpt": "Бани-Экспо 2026 – онлайн-выставка 1FOODEXPO Первая пищевая онлайн-выставка Вход Регистрация Главная Торговая площадка Товары и услуги Сырье Оборудование и технологии Пищевые ингредиенты Переработанная продукция Упаковка и оболочка СИЗ и гигиена Мебель и инвентарь Услуги и сервисы Каталог компаний Сырье Оборудование и технологии Пищевые ингредиенты Переработанная продукция Упаковка и оболочка СИЗ и гигиена Мебель и инвентарь HoReCa Услуги и сервисы Объявления Мероприятия Все мероприятия Площадки для мероприятий Организаторы мероприятий О проекте Новости Спецпредложения Глоссарий Контакты Товары и услуги Сырье Мясо Птица Рыбное сырье Молоко Овощи Фрукты и ягоды Сухофрукты Зерно, семена, орехи Какао-продукты Мука, злаки и крупы Яйца и яйцепродукты Оборудование и технологии Переработка мяса Переработка рыбы Производство молочных продуктов Производство напитков Производство хлеба Кондитерское оборудование Упаковка и маркировка Оборудование для HoReCa Обработка овощей и фруктов Тепловое обор"
+    }
+  },
+  "source_caveats": [
+    "The official landing page has a visible participant/partner section but no separate downloadable/open full exhibitor catalogue endpoint was found.",
+    "Expomap API reports member_count=40; only 12 public company descriptions are currently visible on the official source.",
+    "Rows with social-only websites were not crawled for email enrichment."
+  ],
+  "repeat_matching": {
+    "available": true,
+    "source_basename": "signo_twenty_live_repeat_index_okved_20_41_20260706T104933Z.csv",
+    "reason": "loaded current Twenty repeat index",
+    "order": [
+      "exact normalized email",
+      "company-owned public email/site domain"
+    ]
+  },
+  "safety_flags": {
+    "public_fields_only": true,
+    "contains_browser_session_tokens": false,
+    "uses_private_cookies_or_credentials": false,
+    "forbidden_patterns_checked": [
+      "api_key_literal",
+      "authorization_header",
+      "bearer_token",
+      "cloud_mail_path",
+      "raw_local_user_path",
+      "session_cookie"
+    ],
+    "forbidden_patterns_found": []
+  },
+  "artifacts": {
+    "normalized_csv": "bani_expo_2026_normalized.csv",
+    "normalized_xlsx": "bani_expo_2026_normalized.xlsx",
+    "raw_audit_json": "bani_expo_2026_raw_audit.json",
+    "raw_audit_jsonl": "bani_expo_2026_raw_audit.jsonl",
+    "email_audit_json": "bani_expo_2026_email_enrichment_audit.json",
+    "match_audit_json": "bani_expo_2026_match_audit.json",
+    "workbook": "BANI_EXPO_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+    "manifest": "manifest.json",
+    "readme": "README.md"
+  },
+  "files": {
+    "manifest_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-manifest-public.json",
+    "workbook_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-full-processing-current-twenty-public.xlsx",
+    "normalized_csv_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-normalized-public.csv",
+    "audit_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/bani-expo-2026-raw-audit-public.json"
+  },
+  "sha256": {
+    "workbook": "3c87a416c8b8002747a0e03d34db9251f12d2bee89446d1f0f11f2522d0c8a30",
+    "normalized_csv": "2c84a2569476049baef0aff2edc90fdd873c27240a6f9456c6dc699d2744c78e",
+    "raw_audit_json": "22be4c4d4c7edb837d2509a518bb4558e52d0db8ed539ed8ca5c712bfcae0159"
+  }
+}
