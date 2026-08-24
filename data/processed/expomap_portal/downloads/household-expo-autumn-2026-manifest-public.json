@@ -14,22 +14,22 @@
   "qaStatus": "PENDING",
   "parserTaskId": "t_0953ee8e",
   "qaTaskId": "t_f998fbe3",
-  "numberOfContacts": 73,
-  "parsedDate": "2026-08-24T05:20:59Z",
+  "numberOfContacts": 90,
+  "parsedDate": "2026-08-24T05:48:26Z",
   "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-manifest-public.json",
   "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
   "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-normalized-public.csv",
   "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-raw-audit-public.json",
   "campaignRelationEvidence": "No Coldy campaign relation inferred by parser; no Coldy writes performed.",
-  "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+  "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.1",
   "counts": {
     "raw_rows": 508,
     "processed_rows": 508,
-    "cleaned_rows": 73,
-    "removed_rows": 435,
-    "new_signo_rows": 56,
-    "repeat_signo_rows": 17,
-    "contacts_with_main_email": 72,
+    "cleaned_rows": 90,
+    "removed_rows": 418,
+    "new_signo_rows": 67,
+    "repeat_signo_rows": 23,
+    "contacts_with_main_email": 89,
     "website_email_enrichment_attempts": 1
   },
   "artifacts": {
@@ -43,10 +43,10 @@
     "source_dir": "source/"
   },
   "sha256": {
-    "HouseHold_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx": "a4186a9a145c04b0595ed04856dec4f0eb3407107a2e4916e902e8603ac63a7a",
-    "household_expo_autumn_2026_normalized.csv": "4434e2f96f974315a2f080ed63f1de91cc4c5a9b8e139b57c78a9babe76d6f84",
-    "household_expo_autumn_2026_normalized.xlsx": "ab4a10743aabe806e72600f0ba437275b31f6baaf07bc71e3a95e7c4ba59c753",
-    "household_expo_autumn_2026_raw_audit.json": "c964d3b50bed424c86068b1f9cf4ac1c534a30b1be24b52997b54e40e85a1b2f",
+    "HouseHold_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx": "f644562822d4dff99755378611dd983d6e98c4f1bbd3d0bd5aebadb2699ff923",
+    "household_expo_autumn_2026_normalized.csv": "c109d4d6e596faa6f4ea03b90f4a4f7ae8b037468f00d5a56ab36a17626523b2",
+    "household_expo_autumn_2026_normalized.xlsx": "8d0092dc2d3e22e375a13c9bcf28aab12327d140e07add958c4dd101b08b0e48",
+    "household_expo_autumn_2026_raw_audit.json": "1de994c7fd098b839479c39bfa4b02dddea5ffe79d67285e77c3c8a7f54b7049",
     "household_expo_autumn_2026_email_enrichment_audit.json": "add2d2541fd0ef9751b463c32732d7520e0b69471d5c5b5b6dd7ae75e6666ddc"
   },
   "source_urls": {

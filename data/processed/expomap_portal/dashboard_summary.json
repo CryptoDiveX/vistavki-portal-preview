@@ -1026,7 +1026,7 @@
   },
   "data_package_version": "expomap-portal-package-v1.1.0",
   "exhibitor_parser_pilot_summary": {
-    "downloadable_files_count": 42,
+    "downloadable_files_count": 33,
     "mapping_file": "exhibitor_parser_pilots.json",
     "matched_event_ordinals": [
       41,
@@ -1034,16 +1034,15 @@
       87,
       95,
       131,
+      157,
+      158,
       161,
       220,
-      228,
       232,
-      237,
       242,
-      248,
-      249
+      248
     ],
-    "matched_parser_pilots_count": 14,
+    "matched_parser_pilots_count": 11,
     "note": "Website/catalogue/source-limited parser pilots are parser/workbook outputs attached to exact Expomap rows, distinct from uploaded contact workbooks.",
     "unmatched_parser_pilots_count": 0
   },
@@ -1065,12 +1064,12 @@
     "Dashboard should use a clean light background with readable cards/table and a clear export CTA.",
     "Show the API count caveat wherever total Expomap counts are displayed."
   ],
-  "generated_at": "2026-08-24T05:24:56Z",
+  "generated_at": "2026-08-24T06:00:21Z",
   "january_2026_count": 15,
   "official_website_summary": {
     "audit_file": "official_website_audit.json",
     "detail_pages_fetched": 0,
-    "generated_at": "2026-08-24T05:24:56Z",
+    "generated_at": "2026-08-24T06:00:21Z",
     "official_website_found_count": 0,
     "official_website_missing_count": 341,
     "parser_version": "expomap-official-website-detail-v1.0.0",
