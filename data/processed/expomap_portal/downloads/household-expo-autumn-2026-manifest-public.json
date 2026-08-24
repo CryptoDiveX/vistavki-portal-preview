@@ -1,0 +1,230 @@
+{
+  "dataset": "household_expo_autumn_2026",
+  "eventName": "HouseHold Expo. Осень 2026",
+  "event_name": "HouseHold Expo. Осень 2026",
+  "expomapSourceKey": "household-expo",
+  "sourceEventKey": "household-expo",
+  "startDate": "2026-09-08",
+  "endDate": "2026-09-10",
+  "city": "Москва",
+  "sourcePlatform": "Expomap + official HouseHold Expo catalogue",
+  "sourceUrl": "https://expomap.ru/expo/household-expo/",
+  "officialWebsiteUrl": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+  "parserStatus": "PARSED",
+  "qaStatus": "PENDING",
+  "parserTaskId": "t_0953ee8e",
+  "qaTaskId": "t_f998fbe3",
+  "numberOfContacts": 73,
+  "parsedDate": "2026-08-24T05:20:59Z",
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-manifest-public.json",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-normalized-public.csv",
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-raw-audit-public.json",
+  "campaignRelationEvidence": "No Coldy campaign relation inferred by parser; no Coldy writes performed.",
+  "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+  "counts": {
+    "raw_rows": 508,
+    "processed_rows": 508,
+    "cleaned_rows": 73,
+    "removed_rows": 435,
+    "new_signo_rows": 56,
+    "repeat_signo_rows": 17,
+    "contacts_with_main_email": 72,
+    "website_email_enrichment_attempts": 1
+  },
+  "artifacts": {
+    "workbook": "HouseHold_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+    "normalized_csv": "household_expo_autumn_2026_normalized.csv",
+    "normalized_xlsx": "household_expo_autumn_2026_normalized.xlsx",
+    "raw_audit_json": "household_expo_autumn_2026_raw_audit.json",
+    "raw_audit_jsonl": "household_expo_autumn_2026_raw_audit.jsonl",
+    "email_enrichment_audit_json": "household_expo_autumn_2026_email_enrichment_audit.json",
+    "readme": "README.md",
+    "source_dir": "source/"
+  },
+  "sha256": {
+    "HouseHold_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx": "a4186a9a145c04b0595ed04856dec4f0eb3407107a2e4916e902e8603ac63a7a",
+    "household_expo_autumn_2026_normalized.csv": "4434e2f96f974315a2f080ed63f1de91cc4c5a9b8e139b57c78a9babe76d6f84",
+    "household_expo_autumn_2026_normalized.xlsx": "ab4a10743aabe806e72600f0ba437275b31f6baaf07bc71e3a95e7c4ba59c753",
+    "household_expo_autumn_2026_raw_audit.json": "c964d3b50bed424c86068b1f9cf4ac1c534a30b1be24b52997b54e40e85a1b2f",
+    "household_expo_autumn_2026_email_enrichment_audit.json": "add2d2541fd0ef9751b463c32732d7520e0b69471d5c5b5b6dd7ae75e6666ddc"
+  },
+  "source_urls": {
+    "expomap": "https://expomap.ru/expo/household-expo/",
+    "official_home": "https://hhexpo.ru/",
+    "official_catalog": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+    "official_catalog_alias": "https://catalog.householdexpo.ru/expositions/exposition/7240-household-expo"
+  },
+  "source_audit": {
+    "listing_pages": [
+      {
+        "start": 0,
+        "url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+        "cache_file": "source/listing_pages/catalog_start_0.html",
+        "company_links": 48,
+        "sha256": "0a6f65568d9f223d598889db0a1f09dc066435d0ece9dcb3328970408e190dd7"
+      },
+      {
+        "start": 48,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=48",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=48",
+        "cache_file": "source/listing_pages/catalog_start_48.html",
+        "company_links": 48,
+        "sha256": "b3587932fe785af791ed085709705e8663315a3879ed99efe9194021ae93912a"
+      },
+      {
+        "start": 96,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=96",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=96",
+        "cache_file": "source/listing_pages/catalog_start_96.html",
+        "company_links": 48,
+        "sha256": "72621646fe5e2b11225504672dcc14b246c5eda9d79d61782e1fca7a4825dac7"
+      },
+      {
+        "start": 144,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=144",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=144",
+        "cache_file": "source/listing_pages/catalog_start_144.html",
+        "company_links": 48,
+        "sha256": "ff9743ee0726fb3d935836588442f46e3ab2a520cf42756787bfd4f0c79ff39a"
+      },
+      {
+        "start": 192,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=192",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=192",
+        "cache_file": "source/listing_pages/catalog_start_192.html",
+        "company_links": 48,
+        "sha256": "764f8d8a4e5417dd887d894d02056269000458756b3fc47fc42dc9254bddb2a1"
+      },
+      {
+        "start": 240,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=240",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=240",
+        "cache_file": "source/listing_pages/catalog_start_240.html",
+        "company_links": 48,
+        "sha256": "8f19d78792c184a86fb4f60e2ea7c2051037dea60c8f254d2c8a65e5e00073d4"
+      },
+      {
+        "start": 288,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=288",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=288",
+        "cache_file": "source/listing_pages/catalog_start_288.html",
+        "company_links": 48,
+        "sha256": "5e1520800f81c5032c05765488794a69c1b083fd7ca4057170b3073ac9e914d4"
+      },
+      {
+        "start": 336,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=336",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=336",
+        "cache_file": "source/listing_pages/catalog_start_336.html",
+        "company_links": 48,
+        "sha256": "b6b8e752a08c96b1e60fd8bf677b32b215a33a2c057aa5120eb2a0bcdd055625"
+      },
+      {
+        "start": 384,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=384",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=384",
+        "cache_file": "source/listing_pages/catalog_start_384.html",
+        "company_links": 48,
+        "sha256": "1798cd7f2b61291d77cf76c8328723a041597f58116ae4be6cb5bf5eb4e035ed"
+      },
+      {
+        "start": 432,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=432",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=432",
+        "cache_file": "source/listing_pages/catalog_start_432.html",
+        "company_links": 48,
+        "sha256": "bea8ad2b1cb4604783fe0115852cd29157351f3cf899526433e56e9045f649a9"
+      },
+      {
+        "start": 480,
+        "url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=480",
+        "status": 200,
+        "final_url": "https://catalog.hhexpo.ru/?Itemid=132&option=com_expo&view=exposition&task=viewexposition&id=7240&ajaxScroll=1&start=480",
+        "cache_file": "source/listing_pages/catalog_start_480.html",
+        "company_links": 28,
+        "sha256": "dea798de90350a8f1c578135b74ce3d362b8af30122ed86fe2844c97f739fe64"
+      }
+    ],
+    "listing_cards_parsed": 508,
+    "detail_pages_attempted": 508,
+    "detail_pages_parsed": 508,
+    "source_policy": "Public unauthenticated official catalogue; no cookies, credentials, captcha solving, or private endpoints used."
+  },
+  "repeat_matching": {
+    "available": true,
+    "source_basename": "signo_twenty_live_repeat_index_okved_20_41_20260706T104933Z.csv",
+    "rows_read": 67535,
+    "matching_order": [
+      "exact normalized email",
+      "safe non-generic company-owned email/website domain"
+    ],
+    "generic_email_domains_excluded": [
+      "126.com",
+      "139.com",
+      "163.com",
+      "189.cn",
+      "21cn.com",
+      "aliyun.com",
+      "bk.ru",
+      "foxmail.com",
+      "gmail.com",
+      "googlemail.com",
+      "hotmail.com",
+      "icloud.com",
+      "inbox.ru",
+      "internet.ru",
+      "list.ru",
+      "mail.ru",
+      "narod.ru",
+      "outlook.com",
+      "qq.com",
+      "rambler.ru",
+      "sina.cn",
+      "sina.com",
+      "sohu.com",
+      "tom.com",
+      "ya.ru",
+      "yahoo.com",
+      "yandex.ru",
+      "yeah.net"
+    ],
+    "website_domain_only_matching_used": true
+  },
+  "safety_flags": {
+    "forbidden_patterns_checked": [
+      "api_key_literal",
+      "authorization_header",
+      "bearer_token",
+      "cloud_mail_path",
+      "raw_local_user_path",
+      "session_cookie"
+    ],
+    "forbidden_patterns_found": [],
+    "uses_private_cookies_or_credentials": false
+  },
+  "source_caveats": [
+    "The official catalogue is live and was parsed directly; Expomap is not the sole source.",
+    "Cleaned/New/Repeat are restricted to Russia rows with qualifying product/category evidence; non-Russia and service-only rows remain in Removed for audit.",
+    "Public website enrichment sampled home/contact pages only where the official detail row lacked email.",
+    "Manifest URL fields are intentionally blank/local until an external portal upload maps production-safe URLs; do not paste local file paths into CRM link fields."
+  ],
+  "public_download_urls": {
+    "manifest": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-manifest-public.json",
+    "workbook": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
+    "normalized_csv": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-normalized-public.csv",
+    "normalized_xlsx": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-normalized-public.xlsx",
+    "raw_audit": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/household-expo-autumn-2026-raw-audit-public.json"
+  }
+}

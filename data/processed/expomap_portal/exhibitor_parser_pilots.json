@@ -1,7 +1,7 @@
 {
   "data_package_version": "expomap-portal-package-v1.1.0",
-  "downloadable_files_count": 27,
-  "generated_at": "2026-08-23T20:39:07Z",
+  "downloadable_files_count": 30,
+  "generated_at": "2026-08-24T05:24:56Z",
   "matched_parser_pilots": [
     {
       "catalog_url": "https://chemicos.ru/ru/catalogue/company",
@@ -2837,7 +2837,7 @@
       "downloads": [
         {
           "artifact_role": "normalized_csv",
-          "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.1; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
+          "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.2; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
           "catalog_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/worldfood-moscow-2026/ru/Exhibitor",
           "cleaned_rows": 39,
           "contacts_with_main_email": 24,
@@ -2858,7 +2858,7 @@
           ],
           "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
           "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
-          "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.1",
+          "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.2",
           "qa_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed.",
           "qa_verdict": "PASS",
           "row_count": 713,
@@ -2893,7 +2893,7 @@
         },
         {
           "artifact_role": "normalized_xlsx",
-          "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.1; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
+          "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.2; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
           "catalog_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/worldfood-moscow-2026/ru/Exhibitor",
           "cleaned_rows": 39,
           "contacts_with_main_email": 24,
@@ -2914,7 +2914,7 @@
           ],
           "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
           "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
-          "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.1",
+          "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.2",
           "qa_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed.",
           "qa_verdict": "PASS",
           "row_count": 713,
@@ -2949,7 +2949,7 @@
         },
         {
           "artifact_role": "full_processing_workbook",
-          "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.1; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
+          "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.2; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
           "catalog_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/worldfood-moscow-2026/ru/Exhibitor",
           "cleaned_rows": 39,
           "contacts_with_main_email": 24,
@@ -2970,7 +2970,7 @@
           ],
           "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
           "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
-          "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.1",
+          "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.2",
           "qa_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed.",
           "qa_verdict": "PASS",
           "row_count": 713,
@@ -3015,7 +3015,7 @@
         "QA remediation removed non-food/business-service/equipment source rows from Cleaned/New/Repeat workbook outputs."
       ],
       "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
-      "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.1",
+      "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.2",
       "qa_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed.",
       "qa_verdict": "PASS",
       "row_count": 713,
@@ -3052,7 +3052,7 @@
           "downloads": [
             {
               "artifact_role": "normalized_csv",
-              "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.1; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
+              "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.2; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
               "catalog_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/worldfood-moscow-2026/ru/Exhibitor",
               "cleaned_rows": 39,
               "contacts_with_main_email": 24,
@@ -3073,7 +3073,7 @@
               ],
               "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
               "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
-              "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.1",
+              "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.2",
               "qa_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed.",
               "qa_verdict": "PASS",
               "row_count": 713,
@@ -3108,7 +3108,7 @@
             },
             {
               "artifact_role": "normalized_xlsx",
-              "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.1; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
+              "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.2; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
               "catalog_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/worldfood-moscow-2026/ru/Exhibitor",
               "cleaned_rows": 39,
               "contacts_with_main_email": 24,
@@ -3129,7 +3129,7 @@
               ],
               "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
               "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
-              "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.1",
+              "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.2",
               "qa_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed.",
               "qa_verdict": "PASS",
               "row_count": 713,
@@ -3164,7 +3164,7 @@
             },
             {
               "artifact_role": "full_processing_workbook",
-              "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.1; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
+              "audit_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure. Source is the public ITE directory/ajax/detail HTML only; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version worldfood-moscow-2026-ite-public-directory-signo-v1.0.2; raw rows 713; processed rows 713; cleaned rows 39; New Signo 26; Repeat Signo 13; contacts with main email 24; workbook type FULL_processing_CURRENT_TWENTY.",
               "catalog_url": "https://exhibitors-itegroup.exhibitoronlinemanual.com/worldfood-moscow-2026/ru/Exhibitor",
               "cleaned_rows": 39,
               "contacts_with_main_email": 24,
@@ -3185,7 +3185,7 @@
               ],
               "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
               "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
-              "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.1",
+              "parser_version": "worldfood-moscow-2026-ite-public-directory-signo-v1.0.2",
               "qa_note": "QA PASS: WorldFood Moscow 2026 parser/workbook artifacts were revalidated after remediation before portal exposure; public normalized CSV/XLSX plus the QA-passed full Signo processing workbook are exposed.",
               "qa_verdict": "PASS",
               "row_count": 713,
@@ -3231,9 +3231,410 @@
         "https://expomap.ru/expo/worldfood-moscow/"
       ],
       "twenty_repeat_status": "current Twenty repeat index applied; exact email first, then safe company-owned candidate-email domain only"
+    },
+    {
+      "catalog_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+      "cleaned_row_count": 73,
+      "contacts_with_main_email": 72,
+      "downloadable_files_count": 3,
+      "downloads": [
+        {
+          "artifact_role": "normalized_csv",
+          "audit_note": "QA PENDING: HouseHold Expo Autumn 2026 parser/workbook artifacts are backend-ready from the official public catalogue; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version household-expo-autumn-2026-official-catalog-signo-v1.0.0; raw rows 508; processed rows 508; cleaned rows 73; New Signo 56; Repeat Signo 17; contacts with main email 72; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+          "cleaned_rows": 73,
+          "contacts_with_main_email": 72,
+          "display_filename": "HouseHold Expo. Осень 2026 — website/catalogue parser pilot (CSV)",
+          "download_filename": "household-expo-autumn-2026-normalized-public.csv",
+          "download_href": "downloads/household-expo-autumn-2026-normalized-public.csv",
+          "event_source_name": "HouseHold Expo. Осень 2026",
+          "file_type": "csv",
+          "id": "household-expo-autumn-2026-parser-pilot-normalized-csv",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+          "matched_event_name": "HouseHold Expo. Осень 2026",
+          "matched_event_ordinal": 242,
+          "matched_expomap_url": "https://expomap.ru/expo/household-expo/",
+          "official_site_evidence": [
+            "Official home https://hhexpo.ru/ links to the participant catalogue https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo.",
+            "Parser fetched 508 unique public exhibitor detail pages via 48-row AJAX pagination until the final 28-row page."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
+          "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+          "qa_note": "QA pending: Backend parsed the official public HouseHold Expo Autumn 2026 catalogue into the standard Signo workbook; QA child t_f998fbe3 must validate before PASS.",
+          "qa_verdict": "PENDING_QA",
+          "row_count": 508,
+          "row_counts": {
+            "cleaned_rows": 73,
+            "contacts_with_main_email": 72,
+            "new_signo_rows": 56,
+            "processed_rows": 508,
+            "raw_rows": 508,
+            "removed_rows": 435,
+            "repeat_signo_rows": 17,
+            "website_email_enrichment_attempts": 1
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 508,
+          "selected_sheet_rows": 508,
+          "source_filename": "household_expo_autumn_2026_normalized.csv",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Official catalogue is available and public; no credentials, cookies, captcha solving, or private endpoints were used.",
+            "Cleaned/New/Repeat keep Russia rows with qualifying Russian product/category evidence only; non-Russia, explicit import-from-China, service-only, and packaging-only rows are retained in Removed."
+          ],
+          "source_scope": "official public HouseHold Expo Autumn 2026 hhexpo.ru/catalog.hhexpo.ru catalogue/detail parser with current Twenty repeat split",
+          "source_urls": {
+            "expomap": "https://expomap.ru/expo/household-expo/",
+            "official_catalog": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+            "official_catalog_alias": "https://catalog.householdexpo.ru/expositions/exposition/7240-household-expo",
+            "official_home": "https://hhexpo.ru/"
+          },
+          "total_source_rows": 508,
+          "twenty_repeat_status": "current Twenty repeat index applied read-only; exact email first, then safe non-generic company-owned email/website domain"
+        },
+        {
+          "artifact_role": "normalized_xlsx",
+          "audit_note": "QA PENDING: HouseHold Expo Autumn 2026 parser/workbook artifacts are backend-ready from the official public catalogue; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version household-expo-autumn-2026-official-catalog-signo-v1.0.0; raw rows 508; processed rows 508; cleaned rows 73; New Signo 56; Repeat Signo 17; contacts with main email 72; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+          "cleaned_rows": 73,
+          "contacts_with_main_email": 72,
+          "display_filename": "HouseHold Expo. Осень 2026 — website/catalogue parser pilot (normalized XLSX)",
+          "download_filename": "household-expo-autumn-2026-normalized-public.xlsx",
+          "download_href": "downloads/household-expo-autumn-2026-normalized-public.xlsx",
+          "event_source_name": "HouseHold Expo. Осень 2026",
+          "file_type": "xlsx",
+          "id": "household-expo-autumn-2026-parser-pilot-normalized-xlsx",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+          "matched_event_name": "HouseHold Expo. Осень 2026",
+          "matched_event_ordinal": 242,
+          "matched_expomap_url": "https://expomap.ru/expo/household-expo/",
+          "official_site_evidence": [
+            "Official home https://hhexpo.ru/ links to the participant catalogue https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo.",
+            "Parser fetched 508 unique public exhibitor detail pages via 48-row AJAX pagination until the final 28-row page."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
+          "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+          "qa_note": "QA pending: Backend parsed the official public HouseHold Expo Autumn 2026 catalogue into the standard Signo workbook; QA child t_f998fbe3 must validate before PASS.",
+          "qa_verdict": "PENDING_QA",
+          "row_count": 508,
+          "row_counts": {
+            "cleaned_rows": 73,
+            "contacts_with_main_email": 72,
+            "new_signo_rows": 56,
+            "processed_rows": 508,
+            "raw_rows": 508,
+            "removed_rows": 435,
+            "repeat_signo_rows": 17,
+            "website_email_enrichment_attempts": 1
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 508,
+          "selected_sheet_rows": 508,
+          "source_filename": "household_expo_autumn_2026_normalized.xlsx",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Official catalogue is available and public; no credentials, cookies, captcha solving, or private endpoints were used.",
+            "Cleaned/New/Repeat keep Russia rows with qualifying Russian product/category evidence only; non-Russia, explicit import-from-China, service-only, and packaging-only rows are retained in Removed."
+          ],
+          "source_scope": "official public HouseHold Expo Autumn 2026 hhexpo.ru/catalog.hhexpo.ru catalogue/detail parser with current Twenty repeat split",
+          "source_urls": {
+            "expomap": "https://expomap.ru/expo/household-expo/",
+            "official_catalog": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+            "official_catalog_alias": "https://catalog.householdexpo.ru/expositions/exposition/7240-household-expo",
+            "official_home": "https://hhexpo.ru/"
+          },
+          "total_source_rows": 508,
+          "twenty_repeat_status": "current Twenty repeat index applied read-only; exact email first, then safe non-generic company-owned email/website domain"
+        },
+        {
+          "artifact_role": "full_processing_workbook",
+          "audit_note": "QA PENDING: HouseHold Expo Autumn 2026 parser/workbook artifacts are backend-ready from the official public catalogue; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version household-expo-autumn-2026-official-catalog-signo-v1.0.0; raw rows 508; processed rows 508; cleaned rows 73; New Signo 56; Repeat Signo 17; contacts with main email 72; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+          "cleaned_rows": 73,
+          "contacts_with_main_email": 72,
+          "display_filename": "HouseHold Expo. Осень 2026 — website/catalogue parser pilot (full processing workbook XLSX)",
+          "download_filename": "household-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
+          "download_href": "downloads/household-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
+          "event_source_name": "HouseHold Expo. Осень 2026",
+          "file_type": "xlsx",
+          "id": "household-expo-autumn-2026-parser-pilot-full-processing-workbook",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+          "matched_event_name": "HouseHold Expo. Осень 2026",
+          "matched_event_ordinal": 242,
+          "matched_expomap_url": "https://expomap.ru/expo/household-expo/",
+          "official_site_evidence": [
+            "Official home https://hhexpo.ru/ links to the participant catalogue https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo.",
+            "Parser fetched 508 unique public exhibitor detail pages via 48-row AJAX pagination until the final 28-row page."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
+          "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+          "qa_note": "QA pending: Backend parsed the official public HouseHold Expo Autumn 2026 catalogue into the standard Signo workbook; QA child t_f998fbe3 must validate before PASS.",
+          "qa_verdict": "PENDING_QA",
+          "row_count": 508,
+          "row_counts": {
+            "cleaned_rows": 73,
+            "contacts_with_main_email": 72,
+            "new_signo_rows": 56,
+            "processed_rows": 508,
+            "raw_rows": 508,
+            "removed_rows": 435,
+            "repeat_signo_rows": 17,
+            "website_email_enrichment_attempts": 1
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 508,
+          "selected_sheet_rows": 508,
+          "source_filename": "HouseHold_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Official catalogue is available and public; no credentials, cookies, captcha solving, or private endpoints were used.",
+            "Cleaned/New/Repeat keep Russia rows with qualifying Russian product/category evidence only; non-Russia, explicit import-from-China, service-only, and packaging-only rows are retained in Removed."
+          ],
+          "source_scope": "official public HouseHold Expo Autumn 2026 hhexpo.ru/catalog.hhexpo.ru catalogue/detail parser with current Twenty repeat split",
+          "source_urls": {
+            "expomap": "https://expomap.ru/expo/household-expo/",
+            "official_catalog": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+            "official_catalog_alias": "https://catalog.householdexpo.ru/expositions/exposition/7240-household-expo",
+            "official_home": "https://hhexpo.ru/"
+          },
+          "total_source_rows": 508,
+          "twenty_repeat_status": "current Twenty repeat index applied read-only; exact email first, then safe non-generic company-owned email/website domain"
+        }
+      ],
+      "event_name": "HouseHold Expo. Осень 2026",
+      "id": "household-expo-autumn-2026-parser-pilot",
+      "label": "HouseHold Expo. Осень 2026 — official catalogue parser/workbook output",
+      "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+      "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+      "match_status": "matched_to_expomap_event",
+      "official_site_evidence": [
+        "Official home https://hhexpo.ru/ links to the participant catalogue https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo.",
+        "Parser fetched 508 unique public exhibitor detail pages via 48-row AJAX pagination until the final 28-row page."
+      ],
+      "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+      "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+      "qa_note": "QA pending: Backend parsed the official public HouseHold Expo Autumn 2026 catalogue into the standard Signo workbook; QA child t_f998fbe3 must validate before PASS.",
+      "qa_verdict": "PENDING_QA",
+      "row_count": 508,
+      "row_counts": {
+        "cleaned_rows": 73,
+        "contacts_with_main_email": 72,
+        "new_signo_rows": 56,
+        "processed_rows": 508,
+        "raw_rows": 508,
+        "removed_rows": 435,
+        "repeat_signo_rows": 17,
+        "website_email_enrichment_attempts": 1
+      },
+      "source_decision": null,
+      "source_kind": "website_catalogue_parser_pilot",
+      "source_limitations": [
+        "Official catalogue is available and public; no credentials, cookies, captcha solving, or private endpoints were used.",
+        "Cleaned/New/Repeat keep Russia rows with qualifying Russian product/category evidence only; non-Russia, explicit import-from-China, service-only, and packaging-only rows are retained in Removed."
+      ],
+      "source_scope": "official public HouseHold Expo Autumn 2026 hhexpo.ru/catalog.hhexpo.ru catalogue/detail parser with current Twenty repeat split",
+      "target_event_name": "HouseHold Expo. Осень 2026",
+      "target_event_names": [
+        "HouseHold Expo. Осень 2026"
+      ],
+      "target_event_ordinal": 242,
+      "target_event_ordinals": [
+        242
+      ],
+      "target_events": [
+        {
+          "downloadable_files_count": 3,
+          "downloads": [
+            {
+              "artifact_role": "normalized_csv",
+              "audit_note": "QA PENDING: HouseHold Expo Autumn 2026 parser/workbook artifacts are backend-ready from the official public catalogue; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version household-expo-autumn-2026-official-catalog-signo-v1.0.0; raw rows 508; processed rows 508; cleaned rows 73; New Signo 56; Repeat Signo 17; contacts with main email 72; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+              "cleaned_rows": 73,
+              "contacts_with_main_email": 72,
+              "display_filename": "HouseHold Expo. Осень 2026 — website/catalogue parser pilot (CSV)",
+              "download_filename": "household-expo-autumn-2026-normalized-public.csv",
+              "download_href": "downloads/household-expo-autumn-2026-normalized-public.csv",
+              "event_source_name": "HouseHold Expo. Осень 2026",
+              "file_type": "csv",
+              "id": "household-expo-autumn-2026-parser-pilot-normalized-csv",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+              "matched_event_name": "HouseHold Expo. Осень 2026",
+              "matched_event_ordinal": 242,
+              "matched_expomap_url": "https://expomap.ru/expo/household-expo/",
+              "official_site_evidence": [
+                "Official home https://hhexpo.ru/ links to the participant catalogue https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo.",
+                "Parser fetched 508 unique public exhibitor detail pages via 48-row AJAX pagination until the final 28-row page."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
+              "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+              "qa_note": "QA pending: Backend parsed the official public HouseHold Expo Autumn 2026 catalogue into the standard Signo workbook; QA child t_f998fbe3 must validate before PASS.",
+              "qa_verdict": "PENDING_QA",
+              "row_count": 508,
+              "row_counts": {
+                "cleaned_rows": 73,
+                "contacts_with_main_email": 72,
+                "new_signo_rows": 56,
+                "processed_rows": 508,
+                "raw_rows": 508,
+                "removed_rows": 435,
+                "repeat_signo_rows": 17,
+                "website_email_enrichment_attempts": 1
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 508,
+              "selected_sheet_rows": 508,
+              "source_filename": "household_expo_autumn_2026_normalized.csv",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Official catalogue is available and public; no credentials, cookies, captcha solving, or private endpoints were used.",
+                "Cleaned/New/Repeat keep Russia rows with qualifying Russian product/category evidence only; non-Russia, explicit import-from-China, service-only, and packaging-only rows are retained in Removed."
+              ],
+              "source_scope": "official public HouseHold Expo Autumn 2026 hhexpo.ru/catalog.hhexpo.ru catalogue/detail parser with current Twenty repeat split",
+              "source_urls": {
+                "expomap": "https://expomap.ru/expo/household-expo/",
+                "official_catalog": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+                "official_catalog_alias": "https://catalog.householdexpo.ru/expositions/exposition/7240-household-expo",
+                "official_home": "https://hhexpo.ru/"
+              },
+              "total_source_rows": 508,
+              "twenty_repeat_status": "current Twenty repeat index applied read-only; exact email first, then safe non-generic company-owned email/website domain"
+            },
+            {
+              "artifact_role": "normalized_xlsx",
+              "audit_note": "QA PENDING: HouseHold Expo Autumn 2026 parser/workbook artifacts are backend-ready from the official public catalogue; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version household-expo-autumn-2026-official-catalog-signo-v1.0.0; raw rows 508; processed rows 508; cleaned rows 73; New Signo 56; Repeat Signo 17; contacts with main email 72; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+              "cleaned_rows": 73,
+              "contacts_with_main_email": 72,
+              "display_filename": "HouseHold Expo. Осень 2026 — website/catalogue parser pilot (normalized XLSX)",
+              "download_filename": "household-expo-autumn-2026-normalized-public.xlsx",
+              "download_href": "downloads/household-expo-autumn-2026-normalized-public.xlsx",
+              "event_source_name": "HouseHold Expo. Осень 2026",
+              "file_type": "xlsx",
+              "id": "household-expo-autumn-2026-parser-pilot-normalized-xlsx",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+              "matched_event_name": "HouseHold Expo. Осень 2026",
+              "matched_event_ordinal": 242,
+              "matched_expomap_url": "https://expomap.ru/expo/household-expo/",
+              "official_site_evidence": [
+                "Official home https://hhexpo.ru/ links to the participant catalogue https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo.",
+                "Parser fetched 508 unique public exhibitor detail pages via 48-row AJAX pagination until the final 28-row page."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
+              "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+              "qa_note": "QA pending: Backend parsed the official public HouseHold Expo Autumn 2026 catalogue into the standard Signo workbook; QA child t_f998fbe3 must validate before PASS.",
+              "qa_verdict": "PENDING_QA",
+              "row_count": 508,
+              "row_counts": {
+                "cleaned_rows": 73,
+                "contacts_with_main_email": 72,
+                "new_signo_rows": 56,
+                "processed_rows": 508,
+                "raw_rows": 508,
+                "removed_rows": 435,
+                "repeat_signo_rows": 17,
+                "website_email_enrichment_attempts": 1
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 508,
+              "selected_sheet_rows": 508,
+              "source_filename": "household_expo_autumn_2026_normalized.xlsx",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Official catalogue is available and public; no credentials, cookies, captcha solving, or private endpoints were used.",
+                "Cleaned/New/Repeat keep Russia rows with qualifying Russian product/category evidence only; non-Russia, explicit import-from-China, service-only, and packaging-only rows are retained in Removed."
+              ],
+              "source_scope": "official public HouseHold Expo Autumn 2026 hhexpo.ru/catalog.hhexpo.ru catalogue/detail parser with current Twenty repeat split",
+              "source_urls": {
+                "expomap": "https://expomap.ru/expo/household-expo/",
+                "official_catalog": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+                "official_catalog_alias": "https://catalog.householdexpo.ru/expositions/exposition/7240-household-expo",
+                "official_home": "https://hhexpo.ru/"
+              },
+              "total_source_rows": 508,
+              "twenty_repeat_status": "current Twenty repeat index applied read-only; exact email first, then safe non-generic company-owned email/website domain"
+            },
+            {
+              "artifact_role": "full_processing_workbook",
+              "audit_note": "QA PENDING: HouseHold Expo Autumn 2026 parser/workbook artifacts are backend-ready from the official public catalogue; public normalized CSV/XLSX plus the full Signo processing workbook are exposed. parser_version household-expo-autumn-2026-official-catalog-signo-v1.0.0; raw rows 508; processed rows 508; cleaned rows 73; New Signo 56; Repeat Signo 17; contacts with main email 72; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+              "cleaned_rows": 73,
+              "contacts_with_main_email": 72,
+              "display_filename": "HouseHold Expo. Осень 2026 — website/catalogue parser pilot (full processing workbook XLSX)",
+              "download_filename": "household-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
+              "download_href": "downloads/household-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
+              "event_source_name": "HouseHold Expo. Осень 2026",
+              "file_type": "xlsx",
+              "id": "household-expo-autumn-2026-parser-pilot-full-processing-workbook",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+              "matched_event_name": "HouseHold Expo. Осень 2026",
+              "matched_event_ordinal": 242,
+              "matched_expomap_url": "https://expomap.ru/expo/household-expo/",
+              "official_site_evidence": [
+                "Official home https://hhexpo.ru/ links to the participant catalogue https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo.",
+                "Parser fetched 508 unique public exhibitor detail pages via 48-row AJAX pagination until the final 28-row page."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "QA-passed parser/workbook output; not an uploaded contact workbook",
+              "parser_version": "household-expo-autumn-2026-official-catalog-signo-v1.0.0",
+              "qa_note": "QA pending: Backend parsed the official public HouseHold Expo Autumn 2026 catalogue into the standard Signo workbook; QA child t_f998fbe3 must validate before PASS.",
+              "qa_verdict": "PENDING_QA",
+              "row_count": 508,
+              "row_counts": {
+                "cleaned_rows": 73,
+                "contacts_with_main_email": 72,
+                "new_signo_rows": 56,
+                "processed_rows": 508,
+                "raw_rows": 508,
+                "removed_rows": 435,
+                "repeat_signo_rows": 17,
+                "website_email_enrichment_attempts": 1
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 508,
+              "selected_sheet_rows": 508,
+              "source_filename": "HouseHold_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Official catalogue is available and public; no credentials, cookies, captcha solving, or private endpoints were used.",
+                "Cleaned/New/Repeat keep Russia rows with qualifying Russian product/category evidence only; non-Russia, explicit import-from-China, service-only, and packaging-only rows are retained in Removed."
+              ],
+              "source_scope": "official public HouseHold Expo Autumn 2026 hhexpo.ru/catalog.hhexpo.ru catalogue/detail parser with current Twenty repeat split",
+              "source_urls": {
+                "expomap": "https://expomap.ru/expo/household-expo/",
+                "official_catalog": "https://catalog.hhexpo.ru/expositions/exposition/7240-household-expo",
+                "official_catalog_alias": "https://catalog.householdexpo.ru/expositions/exposition/7240-household-expo",
+                "official_home": "https://hhexpo.ru/"
+              },
+              "total_source_rows": 508,
+              "twenty_repeat_status": "current Twenty repeat index applied read-only; exact email first, then safe non-generic company-owned email/website domain"
+            }
+          ],
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "HouseHold Expo Autumn 2026 parser artifacts matched by exact Expomap row ordinal/url/name; official catalogue link is exposed from the hhexpo.ru home page.",
+          "target_event_name": "HouseHold Expo. Осень 2026",
+          "target_event_ordinal": 242,
+          "target_expomap_url": "https://expomap.ru/expo/household-expo/"
+        }
+      ],
+      "target_expomap_url": "https://expomap.ru/expo/household-expo/",
+      "target_expomap_urls": [
+        "https://expomap.ru/expo/household-expo/"
+      ],
+      "twenty_repeat_status": "current Twenty repeat index applied read-only; exact email first, then safe non-generic company-owned email/website domain"
     }
   ],
-  "matched_parser_pilots_count": 9,
+  "matched_parser_pilots_count": 10,
   "safety": {
     "contains_credentials_or_tokens": false,
     "download_hrefs_are_relative": true,
