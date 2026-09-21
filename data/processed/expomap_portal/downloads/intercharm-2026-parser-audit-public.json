@@ -1,0 +1,44 @@
+{
+  "event_name": "InterCHARM 2026",
+  "event_dates": "14–17 октября 2026",
+  "source_urls": {
+    "expomap": "https://expomap.ru/expo/intercharm/",
+    "official_home": "https://intercharm.ru/",
+    "official_catalog": "https://intercharm.ru/exhibitor-directory",
+    "official_widget": "https://personal-account.expovr.ru/widget/preset/ru/69d8e35163aa2ec91670244b/exhibitors/-/-/-/-",
+    "official_api_base": "https://personal-account.expovr.ru/api"
+  },
+  "source_status": "official catalogue live/public; parsed official source instead of relying on Expomap alone",
+  "scraped_at": "2026-09-21T05:23:31Z",
+  "parser_version": "intercharm-2026-official-expovr-signo-v1.0.0",
+  "counts": {
+    "official_catalog_total": 1193,
+    "raw_parsed": 1193,
+    "processed": 1193,
+    "cleaned": 459,
+    "removed": 734,
+    "new_signo": 337,
+    "repeat_signo": 122,
+    "email_audit_rows": 9,
+    "match_audit_rows": 459
+  },
+  "removed_reasons": {
+    "non_russia_row": 667,
+    "packaging_only": 39,
+    "non_russian_product_origin": 15,
+    "no_signo_product_evidence": 7,
+    "service_only": 6
+  },
+  "repeat_index": {
+    "available": true,
+    "source_basename": "signo_twenty_live_repeat_index_all_20260910T104234Z.csv",
+    "read_only": true
+  },
+  "row_count_reconciliation": "Raw Parsed has 1193 unique exhibitor IDs from the official Expovr API; API advertised total=1193.",
+  "source_caveats": [
+    "The official InterCHARM exhibitor-directory embeds a public Expovr catalogue widget and API; cache files are redacted to remove embedded external API credentials from event metadata.",
+    "Cleaned/New/Repeat are restricted to official RUS rows with qualifying product evidence; non-Russia and service/packaging-only rows remain in Removed for QA audit.",
+    "Website email enrichment uses only public home/contact pages where the official catalogue lacks email.",
+    "Public URL fields point to sanitized portal-download filenames; local paths are retained only inside this manifest for internal handoff."
+  ]
+}
