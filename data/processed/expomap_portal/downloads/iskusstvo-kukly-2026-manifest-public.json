@@ -1,0 +1,111 @@
+{
+  "artifacts": {
+    "completion_manifest": "twenty_completion_manifest.json",
+    "email_enrichment_audit_json": "iskusstvo_kukly_2026_email_enrichment_audit.json",
+    "match_audit_json": "iskusstvo_kukly_2026_match_audit.json",
+    "normalized_csv": "iskusstvo_kukly_2026_normalized.csv",
+    "raw_audit_json": "iskusstvo_kukly_2026_raw_audit.json",
+    "source_audit_json": "iskusstvo_kukly_2026_source_audit.json",
+    "source_dir": "source/",
+    "workbook": "Iskusstvo_Kukly_2026_FULL_processing_CURRENT_TWENTY.xlsx"
+  },
+  "campaignRelationEvidence": "No Coldy campaign relation checked or written by this parser run.",
+  "city": "Москва",
+  "counts": {
+    "cleaned_rows": 57,
+    "contacts_with_main_email": 0,
+    "new_signo_rows": 57,
+    "non_russian_removed": 2,
+    "processed_rows": 60,
+    "raw_rows": 60,
+    "removed_rows": 3,
+    "repeat_signo_rows": 0,
+    "website_email_enrichment_attempts": 0,
+    "website_email_found_rows": 0
+  },
+  "dataset": "iskusstvo_kukly_2026",
+  "endDate": "2026-10-03",
+  "eventName": "Искусство куклы 2026",
+  "event_name": "Искусство куклы 2026",
+  "expomap_audit": {
+    "cache_file": "source/expomap_iskusstvo_kukly.html",
+    "expomap_url": "https://expomap.ru/expo/iskusstvo-kukly/",
+    "final_url": "https://expomap.ru/expo/iskusstvo-kukly/",
+    "official_links_found": [
+      {
+        "href": "https://xn--b1algbagsvbaljg8i.xn--p1ai/",
+        "label": "Перейти на официальный сайт"
+      }
+    ],
+    "sha256": "6629b91be0d59198f324c4712484c60c077f49138903e851607e2ea3c1f062de",
+    "status_code": 200,
+    "verified_official_home": true
+  },
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-manifest-public.json",
+  "files": {
+    "audit_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-raw-audit-public.json",
+    "manifest_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-manifest-public.json",
+    "normalized_csv_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-normalized-public.csv",
+    "workbook_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-full-processing-current-twenty-public.xlsx"
+  },
+  "generated_at": "2026-09-21T05:08:40Z",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-normalized-public.csv",
+  "officialWebsiteUrl": "https://искусствокуклы.рф/",
+  "parsedDate": "2026-09-21T05:08:40Z",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-full-processing-current-twenty-public.xlsx",
+  "parserStatus": "QA_PASSED",
+  "parserTaskId": "t_40a9f976",
+  "parser_version": "iskusstvo-kukly-2026-official-participant-list-signo-v1.0.0",
+  "qaStatus": "PASSED",
+  "qaTaskId": "t_f61144bd",
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/iskusstvo-kukly-2026-raw-audit-public.json",
+  "relevant": true,
+  "repeat_matching": {
+    "available": true,
+    "order": [
+      "exact normalized company/name only because official source exposes no email/domain identifiers"
+    ],
+    "reason": "",
+    "source_basename": "signo_twenty_live_repeat_index_okved_20_41_20260706T104933Z.csv"
+  },
+  "safety_flags": {
+    "forbidden_patterns_found": []
+  },
+  "sha256": {
+    "email_enrichment_audit_json": "4991d47c8e35126db5cef4a03d6f0f2088f3723b035ebbd82730ce02bc39901d",
+    "match_audit_json": "2ccd780f49b610ba87617acd22c897676a06d88d6275c4ae1277914b7e6e58f8",
+    "normalized_csv": "c0b657bd7d6887b794fd30c40482b1f4466250f42fbc83f746b6b851e1ace9f4",
+    "raw_audit_json": "2de1695d94475f52e62cef9e1ff4c0cad5852b6515f0373d9adf8628001b0ec9",
+    "workbook": "f4e24142a68b3b02c1a460baa87077a5097e2b9c6d4c4f87f05ee175e9016d55"
+  },
+  "sourceCaveat": "Official 2026 page exposes a public participant/art-zone list but no per-exhibitor detail pages, websites, emails, stands, or downloadable full catalogue at parse time.",
+  "sourceEventKey": "iskusstvo-kukly",
+  "sourceUrl": "https://expomap.ru/expo/iskusstvo-kukly/",
+  "source_audit": {
+    "official_catalog_page_sha256": "f68c7e2d44f1d4b72326343fcd7bc10e8dbc1df254abcb8fffe9477859291fe3",
+    "official_catalog_page_status": 200,
+    "official_catalog_url": "https://искусствокуклы.рф/katalog",
+    "official_participant_url": "https://искусствокуклы.рф/uchastniki-vystavki-iskusstvo-kukly-2026g",
+    "participant_page_final_url": "https://xn--b1algbagsvbaljg8i.xn--p1ai/uchastniki-vystavki-iskusstvo-kukly-2026g",
+    "participant_page_sha256": "1c4c84fab24eb6248f53b623fe19835b3f142ad04942cc5f5a32473176ccf167",
+    "participant_page_status": 200,
+    "participant_rows_parsed": 60,
+    "sections_seen": [
+      "СПИСОК УЧАСТНИКОВ АРТ ЗОНЫ ВЫСТАВКИ ИСКУССТВО КУКЛЫ 2026"
+    ],
+    "source_caveat": "Official 2026 page exposes a public participant/art-zone list but no per-exhibitor detail pages, websites, emails, stands, or downloadable full catalogue at parse time.",
+    "source_policy": "Official public participant page on искусствокуклы.рф; Expomap used only to verify official website link."
+  },
+  "source_caveats": [
+    "Official 2026 page exposes a public participant/art-zone list but no per-exhibitor detail pages, websites, emails, stands, or downloadable full catalogue at parse time.",
+    "The /katalog official page describes the paid printed art catalogue process; it does not expose a downloadable exhibitor/company catalogue at parse time.",
+    "Official participant rows contain names/projects only; website email enrichment is not possible without public websites in the source."
+  ],
+  "source_urls": {
+    "expomap": "https://expomap.ru/expo/iskusstvo-kukly/",
+    "official_catalog_info": "https://искусствокуклы.рф/katalog",
+    "official_home": "https://искусствокуклы.рф/",
+    "official_participants": "https://искусствокуклы.рф/uchastniki-vystavki-iskusstvo-kukly-2026g"
+  },
+  "startDate": "2026-10-01"
+}
