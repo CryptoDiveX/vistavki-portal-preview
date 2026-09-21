@@ -1,0 +1,151 @@
+{
+  "artifacts": {
+    "email_enrichment_audit_json": "rappa_expo_autumn_2026_email_enrichment_audit.json",
+    "normalized_csv": "rappa_expo_autumn_2026_normalized.csv",
+    "normalized_xlsx": "rappa_expo_autumn_2026_normalized.xlsx",
+    "raw_audit_json": "rappa_expo_autumn_2026_raw_audit.json",
+    "raw_audit_jsonl": "rappa_expo_autumn_2026_raw_audit.jsonl",
+    "readme": "README.md",
+    "source_dir": "source/",
+    "workbook": "RAPPA_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx"
+  },
+  "campaignRelationEvidence": "No Coldy campaign relation inferred by parser; campaignId remains null; no Coldy writes performed.",
+  "city": "Москва",
+  "counts": {
+    "cleaned_rows": 30,
+    "contacts_with_main_email": 27,
+    "new_signo_rows": 22,
+    "processed_rows": 78,
+    "raw_rows": 78,
+    "removed_rows": 48,
+    "repeat_signo_rows": 8,
+    "website_email_enrichment_attempts": 4
+  },
+  "dataset": "rappa_expo_autumn_2026",
+  "endDate": "2026-10-22",
+  "eventName": "РАППА Экспо Осень 2026",
+  "event_name": "РАППА Экспо Осень 2026",
+  "expomapSourceKey": "rappa-expo",
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/rappa-expo-autumn-2026-manifest-public.json",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/rappa-expo-autumn-2026-normalized-public.csv",
+  "numberOfContacts": 30,
+  "officialWebsiteUrl": "https://raapa-expo.ru/#catalog",
+  "parsedDate": "2026-09-21T05:14:33Z",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/rappa-expo-autumn-2026-full-processing-current-twenty-public.xlsx",
+  "parserStatus": "QA_PASSED",
+  "parserTaskId": "t_48b32079",
+  "parser_version": "rappa-expo-autumn-2026-official-tilda-catalog-signo-v1.0.0",
+  "qaPassedAt": "2026-09-21T05:25:48.183037+00:00",
+  "qaStatus": "PASSED",
+  "qaTaskId": "t_ef42e92f",
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/rappa-expo-autumn-2026-raw-audit-public.json",
+  "repeat_matching": {
+    "available": true,
+    "generic_email_domains_excluded": [
+      "126.com",
+      "163.com",
+      "bk.ru",
+      "foxmail.com",
+      "gmail.com",
+      "googlemail.com",
+      "hotmail.com",
+      "icloud.com",
+      "inbox.ru",
+      "internet.ru",
+      "list.ru",
+      "mail.ru",
+      "narod.ru",
+      "outlook.com",
+      "protonmail.com",
+      "qq.com",
+      "rambler.ru",
+      "sina.com",
+      "sohu.com",
+      "ya.ru",
+      "yahoo.com",
+      "yandex.ru"
+    ],
+    "matching_order": [
+      "exact normalized email",
+      "safe non-generic company-owned email/website domain"
+    ],
+    "rows_read": 67535,
+    "source_basename": "signo_twenty_live_repeat_index_okved_20_41_20260706T104933Z.csv",
+    "website_domain_only_matching_used": true
+  },
+  "safety_flags": {
+    "forbidden_patterns_checked": [
+      "api_key_literal",
+      "authorization_header",
+      "bearer_token",
+      "cloud_mail_path",
+      "raw_local_user_path",
+      "session_cookie"
+    ],
+    "forbidden_patterns_found": [],
+    "uses_private_cookies_or_credentials": false
+  },
+  "sha256": {
+    "RAPPA_Expo_Autumn_2026_FULL_processing_CURRENT_TWENTY.xlsx": "5eaff4ff70d4f0886fb0c3590fb98c6dbbaf1b865428ce381002f80a654b6353",
+    "rappa_expo_autumn_2026_email_enrichment_audit.json": "e6cd8e3dd6b541bfd23f469ef9c9c0ef2ab8a400eec26d823e61e35db1a91af4",
+    "rappa_expo_autumn_2026_normalized.csv": "89ce9f65a2c8c6bef298db3f09450b39f8028bfbaeb7b5ec6d331b4103b9028c",
+    "rappa_expo_autumn_2026_normalized.xlsx": "9e29cc363ce488c0f80dad1e35162e5c4333ee1dfddbabb6b6a15704cb108914",
+    "rappa_expo_autumn_2026_raw_audit.json": "b0f0dc0c98ffe76bf5e9c96514c0fa71baa1fa262543df86fed80b6000706a33"
+  },
+  "sourceEventKey": "rappa-expo",
+  "sourcePlatform": "Expomap + official RAAPA EXPO Tilda catalogue",
+  "sourceUrl": "https://expomap.ru/expo/rappa-expo/",
+  "source_audit": {
+    "catalog_rows_parsed": 78,
+    "catalog_total": 78,
+    "pages": [
+      {
+        "bytes": 332991,
+        "cache_file": "source/expomap.html",
+        "final_url": "https://expomap.ru/expo/rappa-expo/",
+        "sha256": "d405e0d128fef72e27ecf6128c55879dcfe366532af351eb3685dafe2f493d14",
+        "status": 200,
+        "url": "https://expomap.ru/expo/rappa-expo/"
+      },
+      {
+        "bytes": 253033,
+        "cache_file": "source/official_home.html",
+        "final_url": "https://raapa-expo.ru/",
+        "sha256": "76d14444fadc90bdde309f9d9f649f5c372183d0f6d15e89ebe8d3eb40d2802b",
+        "status": 200,
+        "url": "https://raapa-expo.ru/"
+      },
+      {
+        "bytes": 186911,
+        "cache_file": "source/official_event.html",
+        "final_url": "https://raapa.ru/exhibitions/48-ya-moskovskaya-mezhdunarodnaya-vystavka-attraktsiony-i-razvlekatelnoe-oborudovanie-rappa-ekspo-os/",
+        "sha256": "fe17ac54f5278a072826547dd431ac12ebe53a1e46a79e50d64825f63996d0ed",
+        "status": 200,
+        "url": "https://raapa.ru/exhibitions/48-ya-moskovskaya-mezhdunarodnaya-vystavka-attraktsiony-i-razvlekatelnoe-oborudovanie-rappa-ekspo-os/"
+      },
+      {
+        "bytes": 205232,
+        "cache_file": "source/tilda_store_products.json",
+        "final_url": "https://store.tildacdn.com/api/getproductslist/?storepartuid=805297375621&recid=497599382&getparts=true&getoptions=true&slice=1&size=200",
+        "sha256": "6dbabe23c25b1714862a06638dbaae6abe3bc879a4449070d2ae243de95cc22c",
+        "status": 200,
+        "url": "https://store.tildacdn.com/api/getproductslist/?storepartuid=805297375621&recid=497599382&getparts=true&getoptions=true&slice=1&size=200"
+      }
+    ],
+    "source_policy": "Public unauthenticated official catalogue; no cookies, credentials, captcha solving, or private endpoints used."
+  },
+  "source_caveats": [
+    "The official RAAPA EXPO catalogue is live and was parsed directly from raapa-expo.ru / Tilda public API; Expomap is not the sole source.",
+    "Cleaned/New/Repeat are restricted to Russia/Russian-market rows with qualifying product/category evidence; foreign, service-only, media, certification/training, and non-Russian-origin rows remain in Removed for audit.",
+    "Public website enrichment sampled home/contact pages only where the official row lacked email.",
+    "CRM URL fields use production-safe public portal URL placeholders; local file paths stay only in local_paths for Kanban handoff and are not used as CRM links."
+  ],
+  "source_urls": {
+    "expomap": "https://expomap.ru/expo/rappa-expo/",
+    "official_catalog": "https://raapa-expo.ru/#catalog",
+    "official_catalog_api": "https://store.tildacdn.com/api/getproductslist/?storepartuid=805297375621&recid=497599382&getparts=true&getoptions=true&slice=1&size=200",
+    "official_event": "https://raapa.ru/exhibitions/48-ya-moskovskaya-mezhdunarodnaya-vystavka-attraktsiony-i-razvlekatelnoe-oborudovanie-rappa-ekspo-os/",
+    "official_home": "https://raapa-expo.ru/"
+  },
+  "startDate": "2026-10-21"
+}
