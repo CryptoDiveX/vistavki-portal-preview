@@ -1,0 +1,79 @@
+{
+  "event_name": "ПИР Экспо 2026",
+  "event_dates": "26–29 октября 2026",
+  "source_urls": {
+    "expomap": "https://expomap.ru/expo/pir-expo/",
+    "official_home": "https://pirexpo.com/",
+    "official_catalog": "https://pirexpo.com/exposition/all-exhibitors",
+    "official_api": "https://prd.api.pir.ru/api/v3/brand/list?project=14"
+  },
+  "source_status": "official catalogue live/public; parsed official source instead of relying on Expomap alone",
+  "scraped_at": "2026-10-05T08:23:57Z",
+  "parser_version": "pir-expo-2026-official-pirexpo-api-signo-v1.0.2-service-product-leakage-remediation",
+  "counts": {
+    "raw_rows": 652,
+    "processed_rows": 652,
+    "cleaned_rows": 207,
+    "removed_rows": 445,
+    "new_signo_rows": 130,
+    "repeat_signo_rows": 77,
+    "email_audit_rows": 21,
+    "match_audit_rows": 207
+  },
+  "removed_reasons": {
+    "no_signo_product_evidence": 403,
+    "service_only": 14,
+    "service_software_event": 12,
+    "packaging_disposable_only": 10,
+    "packaging_only": 4,
+    "non_russian_origin": 2
+  },
+  "source_audit": [
+    {
+      "url": "https://expomap.ru/expo/pir-expo/",
+      "status": 200,
+      "final_url": "https://expomap.ru/expo/pir-expo/",
+      "cache_file": "source/expomap.html",
+      "sha256": "85bc10ddee80687b5b0ffc163b9b1f4c42e1a5b1155b02d4a1cd9c7ecd35eb9e",
+      "bytes": 201290
+    },
+    {
+      "url": "https://pirexpo.com/",
+      "status": 200,
+      "final_url": "https://pirexpo.com/",
+      "cache_file": "source/official_home.html",
+      "sha256": "dc71c7c6b2d9248a3d541857213001b3c4475637eed868511a1ecc29ac7332e5",
+      "bytes": 454626
+    },
+    {
+      "url": "https://pirexpo.com/exposition/all-exhibitors",
+      "status": 200,
+      "final_url": "https://pirexpo.com/exposition/all-exhibitors",
+      "cache_file": "source/official_catalog.html",
+      "sha256": "7b242d724cdbba769b168af973290f2c0944e2d18b7c86a2bc62efac0cea0551",
+      "bytes": 187213
+    },
+    {
+      "url": "https://prd.api.pir.ru/api/v3/brand/list?project=14",
+      "status": 200,
+      "final_url": "https://prd.api.pir.ru/api/v3/brand/list?project=14",
+      "cache_file": "source/brand_list_project_14.json",
+      "sha256": "30ce959b5aa8d8f61a72c18f3281eef9ee1ac354599d61c2383c876f84a41772",
+      "bytes": 1229523
+    }
+  ],
+  "repeat_index": {
+    "available": true,
+    "source_basename": "signo_twenty_live_repeat_index_all_20260910T104234Z.csv",
+    "rows_read": 71161,
+    "read_only": true
+  },
+  "row_count_reconciliation": "Raw Parsed has 652 unique brand/exhibitor IDs from the official PIR Expo API.",
+  "source_caveats": [
+    "The official PIR Expo 2026 catalogue is live at pirexpo.com/exposition/all-exhibitors and backed by the public unauthenticated prd.api.pir.ru /brand/list API; Expomap is not the sole source.",
+    "The official API does not expose a structured country field; country/Russian-market status is inferred from public row evidence and the Russian-market official exhibition scope.",
+    "Cleaned/New/Repeat are restricted to normalized Russian HoReCa product/category evidence; service/software/event, packaging/disposable-only, blank-product, and no-product-evidence rows remain in Removed for QA audit.",
+    "Public website enrichment sampled home/contact/about pages only where the official catalogue lacked email.",
+    "CRM URL fields use production-safe public portal URL placeholders; local file paths stay only in local_paths for Kanban handoff and are not used as CRM links."
+  ]
+}
