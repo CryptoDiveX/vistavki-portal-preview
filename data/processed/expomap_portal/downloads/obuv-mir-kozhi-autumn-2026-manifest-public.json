@@ -1,0 +1,97 @@
+{
+  "campaignRelationEvidence": "No Coldy campaign relation found/used from public source; campaignId remains null; no Coldy writes performed.",
+  "city": "Москва",
+  "counts": {
+    "cleaned_rows": 47,
+    "contacts": 47,
+    "contacts_with_main_email": 40,
+    "contacts_with_website": 3,
+    "new_signo_rows": 47,
+    "processed_rows": 50,
+    "raw_rows": 50,
+    "removed_rows": 3,
+    "repeat_signo_rows": 0,
+    "rows": 47
+  },
+  "dataset": "obuv_mir_kozhi_autumn_2026",
+  "description": "Международная выставка обуви и готовых изделий из кожи; official autumn 2026 catalogue PDF parsed.",
+  "endDate": "2026-10-15",
+  "eventName": "Обувь. Мир кожи 2026. Осень",
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-manifest-public.json",
+  "files": {
+    "audit_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-parser-audit-public.json",
+    "manifest_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-manifest-public.json",
+    "normalized_csv_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-cleaned-signo-public.csv",
+    "workbook_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-full-processing-current-twenty-public.xlsx"
+  },
+  "lastScrapedAt": "2026-10-05T08:37:46Z",
+  "link": "https://www.obuv-expo.ru/ru/exhibition/exhibitors/",
+  "linkPrimaryLinkLabel": "Обувь. Мир кожи 2026. Осень",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-cleaned-signo-public.csv",
+  "numberOfContacts": 47,
+  "officialWebsiteUrl": "https://www.obuv-expo.ru/ru/exhibition/exhibitors/",
+  "parsedDate": "2026-10-05T08:37:46Z",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-full-processing-current-twenty-public.xlsx",
+  "parserStatus": "QA_PASSED",
+  "parserTaskId": "t_297b4607",
+  "parsingWaitlist": "",
+  "priority": 990,
+  "qaPassedAt": "2026-10-05T08:44:10.091255+00:00",
+  "qaStatus": "PASSED",
+  "qaTaskId": "t_6c17a668",
+  "qa_notes": [
+    "Official autumn 2026 catalogue PDF is live and was parsed directly from obuv-expo.ru; Expomap was used as watcher/detail evidence only.",
+    "Foreign exhibitors are retained as Russian-market exhibitors because the official catalogue is for the Moscow autumn 2026 event; service/logistics/no-product rows are removed.",
+    "Products are normalized to Russian product/category terms; source product descriptions are retained in product_notes for QA spot-checking.",
+    "No Coldy writes were performed."
+  ],
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/obuv-mir-kozhi-autumn-2026-parser-audit-public.json",
+  "relevant": true,
+  "repeat_matching": {
+    "available": true,
+    "matching_order": [
+      "exact public email",
+      "non-generic email/website domain",
+      "exact normalized company name"
+    ],
+    "read_only": true,
+    "rows_read": 71161,
+    "source_basename": "signo_twenty_live_repeat_index_all_20260910T104234Z.csv"
+  },
+  "scheduleReason": "qa_passed_portal_alert_ready",
+  "sha256": {
+    "Obuv_Mir_Kozhi_2026_Autumn_FULL_processing_CURRENT_TWENTY.xlsx": "cf1b2d4de4600da8bbaceec828a5116163e39519f3e9900d5b92faa83d53d63d",
+    "obuv-mir-kozhi-autumn-2026-cleaned-signo-public.csv": "41d3d0a9f5f1eacc751e78df636514838139ea5898550b6daad34fe6ffa3fe44",
+    "obuv-mir-kozhi-autumn-2026-full-processing-current-twenty-public.xlsx": "cf1b2d4de4600da8bbaceec828a5116163e39519f3e9900d5b92faa83d53d63d",
+    "obuv-mir-kozhi-autumn-2026-manifest-public.json": "c5ec463e8331f109c1c67c23e04c644458ea9b60e110c376b0b0ff3e102389de",
+    "obuv-mir-kozhi-autumn-2026-parser-audit-public.json": "e75acf2f789ddbce548dc015110dc1ff5714272ed2e9ef42a4e04794fe6f3048",
+    "obuv_mir_kozhi_autumn_2026_cleaned_signo.csv": "41d3d0a9f5f1eacc751e78df636514838139ea5898550b6daad34fe6ffa3fe44",
+    "obuv_mir_kozhi_autumn_2026_email_audit.json": "c84fdeb429f179b2ff0c4f41bcb174bb68fe397c6371da1791709c2f00aefbbe",
+    "obuv_mir_kozhi_autumn_2026_match_audit.json": "7653770d9d478abba3e54d94a555e1f5d677e5a6a78421aace391e0fc9ef2cb0",
+    "obuv_mir_kozhi_autumn_2026_parser_audit.json": "e75acf2f789ddbce548dc015110dc1ff5714272ed2e9ef42a4e04794fe6f3048",
+    "obuv_mir_kozhi_autumn_2026_raw_audit.jsonl": "772d829f1fcc3c4f3f481fc2a4b71b8afa9b761819809ebd21d0924feb0583cc"
+  },
+  "sourceCaveat": "Official autumn 2026 catalogue PDF is public on obuv-expo.ru exhibitors page, updated 01.10.2026. The catalogue is for a Moscow/Russian-market event and includes foreign exhibitors presenting into the Russian market; rows are kept when product evidence is Signo-relevant, while service/logistics/no-product rows are excluded into Removed.",
+  "sourceEventKey": "obuv-mir-kozhi-osen",
+  "sourcePlatform": "Expomap",
+  "sourceUrl": "https://expomap.ru/expo/obuv-mir-kozhi-osen/",
+  "source_status": {
+    "active_autumn_pdf_links": [
+      "https://www.obuv-expo.ru/common/img/uploaded/exhibitions/obuv_mir_kozhi/2026/doc/OBUV_Catalogo_10_26.pdf"
+    ],
+    "evidence": "Official autumn 2026 catalogue PDF is public on obuv-expo.ru exhibitors page, updated 01.10.2026. The catalogue is for a Moscow/Russian-market event and includes foreign exhibitors presenting into the Russian market; rows are kept when product evidence is Signo-relevant, while service/logistics/no-product rows are excluded into Removed.",
+    "official_pdf_sha256": "9f6d2857f6d58cb0423691611efe1fd4d05a4a9e21381674317ae0094be37dbd",
+    "official_pdf_url": "https://www.obuv-expo.ru/common/img/uploaded/exhibitions/obuv_mir_kozhi/2026/doc/OBUV_Catalogo_10_26.pdf",
+    "pdf_parse": {
+      "detail_pages_parsed": "12-20",
+      "pages": 20,
+      "text_cache": "data/processed/exhibitor_pilots/obuv_mir_kozhi_autumn_2026/source/OBUV_Catalogo_10_26_pypdf_text.txt"
+    },
+    "source_updated_at": "01.10.2026",
+    "status": "official_catalog_pdf_available"
+  },
+  "startDate": "2026-10-13",
+  "tags": "Обувь; Меховые и кожаные изделия; Кожевенное производство; Кожсырье; Обувная промышленность",
+  "themes": "Легкая промышленность; Мода и стиль; Потребительские товары",
+  "title": "Обувь. Мир кожи 2026. Осень"
+}
