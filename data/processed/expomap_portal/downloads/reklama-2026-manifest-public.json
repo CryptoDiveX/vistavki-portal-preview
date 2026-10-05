@@ -1,0 +1,92 @@
+{
+  "campaignRelationEvidence": "No Coldy campaign relation found/used from public source; campaignId remains null; no Coldy writes performed.",
+  "city": "Москва",
+  "counts": {
+    "cleaned_rows": 78,
+    "contacts": 78,
+    "contacts_with_main_email": 0,
+    "new_signo_rows": 72,
+    "processed_rows": 102,
+    "raw_rows": 102,
+    "removed_rows": 24,
+    "repeat_signo_rows": 6,
+    "rows": 78
+  },
+  "dataset": "reklama_2026",
+  "description": "33-я международная специализированная выставка производителей и заказчиков рекламы; official 2026 participant table parsed.",
+  "endDate": "2026-10-29",
+  "eventName": "Реклама 2026",
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-manifest-public.json",
+  "files": {
+    "audit_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-parser-audit-public.json",
+    "manifest_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-manifest-public.json",
+    "normalized_csv_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-cleaned-signo-public.csv",
+    "workbook_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-full-processing-current-twenty-public.xlsx"
+  },
+  "lastScrapedAt": "2026-10-05T07:58:06Z",
+  "link": "https://www.reklama-expo.ru/ru/exhibition/exhibitors/",
+  "linkPrimaryLinkLabel": "Реклама 2026",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-cleaned-signo-public.csv",
+  "numberOfContacts": 78,
+  "officialWebsiteUrl": "https://www.reklama-expo.ru/ru/exhibition/exhibitors/",
+  "parsedDate": "2026-10-05T07:58:06Z",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-full-processing-current-twenty-public.xlsx",
+  "parserStatus": "QA_PASSED",
+  "parserTaskId": "t_1fe13a8d",
+  "parsingWaitlist": "",
+  "priority": 990,
+  "qaPassedAt": "2026-10-05T08:10:54.629251+00:00",
+  "qaStatus": "PASSED",
+  "qaTaskId": "t_2fdeac74",
+  "qa_notes": [
+    "Official 2026 participant table is live and was parsed directly from reklama-expo.ru; Expomap was used as watcher/detail evidence only.",
+    "Official per-company catalogue/details were not public in the 2026 pane at parse time; products are event-level Russian categories and should be QA spot-checked.",
+    "Cleaned/New/Repeat are restricted to Russia/Russian-market rows; foreign rows remain in Removed for audit.",
+    "No Coldy writes were performed."
+  ],
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/reklama-2026-parser-audit-public.json",
+  "relevant": true,
+  "repeat_matching": {
+    "available": true,
+    "matching_order": [
+      "exact normalized company name"
+    ],
+    "read_only": true,
+    "rows_read": 71161,
+    "source_basename": "signo_twenty_live_repeat_index_all_20260910T104234Z.csv"
+  },
+  "scheduleReason": "qa_passed_portal_alert_ready",
+  "sha256": {
+    "Reklama_2026_FULL_processing_CURRENT_TWENTY.xlsx": "9652f7108b23a11ab07086006c0a7d544d439e6f7764e8b3fc0bd22bee1b2332",
+    "reklama-2026-cleaned-signo-public.csv": "d8e9ae50e1383b4b645f89745373a31163163ec72eab0d9741d402c6d0ac9e38",
+    "reklama-2026-full-processing-current-twenty-public.xlsx": "9652f7108b23a11ab07086006c0a7d544d439e6f7764e8b3fc0bd22bee1b2332",
+    "reklama-2026-manifest-public.json": "8e901fd49e986563286c8bf9504fd039da1eb1c179ad4b4ea46732d17b12a6df",
+    "reklama-2026-parser-audit-public.json": "f977eb3daec6b1ba0310c200b6f9bd5085bd67e6a4702fadbf7a0dee12da599f",
+    "reklama_2026_cleaned_signo.csv": "d8e9ae50e1383b4b645f89745373a31163163ec72eab0d9741d402c6d0ac9e38",
+    "reklama_2026_email_audit.json": "961170b4b4da399663e32217635d0807581baf7eebba86ced3de68c30933b224",
+    "reklama_2026_match_audit.json": "a706df7b2cba065a28fead7d29e592c15709ee2e8c0606d9d7e5aedb62596970",
+    "reklama_2026_parser_audit.json": "f977eb3daec6b1ba0310c200b6f9bd5085bd67e6a4702fadbf7a0dee12da599f",
+    "reklama_2026_raw_audit.jsonl": "835a60161c11dfa10bc97224ce84e15fa357ede41c4a1f2f5ed204824e878987"
+  },
+  "sourceCaveat": "Official 2026 participant table is public and updated 22.09.2026. The 2026 internet-catalog/PDF block on the official participants page is commented out and only old 2025 links are present there, so per-company products, websites and emails were not publicly available from the official 2026 page at parse time.",
+  "sourceEventKey": "reklama",
+  "sourcePlatform": "Expomap",
+  "sourceUrl": "https://expomap.ru/expo/reklama/",
+  "source_status": {
+    "active_2026_icatalog_links": [],
+    "active_2026_pdf_links": [],
+    "commented_or_historical_icatalog_links_seen": [
+      "https://icatalog.expocentr.ru/ru/exhibitions/b67ac0c5-40d1-11ee-80ce-a0d3c1fab97f?&hallid=54"
+    ],
+    "commented_or_historical_pdf_links_seen": [
+      "/common/img/uploaded/exhibitions/r1/doc_2025/catalogue_reklama25.pdf",
+      "/common/img/uploaded/exhibitions/r1/doc_2025/recl25guide_site.pdf"
+    ],
+    "evidence": "Official 2026 participant table is public and updated 22.09.2026. The 2026 internet-catalog/PDF block on the official participants page is commented out and only old 2025 links are present there, so per-company products, websites and emails were not publicly available from the official 2026 page at parse time.",
+    "status": "participant_table_only"
+  },
+  "startDate": "2026-10-27",
+  "tags": "Реклама; Ритейл; Маркетинг и реклама; Печатные технологии; Бизнес-подарки; Digital-маркетинг; Сувениры",
+  "themes": "Полиграфия, издательское дело; Упаковка; Реклама, маркетинг, PR",
+  "title": "Реклама 2026"
+}
