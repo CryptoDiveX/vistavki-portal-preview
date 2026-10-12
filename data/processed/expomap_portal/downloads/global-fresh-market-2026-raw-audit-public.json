@@ -1,0 +1,754 @@
+{
+  "event_name": "Global Fresh Market 2026",
+  "event_dates": "11–13 ноября 2026",
+  "source_urls": {
+    "expomap": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+    "official_home": "https://gfmexpo.com/",
+    "official_catalog": "https://gfmexpo.com/ex_archive/2026/"
+  },
+  "source_status": "official catalogue live/public; parsed official gfmexpo.com source instead of relying on Expomap alone",
+  "scraped_at": "2026-10-12T05:18:28Z",
+  "parser_version": "global-fresh-market-2026-official-gfmexpo-signo-v1.0.1",
+  "counts": {
+    "raw_rows": 71,
+    "processed_rows": 71,
+    "cleaned_rows": 66,
+    "removed_rows": 5,
+    "new_signo_rows": 53,
+    "repeat_signo_rows": 13,
+    "email_audit_rows": 0,
+    "match_audit_rows": 66
+  },
+  "removed_reasons": {
+    "packaging_only": 3,
+    "service_only": 1,
+    "no_signo_product_evidence": 1
+  },
+  "source_audit": [
+    {
+      "url": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+      "status": 200,
+      "final_url": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+      "cache_file": "source/expomap.html",
+      "sha256": "00206b7ccc2d4550b54fb777c3b311447737b5cfd78dcd6472a00c4e9fd36981",
+      "bytes": 267114,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://gfmexpo.com/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/",
+      "cache_file": "source/official_home.html",
+      "sha256": "5460f0867cbec22d8d18da1b7d7137c8f10ac31101e846e65af743defdf858fc",
+      "bytes": 134258,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/ex_archive/2026/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/ex_archive/2026/",
+      "cache_file": "source/listing_pages/ex_archive_2026_page_1.html",
+      "sha256": "0e5b51155c8f0d18870ad0985ae3cadf0994131aa5b85373032b2de2c294e190",
+      "bytes": 106124,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/ex_archive/2026/page/2/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/ex_archive/2026/page/2/",
+      "cache_file": "source/listing_pages/ex_archive_2026_page_2.html",
+      "sha256": "4399e703ed767e6978f1a47aaf46bbd1877c2b1c25b6ebbed4a93705c1eb822e",
+      "bytes": 106952,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/ex_archive/2026/page/3/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/ex_archive/2026/page/3/",
+      "cache_file": "source/listing_pages/ex_archive_2026_page_3.html",
+      "sha256": "e8c72b368d9cb40f31e9d0f5864c1542fa66d0da8c5b3b8827171bc8c6b023a7",
+      "bytes": 109300,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/ex_archive/2026/page/4/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/ex_archive/2026/page/4/",
+      "cache_file": "source/listing_pages/ex_archive_2026_page_4.html",
+      "sha256": "9db179db0cf6ec97b0cbe311707c65c04375f52f7d5efc294702783235e74fe3",
+      "bytes": 104674,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/ex_archive/2026/page/5/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/ex_archive/2026/page/5/",
+      "cache_file": "source/listing_pages/ex_archive_2026_page_5.html",
+      "sha256": "546fdcee1815f6963d1bca164830d36d4554e7bf70c9dc4cb01d15f2f474e430",
+      "bytes": 101043,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/ex_archive/2026/page/6/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/ex_archive/2026/page/6/",
+      "cache_file": "source/listing_pages/ex_archive_2026_page_6.html",
+      "sha256": "2a67d227c21d6685849cb7540ed2a3dd7dbcc5117e2f774797182984278183bf",
+      "bytes": 100549,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/gruppa-uralhim-2/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/gruppa-uralhim-2/",
+      "cache_file": "source/detail_pages/gruppa-uralhim-2.html",
+      "sha256": "46c4e8450120419532e05f748a07bbb4a3d75f1785129a4263bb472299ece12e",
+      "bytes": 93585,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/agrisovgaz-2/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/agrisovgaz-2/",
+      "cache_file": "source/detail_pages/agrisovgaz-2.html",
+      "sha256": "9a0fea55e10c06287caf6596fbee97534b8edf66d943f818e22eabd5256e22d0",
+      "bytes": 100858,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/guangdong-fahold-electronics-technology-co-ltd/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/guangdong-fahold-electronics-technology-co-ltd/",
+      "cache_file": "source/detail_pages/guangdong-fahold-electronics-technology-co-ltd.html",
+      "sha256": "572be1a42d5c14b8a8257b4f0f6a05df73756202bd88f4145511ac89d8c22ee8",
+      "bytes": 92086,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/hongcan-plastics-coltd/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/hongcan-plastics-coltd/",
+      "cache_file": "source/detail_pages/hongcan-plastics-coltd.html",
+      "sha256": "0f5562daeba1746e35fa9c477075514d4e42a137c25c99c8f495b72f1fe2a3ea",
+      "bytes": 92116,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/guangdong-done-energy-technology-company/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/guangdong-done-energy-technology-company/",
+      "cache_file": "source/detail_pages/guangdong-done-energy-technology-company.html",
+      "sha256": "cd641b51d7581b486c7fa9890640fd15a42528d1ea1905daaafc6934cf758012",
+      "bytes": 92966,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-nfl-grupp/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-nfl-grupp/",
+      "cache_file": "source/detail_pages/ooo-nfl-grupp.html",
+      "sha256": "9f51663a6bfd3d0aed12f6bd7b46b77ab4f6c5d6203c5a6eb2cc27c9a9669114",
+      "bytes": 94932,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/kfh-belye-lugi/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/kfh-belye-lugi/",
+      "cache_file": "source/detail_pages/kfh-belye-lugi.html",
+      "sha256": "e2b46f639d567dec926e544581f0de08fb023cf68e72e70aa3a5c00ff15252c7",
+      "bytes": 93057,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/kooperativ-soyuz-organicheskogo-zemledeliya/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/kooperativ-soyuz-organicheskogo-zemledeliya/",
+      "cache_file": "source/detail_pages/kooperativ-soyuz-organicheskogo-zemledeliya.html",
+      "sha256": "6bf2126dab1716d5f73d98276ac6fcce43350ceb7692494e38dd51517d4119a0",
+      "bytes": 93716,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-meristema-n/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-meristema-n/",
+      "cache_file": "source/detail_pages/ooo-meristema-n.html",
+      "sha256": "9f2506a9a2255b6667c6dc30083b668f98ec57605ca56bafd452d3ca3263e704",
+      "bytes": 95639,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/selskohozyajstvennyj-potrebitelskij-pererabatyvayushhij-snabzhenchesko-sbytovoj-kooperativk1-sppsskk1/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/selskohozyajstvennyj-potrebitelskij-pererabatyvayushhij-snabzhenchesko-sbytovoj-kooperativk1-sppsskk1/",
+      "cache_file": "source/detail_pages/selskohozyajstvennyj-potrebitelskij-pererabatyvayushhij-snabzhenchesko-sbytovoj-kooperativk1-sppsskk1.html",
+      "sha256": "6e285e915cf60d947d589b638a4da0df4d3be980bf5a64aac81cc2e0b9818ccf",
+      "bytes": 96182,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ekoferma-ogo-rod/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ekoferma-ogo-rod/",
+      "cache_file": "source/detail_pages/ekoferma-ogo-rod.html",
+      "sha256": "01436ed733350979143458413b388e65012d54f171e180845b82208de52ebd07",
+      "bytes": 93612,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/kfh-shtanov-aleksej-yurevich/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/kfh-shtanov-aleksej-yurevich/",
+      "cache_file": "source/detail_pages/kfh-shtanov-aleksej-yurevich.html",
+      "sha256": "92b617d8b12d78889428600e70234932fa91ecaeaeea491c11572d86671eb8b8",
+      "bytes": 92560,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-seha/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-seha/",
+      "cache_file": "source/detail_pages/ooo-seha.html",
+      "sha256": "cc515e1f16310ac4932afa93cb644bb29144b35cc03a11f28d0f316aab143dba",
+      "bytes": 99391,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/eg-billion-electronics-dongguan-co-ltd/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/eg-billion-electronics-dongguan-co-ltd/",
+      "cache_file": "source/detail_pages/eg-billion-electronics-dongguan-co-ltd.html",
+      "sha256": "a1f74dc64e69e17c3d38739bf7ab8f598a0313f261460ae685efb0fce28d32fe",
+      "bytes": 94532,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/jiangsu-guangman-new-materials-co-ltd/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/jiangsu-guangman-new-materials-co-ltd/",
+      "cache_file": "source/detail_pages/jiangsu-guangman-new-materials-co-ltd.html",
+      "sha256": "13820f8e1dda25385b1d8b89df1c4272cfdb0faf622cb90dd09a2618f8681344",
+      "bytes": 94192,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/sichuan-fenghe-fresh-produce-supply-chain-management-co-ltd/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/sichuan-fenghe-fresh-produce-supply-chain-management-co-ltd/",
+      "cache_file": "source/detail_pages/sichuan-fenghe-fresh-produce-supply-chain-management-co-ltd.html",
+      "sha256": "f4c891c73ee179c7acbee617b51ee874cee63b05b3651cd1727a75210fc10f51",
+      "bytes": 95622,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/zapadnye-vorota/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/zapadnye-vorota/",
+      "cache_file": "source/detail_pages/zapadnye-vorota.html",
+      "sha256": "5b4914bb67d0e8581d2fe62fd35c76cc406891f72c66025e443edd20fed6fe91",
+      "bytes": 91315,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-agro-inzhiniring/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-agro-inzhiniring/",
+      "cache_file": "source/detail_pages/ooo-agro-inzhiniring.html",
+      "sha256": "59957f62b95aefcefa06b29cab2043e9f4bfc67b753eaec478de27241d7b5fc9",
+      "bytes": 102939,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/istok/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/istok/",
+      "cache_file": "source/detail_pages/istok.html",
+      "sha256": "20186ef9fbb43a5099fbf037fa820a4e71cd708436f9f13d11d84b72a6404817",
+      "bytes": 96925,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/raznoyagode/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/raznoyagode/",
+      "cache_file": "source/detail_pages/raznoyagode.html",
+      "sha256": "ebde7ff40cafef0987613b6e224f2c3c6c1a2f884e3db4555796b04baf42bb57",
+      "bytes": 94173,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/servis-yunit/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/servis-yunit/",
+      "cache_file": "source/detail_pages/servis-yunit.html",
+      "sha256": "93d1656f5e484798948f21868c0573814ea43196d9dde2eb60131c0f410ae8c9",
+      "bytes": 96246,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-himlyuks/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-himlyuks/",
+      "cache_file": "source/detail_pages/ooo-himlyuks.html",
+      "sha256": "f5421c3214dffc689704b4e446bcf855d00a07d4b046dd444192a54767daa5d1",
+      "bytes": 92069,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/led-effekt/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/led-effekt/",
+      "cache_file": "source/detail_pages/led-effekt.html",
+      "sha256": "25105b33481a57fd7cdb1162ea88e5aaf5ee3d94a7f9f6f7e24754b225c0ef30",
+      "bytes": 94696,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/shenzhen-guanke-technologies-co-ltd/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/shenzhen-guanke-technologies-co-ltd/",
+      "cache_file": "source/detail_pages/shenzhen-guanke-technologies-co-ltd.html",
+      "sha256": "109c84ca3e58266ade024d6307ad240ebfaa1db1880e50810a21b1e6b98dffad",
+      "bytes": 93214,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-biostaff/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-biostaff/",
+      "cache_file": "source/detail_pages/ooo-biostaff.html",
+      "sha256": "d90b6b1296377fb908dc6a8f0033deaf3b4d5b95ca246fd1c87726d023eee1b0",
+      "bytes": 91005,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-palitra-rusi/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-palitra-rusi/",
+      "cache_file": "source/detail_pages/ooo-palitra-rusi.html",
+      "sha256": "5463c0bad1e629fad9a74984885361aafb9413ba68b8048ad24aea89642c1ebf",
+      "bytes": 96664,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-vetagrosnab/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-vetagrosnab/",
+      "cache_file": "source/detail_pages/ooo-vetagrosnab.html",
+      "sha256": "aee3ebc13d42b20d5ce1cda2743736f62f3d5434d609e9fc1ec80c0bcfb1e10d",
+      "bytes": 93046,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ao-rost-enerdzhi/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ao-rost-enerdzhi/",
+      "cache_file": "source/detail_pages/ao-rost-enerdzhi.html",
+      "sha256": "beaf2459f589086d7cbf0de6144757523964d2081066e33ca1c6f4d74e62f367",
+      "bytes": 95396,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-r-lajt/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-r-lajt/",
+      "cache_file": "source/detail_pages/ooo-r-lajt.html",
+      "sha256": "ced79b3af2c67b3b613e93ee88c69f29c7a8cf99f7a1b0058676d3f421f00e3b",
+      "bytes": 95491,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-npf-svetovye-resheniya/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-npf-svetovye-resheniya/",
+      "cache_file": "source/detail_pages/ooo-npf-svetovye-resheniya.html",
+      "sha256": "a9af735f7b72c71402a903ae7e278d89b23d6592bac6eaa1d9746ec7b7c3efd7",
+      "bytes": 95766,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-market-stajl/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-market-stajl/",
+      "cache_file": "source/detail_pages/ooo-market-stajl.html",
+      "sha256": "cc99ab475712d73dd1e518e9159f55ce4357272d2e50850e30bfe0989d6a8526",
+      "bytes": 91878,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-energokontur/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-energokontur/",
+      "cache_file": "source/detail_pages/ooo-energokontur.html",
+      "sha256": "1f2e717df55e2f183eea8db0cceb9585b675fc38c946a473ce18120ff9086051",
+      "bytes": 103105,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/horsatech/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/horsatech/",
+      "cache_file": "source/detail_pages/horsatech.html",
+      "sha256": "b933479669e215a73dda0ac5169436d84751ef72b4ded589392303071f8b8652",
+      "bytes": 90780,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-biokontrol/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-biokontrol/",
+      "cache_file": "source/detail_pages/ooo-biokontrol.html",
+      "sha256": "c74c27bf5c0086d2007086e4fe606200e27c083bfe8abcda54618d77fae43478",
+      "bytes": 92259,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-fitodiagnostika/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-fitodiagnostika/",
+      "cache_file": "source/detail_pages/ooo-fitodiagnostika.html",
+      "sha256": "914dbc66ce4ef28671b1a20f9aae336d5ab783f116ba625721c36833e8041403",
+      "bytes": 95458,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/raster/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/raster/",
+      "cache_file": "source/detail_pages/raster.html",
+      "sha256": "47df1bab89366573074096dbfc20df63c3bf2edd1ce4b034400458c1a0428a85",
+      "bytes": 95351,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/keaz/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/keaz/",
+      "cache_file": "source/detail_pages/keaz.html",
+      "sha256": "4f0dcad06f791f6e6ae6b77a58131a0452cdbca218be8671bc110ee22a84c434",
+      "bytes": 91486,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-tehnonikol-stroitelnye-sistemy/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-tehnonikol-stroitelnye-sistemy/",
+      "cache_file": "source/detail_pages/ooo-tehnonikol-stroitelnye-sistemy.html",
+      "sha256": "affa6e4c1602867d4457014f9d69f6e8e6cd46e35b9b1c8d57e8ca5e88093841",
+      "bytes": 93784,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-grinal/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-grinal/",
+      "cache_file": "source/detail_pages/ooo-grinal.html",
+      "sha256": "c8ad88cd675d50725cba54e82430dd84309146e1313a31685b4fa67a34aa490a",
+      "bytes": 95965,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/agrobiotrejd/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/agrobiotrejd/",
+      "cache_file": "source/detail_pages/agrobiotrejd.html",
+      "sha256": "cd623a3354147b561dadcf8435f2cdbfc5751baf08c37684568e284637de7843",
+      "bytes": 91399,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-koppert-rus-2/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-koppert-rus-2/",
+      "cache_file": "source/detail_pages/ooo-koppert-rus-2.html",
+      "sha256": "1f7c2a11bc448fe3d42db1f9abb6cfecf72e056c76ba9a436f53f12753cab928",
+      "bytes": 92610,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-app-slobodskie-yagodniki/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-app-slobodskie-yagodniki/",
+      "cache_file": "source/detail_pages/ooo-app-slobodskie-yagodniki.html",
+      "sha256": "aee76fc7faca574479b0c6d459266ffac50608b9072803da6a68d5d96249b607",
+      "bytes": 93178,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ao-bajer/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ao-bajer/",
+      "cache_file": "source/detail_pages/ao-bajer.html",
+      "sha256": "70ec8256ca963be634fb27e612a6518510c3c5af003e6bb8b4be2ac7071038de",
+      "bytes": 91752,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/eva-svet/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/eva-svet/",
+      "cache_file": "source/detail_pages/eva-svet.html",
+      "sha256": "d84df8877d03a4580fe2e32e8a6cad262f06d763852d7c4fa6253b63827894dd",
+      "bytes": 95116,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-tehnostal/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-tehnostal/",
+      "cache_file": "source/detail_pages/ooo-tehnostal.html",
+      "sha256": "dd7a1ff9372b3c3d9563e0c9193ee0d0d18ab16e7bbae7f540b904cfd51a24f7",
+      "bytes": 92779,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/akim/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/akim/",
+      "cache_file": "source/detail_pages/akim.html",
+      "sha256": "6719d010c384a1bb6a51836dcf3edaf34469c24dbe0f26f2c5aa6bd0b6a9188b",
+      "bytes": 94788,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/grodan/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/grodan/",
+      "cache_file": "source/detail_pages/grodan.html",
+      "sha256": "a2dc2de90aeca23f6212a823e2ace83a02afe47dd408bd78396e810c1c3b4ac8",
+      "bytes": 91612,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/sft-pakedzhing/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/sft-pakedzhing/",
+      "cache_file": "source/detail_pages/sft-pakedzhing.html",
+      "sha256": "10de3b625d198e97b7381b45d4e6f6da686514d626d6a8db171bb728f10a09be",
+      "bytes": 95039,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/farmbiomed/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/farmbiomed/",
+      "cache_file": "source/detail_pages/farmbiomed.html",
+      "sha256": "26f9cf98f86490d4ce215898ca3c132320b1ebb400df452401f9152bb700071b",
+      "bytes": 97161,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-nicz-innovaczii/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-nicz-innovaczii/",
+      "cache_file": "source/detail_pages/ooo-nicz-innovaczii.html",
+      "sha256": "7575566cb7732652ece9bb32a1e939c842e98cea9b5802c1926f1162bee9a7d6",
+      "bytes": 95290,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-agromart/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-agromart/",
+      "cache_file": "source/detail_pages/ooo-agromart.html",
+      "sha256": "776c360aa41b656ee9c8715b170b8a68d4029571d65a3a93eca8d22f5b0e84a7",
+      "bytes": 91058,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/gruppa-uralhim/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/gruppa-uralhim/",
+      "cache_file": "source/detail_pages/gruppa-uralhim.html",
+      "sha256": "bc068faffc2c16adc9d087574c7d467f7748da48d02b8611058030390c19646f",
+      "bytes": 93556,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-agrofirma-poisk-profi/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-agrofirma-poisk-profi/",
+      "cache_file": "source/detail_pages/ooo-agrofirma-poisk-profi.html",
+      "sha256": "544cde274a2f3c1ebfe2128d9c60c0cac31f3eae18313f0bf5cb5fb9fa54e090",
+      "bytes": 95323,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-agrobiotehnologiya/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-agrobiotehnologiya/",
+      "cache_file": "source/detail_pages/ooo-agrobiotehnologiya.html",
+      "sha256": "ec8237a3d88cb79c5e87f652d7ba43bd0cb51bae38364e55b057b82e00ed32fb",
+      "bytes": 95782,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/gruppa-kompanij-rost/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/gruppa-kompanij-rost/",
+      "cache_file": "source/detail_pages/gruppa-kompanij-rost.html",
+      "sha256": "4fd00e86cb55b637589372c3464fd7adb7f44480c29457b1b6abf191a1ed10b3",
+      "bytes": 98764,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-valczmatik-agro-tehnika/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-valczmatik-agro-tehnika/",
+      "cache_file": "source/detail_pages/ooo-valczmatik-agro-tehnika.html",
+      "sha256": "6dc5734094bd2d8b2d32043e83fa7cbe2d23b1435a09fae03eea2a95a3428e78",
+      "bytes": 97234,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-groutek/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-groutek/",
+      "cache_file": "source/detail_pages/ooo-groutek.html",
+      "sha256": "977ddbd2621e472f82cd2a1c150ebc5fb1573ba0ad43548038e6da471a329c6e",
+      "bytes": 94956,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-kcz-global-ekspert/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-kcz-global-ekspert/",
+      "cache_file": "source/detail_pages/ooo-kcz-global-ekspert.html",
+      "sha256": "3978fe981846682d07099aff471320a91eed1d7298079ea76525d08aedf7a05a",
+      "bytes": 92358,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-singenta/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-singenta/",
+      "cache_file": "source/detail_pages/ooo-singenta.html",
+      "sha256": "769c6452b0a4babbdda9c62c70d41276fd0af43004eed20d074b5ce16d8fe59a",
+      "bytes": 94274,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-starkom/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-starkom/",
+      "cache_file": "source/detail_pages/ooo-starkom.html",
+      "sha256": "c054b152b73a3abba0243f5e24ae01419a7b6bde557b5ec30a61bb025aa04f0e",
+      "bytes": 92874,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/gruppa-kompanij-reflaks/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/gruppa-kompanij-reflaks/",
+      "cache_file": "source/detail_pages/gruppa-kompanij-reflaks.html",
+      "sha256": "d995fc782571374e8475a589760ab438a6cea9844f027f8c8b2e49b3aa4518e1",
+      "bytes": 95387,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/nkcz-flora/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/nkcz-flora/",
+      "cache_file": "source/detail_pages/nkcz-flora.html",
+      "sha256": "9c3a27385c21ec7cadd903b6a403d6bbfd7277c1a874f9f94c0e2fee7f498363",
+      "bytes": 93376,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-enza-semena/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-enza-semena/",
+      "cache_file": "source/detail_pages/ooo-enza-semena.html",
+      "sha256": "be06d6b775b5e43264e93dff18d055c0c03dfda9e9857360532925af87e6d850",
+      "bytes": 93241,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-bio-tehnologiya/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-bio-tehnologiya/",
+      "cache_file": "source/detail_pages/ooo-bio-tehnologiya.html",
+      "sha256": "e673f2f2957cc7c7b4c4489a0c519c080e76fb6a6e05a3cb126cb63bbe87f176",
+      "bytes": 92304,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-rajk-czvaan-rus/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-rajk-czvaan-rus/",
+      "cache_file": "source/detail_pages/ooo-rajk-czvaan-rus.html",
+      "sha256": "3ff4d4cdab55cfab4157926aa1d1efba1238e667af04189254ec57ec159e8f6c",
+      "bytes": 94321,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/gruppa-kompanij-biom/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/gruppa-kompanij-biom/",
+      "cache_file": "source/detail_pages/gruppa-kompanij-biom.html",
+      "sha256": "b69e66a6a99b8e762b94148758216994aa702c57bf7592963e150c04ab141ef3",
+      "bytes": 96943,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-ptk-svetogor/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-ptk-svetogor/",
+      "cache_file": "source/detail_pages/ooo-ptk-svetogor.html",
+      "sha256": "baac1de5e3b7b740c181bbff66c7449d3ccc130a35239366b2612c47cf936c89",
+      "bytes": 96611,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-laboratoriya-inzhenernyh-sistem/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-laboratoriya-inzhenernyh-sistem/",
+      "cache_file": "source/detail_pages/ooo-laboratoriya-inzhenernyh-sistem.html",
+      "sha256": "341c6426e7a8c817f7980b29e44fb39ec75cb45fcedecef08e57d4ed4841f5c0",
+      "bytes": 95569,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ao-arhbum/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ao-arhbum/",
+      "cache_file": "source/detail_pages/ao-arhbum.html",
+      "sha256": "f84ed55365025a606a6747415321b45441356e3195204f7b093e6e037cb2554d",
+      "bytes": 93582,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-ekspress-agro/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-ekspress-agro/",
+      "cache_file": "source/detail_pages/ooo-ekspress-agro.html",
+      "sha256": "1f4c3bb2db0591bf929714c3a4a3f6780b66558c04877f18ca90abcf7c6605b2",
+      "bytes": 94017,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://gfmexpo.com/eksponent/ooo-kerher/",
+      "status": 200,
+      "final_url": "https://gfmexpo.com/eksponent/ooo-kerher/",
+      "cache_file": "source/detail_pages/ooo-kerher.html",
+      "sha256": "ffcfb8ad570b30a6eb4f5639332ffb9ab2e8f5da002df61cfe0ad84cc8acd320",
+      "bytes": 92195,
+      "content_type": "text/html; charset=UTF-8"
+    }
+  ],
+  "repeat_index": {
+    "available": true,
+    "source_basename": "signo_twenty_live_repeat_index_all_20260910T104234Z.csv",
+    "rows_read": 71161,
+    "read_only": true
+  },
+  "row_count_reconciliation": "Raw Parsed has 71 unique exhibitor detail pages linked from official gfmexpo.com/ex_archive/2026/ pages 1-6.",
+  "source_caveats": [
+    "The official Global Fresh Market 2026 exhibitor catalogue is live at gfmexpo.com/ex_archive/2026/; Expomap is watcher/detail evidence only.",
+    "The event is a Moscow/Russian-market exhibition, so foreign official exhibitors are retained when they have Signo-relevant tangible product/category evidence; products are normalized to Russian terms.",
+    "Cleaned/New/Repeat exclude service-only, packaging-only, blank-product, and no-product-evidence rows; removed rows stay auditable in the Removed sheet.",
+    "Public website enrichment sampled home/contact/about pages only where the official detail lacked email.",
+    "CRM URL fields use production-safe public portal URL placeholders; local file paths stay only in local_paths for Kanban handoff and are not used as CRM links."
+  ]
+}

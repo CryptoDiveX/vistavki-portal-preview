@@ -38242,14 +38242,14 @@
       "start": "2026-11-10T00:00:00"
     },
     "description": null,
-    "downloadable_files_count": 0,
+    "downloadable_files_count": 2,
     "event_name": "Global Fresh Market: Vegetables&Fruits 2026",
     "event_subtitle": "международная специализированная B2B выставка производителей и участников рынка плодоовощной продукции",
     "exhibited_products": [
       "Свежие фрукты и овощи<br />\r\nСвежие полуфабрикаты<br />\r\nСвежая зелень<br />\r\nРостки, специи, цветы, комнатные растения<br />\r\nОрганические продукты<br />\r\nЗамороженные фрукты и овощи<br />\r\nУслуги<br />\r\nТранспортировка и хранение<br />\r\nСемена, развитие сортов, продукция питомников<br />\r\nТехнологии выращивания<br />\r\nСельскохозяйственное оборудование<br />\r\nТехнологии и системы обработки<br />\r\nУпаковочные материалы / тара<br />\r\nТеплицы и тепличная техника<br />\r\nОвощные магазины и оборудование для хранения готовой продукции"
     ],
-    "has_downloadable_file": false,
-    "has_parsed_data": false,
+    "has_downloadable_file": true,
+    "has_parsed_data": true,
     "matched_relevance_categories": [
       "food_agri_products_non_beverage",
       "packaging_printing_label_marking"
@@ -38286,10 +38286,215 @@
     "ordinal": 319,
     "parse_status": "ok",
     "parser_notes": null,
+    "parser_pilot_facts": [
+      {
+        "catalog_url": "https://gfmexpo.com/ex_archive/2026/",
+        "cleaned_rows": 66,
+        "contacts_with_main_email": 66,
+        "downloadable_files_count": 2,
+        "event_date": "11–13 ноября 2026",
+        "event_name": "Global Fresh Market 2026",
+        "event_source_name": "Global Fresh Market: Vegetables&Fruits 2026",
+        "id": "global-fresh-market-2026-parser-pilot",
+        "label": "Global Fresh Market 2026 — QA-passed official Global Fresh Market catalogue parser/workbook output",
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "match_reason": "Global Fresh Market 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_3c623bee.",
+        "match_status": "matched_to_expomap_event",
+        "matched_event_name": "Global Fresh Market: Vegetables&Fruits 2026",
+        "matched_event_ordinal": 319,
+        "matched_expomap_url": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+        "official_event_name": "Global Fresh Market 2026",
+        "official_site_evidence": [
+          "Official Global Fresh Market catalogue at gfmexpo.com/ex_archive/2026/ produced 71 parsed exhibitor detail pages from 6 listing pages.",
+          "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+        ],
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "parser_pilot_label": "official public Global Fresh Market catalogue parser workbook; not an uploaded contact workbook",
+        "parser_task_id": "t_712fd688",
+        "parser_version": "global-fresh-market-2026-official-gfmexpo-signo-v1.0.1",
+        "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, normalized CSV/XLSX, raw audit, email audit, match audit, and public copies; unsafe vk.ru/jimdo.com/spb.ru repeat-domain false positives are removed.",
+        "qa_task_id": "t_3c623bee",
+        "qa_verdict": "PASS",
+        "row_count": 71,
+        "row_counts": {
+          "cleaned_rows": 66,
+          "contacts": 66,
+          "contacts_with_main_email": 66,
+          "email_audit_rows": 0,
+          "match_audit_rows": 66,
+          "new_signo_rows": 53,
+          "processed_rows": 71,
+          "raw_rows": 71,
+          "removed_rows": 5,
+          "repeat_signo_rows": 13,
+          "website_email_enrichment_attempts": 0
+        },
+        "selected_sheet_nonempty_rows": 71,
+        "selected_sheet_rows": 71,
+        "source_kind": "website_catalogue_parser_pilot",
+        "source_limitations": [
+          "The official Global Fresh Market 2026 exhibitor catalogue is live at gfmexpo.com/ex_archive/2026/; Expomap is watcher/detail evidence only.",
+          "The event is a Moscow/Russian-market exhibition, so foreign official exhibitors are retained when they have Signo-relevant tangible product/category evidence; products are normalized to Russian terms.",
+          "Cleaned/New/Repeat exclude service-only, packaging-only, blank-product, and no-product-evidence rows; removed rows stay auditable in the Removed sheet.",
+          "Public website enrichment sampled home/contact/about pages only where the official detail lacked email.",
+          "CRM URL fields use production-safe public portal URL placeholders; local file paths stay only in local_paths for Kanban handoff and are not used as CRM links."
+        ],
+        "source_scope": "official public gfmexpo.com Global Fresh Market 2026 catalogue/detail parser with current Twenty repeat split",
+        "source_urls": {
+          "expomap_event": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+          "official_catalog": "https://gfmexpo.com/ex_archive/2026/",
+          "official_home": "https://gfmexpo.com/"
+        },
+        "target_event_name": "Global Fresh Market: Vegetables&Fruits 2026",
+        "target_event_names": [
+          "Global Fresh Market: Vegetables&Fruits 2026",
+          "Global Fresh Market 2026"
+        ],
+        "target_event_ordinal": 319,
+        "target_event_ordinals": [
+          319
+        ],
+        "target_expomap_url": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+        "target_expomap_urls": [
+          "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/"
+        ],
+        "total_source_rows": 71,
+        "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
+      }
+    ],
     "predicted_relevance": "yes",
     "predicted_relevance_confidence": 0.9,
     "predicted_relevance_reason": "strong non-beverage packaged/product or packaging-label evidence",
-    "related_files": [],
+    "related_files": [
+      {
+        "artifact_role": "normalized_csv",
+        "audit_note": "QA PASS: Global Fresh Market 2026 parser/workbook artifacts were validated after backend repeat-domain remediation before portal exposure. Public normalized CSV plus the QA-passed full Signo processing workbook are exposed. parser_version global-fresh-market-2026-official-gfmexpo-signo-v1.0.1; raw/processed 71; contacts 66; new 53; repeat 13; contacts with main email 66; workbook type FULL_processing_CURRENT_TWENTY.",
+        "catalog_url": "https://gfmexpo.com/ex_archive/2026/",
+        "cleaned_rows": 66,
+        "contacts_with_main_email": 66,
+        "display_filename": "Global Fresh Market 2026 — parser/workbook (normalized contacts CSV)",
+        "download_filename": "global-fresh-market-2026-normalized-public.csv",
+        "download_href": "downloads/global-fresh-market-2026-normalized-public.csv",
+        "event_source_name": "Global Fresh Market: Vegetables&Fruits 2026",
+        "file_type": "csv",
+        "id": "global-fresh-market-2026-parser-pilot-normalized-csv",
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "match_reason": "Global Fresh Market 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_3c623bee.",
+        "matched_event_name": "Global Fresh Market: Vegetables&Fruits 2026",
+        "matched_event_ordinal": 319,
+        "matched_expomap_url": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+        "official_event_name": "Global Fresh Market 2026",
+        "official_site_evidence": [
+          "Official Global Fresh Market catalogue at gfmexpo.com/ex_archive/2026/ produced 71 parsed exhibitor detail pages from 6 listing pages.",
+          "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+        ],
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "parser_pilot_label": "official public Global Fresh Market catalogue parser workbook; not an uploaded contact workbook",
+        "parser_task_id": "t_712fd688",
+        "parser_version": "global-fresh-market-2026-official-gfmexpo-signo-v1.0.1",
+        "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, normalized CSV/XLSX, raw audit, email audit, match audit, and public copies; unsafe vk.ru/jimdo.com/spb.ru repeat-domain false positives are removed.",
+        "qa_task_id": "t_3c623bee",
+        "qa_verdict": "PASS",
+        "row_count": 71,
+        "row_counts": {
+          "cleaned_rows": 66,
+          "contacts": 66,
+          "contacts_with_main_email": 66,
+          "email_audit_rows": 0,
+          "match_audit_rows": 66,
+          "new_signo_rows": 53,
+          "processed_rows": 71,
+          "raw_rows": 71,
+          "removed_rows": 5,
+          "repeat_signo_rows": 13,
+          "website_email_enrichment_attempts": 0
+        },
+        "safety_scan_status": "pass",
+        "selected_sheet_nonempty_rows": 71,
+        "selected_sheet_rows": 71,
+        "source_filename": "global_fresh_market_2026_normalized.csv",
+        "source_kind": "website_catalogue_parser_pilot",
+        "source_limitations": [
+          "The official Global Fresh Market 2026 exhibitor catalogue is live at gfmexpo.com/ex_archive/2026/; Expomap is watcher/detail evidence only.",
+          "The event is a Moscow/Russian-market exhibition, so foreign official exhibitors are retained when they have Signo-relevant tangible product/category evidence; products are normalized to Russian terms.",
+          "Cleaned/New/Repeat exclude service-only, packaging-only, blank-product, and no-product-evidence rows; removed rows stay auditable in the Removed sheet.",
+          "Public website enrichment sampled home/contact/about pages only where the official detail lacked email.",
+          "CRM URL fields use production-safe public portal URL placeholders; local file paths stay only in local_paths for Kanban handoff and are not used as CRM links."
+        ],
+        "source_scope": "official public gfmexpo.com Global Fresh Market 2026 catalogue/detail parser with current Twenty repeat split",
+        "source_urls": {
+          "expomap_event": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+          "official_catalog": "https://gfmexpo.com/ex_archive/2026/",
+          "official_home": "https://gfmexpo.com/"
+        },
+        "total_source_rows": 71,
+        "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
+      },
+      {
+        "artifact_role": "full_processing_workbook",
+        "audit_note": "QA PASS: Global Fresh Market 2026 parser/workbook artifacts were validated after backend repeat-domain remediation before portal exposure. Public normalized CSV plus the QA-passed full Signo processing workbook are exposed. parser_version global-fresh-market-2026-official-gfmexpo-signo-v1.0.1; raw/processed 71; contacts 66; new 53; repeat 13; contacts with main email 66; workbook type FULL_processing_CURRENT_TWENTY.",
+        "catalog_url": "https://gfmexpo.com/ex_archive/2026/",
+        "cleaned_rows": 66,
+        "contacts_with_main_email": 66,
+        "display_filename": "Global Fresh Market 2026 — parser/workbook (full processing workbook XLSX)",
+        "download_filename": "global-fresh-market-2026-full-processing-current-twenty-public.xlsx",
+        "download_href": "downloads/global-fresh-market-2026-full-processing-current-twenty-public.xlsx",
+        "event_source_name": "Global Fresh Market: Vegetables&Fruits 2026",
+        "file_type": "xlsx",
+        "id": "global-fresh-market-2026-parser-pilot-full-processing-workbook",
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "match_reason": "Global Fresh Market 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_3c623bee.",
+        "matched_event_name": "Global Fresh Market: Vegetables&Fruits 2026",
+        "matched_event_ordinal": 319,
+        "matched_expomap_url": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+        "official_event_name": "Global Fresh Market 2026",
+        "official_site_evidence": [
+          "Official Global Fresh Market catalogue at gfmexpo.com/ex_archive/2026/ produced 71 parsed exhibitor detail pages from 6 listing pages.",
+          "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+        ],
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "parser_pilot_label": "official public Global Fresh Market catalogue parser workbook; not an uploaded contact workbook",
+        "parser_task_id": "t_712fd688",
+        "parser_version": "global-fresh-market-2026-official-gfmexpo-signo-v1.0.1",
+        "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, normalized CSV/XLSX, raw audit, email audit, match audit, and public copies; unsafe vk.ru/jimdo.com/spb.ru repeat-domain false positives are removed.",
+        "qa_task_id": "t_3c623bee",
+        "qa_verdict": "PASS",
+        "row_count": 71,
+        "row_counts": {
+          "cleaned_rows": 66,
+          "contacts": 66,
+          "contacts_with_main_email": 66,
+          "email_audit_rows": 0,
+          "match_audit_rows": 66,
+          "new_signo_rows": 53,
+          "processed_rows": 71,
+          "raw_rows": 71,
+          "removed_rows": 5,
+          "repeat_signo_rows": 13,
+          "website_email_enrichment_attempts": 0
+        },
+        "safety_scan_status": "pass",
+        "selected_sheet_nonempty_rows": 71,
+        "selected_sheet_rows": 71,
+        "source_filename": "Global_Fresh_Market_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+        "source_kind": "website_catalogue_parser_pilot",
+        "source_limitations": [
+          "The official Global Fresh Market 2026 exhibitor catalogue is live at gfmexpo.com/ex_archive/2026/; Expomap is watcher/detail evidence only.",
+          "The event is a Moscow/Russian-market exhibition, so foreign official exhibitors are retained when they have Signo-relevant tangible product/category evidence; products are normalized to Russian terms.",
+          "Cleaned/New/Repeat exclude service-only, packaging-only, blank-product, and no-product-evidence rows; removed rows stay auditable in the Removed sheet.",
+          "Public website enrichment sampled home/contact/about pages only where the official detail lacked email.",
+          "CRM URL fields use production-safe public portal URL placeholders; local file paths stay only in local_paths for Kanban handoff and are not used as CRM links."
+        ],
+        "source_scope": "official public gfmexpo.com Global Fresh Market 2026 catalogue/detail parser with current Twenty repeat split",
+        "source_urls": {
+          "expomap_event": "https://expomap.ru/expo/global-fresh-market-vegetablesfruits/",
+          "official_catalog": "https://gfmexpo.com/ex_archive/2026/",
+          "official_home": "https://gfmexpo.com/"
+        },
+        "total_source_rows": 71,
+        "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
+      }
+    ],
     "relevance_auto": "yes",
     "relevance_confidence": 0.9,
     "relevance_matched_beverage_exclusion_terms": [],
