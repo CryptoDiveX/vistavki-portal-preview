@@ -1,0 +1,88 @@
+{
+  "campaignRelationEvidence": "No Coldy campaign relation found/used from public source; campaignId remains null; no Coldy writes performed.",
+  "city": "Москва",
+  "counts": {
+    "cleaned_rows": 181,
+    "contacts": 181,
+    "contacts_with_main_email": 181,
+    "new_signo_rows": 134,
+    "processed_rows": 407,
+    "raw_rows": 407,
+    "removed_rows": 226,
+    "repeat_signo_rows": 47,
+    "rows": 181
+  },
+  "dataset": "zelenaja_himija_2026",
+  "description": "Official ХИМИЯ-2026 Expocentr internet catalogue parsed for Signo-relevant Зеленая химия 2026 chemical/material/equipment leads.",
+  "endDate": "2026-11-12",
+  "eventName": "Зеленая химия 2026",
+  "event_name": "Зеленая химия 2026",
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-manifest-public.json",
+  "files": {
+    "audit_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-parser-audit-public.json",
+    "manifest_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-manifest-public.json",
+    "normalized_csv_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-cleaned-signo-public.csv",
+    "workbook_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-full-processing-current-twenty-public.xlsx"
+  },
+  "lastScrapedAt": "2026-10-12T05:31:06Z",
+  "link": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+  "linkPrimaryLinkLabel": "Зеленая химия 2026",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-cleaned-signo-public.csv",
+  "numberOfContacts": 181,
+  "officialEventName": "ХИМИЯ-2026",
+  "officialWebsiteUrl": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+  "parsedDate": "2026-10-12T05:31:06Z",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-full-processing-current-twenty-public.xlsx",
+  "parserStatus": "QA_PASSED",
+  "parserTaskId": "t_5ca32fac",
+  "parsingWaitlist": "",
+  "priority": 990,
+  "qaPassedAt": "2026-10-12T05:44:05.255862+00:00",
+  "qaStatus": "PASSED",
+  "qaTaskId": "t_16b2beba",
+  "qa_notes": [
+    "Official 2026 Expocentr icatalog is live and was parsed directly; Expomap was used as watcher/detail evidence only.",
+    "Cleaned/New/Repeat are restricted to Russia/Russian-market rows and exclude service/software/logistics/media/institution-only rows.",
+    "Website email enrichment was attempted for kept rows missing official email where a public website was available.",
+    "No Coldy writes were performed."
+  ],
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/zelenaja-himija-2026-parser-audit-public.json",
+  "relevant": true,
+  "repeat_matching": {
+    "available": true,
+    "matching_order": [
+      "exact normalized email",
+      "safe non-generic email/website domain",
+      "exact normalized company name"
+    ],
+    "read_only": true,
+    "rows_read": 71161,
+    "source_basename": "signo_twenty_live_repeat_index_all_20260910T104234Z.csv"
+  },
+  "scheduleReason": "qa_passed_portal_alert_ready",
+  "sha256": {
+    "Zelenaja_Himija_2026_FULL_processing_CURRENT_TWENTY.xlsx": "4148eb92f3a66ad05f6364545d085d9e88450531dbd9d022218e613008374c16",
+    "zelenaja-himija-2026-cleaned-signo-public.csv": "6f3a7d84758c8de07b91bb0582bdcc488d3606b42df5724626643253ae21f638",
+    "zelenaja-himija-2026-full-processing-current-twenty-public.xlsx": "4148eb92f3a66ad05f6364545d085d9e88450531dbd9d022218e613008374c16",
+    "zelenaja-himija-2026-manifest-public.json": "0852aafc4a5c8021ee7e330d52049233ac26cf7a718daec80f23352d3f62e6f0",
+    "zelenaja-himija-2026-parser-audit-public.json": "de17fa649f6ce7197b85f56c4a66838170d33ba7729bfd665a261c204168710d",
+    "zelenaja_himija_2026_cleaned_signo.csv": "6f3a7d84758c8de07b91bb0582bdcc488d3606b42df5724626643253ae21f638",
+    "zelenaja_himija_2026_email_audit.json": "663af53bfd26da818fc65d2ded6b03340dca6f60af397050b196b498aa9d38d3",
+    "zelenaja_himija_2026_match_audit.json": "7910c22a1e1d3c9d10fb505562b9b5958f2a618aac8021fb1fc26405a133bf4d",
+    "zelenaja_himija_2026_parser_audit.json": "de17fa649f6ce7197b85f56c4a66838170d33ba7729bfd665a261c204168710d",
+    "zelenaja_himija_2026_raw_audit.jsonl": "aa3afbb99b6172bd67df0a0ae6f7ee054f6511b736f8567f11c38ba274ee2bfa"
+  },
+  "sourceCaveat": "Expomap row 'Зеленая химия 2026' resolves to the official ХИМИЯ-2026 Expocentr event. The official 2026 internet catalogue is live on icatalog.expocentr.ru and contains company detail pages. Cleaned/New/Repeat are restricted to Russia/Russian-market (Russia/Belarus) exhibitors with chemical/materials/equipment/lab tangible product evidence; foreign-country, service/software/logistics/media/institution-only rows are retained in Removed for audit.",
+  "sourceEventKey": "zelenaja-himija",
+  "sourcePlatform": "Expomap",
+  "sourceUrl": "https://expomap.ru/expo/zelenaja-himija/",
+  "source_status": {
+    "evidence": "Official 2026 icatalog list/detail pages were parsed directly.",
+    "icatalog_url": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+    "status": "live_icatalog_detail_pages"
+  },
+  "startDate": "2026-11-09",
+  "tags": "Химическое машиностроение; Химическая промышленность; Химическая обработка; Химическая безопасность; Химические продукты; Автоматизированные технологии; Пластмассы и полимеры",
+  "themes": "Химическая промышленность; Зеленая химия; Химическое машиностроение; Химические продукты; Пластмассы и полимеры",
+  "title": "Зеленая химия 2026"
+}

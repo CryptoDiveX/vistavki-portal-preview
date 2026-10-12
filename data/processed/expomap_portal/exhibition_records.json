@@ -38126,14 +38126,14 @@
       "start": "2026-11-09T00:00:00"
     },
     "description": null,
-    "downloadable_files_count": 0,
+    "downloadable_files_count": 2,
     "event_name": "Зеленая химия 2026",
     "event_subtitle": "Выставка материалов, технологий и оборудования для экологически чистых химических процессов",
     "exhibited_products": [
       "Химическое машиностроение<br />\r\nХимическая промышленность<br />\r\nХимическая обработка<br />\r\nХимическая безопасность<br />\r\nХимические продукты<br />\r\nАвтоматизированные технологии<br />\r\nПластмассы и полимеры"
     ],
-    "has_downloadable_file": false,
-    "has_parsed_data": false,
+    "has_downloadable_file": true,
+    "has_parsed_data": true,
     "matched_relevance_categories": [],
     "matched_relevance_terms": {
       "beverage_exclusion": [],
@@ -38153,10 +38153,202 @@
     "ordinal": 316,
     "parse_status": "ok",
     "parser_notes": null,
+    "parser_pilot_facts": [
+      {
+        "catalog_url": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+        "cleaned_rows": 181,
+        "contacts_with_main_email": 181,
+        "downloadable_files_count": 2,
+        "event_date": "9–12 ноября 2026",
+        "event_name": "Зеленая химия 2026",
+        "event_source_name": "Зеленая химия 2026",
+        "id": "zelenaja-himija-2026-parser-pilot",
+        "label": "Зеленая химия 2026 — QA-passed official Expocentr icatalog parser/workbook output",
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "match_reason": "Зеленая химия 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_16b2beba.",
+        "match_status": "matched_to_expomap_event",
+        "matched_event_name": "Зеленая химия 2026",
+        "matched_event_ordinal": 316,
+        "matched_expomap_url": "https://expomap.ru/expo/zelenaja-himija/",
+        "official_event_name": "ХИМИЯ-2026",
+        "official_site_evidence": [
+          "Official Expocentr icatalog exposes 407 company detail rows for the 2026 chemistry catalogue resolved from Зеленая химия 2026.",
+          "QA PASS validates source/cache reconciliation, workbook sheets/counts, Russia/Russian-market filtering, tangible product/category cleanup, and read-only Twenty repeat matching evidence."
+        ],
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "parser_pilot_label": "official public Expocentr icatalog parser workbook; not an uploaded contact workbook",
+        "parser_task_id": "t_5ca32fac",
+        "parser_version": "zelenaja-himija-2026-official-expocentr-icatalog-signo-v1.0.1",
+        "qa_note": "QA PASS after remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/email/match audits and public copies; generic-provider domains including yandex.com are not used for repeat-domain matching; prior product/service leakage is clear.",
+        "qa_task_id": "t_16b2beba",
+        "qa_verdict": "PASS",
+        "row_count": 407,
+        "row_counts": {
+          "cleaned_rows": 181,
+          "contacts": 181,
+          "contacts_with_main_email": 181,
+          "email_audit_rows": 0,
+          "match_audit_rows": 0,
+          "new_signo_rows": 134,
+          "processed_rows": 407,
+          "raw_rows": 407,
+          "removed_rows": 226,
+          "repeat_signo_rows": 47
+        },
+        "selected_sheet_nonempty_rows": 407,
+        "selected_sheet_rows": 407,
+        "source_kind": "website_catalogue_parser_pilot",
+        "source_limitations": [
+          "Expomap row 'Зеленая химия 2026' resolves to the official ХИМИЯ-2026 Expocentr event. The official 2026 internet catalogue is live on icatalog.expocentr.ru and contains company detail pages. Cleaned/New/Repeat are restricted to Russia/Russian-market (Russia/Belarus) exhibitors with chemical/materials/equipment/lab tangible product evidence; foreign-country, service/software/logistics/media/institution-only rows are retained in Removed for audit."
+        ],
+        "source_scope": "official public ХИМИЯ-2026 Expocentr icatalog parser with current Twenty repeat split, exposed for the Зеленая химия Expomap row",
+        "source_urls": {
+          "expomap_event": "https://expomap.ru/expo/zelenaja-himija/",
+          "official_catalog": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+          "official_exhibitors_page": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+          "official_subjects_page": "https://www.chemistry-expo.ru/ru/exhibition/subjects/"
+        },
+        "target_event_name": "Зеленая химия 2026",
+        "target_event_names": [
+          "Зеленая химия 2026"
+        ],
+        "target_event_ordinal": 316,
+        "target_event_ordinals": [
+          316
+        ],
+        "target_expomap_url": "https://expomap.ru/expo/zelenaja-himija/",
+        "target_expomap_urls": [
+          "https://expomap.ru/expo/zelenaja-himija/"
+        ],
+        "total_source_rows": 407,
+        "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic company-owned email/site domain, then exact normalized company name; generic-provider domains are not repeat proof"
+      }
+    ],
     "predicted_relevance": "no",
     "predicted_relevance_confidence": 0.85,
     "predicted_relevance_reason": "no clear packaged-product/label fit; default no for services/equipment/infrastructure",
-    "related_files": [],
+    "related_files": [
+      {
+        "artifact_role": "normalized_csv",
+        "audit_note": "QA PASS: Зеленая химия 2026 parser/workbook artifacts were validated after backend remediation before portal exposure. Public cleaned CSV plus the QA-passed full Signo processing workbook are exposed. parser_version zelenaja-himija-2026-official-expocentr-icatalog-signo-v1.0.1; raw/processed 407; contacts 181; new 134; repeat 47; contacts with main email 181; workbook type FULL_processing_CURRENT_TWENTY.",
+        "catalog_url": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+        "cleaned_rows": 181,
+        "contacts_with_main_email": 181,
+        "display_filename": "Зеленая химия 2026 — parser/workbook (cleaned contacts CSV)",
+        "download_filename": "zelenaja-himija-2026-cleaned-signo-public.csv",
+        "download_href": "downloads/zelenaja-himija-2026-cleaned-signo-public.csv",
+        "event_source_name": "Зеленая химия 2026",
+        "file_type": "csv",
+        "id": "zelenaja-himija-2026-parser-pilot-normalized-csv",
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "match_reason": "Зеленая химия 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_16b2beba.",
+        "matched_event_name": "Зеленая химия 2026",
+        "matched_event_ordinal": 316,
+        "matched_expomap_url": "https://expomap.ru/expo/zelenaja-himija/",
+        "official_event_name": "ХИМИЯ-2026",
+        "official_site_evidence": [
+          "Official Expocentr icatalog exposes 407 company detail rows for the 2026 chemistry catalogue resolved from Зеленая химия 2026.",
+          "QA PASS validates source/cache reconciliation, workbook sheets/counts, Russia/Russian-market filtering, tangible product/category cleanup, and read-only Twenty repeat matching evidence."
+        ],
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "parser_pilot_label": "official public Expocentr icatalog parser workbook; not an uploaded contact workbook",
+        "parser_task_id": "t_5ca32fac",
+        "parser_version": "zelenaja-himija-2026-official-expocentr-icatalog-signo-v1.0.1",
+        "qa_note": "QA PASS after remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/email/match audits and public copies; generic-provider domains including yandex.com are not used for repeat-domain matching; prior product/service leakage is clear.",
+        "qa_task_id": "t_16b2beba",
+        "qa_verdict": "PASS",
+        "row_count": 407,
+        "row_counts": {
+          "cleaned_rows": 181,
+          "contacts": 181,
+          "contacts_with_main_email": 181,
+          "email_audit_rows": 0,
+          "match_audit_rows": 0,
+          "new_signo_rows": 134,
+          "processed_rows": 407,
+          "raw_rows": 407,
+          "removed_rows": 226,
+          "repeat_signo_rows": 47
+        },
+        "safety_scan_status": "pass",
+        "selected_sheet_nonempty_rows": 407,
+        "selected_sheet_rows": 407,
+        "source_filename": "zelenaja_himija_2026_cleaned_signo.csv",
+        "source_kind": "website_catalogue_parser_pilot",
+        "source_limitations": [
+          "Expomap row 'Зеленая химия 2026' resolves to the official ХИМИЯ-2026 Expocentr event. The official 2026 internet catalogue is live on icatalog.expocentr.ru and contains company detail pages. Cleaned/New/Repeat are restricted to Russia/Russian-market (Russia/Belarus) exhibitors with chemical/materials/equipment/lab tangible product evidence; foreign-country, service/software/logistics/media/institution-only rows are retained in Removed for audit."
+        ],
+        "source_scope": "official public ХИМИЯ-2026 Expocentr icatalog parser with current Twenty repeat split, exposed for the Зеленая химия Expomap row",
+        "source_urls": {
+          "expomap_event": "https://expomap.ru/expo/zelenaja-himija/",
+          "official_catalog": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+          "official_exhibitors_page": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+          "official_subjects_page": "https://www.chemistry-expo.ru/ru/exhibition/subjects/"
+        },
+        "total_source_rows": 407,
+        "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic company-owned email/site domain, then exact normalized company name; generic-provider domains are not repeat proof"
+      },
+      {
+        "artifact_role": "full_processing_workbook",
+        "audit_note": "QA PASS: Зеленая химия 2026 parser/workbook artifacts were validated after backend remediation before portal exposure. Public cleaned CSV plus the QA-passed full Signo processing workbook are exposed. parser_version zelenaja-himija-2026-official-expocentr-icatalog-signo-v1.0.1; raw/processed 407; contacts 181; new 134; repeat 47; contacts with main email 181; workbook type FULL_processing_CURRENT_TWENTY.",
+        "catalog_url": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+        "cleaned_rows": 181,
+        "contacts_with_main_email": 181,
+        "display_filename": "Зеленая химия 2026 — parser/workbook (full processing workbook XLSX)",
+        "download_filename": "zelenaja-himija-2026-full-processing-current-twenty-public.xlsx",
+        "download_href": "downloads/zelenaja-himija-2026-full-processing-current-twenty-public.xlsx",
+        "event_source_name": "Зеленая химия 2026",
+        "file_type": "xlsx",
+        "id": "zelenaja-himija-2026-parser-pilot-full-processing-workbook",
+        "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+        "match_reason": "Зеленая химия 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_16b2beba.",
+        "matched_event_name": "Зеленая химия 2026",
+        "matched_event_ordinal": 316,
+        "matched_expomap_url": "https://expomap.ru/expo/zelenaja-himija/",
+        "official_event_name": "ХИМИЯ-2026",
+        "official_site_evidence": [
+          "Official Expocentr icatalog exposes 407 company detail rows for the 2026 chemistry catalogue resolved from Зеленая химия 2026.",
+          "QA PASS validates source/cache reconciliation, workbook sheets/counts, Russia/Russian-market filtering, tangible product/category cleanup, and read-only Twenty repeat matching evidence."
+        ],
+        "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+        "parser_pilot_label": "official public Expocentr icatalog parser workbook; not an uploaded contact workbook",
+        "parser_task_id": "t_5ca32fac",
+        "parser_version": "zelenaja-himija-2026-official-expocentr-icatalog-signo-v1.0.1",
+        "qa_note": "QA PASS after remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/email/match audits and public copies; generic-provider domains including yandex.com are not used for repeat-domain matching; prior product/service leakage is clear.",
+        "qa_task_id": "t_16b2beba",
+        "qa_verdict": "PASS",
+        "row_count": 407,
+        "row_counts": {
+          "cleaned_rows": 181,
+          "contacts": 181,
+          "contacts_with_main_email": 181,
+          "email_audit_rows": 0,
+          "match_audit_rows": 0,
+          "new_signo_rows": 134,
+          "processed_rows": 407,
+          "raw_rows": 407,
+          "removed_rows": 226,
+          "repeat_signo_rows": 47
+        },
+        "safety_scan_status": "pass",
+        "selected_sheet_nonempty_rows": 407,
+        "selected_sheet_rows": 407,
+        "source_filename": "Zelenaja_Himija_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+        "source_kind": "website_catalogue_parser_pilot",
+        "source_limitations": [
+          "Expomap row 'Зеленая химия 2026' resolves to the official ХИМИЯ-2026 Expocentr event. The official 2026 internet catalogue is live on icatalog.expocentr.ru and contains company detail pages. Cleaned/New/Repeat are restricted to Russia/Russian-market (Russia/Belarus) exhibitors with chemical/materials/equipment/lab tangible product evidence; foreign-country, service/software/logistics/media/institution-only rows are retained in Removed for audit."
+        ],
+        "source_scope": "official public ХИМИЯ-2026 Expocentr icatalog parser with current Twenty repeat split, exposed for the Зеленая химия Expomap row",
+        "source_urls": {
+          "expomap_event": "https://expomap.ru/expo/zelenaja-himija/",
+          "official_catalog": "https://icatalog.expocentr.ru/ru/exhibitions/02f6b201-d5c5-11f0-80d0-a0d3c1fab97f/list",
+          "official_exhibitors_page": "https://www.chemistry-expo.ru/ru/exhibition/exhibitors/",
+          "official_subjects_page": "https://www.chemistry-expo.ru/ru/exhibition/subjects/"
+        },
+        "total_source_rows": 407,
+        "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic company-owned email/site domain, then exact normalized company name; generic-provider domains are not repeat proof"
+      }
+    ],
     "relevance_auto": "no",
     "relevance_confidence": 0.85,
     "relevance_matched_beverage_exclusion_terms": [],
