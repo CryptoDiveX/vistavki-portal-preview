@@ -1,0 +1,182 @@
+{
+  "campaignRelationEvidence": "No Coldy campaign relation found/used from public source; campaignId remains null; no Coldy writes performed.",
+  "city": "Москва",
+  "counts": {
+    "cleaned_rows": 184,
+    "contacts": 184,
+    "contacts_with_main_email": 181,
+    "contacts_with_website": 169,
+    "new_signo_rows": 152,
+    "processed_rows": 224,
+    "raw_rows": 224,
+    "removed_rows": 40,
+    "repeat_signo_rows": 32,
+    "rows": 184
+  },
+  "dataset": "mitex_2026",
+  "description": "Московская международная выставка инструмента, оборудования и технологий; official MITEX 2026 public catalogue parsed.",
+  "endDate": "2026-11-13",
+  "eventName": "MITEX 2026",
+  "event_name": "MITEX 2026",
+  "fileManifestUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-manifest-public.json",
+  "files": {
+    "audit_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-parser-audit-public.json",
+    "manifest_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-manifest-public.json",
+    "normalized_csv_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-cleaned-signo-public.csv",
+    "workbook_url": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-full-processing-current-twenty-public.xlsx"
+  },
+  "lastScrapedAt": "2026-10-12T05:35:16Z",
+  "link": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+  "linkPrimaryLinkLabel": "MITEX 2026",
+  "normalizedCsvUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-cleaned-signo-public.csv",
+  "numberOfContacts": 184,
+  "officialWebsiteUrl": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+  "parsedDate": "2026-10-12T05:35:16Z",
+  "parsedWorkbookUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-full-processing-current-twenty-public.xlsx",
+  "parserStatus": "QA_PASSED",
+  "parserTaskId": "t_4ed0c9af",
+  "parsingWaitlist": "",
+  "previousQaTaskId": "t_4d64cec1",
+  "priority": 990,
+  "qaPassedAt": "2026-10-12T05:43:41.240985+00:00",
+  "qaStatus": "PASSED",
+  "qaTaskId": "t_144ff462",
+  "qa_notes": [
+    "Official MITEX 2026 catalogue is live and was parsed directly from catalog.mitexpo.ru; Expomap was used as watcher/detail evidence only.",
+    "Cleaned/New/Repeat are restricted to official Russia/Russian-market catalogue rows with product/rubric/description evidence; service/no-product rows remain in Removed for audit.",
+    "Products are Russian product/category terms from official MITEX rubrics/description.",
+    "No Coldy writes were performed."
+  ],
+  "rawAuditUrl": "https://cryptodivex.github.io/vistavki-portal-preview/data/processed/expomap_portal/downloads/mitex-2026-parser-audit-public.json",
+  "relevant": true,
+  "repeat_matching": {
+    "ambiguous_platform_or_public_suffix_domains_excluded": [
+      "browsehappy.com",
+      "catalog.mitexpo.ru",
+      "clck.ru",
+      "com.ru",
+      "dzen.ru",
+      "expodat.com",
+      "expomap.ru",
+      "facebook.com",
+      "github.io",
+      "google.com",
+      "instagram.com",
+      "jimdo.com",
+      "linkedin.com",
+      "max.ru",
+      "mitexpo.ru",
+      "moscow.ru",
+      "msk.ru",
+      "net.ru",
+      "ok.ru",
+      "org.ru",
+      "pp.ru",
+      "rutube.ru",
+      "sites.google.com",
+      "spb.ru",
+      "t.me",
+      "taplink.cc",
+      "telegram.me",
+      "tiktok.com",
+      "tilda.ws",
+      "vk.com",
+      "vk.ru",
+      "vkvideo.ru",
+      "wa.me",
+      "whatsapp.com",
+      "wix.com",
+      "wixsite.com",
+      "wordpress.com",
+      "youtu.be",
+      "youtube.com"
+    ],
+    "available": true,
+    "generic_email_domains_excluded_from_domain_matching": [
+      "bk.ru",
+      "gmail.com",
+      "googlemail.com",
+      "hotmail.com",
+      "icloud.com",
+      "inbox.ru",
+      "internet.ru",
+      "list.ru",
+      "live.com",
+      "mail.ru",
+      "me.com",
+      "outlook.com",
+      "qq.com",
+      "rambler.ru",
+      "ya.ru",
+      "yahoo.com",
+      "yandex.ru"
+    ],
+    "matching_order": [
+      "exact normalized email",
+      "safe non-generic non-social company-owned email/website domain",
+      "exact normalized company name"
+    ],
+    "read_only": true,
+    "rows_read": 71161,
+    "source_basename": "signo_twenty_live_repeat_index_all_20260910T104234Z.csv"
+  },
+  "scheduleReason": "qa_passed_portal_alert_ready",
+  "sha256": {
+    "MITEX_2026_FULL_processing_CURRENT_TWENTY.xlsx": "3235889e447964c2859e4533eb0c26790e43ed9d2019d1c2d92964b3774a8c74",
+    "mitex-2026-cleaned-signo-public.csv": "5ee47713e0a566479a074da5da7274a9a2ac8c9ce505fe3f31d1bbcc965fd6ff",
+    "mitex-2026-full-processing-current-twenty-public.xlsx": "3235889e447964c2859e4533eb0c26790e43ed9d2019d1c2d92964b3774a8c74",
+    "mitex-2026-manifest-public.json": "094b2d02166e9fe5f00f1e91f576769c0654104cbc1de9ed2571bb4fe714cb04",
+    "mitex-2026-parser-audit-public.json": "53e80dbf72d39320fec10210503357a8019016931a24f8eb6bcd3edba37d5cb0",
+    "mitex_2026_cleaned_signo.csv": "5ee47713e0a566479a074da5da7274a9a2ac8c9ce505fe3f31d1bbcc965fd6ff",
+    "mitex_2026_email_audit.json": "c5f0e46a7d047493c10cc2c0b4a2192a139298ec51cf2e37d25c4908604439ae",
+    "mitex_2026_match_audit.json": "e81a44762ac3f62c64fd83ea4515614fcf131d7db0aae49caed528a7fb4fb0da",
+    "mitex_2026_parser_audit.json": "53e80dbf72d39320fec10210503357a8019016931a24f8eb6bcd3edba37d5cb0",
+    "mitex_2026_raw_audit.jsonl": "091f11ed470eb5e9b4fa994328710b91597ebbef2f9e1788133b78249084385a"
+  },
+  "sourceCaveat": "Official MITEX 2026 exhibitor catalogue is public on catalog.mitexpo.ru and linked from mitexpo.ru. The catalogue is for a Moscow/Russian-market event and includes Russian plus foreign exhibitors presenting into the Russian market; rows are kept when official product/rubric/description evidence is Signo-relevant, while service/no-product rows are excluded into Removed.",
+  "sourceEventKey": "mitex",
+  "sourcePlatform": "Expomap",
+  "sourceUrl": "https://expomap.ru/expo/mitex/",
+  "source_status": {
+    "catalog_url": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+    "company_links_parsed": 224,
+    "detail_pages_fetched": 224,
+    "evidence": "Expomap MITEX detail exposes official-site CTA redirects to mitexpo.ru via /expo-b/click/ links; mitexpo.ru homepage links to the 2026 catalog.mitexpo.ru catalogue with exposition id 7054.",
+    "official_evidence": {
+      "evidence": "Expomap MITEX detail exposes official-site CTA redirects to mitexpo.ru via /expo-b/click/ links; mitexpo.ru homepage links to the 2026 catalog.mitexpo.ru catalogue with exposition id 7054.",
+      "expomap_click_redirects_seen": [
+        {
+          "location": "https://www.mitexpo.ru/visit/ticket/?utm_source=expomap&utm_medium=page&erid=2VfnxxvRJkq",
+          "status": 302,
+          "url": "https://expomap.ru/expo-b/click/17415/?erid=2VfnxxvRJkq"
+        },
+        {
+          "location": "https://www.mitexpo.ru/participation/zayavka-na-uchastie/?utm_source=expomap&utm_medium=page&erid=2VfnxxvRJkq",
+          "status": 302,
+          "url": "https://expomap.ru/expo-b/click/17416/?erid=2VfnxxvRJkq"
+        },
+        {
+          "location": "https://www.mitexpo.ru/?utm_source=expomap&utm_medium=page&erid=2VfnxxvRJkq",
+          "status": 302,
+          "url": "https://expomap.ru/expo-b/click/17417/?erid=2VfnxxvRJkq"
+        },
+        {
+          "location": "https://euroexpo.ru/?utm_source=expomap&utm_medium=referral&utm_campaign=euroexpo&erid=2VfnxxvRJkq",
+          "status": 302,
+          "url": "https://expomap.ru/expo-b/click/18188/?erid=2VfnxxvRJkq"
+        }
+      ],
+      "expomap_mitexpo_links_seen": [],
+      "official_home_catalog_links_seen": [
+        "https://catalog.mitexpo.ru/expositions/exposition/7054"
+      ],
+      "official_source_verified": true
+    },
+    "official_source_verified": true,
+    "status": "official_catalog_available"
+  },
+  "startDate": "2026-11-10",
+  "tags": "Деревообработка; Производство мебели; Крепеж; Промышленное оборудование; Строительные инструменты; Садовое оборудование; Ремонт",
+  "themes": "Машиностроение, автоматизация, робототехника; Строительство; Лесная промышленность",
+  "title": "MITEX 2026"
+}

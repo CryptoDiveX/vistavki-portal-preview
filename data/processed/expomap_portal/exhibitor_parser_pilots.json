@@ -1,7 +1,7 @@
 {
   "data_package_version": "expomap-portal-package-v1.1.0",
-  "downloadable_files_count": 51,
-  "generated_at": "2026-10-12T05:24:48.581372+00:00",
+  "downloadable_files_count": 53,
+  "generated_at": "2026-10-12T05:43:41.660744+00:00",
   "matched_parser_pilots": [
     {
       "catalog_url": "https://md.expodat.com/expositions/exposition/183-cpm-2026-autumn.html",
@@ -2762,6 +2762,329 @@
       ],
       "total_source_rows": 1193,
       "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic company-owned email/website domain and normalized company name evidence; generic-provider domains excluded"
+    },
+    {
+      "catalog_url": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+      "cleaned_row_count": 184,
+      "cleaned_rows": 184,
+      "contacts_with_main_email": 181,
+      "contacts_with_website": 169,
+      "downloadable_files_count": 2,
+      "downloads": [
+        {
+          "artifact_role": "normalized_csv",
+          "audit_note": "QA PASS: MITEX 2026 parser/workbook artifacts were validated after backend repeat-domain remediation before portal exposure. Public cleaned CSV plus the QA-passed full Signo processing workbook are exposed. parser_version mitex-2026-official-catalog-mitexpo-signo-v1.0.1; raw/processed 224; contacts 184; new 152; repeat 32; contacts with main email 181; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+          "cleaned_rows": 184,
+          "contacts_with_main_email": 181,
+          "contacts_with_website": 169,
+          "display_filename": "MITEX 2026 — parser/workbook (cleaned contacts CSV)",
+          "download_filename": "mitex-2026-cleaned-signo-public.csv",
+          "download_href": "downloads/mitex-2026-cleaned-signo-public.csv",
+          "event_source_name": "MITEX 2026",
+          "file_type": "csv",
+          "id": "mitex-2026-parser-pilot-normalized-csv",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "MITEX 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_144ff462.",
+          "matched_event_name": "MITEX 2026",
+          "matched_event_ordinal": 323,
+          "matched_expomap_url": "https://expomap.ru/expo/mitex/",
+          "official_event_name": "MITEX 2026",
+          "official_site_evidence": [
+            "Official MITEX 2026 catalogue at catalog.mitexpo.ru exposed 224 public company detail pages.",
+            "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "official public MITEX catalogue parser workbook; not an uploaded contact workbook",
+          "parser_task_id": "t_4ed0c9af",
+          "parser_version": "mitex-2026-official-catalog-mitexpo-signo-v1.0.1",
+          "previous_qa_task_id": "t_4d64cec1",
+          "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/source audit, email audit, match audit, and public copies; unsafe spb.ru/vk.ru repeat-domain false positives are removed.",
+          "qa_task_id": "t_144ff462",
+          "qa_verdict": "PASS",
+          "row_count": 224,
+          "row_counts": {
+            "cleaned_rows": 184,
+            "contacts": 184,
+            "contacts_with_main_email": 181,
+            "contacts_with_website": 169,
+            "new_signo_rows": 152,
+            "processed_rows": 224,
+            "raw_rows": 224,
+            "removed_rows": 40,
+            "repeat_signo_rows": 32
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 224,
+          "selected_sheet_rows": 224,
+          "source_filename": "mitex_2026_cleaned_signo.csv",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Official MITEX 2026 exhibitor catalogue is public on catalog.mitexpo.ru and linked from mitexpo.ru. The catalogue is for a Moscow/Russian-market event and includes Russian plus foreign exhibitors presenting into the Russian market; rows are kept when official product/rubric/description evidence is Signo-relevant, while service/no-product rows are excluded into Removed."
+          ],
+          "source_scope": "official public MITEX 2026 catalog.mitexpo.ru catalogue parser with current Twenty repeat split",
+          "source_urls": {
+            "expomap_event": "https://expomap.ru/expo/mitex/",
+            "official_catalog": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+            "official_home": "https://www.mitexpo.ru/"
+          },
+          "total_source_rows": 224,
+          "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic non-social company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
+        },
+        {
+          "artifact_role": "full_processing_workbook",
+          "audit_note": "QA PASS: MITEX 2026 parser/workbook artifacts were validated after backend repeat-domain remediation before portal exposure. Public cleaned CSV plus the QA-passed full Signo processing workbook are exposed. parser_version mitex-2026-official-catalog-mitexpo-signo-v1.0.1; raw/processed 224; contacts 184; new 152; repeat 32; contacts with main email 181; workbook type FULL_processing_CURRENT_TWENTY.",
+          "catalog_url": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+          "cleaned_rows": 184,
+          "contacts_with_main_email": 181,
+          "contacts_with_website": 169,
+          "display_filename": "MITEX 2026 — parser/workbook (full processing workbook XLSX)",
+          "download_filename": "mitex-2026-full-processing-current-twenty-public.xlsx",
+          "download_href": "downloads/mitex-2026-full-processing-current-twenty-public.xlsx",
+          "event_source_name": "MITEX 2026",
+          "file_type": "xlsx",
+          "id": "mitex-2026-parser-pilot-full-processing-workbook",
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "MITEX 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_144ff462.",
+          "matched_event_name": "MITEX 2026",
+          "matched_event_ordinal": 323,
+          "matched_expomap_url": "https://expomap.ru/expo/mitex/",
+          "official_event_name": "MITEX 2026",
+          "official_site_evidence": [
+            "Official MITEX 2026 catalogue at catalog.mitexpo.ru exposed 224 public company detail pages.",
+            "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+          ],
+          "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+          "parser_pilot_label": "official public MITEX catalogue parser workbook; not an uploaded contact workbook",
+          "parser_task_id": "t_4ed0c9af",
+          "parser_version": "mitex-2026-official-catalog-mitexpo-signo-v1.0.1",
+          "previous_qa_task_id": "t_4d64cec1",
+          "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/source audit, email audit, match audit, and public copies; unsafe spb.ru/vk.ru repeat-domain false positives are removed.",
+          "qa_task_id": "t_144ff462",
+          "qa_verdict": "PASS",
+          "row_count": 224,
+          "row_counts": {
+            "cleaned_rows": 184,
+            "contacts": 184,
+            "contacts_with_main_email": 181,
+            "contacts_with_website": 169,
+            "new_signo_rows": 152,
+            "processed_rows": 224,
+            "raw_rows": 224,
+            "removed_rows": 40,
+            "repeat_signo_rows": 32
+          },
+          "safety_scan_status": "pass",
+          "selected_sheet_nonempty_rows": 224,
+          "selected_sheet_rows": 224,
+          "source_filename": "MITEX_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+          "source_kind": "website_catalogue_parser_pilot",
+          "source_limitations": [
+            "Official MITEX 2026 exhibitor catalogue is public on catalog.mitexpo.ru and linked from mitexpo.ru. The catalogue is for a Moscow/Russian-market event and includes Russian plus foreign exhibitors presenting into the Russian market; rows are kept when official product/rubric/description evidence is Signo-relevant, while service/no-product rows are excluded into Removed."
+          ],
+          "source_scope": "official public MITEX 2026 catalog.mitexpo.ru catalogue parser with current Twenty repeat split",
+          "source_urls": {
+            "expomap_event": "https://expomap.ru/expo/mitex/",
+            "official_catalog": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+            "official_home": "https://www.mitexpo.ru/"
+          },
+          "total_source_rows": 224,
+          "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic non-social company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
+        }
+      ],
+      "event_name": "MITEX 2026",
+      "event_source_name": "MITEX 2026",
+      "id": "mitex-2026-parser-pilot",
+      "label": "MITEX 2026 — QA-passed official MITEX catalogue parser/workbook output",
+      "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+      "match_reason": "MITEX 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_144ff462.",
+      "match_status": "matched_to_expomap_event",
+      "matched_event_name": "MITEX 2026",
+      "matched_event_ordinal": 323,
+      "matched_expomap_url": "https://expomap.ru/expo/mitex/",
+      "official_event_name": "MITEX 2026",
+      "official_site_evidence": [
+        "Official MITEX 2026 catalogue at catalog.mitexpo.ru exposed 224 public company detail pages.",
+        "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+      ],
+      "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+      "parser_pilot_label": "official public MITEX catalogue parser workbook; not an uploaded contact workbook",
+      "parser_task_id": "t_4ed0c9af",
+      "parser_version": "mitex-2026-official-catalog-mitexpo-signo-v1.0.1",
+      "previous_qa_task_id": "t_4d64cec1",
+      "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/source audit, email audit, match audit, and public copies; unsafe spb.ru/vk.ru repeat-domain false positives are removed.",
+      "qa_task_id": "t_144ff462",
+      "qa_verdict": "PASS",
+      "row_count": 224,
+      "row_counts": {
+        "cleaned_rows": 184,
+        "contacts": 184,
+        "contacts_with_main_email": 181,
+        "contacts_with_website": 169,
+        "new_signo_rows": 152,
+        "processed_rows": 224,
+        "raw_rows": 224,
+        "removed_rows": 40,
+        "repeat_signo_rows": 32
+      },
+      "selected_sheet_nonempty_rows": 224,
+      "selected_sheet_rows": 224,
+      "source_kind": "website_catalogue_parser_pilot",
+      "source_limitations": [
+        "Official MITEX 2026 exhibitor catalogue is public on catalog.mitexpo.ru and linked from mitexpo.ru. The catalogue is for a Moscow/Russian-market event and includes Russian plus foreign exhibitors presenting into the Russian market; rows are kept when official product/rubric/description evidence is Signo-relevant, while service/no-product rows are excluded into Removed."
+      ],
+      "source_scope": "official public MITEX 2026 catalog.mitexpo.ru catalogue parser with current Twenty repeat split",
+      "source_urls": {
+        "expomap_event": "https://expomap.ru/expo/mitex/",
+        "official_catalog": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+        "official_home": "https://www.mitexpo.ru/"
+      },
+      "target_event_name": "MITEX 2026",
+      "target_event_names": [
+        "MITEX 2026"
+      ],
+      "target_event_ordinal": 323,
+      "target_event_ordinals": [
+        323
+      ],
+      "target_events": [
+        {
+          "downloadable_files_count": 2,
+          "downloads": [
+            {
+              "artifact_role": "normalized_csv",
+              "audit_note": "QA PASS: MITEX 2026 parser/workbook artifacts were validated after backend repeat-domain remediation before portal exposure. Public cleaned CSV plus the QA-passed full Signo processing workbook are exposed. parser_version mitex-2026-official-catalog-mitexpo-signo-v1.0.1; raw/processed 224; contacts 184; new 152; repeat 32; contacts with main email 181; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+              "cleaned_rows": 184,
+              "contacts_with_main_email": 181,
+              "contacts_with_website": 169,
+              "display_filename": "MITEX 2026 — parser/workbook (cleaned contacts CSV)",
+              "download_filename": "mitex-2026-cleaned-signo-public.csv",
+              "download_href": "downloads/mitex-2026-cleaned-signo-public.csv",
+              "event_source_name": "MITEX 2026",
+              "file_type": "csv",
+              "id": "mitex-2026-parser-pilot-normalized-csv",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "MITEX 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_144ff462.",
+              "matched_event_name": "MITEX 2026",
+              "matched_event_ordinal": 323,
+              "matched_expomap_url": "https://expomap.ru/expo/mitex/",
+              "official_event_name": "MITEX 2026",
+              "official_site_evidence": [
+                "Official MITEX 2026 catalogue at catalog.mitexpo.ru exposed 224 public company detail pages.",
+                "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "official public MITEX catalogue parser workbook; not an uploaded contact workbook",
+              "parser_task_id": "t_4ed0c9af",
+              "parser_version": "mitex-2026-official-catalog-mitexpo-signo-v1.0.1",
+              "previous_qa_task_id": "t_4d64cec1",
+              "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/source audit, email audit, match audit, and public copies; unsafe spb.ru/vk.ru repeat-domain false positives are removed.",
+              "qa_task_id": "t_144ff462",
+              "qa_verdict": "PASS",
+              "row_count": 224,
+              "row_counts": {
+                "cleaned_rows": 184,
+                "contacts": 184,
+                "contacts_with_main_email": 181,
+                "contacts_with_website": 169,
+                "new_signo_rows": 152,
+                "processed_rows": 224,
+                "raw_rows": 224,
+                "removed_rows": 40,
+                "repeat_signo_rows": 32
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 224,
+              "selected_sheet_rows": 224,
+              "source_filename": "mitex_2026_cleaned_signo.csv",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Official MITEX 2026 exhibitor catalogue is public on catalog.mitexpo.ru and linked from mitexpo.ru. The catalogue is for a Moscow/Russian-market event and includes Russian plus foreign exhibitors presenting into the Russian market; rows are kept when official product/rubric/description evidence is Signo-relevant, while service/no-product rows are excluded into Removed."
+              ],
+              "source_scope": "official public MITEX 2026 catalog.mitexpo.ru catalogue parser with current Twenty repeat split",
+              "source_urls": {
+                "expomap_event": "https://expomap.ru/expo/mitex/",
+                "official_catalog": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+                "official_home": "https://www.mitexpo.ru/"
+              },
+              "total_source_rows": 224,
+              "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic non-social company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
+            },
+            {
+              "artifact_role": "full_processing_workbook",
+              "audit_note": "QA PASS: MITEX 2026 parser/workbook artifacts were validated after backend repeat-domain remediation before portal exposure. Public cleaned CSV plus the QA-passed full Signo processing workbook are exposed. parser_version mitex-2026-official-catalog-mitexpo-signo-v1.0.1; raw/processed 224; contacts 184; new 152; repeat 32; contacts with main email 181; workbook type FULL_processing_CURRENT_TWENTY.",
+              "catalog_url": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+              "cleaned_rows": 184,
+              "contacts_with_main_email": 181,
+              "contacts_with_website": 169,
+              "display_filename": "MITEX 2026 — parser/workbook (full processing workbook XLSX)",
+              "download_filename": "mitex-2026-full-processing-current-twenty-public.xlsx",
+              "download_href": "downloads/mitex-2026-full-processing-current-twenty-public.xlsx",
+              "event_source_name": "MITEX 2026",
+              "file_type": "xlsx",
+              "id": "mitex-2026-parser-pilot-full-processing-workbook",
+              "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+              "match_reason": "MITEX 2026 parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_144ff462.",
+              "matched_event_name": "MITEX 2026",
+              "matched_event_ordinal": 323,
+              "matched_expomap_url": "https://expomap.ru/expo/mitex/",
+              "official_event_name": "MITEX 2026",
+              "official_site_evidence": [
+                "Official MITEX 2026 catalogue at catalog.mitexpo.ru exposed 224 public company detail pages.",
+                "QA PASS validates source/cache reconciliation, workbook sheets/counts, product filtering, and read-only Twenty repeat matching after unsafe-domain remediation."
+              ],
+              "parsed_workbook_type": "FULL_processing_CURRENT_TWENTY",
+              "parser_pilot_label": "official public MITEX catalogue parser workbook; not an uploaded contact workbook",
+              "parser_task_id": "t_4ed0c9af",
+              "parser_version": "mitex-2026-official-catalog-mitexpo-signo-v1.0.1",
+              "previous_qa_task_id": "t_4d64cec1",
+              "qa_note": "QA PASS after repeat-domain remediation: workbook opens; counts reconcile across workbook, manifest, cleaned CSV, parser/source audit, email audit, match audit, and public copies; unsafe spb.ru/vk.ru repeat-domain false positives are removed.",
+              "qa_task_id": "t_144ff462",
+              "qa_verdict": "PASS",
+              "row_count": 224,
+              "row_counts": {
+                "cleaned_rows": 184,
+                "contacts": 184,
+                "contacts_with_main_email": 181,
+                "contacts_with_website": 169,
+                "new_signo_rows": 152,
+                "processed_rows": 224,
+                "raw_rows": 224,
+                "removed_rows": 40,
+                "repeat_signo_rows": 32
+              },
+              "safety_scan_status": "pass",
+              "selected_sheet_nonempty_rows": 224,
+              "selected_sheet_rows": 224,
+              "source_filename": "MITEX_2026_FULL_processing_CURRENT_TWENTY.xlsx",
+              "source_kind": "website_catalogue_parser_pilot",
+              "source_limitations": [
+                "Official MITEX 2026 exhibitor catalogue is public on catalog.mitexpo.ru and linked from mitexpo.ru. The catalogue is for a Moscow/Russian-market event and includes Russian plus foreign exhibitors presenting into the Russian market; rows are kept when official product/rubric/description evidence is Signo-relevant, while service/no-product rows are excluded into Removed."
+              ],
+              "source_scope": "official public MITEX 2026 catalog.mitexpo.ru catalogue parser with current Twenty repeat split",
+              "source_urls": {
+                "expomap_event": "https://expomap.ru/expo/mitex/",
+                "official_catalog": "https://catalog.mitexpo.ru/expositions/exposition/7054-mitex-2026.html",
+                "official_home": "https://www.mitexpo.ru/"
+              },
+              "total_source_rows": 224,
+              "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic non-social company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
+            }
+          ],
+          "match_confidence": "exact_expomap_event_and_qa_passed_parser_artifact_match",
+          "match_reason": "Parser artifacts matched by exact Expomap row ordinal/url/name and QA PASS handoff t_144ff462.",
+          "target_event_name": "MITEX 2026",
+          "target_event_ordinal": 323,
+          "target_expomap_url": "https://expomap.ru/expo/mitex/"
+        }
+      ],
+      "target_expomap_url": "https://expomap.ru/expo/mitex/",
+      "target_expomap_urls": [
+        "https://expomap.ru/expo/mitex/"
+      ],
+      "total_source_rows": 224,
+      "twenty_repeat_status": "current Twenty repeat index applied read-only; exact normalized email first, then safe non-generic non-social company-owned email/site domain; generic/provider and ambiguous platform/public suffix domains are not repeat proof"
     },
     {
       "catalog_url": "https://profbeauty-expo.ru/uchastniki_old7",
@@ -6904,7 +7227,7 @@
       "twenty_repeat_status": "current Twenty repeat index applied read-only; exact public email and non-generic company-owned domain evidence; generic-provider domains are not treated as repeat proof"
     }
   ],
-  "matched_parser_pilots_count": 19,
+  "matched_parser_pilots_count": 20,
   "safety": {
     "contains_credentials_or_tokens": false,
     "download_hrefs_are_relative": true,
